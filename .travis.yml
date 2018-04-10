@@ -6,7 +6,7 @@ cache: bundler
 env:
   # http://docs.travis-ci.com/user/environment-variables/#Global-Variables
   global:
-    - BITCOINORG_BUILD_TYPE=deployment
+    - FABCOINORG_BUILD_TYPE=deployment
 
 before_install: gem install bundler --pre
 
