@@ -33,15 +33,15 @@ def fetchlinks()
 	dirs = Dir.glob(WORKDIR + "/_site/**/*.html").each { |file| 
 		content = File.read(file)
 		content.scan(/ href *= *"(.*?)"/).each { |link|
-			link = link[0].to_s.gsub(/^(https?:\/\/(www\.)?bitcoin\.org)?\//,'/')
+			link = link[0].to_s.gsub(/^(http?:\/\/(www\.)?fabcoin\.org)?\//,'/')
 			next if (link.match(/^#|^http:\/\/www.meetup.com\//))
-			if(!link.match(/^https?:\/\/|^\/[^\/]|^mailto:/))
+			if(!link.match(/^http?:\/\/|^\/[^\/]|^mailto:/))
 				link = File.dirname(file.sub(WORKDIR + '/_site','')) + '/' + File.basename(link)
 			end
 			links[link] = "0"
 		}
 		content.scan(/ src *= *"(.*?)"/).each { |link|
-			link = link[0].to_s.gsub(/^(https?:\/\/(www\.)?bitcoin\.org)?\//,'/')
+			link = link[0].to_s.gsub(/^(http?:\/\/(www\.)?fabcoin\.org)?\//,'/')
 			links[link] = "0"
 		}
 	}

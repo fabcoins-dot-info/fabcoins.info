@@ -7,7 +7,7 @@ required:
     title_max_40_characters_no_formatting: Genesis Block, Block 0
 
     summary_max_255_characters_no_formatting: >
-        The first block in the Bitcoin block chain.
+        The first block in the Fabcoin block chain.
 
     synonyms_shown_in_glossary_capitalize_first_letter:
         - Genesis block
@@ -22,8 +22,8 @@ optional:
         - Generation transaction (the first transaction in a block)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Genesis block](/en/developer-guide#term-genesis-block) --- Bitcoin.org Developer Guide"
-        - "[Genesis block](https://en.bitcoin.it/wiki/Genesis_block) --- Bitcoin Wiki"
-        - "[Why can't the genesis block coinbase transaction be spent?](http://bitcoin.stackexchange.com/q/10009) --- Bitcoin StackExchange"
+        - "[Genesis block](/en/developer-guide#term-genesis-block) --- Fabcoin.org Developer Guide"
+        - "[Genesis block](http://en.fabcoin.it/wiki/Genesis_block) --- Fabcoin Wiki"
+        - "[Why can't the genesis block coinbase transaction be spent?](http://fabcoin.stackexchange.com/q/10009) --- Fabcoin StackExchange"
 
 ---

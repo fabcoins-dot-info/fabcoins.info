@@ -5,16 +5,16 @@
 
 PATH=/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin
 
-AUTHORIZED_SIGNERS_DIR='/bitcoin.org/auto-build-committers.gnupg'
-REPO='https://github.com/bitcoin-dot-org/bitcoin.org.git'
-BUNDLE_DIR='/bitcoin.org/bundle'
-SITEDIR='/bitcoin.org/site'
-DESTDIR='build@bitcoinorgsite:/var/www/site'
+AUTHORIZED_SIGNERS_DIR='/fabcoins.info/auto-build-committers.gnupg'
+REPO='http://github.com/fabcoin-dot-org/fabcoins.info.git'
+BUNDLE_DIR='/fabcoins.info/bundle'
+SITEDIR='/fabcoins.info/site'
+DESTDIR='build@fabcoinorgsite:/var/www/site'
 WORKDIR=`mktemp -d`
-BITCOINORG_BUILD_TYPE='deployment'
+FABCOINORG_BUILD_TYPE='deployment'
 
 export BUNDLE_DIR
-export BITCOINORG_BUILD_TYPE
+export FABCOINORG_BUILD_TYPE
 
 # Stop script in case a single command fails
 set -e

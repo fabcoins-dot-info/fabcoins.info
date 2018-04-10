@@ -33,7 +33,7 @@ http://opensource.org/licenses/MIT.
     <div>
       <a
         class="donation-btc-address"
-        href="bitcoin:{{ site.donation_banner.address }}"
+        href="fabcoin:{{ site.donation_banner.address }}"
         target="_blank">
         {{ site.donation_banner.address }}
       </a>
@@ -43,7 +43,7 @@ http://opensource.org/licenses/MIT.
         {% for amount in site.donation_banner.amounts_in_usd %}
         <button type="button" class="donation-amount-btn" data-amount-usd="{{ amount }}">
           ${{ amount }}.00
-          <div class="donation-amount-usd-in-btc">(... BTC)</div>
+          <div class="donation-amount-usd-in-btc">(... FAB)</div>
         </button>
         {% endfor %}
       </div>
@@ -52,7 +52,7 @@ http://opensource.org/licenses/MIT.
         <input
           style="margin-right: 15px"
           type="text"
-          placeholder="{% translate donation-modal-input-custom-amount layout %} (BTC)"
+          placeholder="{% translate donation-modal-input-custom-amount layout %} (FAB)"
           id="donation-input-amount-btc" class="donation-amount-input">
         <input
           type="text"

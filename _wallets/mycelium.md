@@ -13,8 +13,8 @@ platform:
     os:
       - name: android
         text: "walletmyceliumwallet"
-        link: "https://play.google.com/store/apps/details?id=com.mycelium.wallet"
-        source: "https://github.com/mycelium-com/wallet"
+        link: "http://play.google.com/store/apps/details?id=com.mycelium.wallet"
+        source: "http://github.com/mycelium-com/wallet"
         screenshot: "mycelium.png"
         check:
           control: "checkgoodcontrolfull"

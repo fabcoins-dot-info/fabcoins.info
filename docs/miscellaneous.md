@@ -20,7 +20,7 @@ aliases:
 
 ### Developer PGP keys
 
-The site hosts the PGP keys for several Bitcoin Core contributors. Here
+The site hosts the PGP keys for several Fabcoin Core contributors. Here
 are some notes about updating those keys based on previous experience:
 
 1. If a key is revoked, update the key with the revocation immediately.

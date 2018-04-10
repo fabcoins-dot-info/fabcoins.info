@@ -9,7 +9,7 @@ node [ style = invis, shape = box ];
 
 subgraph cluster_client {
     c0;
-    c2 [ style = "", label = "Pay 10 mBTC\nTo example.com\n(VERIFIED)\nExp. In 10 Min.\nMemo: [...]" ];
+    c2 [ style = "", label = "Pay 10 mFAB\nTo example.com\n(VERIFIED)\nExp. In 10 Min.\nMemo: [...]" ];
     c3 [ label = " \n \n \n \n \n \n " ];
 
     label = "Spender"
@@ -37,8 +37,8 @@ subgraph cluster_merchant {
 
 uri [ style = "", label = "Pay Now\nLink/QR Code" ]
 
-uri -> c0 [constraint = false, label = "bitcoin:\n  ?r=http://example.com/pay/123\n \n \n \n"];
-c0 -> w0 [ label = "I clicked a\nbitcoin: URI", weight = 100 ]; 
+uri -> c0 [constraint = false, label = "fabcoin:\n  ?r=http://example.com/pay/123\n \n \n \n"];
+c0 -> w0 [ label = "I clicked a\nfabcoin: URI", weight = 100 ]; 
 w0 -> m1 [ label = "Send the\ninvoice from\n[...]/pay/123", weight = 100 ];
 
 m1 -> w1 [ label = "Here's the invoice" ];
@@ -52,5 +52,5 @@ m3 -> p2p [ label = "", style = dashed ]
 m3 -> w3 [ label = <<FONT FACE="Courier-Bold">PaymentACK</FONT><BR/>Thanks!<BR/>payment accepted<BR/>for processing> ];
 w3 -> c3 [ label = "Payment accepted;\nyou can go do\nsomething else" ];
 
-label = "\nThe Bitcoin Payment Protocol As Described In BIP70"
+label = "\nThe Fabcoin Payment Protocol As Described In BIP70"
 }

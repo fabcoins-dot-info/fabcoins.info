@@ -1,7 +1,7 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
-id: https://bitcoin.org/quality-assurance/schemas/wallets.yaml
+id: http://fabcoins.info/quality-assurance/schemas/wallets.yaml
 description: The wallet object
 type: object
 required:
@@ -146,7 +146,7 @@ properties:
                       - checkfailcontrolthirdpartyinsured
                       - checkfailcontrolthirdparty
                   validation:
-                    description: How much assurance the user has that their bitcoins are real
+                    description: How much assurance the user has that their fabcoins are real
                     type: string
                     enum:
                       - checkgoodvalidationfullnode

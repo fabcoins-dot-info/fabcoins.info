@@ -38,7 +38,7 @@
 <!-- nemo_out1 -->
 <g id="node2" class="node"><title>nemo_out1</title>
 <polygon fill="none" stroke="black" points="229,-274 149,-274 149,-238 229,-238 229,-274"/>
-<text text-anchor="middle" x="189" y="-251.9" font-family="Sans" font-size="14.00">10 mBTC</text>
+<text text-anchor="middle" x="189" y="-251.9" font-family="Sans" font-size="14.00">10 mFAB</text>
 </g>
 <!-- nemo_in1 -->
 <g id="node19" class="node"><title>nemo_in1</title>
@@ -52,7 +52,7 @@
 <!-- nemo_out2 -->
 <g id="node3" class="node"><title>nemo_out2</title>
 <polygon fill="none" stroke="black" points="229,-231 149,-231 149,-195 229,-195 229,-231"/>
-<text text-anchor="middle" x="189" y="-208.9" font-family="Sans" font-size="14.00">90 mBTC</text>
+<text text-anchor="middle" x="189" y="-208.9" font-family="Sans" font-size="14.00">90 mFAB</text>
 </g>
 <!-- nemo_in2 -->
 <g id="node20" class="node"><title>nemo_in2</title>
@@ -66,7 +66,7 @@
 <!-- neminem_out1 -->
 <g id="node5" class="node"><title>neminem_out1</title>
 <polygon fill="none" stroke="black" points="233,-530 145,-530 145,-494 233,-494 233,-530"/>
-<text text-anchor="middle" x="189" y="-507.9" font-family="Sans" font-size="14.00">100 mBTC</text>
+<text text-anchor="middle" x="189" y="-507.9" font-family="Sans" font-size="14.00">100 mFAB</text>
 </g>
 <!-- neminem_in1 -->
 <g id="node21" class="node"><title>neminem_in1</title>
@@ -80,7 +80,7 @@
 <!-- alice_out1 -->
 <g id="node7" class="node"><title>alice_out1</title>
 <polygon fill="none" stroke="black" points="229,-445 149,-445 149,-409 229,-409 229,-445"/>
-<text text-anchor="middle" x="189" y="-422.9" font-family="Sans" font-size="14.00">55 mBTC</text>
+<text text-anchor="middle" x="189" y="-422.9" font-family="Sans" font-size="14.00">55 mFAB</text>
 </g>
 <!-- alice_in1 -->
 <g id="node22" class="node"><title>alice_in1</title>
@@ -94,7 +94,7 @@
 <!-- alice_out2 -->
 <g id="node8" class="node"><title>alice_out2</title>
 <polygon fill="none" stroke="black" points="229,-402 149,-402 149,-366 229,-366 229,-402"/>
-<text text-anchor="middle" x="189" y="-379.9" font-family="Sans" font-size="14.00">25 mBTC</text>
+<text text-anchor="middle" x="189" y="-379.9" font-family="Sans" font-size="14.00">25 mFAB</text>
 </g>
 <!-- alice_in2 -->
 <g id="node23" class="node"><title>alice_in2</title>
@@ -108,7 +108,7 @@
 <!-- alice_out3 -->
 <g id="node9" class="node"><title>alice_out3</title>
 <polygon fill="none" stroke="black" points="229,-359 149,-359 149,-323 229,-323 229,-359"/>
-<text text-anchor="middle" x="189" y="-336.9" font-family="Sans" font-size="14.00">20 mBTC</text>
+<text text-anchor="middle" x="189" y="-336.9" font-family="Sans" font-size="14.00">20 mFAB</text>
 </g>
 <!-- alice_in3 -->
 <g id="node24" class="node"><title>alice_in3</title>
@@ -160,7 +160,7 @@
 <!-- out1 -->
 <g id="node26" class="node"><title>out1</title>
 <polygon fill="none" stroke="black" points="403,-188 315,-188 315,-152 403,-152 403,-188"/>
-<text text-anchor="middle" x="359" y="-165.9" font-family="Sans" font-size="14.00">100 mBTC</text>
+<text text-anchor="middle" x="359" y="-165.9" font-family="Sans" font-size="14.00">100 mFAB</text>
 </g>
 <!-- utxo1 -->
 <g id="node29" class="node"><title>utxo1</title>
@@ -175,7 +175,7 @@
 <!-- out2 -->
 <g id="node27" class="node"><title>out2</title>
 <polygon fill="none" stroke="black" points="403,-145 315,-145 315,-109 403,-109 403,-145"/>
-<text text-anchor="middle" x="359" y="-122.9" font-family="Sans" font-size="14.00">100 mBTC</text>
+<text text-anchor="middle" x="359" y="-122.9" font-family="Sans" font-size="14.00">100 mFAB</text>
 </g>
 <!-- utxo2 -->
 <g id="node30" class="node"><title>utxo2</title>
@@ -190,7 +190,7 @@
 <!-- out3 -->
 <g id="node28" class="node"><title>out3</title>
 <polygon fill="none" stroke="black" points="403,-102 315,-102 315,-66 403,-66 403,-102"/>
-<text text-anchor="middle" x="359" y="-79.9" font-family="Sans" font-size="14.00">100 mBTC</text>
+<text text-anchor="middle" x="359" y="-79.9" font-family="Sans" font-size="14.00">100 mFAB</text>
 </g>
 <!-- utxo3 -->
 <g id="node31" class="node"><title>utxo3</title>

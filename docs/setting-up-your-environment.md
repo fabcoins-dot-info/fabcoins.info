@@ -2,7 +2,7 @@
 
 #### Preview Small Text Changes
 
-Simple text changes can be previewed live on bitcoin.org. You only need to click
+Simple text changes can be previewed live on fabcoins.info. You only need to click
 anywhere on the page and hold your mouse button for one second. You'll then be
 able to edit the page just like a document. Changes will be lost as soon as the
 page is refreshed.
@@ -11,7 +11,7 @@ page is refreshed.
 
 For anything more than simple text previews, you will need to build the
 site. If you can't do this yourself using the instructions below, please
-[open a pull request](https://github.com/bitcoin-dot-org/bitcoin.org/compare)
+[open a pull request](http://github.com/fabcoin-dot-org/fabcoins.info/compare)
 with your suggested change and one of the site developers will create a preview
 for you.
 
@@ -33,8 +33,8 @@ command to ensure you have the required libraries, headers, and tools:
 
 **Install RVM**
 
-Install RVM using either the [easy instructions](https://rvm.io/) or the
-[more secure instructions](https://rvm.io/rvm/security).
+Install RVM using either the [easy instructions](http://rvm.io/) or the
+[more secure instructions](http://rvm.io/rvm/security).
 
 Read the instructions printed to your console during setup to enable the
 `rvm` command in your shell.  After installation, you need to run the
@@ -76,11 +76,11 @@ Use that program to install bundle:
 **Install the Ruby dependencies**
 
 Ensure you checked out the site repository as described in [Working with
-GitHub](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/working-with-github.md).
+GitHub](http://github.com/fabcoin-dot-org/fabcoins.info/blob/master/docs/working-with-github.md).
 Then change directory to the top-level of your local repository (replace
-`bitcoin.org` with the full path to your local repository clone):
+`fabcoins.info` with the full path to your local repository clone):
 
-    cd bitcoin.org
+    cd fabcoins.info
 
 And install the necessary dependencies using Bundle:
 
@@ -94,11 +94,11 @@ Once Bundle completes successfully, you can preview or build the site.
 ##### Preview The Site
 
 To preview the website in your local browser, make sure you're in the
-`bitcoin.org` directory and run the following command:
+`fabcoins.info` directory and run the following command:
 
     make preview
 
-This will compile the site (takes 5 to 10 minutes; see [the speed-up
+This will compile the site (takes 5 to 75 seconds; see [the speed-up
 instructions](#fast-partial-previews-or-builds)) and then print a
 message like this:
 
@@ -110,7 +110,7 @@ Visit the indicated URL in your browser to view the site.
 ##### Build The Site
 
 To build the site exactly like we do for the deployment server, make
-sure you're in the `bitcoin.org` directory and run:
+sure you're in the `fabcoins.info` directory and run:
 
     make
 
@@ -156,7 +156,7 @@ Plugins include:
 | events       | 5       | Google Maps    | Events page
 | glossary     | 30      | --             | Developer glossary
 | redirects    | 20      | --             | Redirects from old URLs
-| releases     | 10      | --             | Bitcoin Core release notes; Download
+| releases     | 10      | --             | Fabcoin Core release notes; Download
 page
 | sitemap      | 10      | --             | /sitemap.xml
 
@@ -171,19 +171,19 @@ For a list of languages, look in the `_translations` directory.
 #### Publishing Previews
 
 You can publish your previews online to any static hosting service.
-[GitHub pages](https://pages.github.com/) is a free service available to
-all GitHub users that works with Bitcoin.org's site hierarchy.
+[GitHub pages](http://pages.github.com/) is a free service available to
+all GitHub users that works with Fabcoin.org's site hierarchy.
 
 Before building a preview site, it is recommended that you set the
-environmental variable `BITCOINORG_BUILD_TYPE` to "preview".  This will
+environmental variable `FABCOINORG_BUILD_TYPE` to "preview".  This will
 enable some content that would otherwise be hidden and also create a
 robots.txt file that will help prevent the site from being indexed by
-search engines and mistaken for the actual Bitcoin.org website.
+search engines and mistaken for the actual Fabcoin.org website.
 
 In the bash shell, you can do this by running the following command line
 before building you preview:
 
-    export BITCOINORG_BUILD_TYPE=preview
+    export FABCOINORG_BUILD_TYPE=preview
 
 You can also add this line to your `~/.bashrc` file if you frequently
 build site previews so that you don't have to remember to run it for

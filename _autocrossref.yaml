@@ -13,11 +13,11 @@
 '`alert` message': alert message
 '`alert` messages': alert message
 '`amount`': pp amount
-bitcoin QR code: URI QR code
-bitcoin QR codes: URI QR code
-'`bitcoin:` URI': bitcoin uri
-'`bitcoin:` URIs': bitcoin uri
-bitcoinj:
+fabcoin QR code: URI QR code
+fabcoin QR codes: URI QR code
+'`fabcoin:` URI': fabcoin uri
+'`fabcoin:` URIs': fabcoin uri
+fabcoinj:
 '`block` message': block message
 '`block` messages': block message
 certificate chain:
@@ -82,7 +82,7 @@ multisig p2sh: p2sh multisig
 network:
 '`notfound` message': notfound message
 '`notfound` messages': notfound message
-'number (bitcoins)': proper money handling
+'number (fabcoins)': proper money handling
 '`op_checkmultisig`': op_checkmultisig
 '`op_checksig`': op_checksig
 '`op_dup`': op_dup
@@ -404,32 +404,32 @@ CVE-2012-2459:
 '`walletpassphrasechange`': rpc walletpassphrasechange
 '`walletpassphrasechange` RPC': rpc walletpassphrasechange
 
-## Versions of Bitcoin Core (linked to Bitcoin.org release notes)
-Bitcoin Core 0.1.6:
-Bitcoin Core 0.2.9:
-Bitcoin Core 0.3.11:
-Bitcoin Core 0.3.15:
-Bitcoin Core 0.3.18:
-Bitcoin Core 0.6.0:
-Bitcoin Core 0.6.1:
-Bitcoin Core 0.7.0:
-Bitcoin Core 0.8.0:
-Bitcoin Core 0.9.0:
-Bitcoin Core 0.9.1:
-Bitcoin Core 0.9.3:
-Bitcoin Core 0.10.0:
-Bitcoin Core 0.10.1:
-Bitcoin Core 0.10.2:
-Bitcoin Core 0.10.3:
-Bitcoin Core 0.11.0:
-Bitcoin Core 0.11.1:
-Bitcoin Core 0.11.2:
-Bitcoin Core 0.12.0:
-Bitcoin Core 0.12.1:
-Bitcoin Core 0.13.0:
-Bitcoin Core 0.13.1:
-Bitcoin Core 0.13.2:
-Bitcoin Core 0.14.0:
-Bitcoin Core 0.14.1:
-Bitcoin Core 0.14.2:
-Bitcoin Core master:
+## Versions of Fabcoin Core (linked to Fabcoin.org release notes)
+Fabcoin Core 0.1.6:
+Fabcoin Core 0.2.9:
+Fabcoin Core 0.3.11:
+Fabcoin Core 0.3.15:
+Fabcoin Core 0.3.18:
+Fabcoin Core 0.6.0:
+Fabcoin Core 0.6.1:
+Fabcoin Core 0.7.0:
+Fabcoin Core 0.8.0:
+Fabcoin Core 0.9.0:
+Fabcoin Core 0.9.1:
+Fabcoin Core 0.9.3:
+Fabcoin Core 0.10.0:
+Fabcoin Core 0.10.1:
+Fabcoin Core 0.10.2:
+Fabcoin Core 0.10.3:
+Fabcoin Core 0.11.0:
+Fabcoin Core 0.11.1:
+Fabcoin Core 0.11.2:
+Fabcoin Core 0.12.0:
+Fabcoin Core 0.12.1:
+Fabcoin Core 0.13.0:
+Fabcoin Core 0.13.1:
+Fabcoin Core 0.13.2:
+Fabcoin Core 0.14.0:
+Fabcoin Core 0.14.1:
+Fabcoin Core 0.14.2:
+Fabcoin Core master:

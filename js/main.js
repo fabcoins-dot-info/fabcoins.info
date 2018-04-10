@@ -198,7 +198,7 @@ function librariesShow(e) {
 
 function freenodeShow(e) {
   // Display freenode chat window on the "Development" page at user request.
-  document.getElementById('chatbox').innerHTML = '<iframe style=width:98%;min-width:400px;height:600px src="http://webchat.freenode.net/?channels=bitcoin-dev" />';
+  document.getElementById('chatbox').innerHTML = '<iframe style=width:98%;min-width:400px;height:600px src="http://webchat.freenode.net/?channels=fabcoin-dev" />';
   cancelEvent(e);
 }
 
@@ -311,7 +311,7 @@ function updateToc() {
 function updateIssue(e) {
   // Update GitHub issue link pre-filled with current page location.
   var t = getEvent(e, 'target');
-  t.href = 'https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?body=' + encodeURIComponent('Location: ' + window.location.href.toString() + "\n\n");
+  t.href = 'http://github.com/fabcoin-dot-org/fabcoins.info/issues/new?body=' + encodeURIComponent('Location: ' + window.location.href.toString() + "\n\n");
 }
 
 function updateSource(e) {
@@ -336,7 +336,7 @@ function updateSource(e) {
   if (pageoffset < first[1]) closer = [first[0], first[1]];
   if (windowy + pageoffset >= getHeight(document.body)) closer = [last[0], last[1]];
   // Set updated url to source file.
-  t.href = 'https://github.com/bitcoin-dot-org/bitcoin.org/edit/master/' + closer[0].getAttribute('data-sourcefile');
+  t.href = 'http://github.com/fabcoin-dot-org/fabcoins.info/edit/master/' + closer[0].getAttribute('data-sourcefile');
 }
 
 function disclaimerClose(e) {
@@ -454,7 +454,7 @@ function generateDonationQrCode() {
     var amount = $('#donation-input-amount-btc').val();
     var message = $('#donation-input-message').val();
 
-    var text = 'bitcoin:' + generateDonationUrl(address, amount, message);
+    var text = 'fabcoin:' + generateDonationUrl(address, amount, message);
 
     $('#donation-qr-code').qrcode({
         width: 150,
@@ -465,8 +465,8 @@ function generateDonationQrCode() {
 }
 
 function loadTickerPrices() {
-    $.ajax('https://apiv2.bitcoinaverage.com/indices/global/ticker/short?crypto=BTC&fiat=USD').then(function(data) {
-        var rate = data.BTCUSD.last;
+    $.ajax('http://apiv2.fabcoinaverage.com/indices/global/ticker/short?crypto=FAB&fiat=USD').then(function(data) {
+        var rate = data.FABUSD.last;
 
         function usdToBtc(amount) {
             var amountUsd = parseFloat(amount);
@@ -505,7 +505,7 @@ function loadTickerPrices() {
         $('[data-amount-usd]').each(function() {
             var amountUsd = $(this).data('amount-usd');
             var amountBtc = usdToBtc(amountUsd);
-            $('div', this).text('(' + amountBtc + ' BTC)');
+            $('div', this).text('(' + amountBtc + ' FAB)');
 
             $(this).on('click', function() {
                 $('#donation-input-amount-btc').val(amountBtc);

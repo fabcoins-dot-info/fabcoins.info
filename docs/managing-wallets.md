@@ -23,7 +23,7 @@ in the future
 - No concerning bug is found when testing the wallet
 - Website supports HTTPS and 301 redirects HTTP requests
 - SSL certificate passes [Qualys SSL Labs SSL
-  test](https://www.ssllabs.com/ssltest/)
+  test](http://www.ssllabs.com/ssltest/)
 - Website serving executable code or requiring authentication uses HSTS with a
   max-age of at least 180 days
 - The identity of CEOs and/or developers is public
@@ -57,11 +57,11 @@ recovery process.
 Optional criteria (some could become requirements):
 
 - Received independent security audit(s)
-- Does not show "received from" Bitcoin addresses in the UI
+- Does not show "received from" Fabcoin addresses in the UI
 - Uses deterministic ECDSA nonces (RFC 6979)
 - Provides a bug reporting policy on the website
 - Website serving executable code or requiring authentication is included in the
-  [HSTS preload list](https://hstspreload.appspot.com/)
+  [HSTS preload list](http://hstspreload.appspot.com/)
 - If user has exclusive access over its private keys:
   - Supports HD wallets (BIP32)
   - Provides users with step to print or write their wallet seed on setup
@@ -74,9 +74,9 @@ Optional criteria (some could become requirements):
 ### Adding a wallet
 
 *Before adding a wallet,* please make sure your wallet meets all of the
-Basic Requirements listed above, or open a [new issue](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new)
+Basic Requirements listed above, or open a [new issue](http://github.com/fabcoin-dot-org/fabcoins.info/issues/new)
 to request an exemption or policy change. Feel free to email Will Binns
-([will@bitcoin.org](mailto:will@bitcoin.org)) or Dave Harding ([dave@dtrt.org](mailto:dave@dtrt.org))
+([will@fabcoins.info](mailto:will@fabcoins.info)) or Dave Harding ([dave@dtrt.org](mailto:dave@dtrt.org))
 if you have any questions.
 
 Wallets can be added by creating a Markdown file with a wallet name
@@ -108,13 +108,13 @@ between 1 and 4. Level represents a category of a wallet:
 Each wallet is assigned a score for five criteria. For each of them, the
 appropriate text in `_translations/en.yml` needs to be chosen (_see `choose-your-wallet` section_).
 
-**Control** - What control the user has over his bitcoins?
+**Control** - What control the user has over his fabcoins?
 
 To get a good score, the wallet must provide the user with full exclusive
-control over their bitcoins.
+control over their fabcoins.
 
 To get a passing score, the wallet must provide the user with exclusive control
-over their bitcoins. Encrypted online backups are accepted so long as only the
+over their fabcoins. Encrypted online backups are accepted so long as only the
 user can decrypt them. Multisig wallets are accepted so long as only the user
 can spend without the other party's permission.
 

@@ -7,7 +7,7 @@ required:
     title_max_40_characters_no_formatting: Node
 
     summary_max_255_characters_no_formatting: >
-        A computer that connects to the Bitcoin network.
+        A computer that connects to the Fabcoin network.
 
     synonyms_shown_in_glossary_capitalize_first_letter:
         - Node
@@ -26,6 +26,6 @@ optional:
         - SPV node
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Full node](https://en.bitcoin.it/wiki/Full_node) --- Bitcoin Wiki"
+        - "[Full node](http://en.fabcoin.it/wiki/Full_node) --- Fabcoin Wiki"
 
 ---

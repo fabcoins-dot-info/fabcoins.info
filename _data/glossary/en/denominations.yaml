@@ -7,34 +7,34 @@ required:
     title_max_40_characters_no_formatting: Denominations
 
     summary_max_255_characters_no_formatting: >
-        Denominations of Bitcoin value, usually measured in fractions of
-        a bitcoin but sometimes measured in multiples of a satoshi.  One
-        bitcoin equals 100,000,000 satoshis.
+        Denominations of Fabcoin value, usually measured in fractions of
+        a fabcoin but sometimes measured in multiples of a satoshi.  One
+        fabcoin equals 100,000,000 satoshis.
 
     synonyms_shown_in_glossary_capitalize_first_letter:
         - Denomination
-        - Bitcoins
+        - Fabcoins
         - Satoshis
 
 optional:
     synonyms_and_pluralizations_not_shown_in_glossary:
         - denominations
-        - millibitcoin
-        - millibitcoins
+        - millifabcoin
+        - millifabcoins
         - millibit
         - millibits
-        - microbitcoin
-        - microbitcoins
+        - microfabcoin
+        - microfabcoins
         - microbit
         - microbits
         - satoshi
-        ## Don't add bitcoin singular, we use bare "Bitcoin" massively often
+        ## Don't add fabcoin singular, we use bare "Fabcoin" massively often
         ## Don't add bits; the dev docs use [binary] "bits" often
 
     not_to_be_confused_with_capitalize_first_letter:
         - Binary bits, a unit of data with two possible values
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Bitcoin Units](https://en.bitcoin.it/wiki/Units) --- Bitcoin Wiki"
+        - "[Fabcoin Units](http://en.fabcoin.it/wiki/Units) --- Fabcoin Wiki"
 
 ---

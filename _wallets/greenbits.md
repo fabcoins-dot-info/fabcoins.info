@@ -13,8 +13,8 @@ platform:
     os:
       - name: android
         text: "walletgreenbits"
-        link: "https://play.google.com/store/apps/details?id=com.greenaddress.greenbits_android_wallet"
-        source: "https://github.com/greenaddress/GreenBits"
+        link: "http://play.google.com/store/apps/details?id=com.greenaddress.greenbits_android_wallet"
+        source: "http://github.com/greenaddress/GreenBits"
         screenshot: "greenbits.png"
         check:
           control: "checkpasscontrolmulti"

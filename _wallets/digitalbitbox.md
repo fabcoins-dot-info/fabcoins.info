@@ -13,8 +13,8 @@ platform:
     os:
       - name: hardware
         text: "walletdbb"
-        link: "https://digitalbitbox.com/"
-        source: "https://github.com/digitalbitbox/"
+        link: "http://digitalbitbox.com/"
+        source: "http://github.com/digitalbitbox/"
         screenshot: "digitalbitbox.png"
         check:
           control: "checkgoodcontrolfull"

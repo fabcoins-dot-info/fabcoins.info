@@ -9,11 +9,11 @@ http://opensource.org/licenses/MIT.
 
 {% autocrossref %}
 
-This section describes the Bitcoin P2P network protocol (but it is [not a
+This section describes the Fabcoin P2P network protocol (but it is [not a
 specification][]). It does not describe the discontinued direct [IP-to-IP
 payment protocol][], the [BIP70 payment protocol][/en/glossary/payment-protocol], the
 [GetBlockTemplate mining protocol][section getblocktemplate], or any
-network protocol never implemented in an official version of Bitcoin Core.
+network protocol never implemented in an official version of Fabcoin Core.
 
 All peer-to-peer communication occurs entirely over TCP.
 
@@ -27,13 +27,13 @@ integers mentioned in this section are transmitted in little-endian order.
 
 {% autocrossref %}
 
-The following constants and defaults are taken from Bitcoin Core's
+The following constants and defaults are taken from Fabcoin Core's
 [chainparams.cpp][core chainparams.cpp] source code file.
 
 | Network | Default Port | [Start String][/en/glossary/start-string]{:#term-start-string}{:.term} | Max nBits
 |---------|--------------|-----------------------------------------------|---------------
-| Mainnet | 8333         | 0xf9beb4d9                                    | 0x1d00ffff
-| Testnet | 18333        | 0x0b110907                                    | 0x1d00ffff
+| Mainnet | 8665         | 0xf9beb4d9                                    | 0x1d00ffff
+| Testnet | 18665        | 0x0b110907                                    | 0x1d00ffff
 | Regtest | 18444        | 0xfabfb5da                                    | 0x207fffff
 
 Note: the testnet start string and nBits above are for testnet3; the
@@ -42,12 +42,12 @@ nBits.
 
 Command line parameters can change what port a node listens on (see
 `-help`). Start strings are hardcoded constants that appear at the start
-of all messages sent on the Bitcoin network; they may also appear in
-data files such as Bitcoin Core's block database.  The nBits displayed
+of all messages sent on the Fabcoin network; they may also appear in
+data files such as Fabcoin Core's block database.  The nBits displayed
 above are in big-endian order; they're sent over the network in
 little-endian order.
 
-Bitcoin Core's [chainparams.cpp][core chainparams.cpp] also includes
+Fabcoin Core's [chainparams.cpp][core chainparams.cpp] also includes
 other constants useful to programs, such as the hash of the genesis
 blocks for the different networks.
 
@@ -63,25 +63,25 @@ with the most recent versions listed first. (If you know of a protocol
 version that implemented a major change but which is not listed here,
 please [open an issue][docs issue].)
 
-As of Bitcoin Core 0.14.2, the most recent protocol version is 70015.
+As of Fabcoin Core 0.14.2, the most recent protocol version is 70015.
 
 | Version | Initial Release                    | Major Changes
 |---------|------------------------------------|--------------
-| 70015   | Bitcoin Core 0.13.2 <br>(Jan 2017) | • New banning behavior for invalid compact blocks [#9026](https://github.com/bitcoin/bitcoin/pull/9026) in v0.14.0, Backported to v0.13.2 in [#9048](https://github.com/bitcoin/bitcoin/pull/9048).
-| 70014   | Bitcoin Core 0.13.0 <br>(Aug 2016) | [BIP152][]: <br>• Added `sendcmpct`, `cmpctblock`, `getblocktxn`, `blocktxn` messages <br> • Added `MSG_CMPCT_BLOCK` inventory type to `getdata` message.
-| 70013   | Bitcoin Core 0.13.0 <br>(Aug 2016) | [BIP133][]: <br>• Added `feefilter` message.<br> • Removed `alert` message system. See [Alert System Retirement](https://bitcoin.org/en/alert/2016-11-01-alert-retirement)
-| 70012   | Bitcoin Core 0.12.0 <br>(Feb 2016) | [BIP130][]: <br>• Added `sendheaders` message.
-| 70011   | Bitcoin Core 0.12.0 <br>(Feb 2016) | [BIP111][]: <br>• `filter*` messages are disabled without NODE_BLOOM after and including this version.
-| 70002   | Bitcoin Core 0.9.0 <br>(Mar 2014)  | • Send multiple `inv` messages in response to a `mempool` message if necessary <br><br>[BIP61][]: <br>• Added `reject` message
-| 70001   | Bitcoin Core 0.8.0 <br>(Feb 2013)  | • Added `notfound` message. <br><br>[BIP37][]: <br>• Added `filterload` message. <br>• Added `filteradd` message. <br>• Added `filterclear` message. <br>• Added `merkleblock` message. <br>• Added relay field to `version` message <br>• Added `MSG_FILTERED_BLOCK` inventory type to `getdata` message.
-| 60002   | Bitcoin Core 0.7.0 <br>(Sep 2012)  | [BIP35][]: <br>• Added `mempool` message. <br>• Extended `getdata` message to allow download of memory pool transactions
-| 60001   | Bitcoin Core 0.6.1 <br>(May 2012)  | [BIP31][]: <br>• Added nonce field to `ping` message <br>• Added `pong` message
-| 60000   | Bitcoin Core 0.6.0 <br>(Mar 2012)  | [BIP14][]: <br>• Separated protocol version from Bitcoin Core version
-| 31800   | Bitcoin Core 0.3.18 <br>(Dec 2010) | • Added `getheaders` message and `headers` message.
-| 31402   | Bitcoin Core 0.3.15 <br>(Oct 2010) | • Added time field to `addr` message.
-| 311     | Bitcoin Core 0.3.11 <br>(Aug 2010) | • Added `alert` message.
-| 209     | Bitcoin Core 0.2.9 <br>(May 2010)  | • Added checksum field to message headers, added `verack` message, and added starting height field to `version` message.
-| 106     | Bitcoin Core 0.1.6 <br>(Oct 2009)  | • Added transmitter IP address fields, nonce, and User Agent (subVer) to `version` message.
+| 70015   | Fabcoin Core 0.13.2 <br>(Jan 2017) | • New banning behavior for invalid compact blocks [#9026](http://github.com/fabcoin/fabcoin/pull/9026) in v0.14.0, Backported to v0.13.2 in [#9048](http://github.com/fabcoin/fabcoin/pull/9048).
+| 70014   | Fabcoin Core 0.13.0 <br>(Aug 2016) | [BIP152][]: <br>• Added `sendcmpct`, `cmpctblock`, `getblocktxn`, `blocktxn` messages <br> • Added `MSG_CMPCT_BLOCK` inventory type to `getdata` message.
+| 70013   | Fabcoin Core 0.13.0 <br>(Aug 2016) | [BIP133][]: <br>• Added `feefilter` message.<br> • Removed `alert` message system. See [Alert System Retirement](http://fabcoins.info/en/alert/2016-11-01-alert-retirement)
+| 70012   | Fabcoin Core 0.12.0 <br>(Feb 2016) | [BIP130][]: <br>• Added `sendheaders` message.
+| 70011   | Fabcoin Core 0.12.0 <br>(Feb 2016) | [BIP111][]: <br>• `filter*` messages are disabled without NODE_BLOOM after and including this version.
+| 70002   | Fabcoin Core 0.9.0 <br>(Mar 2014)  | • Send multiple `inv` messages in response to a `mempool` message if necessary <br><br>[BIP61][]: <br>• Added `reject` message
+| 70001   | Fabcoin Core 0.8.0 <br>(Feb 2013)  | • Added `notfound` message. <br><br>[BIP37][]: <br>• Added `filterload` message. <br>• Added `filteradd` message. <br>• Added `filterclear` message. <br>• Added `merkleblock` message. <br>• Added relay field to `version` message <br>• Added `MSG_FILTERED_BLOCK` inventory type to `getdata` message.
+| 60002   | Fabcoin Core 0.7.0 <br>(Sep 2012)  | [BIP35][]: <br>• Added `mempool` message. <br>• Extended `getdata` message to allow download of memory pool transactions
+| 60001   | Fabcoin Core 0.6.1 <br>(May 2012)  | [BIP31][]: <br>• Added nonce field to `ping` message <br>• Added `pong` message
+| 60000   | Fabcoin Core 0.6.0 <br>(Mar 2012)  | [BIP14][]: <br>• Separated protocol version from Fabcoin Core version
+| 31800   | Fabcoin Core 0.3.18 <br>(Dec 2010) | • Added `getheaders` message and `headers` message.
+| 31402   | Fabcoin Core 0.3.15 <br>(Oct 2010) | • Added time field to `addr` message.
+| 311     | Fabcoin Core 0.3.11 <br>(Aug 2010) | • Added `alert` message.
+| 209     | Fabcoin Core 0.2.9 <br>(May 2010)  | • Added checksum field to message headers, added `verack` message, and added starting height field to `version` message.
+| 106     | Fabcoin Core 0.1.6 <br>(Oct 2009)  | • Added transmitter IP address fields, nonce, and User Agent (subVer) to `version` message.
 
 {% endautocrossref %}
 
@@ -98,7 +98,7 @@ The message header format is:
 |-------|--------------|-----------|-------------
 | 4     | start string | char[4]   | Magic bytes indicating the originating network; used to seek to next message when stream state is unknown.
 | 12    | command name | char[12]  | ASCII string which identifies what message type is contained in the payload.  Followed by nulls (0x00) to pad out byte count; for example: `version\0\0\0\0\0`.
-| 4     | payload size | uint32_t  | Number of bytes in payload.  The current maximum number of bytes ([`MAX_SIZE`][max_size]) allowed in the payload by Bitcoin Core is 32 MiB---messages with a payload size larger than this will be dropped or rejected.
+| 4     | payload size | uint32_t  | Number of bytes in payload.  The current maximum number of bytes ([`MAX_SIZE`][max_size]) allowed in the payload by Fabcoin Core is 32 MiB---messages with a payload size larger than this will be dropped or rejected.
 | 4     | checksum     | char[4]   | *Added in protocol version 209.* <br><br>First 4 bytes of SHA256(SHA256(payload)) in internal byte order.<br /><br /> If payload is empty, as in `verack` and `getaddr` messages, the checksum is always 0x5df6e0e2 (SHA256(SHA256(\<empty string>))).
 
 The following example is an annotated hex dump of a mainnet message
@@ -142,7 +142,7 @@ The currently-available type identifiers are:
 | 3               | [`MSG_FILTERED_BLOCK`][msg_filtered_block]{:#term-msg_filtered_block}{:.term} | The hash is of a block header; identical to `MSG_BLOCK`. When used in a `getdata` message, this indicates the response should be a `merkleblock` message rather than a `block` message (but this only works if a bloom filter was previously configured).  **Only for use in `getdata` messages.**
 
 Type identifier zero and type identifiers greater than three are reserved
-for future implementations. Bitcoin Core ignores all inventories with
+for future implementations. Fabcoin Core ignores all inventories with
 one of these unknown types.
 
 {% endautocrossref %}
@@ -364,10 +364,10 @@ view of the network---not a complete list of unconfirmed transactions
 on the network. Here are some additional reasons the list might not
 be complete:
 
-* Before Bitcoin Core 0.9.0, the response to the `mempool` message was
+* Before Fabcoin Core 0.9.0, the response to the `mempool` message was
   only one `inv` message. An `inv` message is limited to 50,000
   inventories, so a node with a memory pool larger than 50,000 entries
-  would not send everything.  Later versions of Bitcoin Core send as
+  would not send everything.  Later versions of Fabcoin Core send as
   many `inv` messages as needed to reference its complete memory pool.
 
 * The `mempool` message is not currently fully compatible with the
@@ -377,7 +377,7 @@ be complete:
   output can appear before the transaction (tx1) containing that output,
   which means the automatic filter update mechanism won't operate until
   the second-appearing transaction (tx1) is seen---missing the
-  first-appearing transaction (tx2). It has been proposed in [Bitcoin
+  first-appearing transaction (tx2). It has been proposed in [Fabcoin
   Core issue #2381][] that the transactions should be sorted before
   being processed by the filter.
 
@@ -599,17 +599,17 @@ identical to the `inv` message; only the message header differs.
 The `tx` message transmits a single transaction in the raw transaction
 format. It can be sent in a variety of situations;
 
-* **Transaction Response:** Bitcoin Core and BitcoinJ will send it in
+* **Transaction Response:** Fabcoin Core and FabcoinJ will send it in
   response to a `getdata` message that requests the transaction with an
   inventory type of `MSG_TX`.
 
-* **MerkleBlock Response:** Bitcoin Core will send it in response to a
+* **MerkleBlock Response:** Fabcoin Core will send it in response to a
   `getdata` message that requests a merkle block with an inventory type
   of `MSG_MERKLEBLOCK`. (This is in addition to sending a `merkleblock`
   message.) Each `tx` message in this case provides a matched
   transaction from that block.
 
-* **Unsolicited:** BitcoinJ will send a `tx` message unsolicited for
+* **Unsolicited:** FabcoinJ will send a `tx` message unsolicited for
   transactions it originates.
 
 For an example hexdump of the raw transaction format, see the [raw
@@ -658,7 +658,7 @@ An `addr` message may also be sent in response to a `getaddr` message.
 | Bytes      | Name             | Data Type          | Description
 |------------|------------------|--------------------|----------------
 | *Varies*   | IP address count | compactSize uint   | The number of IP address entries up to a maximum of 1,000.
-| *Varies*   | IP addresses     | network IP address | IP address entries.  See the table below for the format of a Bitcoin network IP address.
+| *Varies*   | IP addresses     | network IP address | IP address entries.  See the table below for the format of a Fabcoin network IP address.
 
 Each encapsulated network IP address currently uses the following structure:
 
@@ -667,7 +667,7 @@ Each encapsulated network IP address currently uses the following structure:
 | 4     | time       | uint32    | *Added in protocol version 31402.* <br><br>A time in Unix epoch time format.  Nodes advertising their own IP address set this to the current time.  Nodes advertising IP addresses they've connected to set this to the last time they connected to that node.  Other nodes just relaying the IP address should not change the time.  Nodes can use the time field to avoid relaying old `addr` messages.  <br><br>Malicious nodes may change times or even set them in the future.
 | 8     | services   | uint64_t  | The services the node advertised in its `version` message.
 | 16    | IP address | char      | IPv6 address in **big endian byte order**. IPv4 addresses can be provided as [IPv4-mapped IPv6 addresses][]
-| 2     | port       | uint16_t  | Port number in **big endian byte order**.  Note that Bitcoin Core will only connect to nodes with non-standard port numbers as a last resort for finding peers.  This is to prevent anyone from trying to use the network to disrupt non-Bitcoin services that run on other ports.
+| 2     | port       | uint16_t  | Port number in **big endian byte order**.  Note that Fabcoin Core will only connect to nodes with non-standard port numbers as a last resort for finding peers.  This is to prevent anyone from trying to use the network to disrupt non-Fabcoin services that run on other ports.
 
 The following annotated hexdump shows part of an `addr` message. (The
 message header has been omitted and the actual IP address has been
@@ -679,7 +679,7 @@ fde803 ............................. Address count: 1000
 d91f4854 ........................... Epoch time: 1414012889
 0100000000000000 ................... Service bits: 01 (network node)
 00000000000000000000ffffc0000233 ... IP Address: ::ffff:192.0.2.51
-208d ............................... Port: 8333
+208d ............................... Port: 8665
 
 [...] .............................. (999 more addresses omitted)
 {% endhighlight %}
@@ -695,9 +695,9 @@ d91f4854 ........................... Epoch time: 1414012889
 {% autocrossref %}
 
 *Added in protocol version 311.*
-*Removed in protocol version 70013 and released in Bitcoin Core 0.13.0*
+*Removed in protocol version 70013 and released in Fabcoin Core 0.13.0*
 
-The legacy p2p network alert messaging system has been retired; however, internal alerts, partition detection warnings and the `-alertnotify` option features remain. See [Alert System Retirement](https://bitcoin.org/en/alert/2016-11-01-alert-retirement) for details.
+The legacy p2p network alert messaging system has been retired; however, internal alerts, partition detection warnings and the `-alertnotify` option features remain. See [Alert System Retirement](http://fabcoins.info/en/alert/2016-11-01-alert-retirement) for details.
 
 {% endautocrossref %}
 
@@ -712,8 +712,8 @@ The `feefilter` message is a request to the receiving peer to not relay any
 transaction inv messages to the sending peer where the fee rate for the
 transaction is below the fee rate specified in the feefilter message.
 
-`feefilter` was introduced in Bitcoin Core 0.13.0 following the introduction
-of mempool limiting in Bitcoin Core 0.12.0. Mempool limiting provides protection against
+`feefilter` was introduced in Fabcoin Core 0.13.0 following the introduction
+of mempool limiting in Fabcoin Core 0.12.0. Mempool limiting provides protection against
 attacks and spam transactions that have low fee rates and are unlikely to be
 included in mined blocks. The `feefilter` messages allows a node to inform its
 peers that it will not accept transactions below a specified fee rate into
@@ -802,7 +802,7 @@ previously-set bloom filter.  This also undoes the effect of setting the
 relay field in the `version` message to 0, allowing unfiltered access to
 `inv` messages announcing new transactions.
 
-Bitcoin Core does not require a `filterclear` message before a
+Fabcoin Core does not require a `filterclear` message before a
 replacement filter is loaded with `filterload`.  It also doesn't require
 a `filterload` message before a `filterclear` message.
 
@@ -907,7 +907,7 @@ function][murmur3].
 ![Warning icon](/img/icons/icon_warning.svg)
 **Warning:** the Murmur3 hash function has separate 32-bit and 64-bit
 versions that produce different results for the same input.  Only the
-32-bit Murmur3 version is used with Bitcoin bloom filters.
+32-bit Murmur3 version is used with Fabcoin bloom filters.
 
 The data to be hashed can be any transaction element which the bloom
 filter can match. See the next subsection for the list of transaction
@@ -915,7 +915,7 @@ elements checked against the filter. The largest element which can be
 matched is a script data push of 520 bytes, so the data should never
 exceed 520 bytes.
 
-The example below from Bitcoin Core [bloom.cpp][core bloom.cpp hash] combines
+The example below from Fabcoin Core [bloom.cpp][core bloom.cpp hash] combines
 all the steps above to create the hash function template. The seed is
 the first parameter; the data to be hashed is the second parameter. The
 result is a uint32\_t modulo the size of the bit field in bits.
@@ -1002,7 +1002,7 @@ single 36-byte element.
 | ffffffff ................................. Sequence number: UINT32_MAX
 
 01 ......................................... Number of outputs
-| f0ca052a01000000 ......................... Satoshis (49.99990000 BTC)
+| f0ca052a01000000 ......................... Satoshis (49.99990000 FAB)
 |
 | 19 ....................................... Bytes in pubkey script: 25
 | | 76 ..................................... OP_DUP
@@ -1103,7 +1103,7 @@ header has been omitted.)
 *Added in protocol version 60001 as described by BIP31.*
 
 The `pong` message replies to a `ping` message, proving to the pinging
-node that the ponging node is still alive. Bitcoin Core will, by
+node that the ponging node is still alive. Fabcoin Core will, by
 default, disconnect from any clients which have not responded to a
 `ping` message within 20 minutes.
 
@@ -1219,8 +1219,8 @@ before initializing its half of the connection by first sending a
 | 4        | version               | int32_t          | Required                                 | The highest protocol version understood by the transmitting node.  See the [protocol version section][section protocol versions].
 | 8        | services              | uint64_t         | Required                                 | The services supported by the transmitting node encoded as a bitfield.  See the list of service codes below.
 | 8        | timestamp             | int64_t          | Required                                 | The current Unix epoch time according to the transmitting node's clock.  Because nodes will reject blocks with timestamps more than two hours in the future, this field can help other nodes to determine that their clock is wrong.
-| 8        | addr_recv services    | uint64_t         | Required                                 | The services supported by the receiving node as perceived by the transmitting node.  Same format as the 'services' field above. Bitcoin Core will attempt to provide accurate information.  BitcoinJ will, by default, always send 0.
-| 16       | addr_recv IP address  | char             | Required                                 | The IPv6 address of the receiving node as perceived by the transmitting node in **big endian byte order**. IPv4 addresses can be provided as [IPv4-mapped IPv6 addresses][]. Bitcoin Core will attempt to provide accurate information.  BitcoinJ will, by default, always return ::ffff:127.0.0.1
+| 8        | addr_recv services    | uint64_t         | Required                                 | The services supported by the receiving node as perceived by the transmitting node.  Same format as the 'services' field above. Fabcoin Core will attempt to provide accurate information.  FabcoinJ will, by default, always send 0.
+| 16       | addr_recv IP address  | char             | Required                                 | The IPv6 address of the receiving node as perceived by the transmitting node in **big endian byte order**. IPv4 addresses can be provided as [IPv4-mapped IPv6 addresses][]. Fabcoin Core will attempt to provide accurate information.  FabcoinJ will, by default, always return ::ffff:127.0.0.1
 | 2        | addr_recv port        | uint16_t         | Required                                 | The port number of the receiving node as perceived by the transmitting node in **big endian byte order**.
 | 8        | addr_trans services   | uint64_t         | Required                                 | *Added in protocol version 106.* <br><br>The services supported by the transmitting node.  Should be identical to the 'services' field above.
 | 16       | addr_trans IP address | char             | Required                                 | *Added in protocol version 106.* <br><br>The IPv6 address of the transmitting node in **big endian byte order**. IPv4 addresses can be provided as [IPv4-mapped IPv6 addresses][].  Set to ::ffff:127.0.0.1 if unknown.
@@ -1245,7 +1245,7 @@ replaced with [RFC5737][] reserved IP addresses.)
 {% highlight text %}
 72110100 ........................... Protocol version: 70002
 0100000000000000 ................... Services: NODE_NETWORK
-bc8f5e5400000000 ................... Epoch time: 1415483324
+bc8f5e5400000000 ................... Epoch time: 1415486674
 
 0100000000000000 ................... Receiving node's services
 00000000000000000000ffffc61b6409 ... Receiving node's IPv6 address

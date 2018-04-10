@@ -13,8 +13,8 @@ platform:
     os:
       - name: android
         text: "walletcoinspace"
-        link: "https://play.google.com/store/apps/details?id=com.coinspace.app"
-        source: "https://github.com/CoinSpace/CoinSpace"
+        link: "http://play.google.com/store/apps/details?id=com.coinspace.app"
+        source: "http://github.com/CoinSpace/CoinSpace"
         screenshot: "coinspacemobile.png"
         check:
           control: "checkgoodcontrolfull"
@@ -29,8 +29,8 @@ platform:
           privacynetwork: "checkfailprivacynetworknosupporttor"
       - name: ios
         text: "walletcoinspace"
-        link: "https://itunes.apple.com/us/app/coinspace-bitcoin-wallet/id980719434?mt=8"
-        source: "https://github.com/CoinSpace/CoinSpace"
+        link: "http://itunes.apple.com/us/app/coinspace-fabcoin-wallet/id980719434?mt=8"
+        source: "http://github.com/CoinSpace/CoinSpace"
         screenshot: "coinspacemobile.png"
         check:
           control: "checkgoodcontrolfull"
@@ -45,8 +45,8 @@ platform:
           privacynetwork: "checkfailprivacynetworknosupporttor"
       - name: windowsphone
         text: "walletcoinspace"
-        link: "https://www.microsoft.com/en-us/store/apps/coin-space-digital-currency-wallet/9nblgggz58z9"
-        source: "https://github.com/CoinSpace/CoinSpace"
+        link: "http://www.microsoft.com/en-us/store/apps/coin-space-digital-currency-wallet/9nblgggz58z9"
+        source: "http://github.com/CoinSpace/CoinSpace"
         screenshot: "coinspacemobile.png"
         check:
           control: "checkgoodcontrolfull"
@@ -64,8 +64,8 @@ platform:
     os:
       - name: web
         text: "walletcoinspace"
-        link: "https://coin.space"
-        source: "https://github.com/CoinSpace/CoinSpace"
+        link: "http://coin.space"
+        source: "http://github.com/CoinSpace/CoinSpace"
         screenshot: "coinspaceweb.png"
         check:
           control: "checkgoodcontrolfull"

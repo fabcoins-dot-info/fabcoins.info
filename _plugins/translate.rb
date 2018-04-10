@@ -91,10 +91,10 @@ module Jekyll
         end
       end
 
-      ## Hack for renaming links to the Bitcoin paper. Safe to remove
-      ## when all languages have "bitcoin-paper:" defined in the "url:"
+      ## Hack for renaming links to the Fabcoin paper. Safe to remove
+      ## when all languages have "fabcoin-paper:" defined in the "url:"
       ## section of their '_translations' YAML file.
-      text.gsub!('#bitcoin-paper#','/bitcoin.pdf')
+      text.gsub!('#fabcoin-paper#','/fabcoin.pdf')
 
       anc = site['loc'][lang]['anchor']
       anc.each do |page,anch|

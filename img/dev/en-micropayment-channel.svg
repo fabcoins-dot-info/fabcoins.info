@@ -11,12 +11,12 @@
 <polygon fill="white" stroke="white" points="-4,5 -4,-593 725,-593 725,5 -4,5"/>
 <text text-anchor="middle" x="360" y="-127.4" font-family="Sans" font-size="14.00"> </text>
 <text text-anchor="middle" x="360" y="-110.4" font-family="Sans" font-size="14.00"> </text>
-<text text-anchor="middle" x="360" y="-93.4" font-family="Sans" font-size="14.00">Alice broadcasts the bond to the Bitcoin network immediately.</text>
+<text text-anchor="middle" x="360" y="-93.4" font-family="Sans" font-size="14.00">Alice broadcasts the bond to the Fabcoin network immediately.</text>
 <text text-anchor="middle" x="360" y="-76.4" font-family="Sans" font-size="14.00">She broadcasts the final version of the refund when she finishes work</text>
 <text text-anchor="middle" x="360" y="-59.4" font-family="Sans" font-size="14.00">or before the locktime. &#160;If she fails to broadcast before refund v1&#39;s time lock</text>
 <text text-anchor="middle" x="360" y="-42.4" font-family="Sans" font-size="14.00">expires, Bob can broadcast refund v1 to get a full refund.</text>
 <text text-anchor="middle" x="360" y="-25.4" font-family="Sans" font-size="14.00"> </text>
-<text text-anchor="middle" x="360" y="-8.4" font-family="Sans" font-size="14.00">Bitcoin Micropayment Channels (As Implemented In Bitcoinj)</text>
+<text text-anchor="middle" x="360" y="-8.4" font-family="Sans" font-size="14.00">Fabcoin Micropayment Channels (As Implemented In Fabcoinj)</text>
 <g id="graph2" class="cluster"><title>cluster_alice</title>
 <polygon fill="none" stroke="black" points="8,-161 8,-511 139,-511 139,-161 8,-161"/>
 <text text-anchor="middle" x="73.5" y="-494.4" font-family="Sans" font-size="14.00">Alice&#39;s Computer</text>
@@ -49,7 +49,7 @@
 <path fill="none" stroke="black" stroke-dasharray="5,2" d="M111.163,-383.817C129.001,-381.816 150.55,-380 170,-380 170,-380 170,-380 556,-380 556,-380 579.688,-371.595 603.153,-363.268"/>
 <polygon fill="black" stroke="black" points="604.524,-366.496 612.777,-359.853 602.183,-359.899 604.524,-366.496"/>
 <text text-anchor="middle" x="363" y="-401.4" font-family="Sans" font-size="14.00">A: Some work done; please sign refund v2</text>
-<text text-anchor="middle" x="363" y="-384.4" font-family="Sans" font-size="14.00">reducing your refund by 1 mBTC</text>
+<text text-anchor="middle" x="363" y="-384.4" font-family="Sans" font-size="14.00">reducing your refund by 1 mFAB</text>
 </g>
 <!-- atx2v3 -->
 <!-- btx2v3 -->
@@ -58,7 +58,7 @@
 <path fill="none" stroke="black" stroke-dasharray="5,2" d="M100.189,-313.979C119.413,-307.781 145.943,-301 170,-301 170,-301 170,-301 556,-301 572.432,-301 590.488,-301.474 606.284,-302.045"/>
 <polygon fill="black" stroke="black" points="606.171,-305.543 616.298,-302.43 606.44,-298.548 606.171,-305.543"/>
 <text text-anchor="middle" x="363" y="-322.4" font-family="Sans" font-size="14.00">A: More work done; please sign v3</text>
-<text text-anchor="middle" x="363" y="-305.4" font-family="Sans" font-size="14.00">reducing your refund by another 1 mBTC</text>
+<text text-anchor="middle" x="363" y="-305.4" font-family="Sans" font-size="14.00">reducing your refund by another 1 mFAB</text>
 </g>
 <!-- atx2v4 -->
 <!-- btx2v4 -->

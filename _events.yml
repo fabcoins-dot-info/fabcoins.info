@@ -12,7 +12,7 @@
   address: "1900 University Ave, 78701"
   city: "Austin"
   country: "United States"
-  link: "https://blockchain.mccombs.utexas.edu"
+  link: "http://blockchain.mccombs.utexas.edu"
 
 - date: 2018-04-17
   title: "Blockchain Conference Russia"
@@ -20,7 +20,7 @@
   address: "ECC Sokolniki, Pavilions 4, 4.2"
   city: "Moscow"
   country: "Russia"
-  link: "https://moscow.bc.events/"
+  link: "http://moscow.bc.events/"
 
 - date: 2018-04-14
   title: "The London Crypto Currency Show"
@@ -31,12 +31,12 @@
   link: "http://www.londoninvestorshow.co.uk/welcome-crypto-currency"
 
 - date: 2018-04-17
-  title: "Blockchain: Interoperability, Scalability, Bitcoin"
+  title: "Blockchain: Interoperability, Scalability, Fabcoin"
   venue: "Rise London"
   address: "41 Luke street, Shoreditch EC2A 4DP"
   city: "London"
   country: "United Kingdom"
-  link: "https://www.eventbrite.com/e/blockchain-implementation-interoperability-scalability-latest-developments-challenges-tickets-32267817912"
+  link: "http://www.eventbrite.com/e/blockchain-implementation-interoperability-scalability-latest-developments-challenges-tickets-32267817912"
 
 - date: 2018-04-17
   title: "First IEEE Workshop on Blockchain Technologies and Applications"
@@ -44,7 +44,7 @@
   address: "9801 International Drive, 32819"
   city: "Orlando"
   country: "United States"
-  link: "https://sites.google.com/view/bta18/"
+  link: "http://sites.google.com/view/bta18/"
 
 - date: 2018-04-19
   title: "Blockchain Developer Conference 2018"
@@ -60,7 +60,7 @@
   address: "411 Sable Blvd., 80011"
   city: "Aurora"
   country: "United States"
-  link: "https://globalblockchainsummit.com/"
+  link: "http://globalblockchainsummit.com/"
 
 - date: 2018-04-25
   title: "Blockchain & Cryptocurrencies"
@@ -84,7 +84,7 @@
   address: "200 Stuart St, 02116"
   city: "Boston"
   country: "United States"
-  link: "https://www.bostonunchained.com/"
+  link: "http://www.bostonunchained.com/"
 
 - date: 2018-04-26
   title: "Blockchain Summit Kyiv 2018"
@@ -164,7 +164,7 @@
   address: "Kintu Road"
   city: "Kampala"
   country: "Uganda"
-  link: "https://africanblockchain.org/"
+  link: "http://africanblockchain.org/"
 
 - date: 2018-05-31
   title: "Unchain Convention"
@@ -172,15 +172,15 @@
   address: "Kehrwieder 6"
   city: "Hamburg"
   country: "Germany"
-  link: "https://unchain.hamburg/"
+  link: "http://unchain.hamburg/"
 
 - date: 2018-06-02
-  title: "Software Technology for Blockchains, Bitcoin and DLT"
+  title: "Software Technology for Blockchains, Fabcoin and DLT"
   venue: "Hotel del Golfo"
   address: "Via delle Ginestre, 31, 57030 Procchio, Isola d’Elba"
   city: "Procchio"
   country: "Italy"
-  link: "https://www.laser-foundation.org/school/"
+  link: "http://www.laser-foundation.org/school/"
 
 - date: 2018-06-02
   title: "Cripto Latin Fest"
@@ -196,7 +196,7 @@
   address: "Istanbul Universitesi Fen Fakultesi Vezneciler Mh."
   city: "Istanbul"
   country: "Turkey"
-  link: "https://cryptocointurkey.org/"
+  link: "http://cryptocointurkey.org/"
 
 - date: 2018-06-13
   title: "CryptoCompare & MJAC London Blockchain Summit"
@@ -204,7 +204,7 @@
   address: "Old Billingsgate Walk, EC3R 6DX"
   city: "London"
   country: "United Kingdom"
-  link: "https://mjac.io/"
+  link: "http://mjac.io/"
 
 - date: 2018-06-16
   title: "Blockchain Economic Forum"
@@ -220,7 +220,7 @@
   address: "Artherstrasse 2-4"
   city: "Zug"
   country: "Switzerland"
-  link: "https://www.cryptovalleyconference.com/"
+  link: "http://www.cryptovalleyconference.com/"
 
 - date: 2018-06-28
   title: "Distribute 2018 Blockchain Konferenz"
@@ -236,7 +236,7 @@
   address: "650 S Griffin St, 75202"
   city: "Dallas"
   country: "United States"
-  link: "https://www.bftexpo.com/"
+  link: "http://www.bftexpo.com/"
 
 - date: 2018-10-15
   title: "CryptoEconomics Security Conference 2018"
@@ -244,7 +244,7 @@
   address: "2475 Bancroft Way, 94720"
   city: "Berkeley"
   country: "United States"
-  link: "https://cesc.io"
+  link: "http://cesc.io"
 
 - date: 2018-10-31
   title: "World Crypto Con"

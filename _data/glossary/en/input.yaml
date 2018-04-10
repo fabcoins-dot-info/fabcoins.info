@@ -24,8 +24,8 @@ optional:
     not_to_be_confused_with_capitalize_first_letter:
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Input](/en/developer-guide#term-input) --- Bitcoin.org Developer Guide"
-        - "[TxIn](/en/developer-reference#txin) --- Bitcoin.org Developer Reference"
-        - "[Inputs](https://en.bitcoin.it/wiki/Transaction#Input) --- Bitcoin Wiki"
+        - "[Input](/en/developer-guide#term-input) --- Fabcoin.org Developer Guide"
+        - "[TxIn](/en/developer-reference#txin) --- Fabcoin.org Developer Reference"
+        - "[Inputs](http://en.fabcoin.it/wiki/Transaction#Input) --- Fabcoin Wiki"
 
 ---

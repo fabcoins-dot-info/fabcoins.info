@@ -13,13 +13,13 @@ Payment processing encompasses the steps spenders and receivers perform
 to make and accept payments in exchange for products or services. The
 basic steps have not changed since the dawn of commerce, but the
 technology has. This section will explain how receivers and spenders
-can, respectively, request and make payments using Bitcoin---and how
+can, respectively, request and make payments using Fabcoin---and how
 they can deal with complications such as refunds and recurrent
 rebilling.
 
-![Bitcoin Payment Processing](/img/dev/en-payment-processing.svg)
+![Fabcoin Payment Processing](/img/dev/en-payment-processing.svg)
 
-The figure above illustrates payment processing using Bitcoin from a
+The figure above illustrates payment processing using Fabcoin from a
 receiver's perspective, starting with a new order. The following
 subsections will each address<!--noref--> the three common steps and the three
 occasional or optional steps.
@@ -35,7 +35,7 @@ using third party APIs and services.
 {% autocrossref %}
 
 Because of exchange rate variability between satoshis and national
-currencies ([fiat][]{:#term-fiat}{:.term}), many Bitcoin orders are priced in fiat but paid
+currencies ([fiat][]{:#term-fiat}{:.term}), many Fabcoin orders are priced in fiat but paid
 in satoshis, necessitating a price conversion.
 
 Exchange rate data is widely available through HTTP-based APIs provided
@@ -57,10 +57,10 @@ until a human is able to evaluate the situation.
 
 You may also want to program your applications to enter a safe mode if
 exchange rates are rapidly increasing or decreasing, indicating a
-possible problem in the Bitcoin market which could make it difficult to
+possible problem in the Fabcoin market which could make it difficult to
 spend any satoshis received today.
 
-Exchange rates lie outside the control of Bitcoin and related
+Exchange rates lie outside the control of Fabcoin and related
 technologies, so there are no new or planned technologies which
 will make it significantly easier for your program to correctly convert
 order totals from fiat into satoshis.
@@ -83,9 +83,9 @@ fluctuate a significant amount before payment is received.
 
 {% autocrossref %}
 
-Before requesting payment, your application must create a Bitcoin
+Before requesting payment, your application must create a Fabcoin
 address, or acquire an address from another program such as
-Bitcoin Core.  Bitcoin addresses are described in detail in the
+Fabcoin Core.  Fabcoin addresses are described in detail in the
 [Transactions](#transactions) section. Also described in that section
 are two important reasons to [avoid using an address more than
 once](#avoiding-key-reuse)---but a third reason applies especially to
@@ -106,13 +106,13 @@ payment requests is recommended.
    address and amount into a payment screen. This is, of course,
    inconvenient---but it makes an effective fallback option.
 
-2. Almost all desktop wallets can associate with `bitcoin:` URIs, so
+2. Almost all desktop wallets can associate with `fabcoin:` URIs, so
    spenders can click a link to pre-fill the payment screen. This also
    works with many mobile wallets, but it generally does not work with
    web-based wallets unless the spender installs a browser extension or
    manually configures a URI handler.
 
-3. Most mobile wallets support scanning `bitcoin:` URIs encoded in a
+3. Most mobile wallets support scanning `fabcoin:` URIs encoded in a
    QR code, and almost all wallets can display them for
    accepting payment. While also handy for online orders, QR Codes are
    especially useful for in-person purchases.
@@ -125,7 +125,7 @@ payment requests is recommended.
  **Warning:** Special care must be taken to avoid the theft of incoming
 payments. In particular, private keys should not be stored on web servers,
 and payment requests should be sent over HTTPS or other secure methods
-to prevent man-in-the-middle attacks from replacing your Bitcoin address
+to prevent man-in-the-middle attacks from replacing your Fabcoin address
 with the attacker's address.
 
 {% endautocrossref %}
@@ -145,36 +145,36 @@ the offer may also be specified.  For example:
 
 ~~~
 Pay: mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN
-Amount: 100 BTC
+Amount: 100 FAB
 You must pay by: 2014-04-01 at 23:00 UTC
 ~~~
 
 {% autocrossref %}
 
 Indicating the denomination is critical. As of this writing, popular
-Bitcoin wallet software defaults to denominating amounts in either bitcoins (BTC)
-, millibitcoins (mBTC) or microbitcoins (uBTC, "bits").
+Fabcoin wallet software defaults to denominating amounts in either fabcoins (FAB)
+, millifabcoins (mFAB) or microfabcoins (uFAB, "bits").
 Choosing between each unit is widely supported,
 but other software also lets its users select denomination amounts from
-some preselected (e.g. Table below) or all [standard 8 decimal places](https://en.bitcoin.it/wiki/Units):
+some preselected (e.g. Table below) or all [standard 8 decimal places](http://en.fabcoin.it/wiki/Units):
 
-| Bitcoins    | Unit (Abbreviation) |
+| Fabcoins    | Unit (Abbreviation) |
 |-------------|---------------------|
-| 1.0         | bitcoin (BTC)       |
-| 0.01        | bitcent (cBTC)      |
-| 0.001       | millibitcoin (mBTC) |
-| 0.000001    | microbitcoin (uBTC, "bits") |
+| 1.0         | fabcoin (FAB)       |
+| 0.01        | bitcent (cFAB)      |
+| 0.001       | millifabcoin (mFAB) |
+| 0.000001    | microfabcoin (uFAB, "bits") |
 | 0.0000001   | finney              |
 | 0.00000001  | satoshi             |
 
 {% endautocrossref %}
 
-#### bitcoin: URI
+#### fabcoin: URI
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
-The [`bitcoin:` URI][bitcoin URI]{:#term-bitcoin-uri}{:.term} scheme defined in BIP21 eliminates denomination
+The [`fabcoin:` URI][fabcoin URI]{:#term-fabcoin-uri}{:.term} scheme defined in BIP21 eliminates denomination
 confusion and saves the spender from copying and pasting two separate
 values. It also lets the payment request provide some additional
 information to the spender. An example:
@@ -182,7 +182,7 @@ information to the spender. An example:
 {% endautocrossref %}
 
 ~~~
-bitcoin:mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN?amount=100
+fabcoin:mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN?amount=100
 ~~~
 
 {% autocrossref %}
@@ -190,7 +190,7 @@ bitcoin:mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN?amount=100
 Only the address is required, and if it is the only thing
 specified, wallets will pre-fill a payment request with it and let
 the spender enter an amount. The amount specified is always in
-decimal bitcoins (BTC).
+decimal fabcoins (FAB).
 
 Two other parameters are widely supported. The
 [`label`][label]{:#term-label}{:.term} parameter is generally used to
@@ -198,14 +198,14 @@ provide wallet software with the recipient's name. The
 [`message`][message]{:#term-message}{:.term} parameter is generally used
 to describe the payment request to the spender. Both the label and the
 message are commonly stored by the spender's wallet software---but they
-are never added to the actual transaction, so other Bitcoin users cannot
+are never added to the actual transaction, so other Fabcoin users cannot
 see them. Both the label and the message must be [URI encoded][].
 
 All four parameters used together, with appropriate URI encoding, can be
 seen in the line-wrapped example below.
 
 ~~~
-bitcoin:mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN\
+fabcoin:mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN\
 ?amount=0.10\
 &label=Example+Merchant\
 &message=Order+of+flowers+%26+chocolates
@@ -227,20 +227,20 @@ might be the case for micropayments).
 
 {% autocrossref %}
 
-QR codes are a popular way to exchange `bitcoin:` URIs in person, in
-images, or in videos. Most mobile Bitcoin wallet apps, and some desktop
+QR codes are a popular way to exchange `fabcoin:` URIs in person, in
+images, or in videos. Most mobile Fabcoin wallet apps, and some desktop
 wallets, support scanning QR codes to pre-fill their payment screens.
 
-The figure below shows the same `bitcoin:` URI code encoded as four
-different [Bitcoin QR codes][URI QR code]{:#term-uri-qr-code}{:.term} at four
+The figure below shows the same `fabcoin:` URI code encoded as four
+different [Fabcoin QR codes][URI QR code]{:#term-uri-qr-code}{:.term} at four
 different error correction levels. The QR code can include the `label` and `message`
 parameters---and any other optional parameters---but they were
 omitted here to keep the QR code small and easy to scan with unsteady
 or low-resolution mobile cameras.
 
-![Bitcoin QR Codes](/img/dev/en-qr-code.svg)
+![Fabcoin QR Codes](/img/dev/en-qr-code.svg)
 
-The error correction is combined with a checksum to ensure the Bitcoin QR code
+The error correction is combined with a checksum to ensure the Fabcoin QR code
 cannot be successfully decoded with data missing or accidentally altered,
 so your applications should choose the appropriate level of error
 correction based on the space you have available to display the code.
@@ -255,7 +255,7 @@ displayed on high-resolution screens.
 
 {% autocrossref %}
 
-Bitcoin Core 0.9 supports the new [payment protocol][/en/glossary/payment-protocol]{:#term-payment-protocol}{:.term}. The payment protocol
+Fabcoin Core 0.9 supports the new [payment protocol][/en/glossary/payment-protocol]{:#term-payment-protocol}{:.term}. The payment protocol
 adds many important features to payment requests:
 
 - Supports X.509 certificates and SSL encryption to verify receivers' identity
@@ -271,17 +271,17 @@ adds many important features to payment requests:
 Instead of being asked to pay a meaningless address, such as
 "mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN", spenders are asked to pay the
 Common Name (CN) description from the receiver's X.509 certificate, such
-as "www.bitcoin.org".
+as "www.fabcoins.info".
 
 To request payment using the payment protocol, you use an extended (but
-backwards-compatible) `bitcoin:` URI.  For example:
+backwards-compatible) `fabcoin:` URI.  For example:
 
 ~~~
-bitcoin:mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN\
+fabcoin:mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN\
 ?amount=0.10\
 &label=Example+Merchant\
 &message=Order+of+flowers+%26+chocolates\
-&r=https://example.com/pay/mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN
+&r=http://example.com/pay/mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN
 ~~~
 
 None of the parameters provided above, except `r`, are required for the
@@ -292,7 +292,7 @@ protocol.
 The [`r`][r]{:#term-r-parameter}{:.term} parameter tells payment-protocol-aware wallet programs to ignore
 the other parameters and fetch a PaymentRequest from the URL provided.
 The browser, QR code reader, or other program processing the URI opens
-the spender's Bitcoin wallet program on the URI. 
+the spender's Fabcoin wallet program on the URI. 
 
 ![BIP70 Payment Protocol](/img/dev/en-payment-protocol.svg)
 
@@ -305,7 +305,7 @@ Protocol is typically used.
 
 Charlie, the client, is shopping on a website run by Bob, the
 businessman. Charlie adds a few items to his shopping cart and clicks
-the "Checkout With Bitcoin" button.
+the "Checkout With Fabcoin" button.
 
 Bob's server automatically adds the following information to its
 invoice database:
@@ -323,9 +323,9 @@ invoice database:
   before used) secp256k1 public key.
 
 After adding all that information to the database, Bob's server displays
-a `bitcoin:` URI for Charlie to click to pay. 
+a `fabcoin:` URI for Charlie to click to pay. 
 
-Charlie clicks on the `bitcoin:` URI in his browser. His browser's URI
+Charlie clicks on the `fabcoin:` URI in his browser. His browser's URI
 handler sends the URI to his wallet program. The wallet is aware of the
 Payment Protocol, so it parses the `r` parameter and sends an HTTP GET
 to that URL looking for a PaymentRequest message.
@@ -337,7 +337,7 @@ with a guess-resistant part is typically used. The
 unique public key created for the payment request can be used to create
 a unique identifier. This is why, in the example URI above, the PaymentRequest
 URL contains the P2PKH address:
-`https://example.com/pay/mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN`
+`http://example.com/pay/mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN`
 
 After receiving the HTTP GET to the URL above, the
 PaymentRequest-generating CGI program on Bob's webserver takes the
@@ -362,12 +362,12 @@ server's X.509 SSL certificate.  (The Payment Protocol has been designed
 to allow other signing methods in the future.)  Bob's server sends the
 payment request to Charlie's wallet in the reply to the HTTP GET.
 
-![Bitcoin Core Showing Validated Payment Request](/img/dev/en-btcc-payment-request.png)
+![Fabcoin Core Showing Validated Payment Request](/img/dev/en-btcc-payment-request.png)
 
 Charlie's wallet receives the PaymentRequest message, checks its signature, and
 then displays the details from the PaymentDetails message to Charlie. Charlie
 agrees to pay, so the wallet constructs a payment to the pubkey script
-Bob's server provided. Unlike a traditional Bitcoin payment, Charlie's
+Bob's server provided. Unlike a traditional Fabcoin payment, Charlie's
 wallet doesn't necessarily automatically broadcast this payment to the
 network. Instead, the wallet constructs a Payment message and sends it to
 the URL provided in the PaymentDetails message as an HTTP POST. Among
@@ -404,7 +404,7 @@ otherwise-proven information.
   received an invoice to pay a specified pubkey script for a specified
   number of satoshis for goods specified in the memo field.
 
-* The Bitcoin block chain can prove that the pubkey script specified by
+* The Fabcoin block chain can prove that the pubkey script specified by
   Bob was paid the specified number of satoshis.
 
 If a refund needs to be issued, Bob's server can safely pay the
@@ -431,7 +431,7 @@ to as a [double spend][/en/glossary/double-spend]{:#term-double-spend}{:.term}.
 Once the transaction is included in a block, double spends are
 impossible without modifying block chain history to replace the
 transaction, which is quite difficult. Using this system,
-the Bitcoin protocol can give each of your transactions an updating confidence 
+the Fabcoin protocol can give each of your transactions an updating confidence 
 score based on the number of blocks which would need to be modified to replace 
 a transaction. For each block, the transaction gains one [confirmation][/en/glossary/confirmation-score]{:#term-confirmation}{:.term}. Since
 modifying blocks is quite difficult, higher confirmation scores indicate 
@@ -446,7 +446,7 @@ network into including their version of a transaction.
 
 **1 confirmation**: The transaction is included in the latest block and 
 double-spend risk decreases dramatically. Transactions which pay
-sufficient transaction fees need 10 minutes on average to receive one
+sufficient transaction fees need 75 seconds on average to receive one
 confirmation. However, the most recent block gets replaced fairly often by
 accident, so a double spend is still a real possibility.
 
@@ -463,7 +463,7 @@ somewhat arbitrary, software handling high-value transactions, or otherwise at
 risk for fraud, should wait for at least six confirmations before treating a 
 payment as accepted.
 
-Bitcoin Core provides several RPCs which can provide your program with the 
+Fabcoin Core provides several RPCs which can provide your program with the 
 confirmation score for transactions in your wallet or arbitrary transactions. 
 For example, the `listunspent` RPC provides an array of every satoshi you can 
 spend along with its confirmation score.
@@ -478,15 +478,15 @@ wants to accept unconfirmed payments.
 2. In the case when the program or its user is accepting high value 
 transactions and cannot wait for at least six confirmations or more.
 
-3. In the case of an implementation bug or prolonged attack against Bitcoin 
+3. In the case of an implementation bug or prolonged attack against Fabcoin 
 which makes the system less reliable than expected.
 
 An interesting source of double-spend risk analysis can be acquired by 
-connecting to large numbers of Bitcoin peers to track how transactions and 
+connecting to large numbers of Fabcoin peers to track how transactions and 
 blocks differ from each other. Some third-party APIs can provide you with this 
 type of service.
 
-<!-- TODO Example of double spend risk analysis using bitcoinj, eventually? -->
+<!-- TODO Example of double spend risk analysis using fabcoinj, eventually? -->
 
 For example, unconfirmed transactions can be compared among all connected peers 
 to see if any UTXO is used in multiple unconfirmed transactions, indicating a 
@@ -519,12 +519,12 @@ to return the satoshis to the pubkey script from which they came.
 For example:
 
 * Alice wants to buy a widget from Bob, so Bob gives Alice a price and
-  Bitcoin address. 
+  Fabcoin address. 
 
 * Alice opens her wallet program and sends some satoshis to that
   address. Her wallet program automatically chooses to spend those
   satoshis from one of its unspent outputs, an output corresponding to
-  the Bitcoin address mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN.
+  the Fabcoin address mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN.
 
 * Bob discovers Alice paid too many satoshis. Being an honest fellow,
   Bob refunds the extra satoshis to the mjSk... address.
@@ -538,7 +538,7 @@ were meant for her.
 
 This leaves receivers only two correct ways to issue refunds:
 
-* If an address was copy-and-pasted or a basic `bitcoin:` URI was used,
+* If an address was copy-and-pasted or a basic `fabcoin:` URI was used,
   contact the spender directly and ask them to provide a refund address.
 
 * If the payment protocol was used, send the refund to the output
@@ -662,7 +662,7 @@ the [Verification subsection][] above) before using them to make payments.
 The oldest outputs are the most reliable, as the longer it's been since
 they were received, the more blocks would need to be modified to double
 spend them. However, after just a few blocks, a point of rapidly
-diminishing returns is reached. The [original Bitcoin paper][bitcoinpdf]
+diminishing returns is reached. The [original Fabcoin paper][fabcoinpdf]
 predicts the chance of an attacker being able to modify old blocks,
 assuming the attacker has 30% of the total network hashing power:
 
@@ -681,7 +681,7 @@ assuming the attacker has 30% of the total network hashing power:
 
 FIFO does have a small advantage when it comes to transaction fees, as
 older outputs may be eligible for inclusion in the 50,000 bytes set
-aside for no-fee-required high-priority transactions by miners running the default Bitcoin Core
+aside for no-fee-required high-priority transactions by miners running the default Fabcoin Core
 codebase.  However, with transaction fees being so low, this is not a
 significant advantage.
 
@@ -699,13 +699,13 @@ a bi-hourly schedule.
 
 {% autocrossref %}
 
-Automated recurring payments are not possible with decentralized Bitcoin
+Automated recurring payments are not possible with decentralized Fabcoin
 wallets. Even if a wallet supported automatically sending non-reversible
 payments on a regular schedule, the user would still need to start the
 program at the appointed time, or leave it running all the time
 unprotected by encryption.
 
-This means automated recurring Bitcoin payments can only be made from a
+This means automated recurring Fabcoin payments can only be made from a
 centralized server which handles satoshis on behalf of its spenders. In
 practice, receivers who want to set prices in fiat terms must also let
 the same centralized server choose the appropriate exchange rate.
@@ -713,7 +713,7 @@ the same centralized server choose the appropriate exchange rate.
 Non-automated rebilling can be managed by the same mechanism used before
 credit-card recurring payments became common: contact the spender and
 ask them to pay again---for example, by sending them a PaymentRequest
-`bitcoin:` URI in an HTML email.
+`fabcoin:` URI in an HTML email.
 
 In the future, extensions to the payment protocol and new wallet
 features may allow some wallet programs to manage a list of recurring

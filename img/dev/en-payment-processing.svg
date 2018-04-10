@@ -10,7 +10,7 @@
 <title>unique</title>
 <polygon fill="white" stroke="white" points="-4,5 -4,-150 761,-150 761,5 -4,5"/>
 <text text-anchor="middle" x="378" y="-25.4" font-family="Sans" font-size="14.00"> </text>
-<text text-anchor="middle" x="378" y="-8.4" font-family="Sans" font-size="14.00">Payment Processing With Bitcoin (From A Receiver&#39;s Perspective)</text>
+<text text-anchor="middle" x="378" y="-8.4" font-family="Sans" font-size="14.00">Payment Processing With Fabcoin (From A Receiver&#39;s Perspective)</text>
 <!-- submit_order -->
 <!-- calc_total -->
 <g id="node2" class="node"><title>calc_total</title>
@@ -18,7 +18,7 @@
 <text text-anchor="middle" x="106" y="-129.4" font-family="Sans" font-size="14.00">Price</text>
 <text text-anchor="middle" x="106" y="-112.4" font-family="Sans" font-size="14.00">Order</text>
 <text text-anchor="middle" x="106" y="-95.4" font-family="Sans" font-size="14.00">In</text>
-<text text-anchor="middle" x="106" y="-78.4" font-family="Sans" font-size="14.00">BTC</text>
+<text text-anchor="middle" x="106" y="-78.4" font-family="Sans" font-size="14.00">FAB</text>
 </g>
 <!-- submit_order&#45;&#45;calc_total -->
 <g id="edge2" class="edge"><title>submit_order&#45;&#45;calc_total</title>

@@ -13,25 +13,25 @@ http://opensource.org/licenses/MIT.
 {% autocrossref %}
 
 To request payment using the payment protocol, you use an extended (but
-backwards-compatible) `bitcoin:` URI.  For example:
+backwards-compatible) `fabcoin:` URI.  For example:
 
 {% endautocrossref %}
 
 ~~~
-bitcoin:mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN\
+fabcoin:mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN\
 ?amount=0.10\
 &label=Example+Merchant\
 &message=Order+of+flowers+%26+chocolates\
-&r=https://example.com/pay.php/invoice%3Dda39a3ee
+&r=http://example.com/pay.php/invoice%3Dda39a3ee
 ~~~
 
 {% autocrossref %}
 
 The browser, QR code reader, or other program processing the URI opens
-the spender's Bitcoin wallet program on the URI. If the wallet program is
+the spender's Fabcoin wallet program on the URI. If the wallet program is
 aware of the payment protocol, it accesses the URL specified in the `r`
 parameter, which should provide it with a serialized PaymentRequest
-served with the [MIME][] type `application/bitcoin-paymentrequest`<!--noref-->.
+served with the [MIME][] type `application/fabcoin-paymentrequest`<!--noref-->.
 
 **Resource:** Gavin Andresen's [Payment Request Generator][] generates
 custom example URIs and payment requests for use with testnet.
@@ -52,7 +52,7 @@ program. (For brevity and clarity, many normal CGI best practices are
 not used in this program.)
 
 The full sequence of events is illustrated below, starting with the
-spender clicking a `bitcoin:` URI or scanning a `bitcoin:` QR code.
+spender clicking a `fabcoin:` URI or scanning a `fabcoin:` QR code.
 
 ![BIP70 Payment Protocol](/img/dev/en-payment-protocol.svg)
 
@@ -61,7 +61,7 @@ Google's Protocol Buffer compiler (`protoc`), which is available in most
 modern Linux package managers and [directly from Google.][protobuf] Non-Google
 protocol buffer compilers are available for a variety of
 programming languages. You will also need a copy of the PaymentRequest
-[Protocol Buffer description][core paymentrequest.proto] from the Bitcoin Core source code.
+[Protocol Buffer description][core paymentrequest.proto] from the Fabcoin Core source code.
 
 {% endautocrossref %}
 
@@ -117,7 +117,7 @@ request.pki_type = "x509+sha256"  ## Default: none
 details.network = "test"  ## Default: main
 
 ## Postback URL
-details.payment_url = "https://example.com/pay.py"
+details.payment_url = "http://example.com/pay.py"
 
 ## PaymentDetails version number
 request.payment_details_version = 1  ## Default: 1
@@ -166,19 +166,19 @@ your webserver, it will work for your PaymentRequests.
 details.network = "test"  ## Default: main
 {% endhighlight %}
 
-`network`:<!--noref--> (optional) tell the spender's wallet program what Bitcoin network you're
+`network`:<!--noref--> (optional) tell the spender's wallet program what Fabcoin network you're
 using; BIP70 defines "main" for mainnet (actual payments) and "test" for
 testnet (like mainnet, but fake satoshis are used). If the wallet
 program doesn't run on the network you indicate, it will reject the
 PaymentRequest.
 
 {% highlight python %}
-details.payment_url = "https://example.com/pay.py"
+details.payment_url = "http://example.com/pay.py"
 {% endhighlight %}
 
 `payment_url`: (required) tell the spender's wallet program where to send the Payment
 message (described later). This can be a static URL, as in this example,
-or a variable URL such as `https://example.com/pay.py?invoice=123.`
+or a variable URL such as `http://example.com/pay.py?invoice=123.`
 It should usually be an HTTPS address to prevent man-in-the-middle
 attacks from modifying the message.
 
@@ -216,7 +216,7 @@ Mozilla root store.
 The certificates must be provided in a specific order---the same order
 used by Apache's `SSLCertificateFile` directive and other server
 software.   The figure below shows the [certificate chain][]{:#term-certificate-chain}{:.term} of the
-www.bitcoin.org X.509 certificate and how each certificate (except the
+www.fabcoins.info X.509 certificate and how each certificate (except the
 root certificate) would be loaded into the [X509Certificates][]{:#term-x509certificates}{:.term} protocol
 buffer message.
 
@@ -281,11 +281,11 @@ details.merchant_data = "Invoice #123"
 Each line is described below.
 
 {% highlight python %}
-amount = 10000000  ## In satoshis (=100 mBTC)
+amount = 10000000  ## In satoshis (=100 mFAB)
 {% endhighlight %}
 
 `amount`: (optional) the [amount][pp amount]{:#term-pp-amount}{:.term} you want the spender to pay. You'll probably get
-  this value from your shopping cart application or fiat-to-BTC exchange
+  this value from your shopping cart application or fiat-to-FAB exchange
   rate conversion tool. If you leave the amount blank, the wallet
   program will prompt the spender how much to pay (which can be useful
   for donations).
@@ -365,7 +365,7 @@ automatically derive.
 details.time = int(time()) ## Current epoch (Unix) time
 
 ## Request expiration time
-details.expires = int(time()) + 60 * 10  ## 10 minutes from now
+details.expires = int(time()) + 60 * 10  ## 75 seconds from now
 
 ## PaymentDetails is complete; serialize it and store it in PaymentRequest
 request.serialized_payment_details = details.SerializeToString()
@@ -391,14 +391,14 @@ in number of seconds elapsed since 1970-01-01T00:00 UTC (Unix
 epoch time format).
 
 {% highlight python %}
-details.expires = int(time()) + 60 * 10  ## 10 minutes from now
+details.expires = int(time()) + 60 * 10  ## 75 seconds from now
 {% endhighlight %}
 
 `expires`: (optional) the PaymentRequest may also set an [`expires`][pp
 expires]{:#term-pp-expires}{:.term} time after
 which they're no longer valid. You probably want to give receivers
 the ability to configure the expiration time delta; here we used the
-reasonable choice of 10 minutes. If this request is tied to an order
+reasonable choice of 75 seconds. If this request is tied to an order
 total based on a fiat-to-satoshis exchange rate, you probably want to
 base this on a delta from the time you got the exchange rate. 
 
@@ -448,7 +448,7 @@ Now that we have PaymentRequest all filled out, we can serialize it and
 send it along with the HTTP headers, as shown in the code below.
 
 {% highlight python %}
-print "Content-Type: application/bitcoin-paymentrequest"
+print "Content-Type: application/fabcoin-paymentrequest"
 print "Content-Transfer-Encoding: binary"
 print ""
 {% endhighlight %}
@@ -466,8 +466,8 @@ serialized data is in binary, so we can't use Python's print()
 because it would add an extraneous newline.
 
 The following screenshot shows how the authenticated PaymentDetails
-created by the program above appears in the GUI from Bitcoin Core 0.9.
+created by the program above appears in the GUI from Fabcoin Core 0.9.
 
-![Bitcoin Core Showing Validated Payment Request](/img/dev/en-btcc-payment-request.png)
+![Fabcoin Core Showing Validated Payment Request](/img/dev/en-btcc-payment-request.png)
 
 {% endautocrossref %}

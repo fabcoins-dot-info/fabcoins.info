@@ -9,7 +9,7 @@
 #on the "Version history" page and RSS file.
 
 # This plugin also finds the highest required_version of
-# Bitcoin Core and populates the Download page with variables set in
+# Fabcoin Core and populates the Download page with variables set in
 # that release file
 
 require 'yaml'
@@ -39,7 +39,7 @@ module Jekyll
       self.process(output_file)
 
       ## Title required for <title></title> in _layouts/base.html
-      self.data['title'] = self.data['optional_title'] ? self.data['optional_title'] : "Bitcoin Core version %v released"
+      self.data['title'] = self.data['optional_title'] ? self.data['optional_title'] : "Fabcoin Core version %v released"
       self.data['title'].gsub!('%v', version)
 
       ## For translation, but currently always set to "en"

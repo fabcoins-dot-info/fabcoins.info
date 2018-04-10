@@ -4,11 +4,11 @@
 
 required:
                                            #-------------40 characters-------------#
-    title_max_40_characters_no_formatting: Base58check, Bitcoin Address Encoding
+    title_max_40_characters_no_formatting: Base58check, Fabcoin Address Encoding
 
     summary_max_255_characters_no_formatting: >
-        The method used in Bitcoin for converting 160-bit hashes into
-        P2PKH and P2SH addresses.  Also used in other parts of Bitcoin,
+        The method used in Fabcoin for converting 160-bit hashes into
+        P2PKH and P2SH addresses.  Also used in other parts of Fabcoin,
         such as encoding private keys for backup in WIP format.  Not the
         same as other base58 implementations.
 
@@ -26,7 +26,7 @@ optional:
         - IP address
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[base58check](/en/developer-reference#term-base58check) --- Bitcoin.org Developer Reference"
-        - "[Base58Check encoding](https://en.bitcoin.it/wiki/Base58Check_encoding) --- Bitcoin Wiki"
+        - "[base58check](/en/developer-reference#term-base58check) --- Fabcoin.org Developer Reference"
+        - "[Base58Check encoding](http://en.fabcoin.it/wiki/Base58Check_encoding) --- Fabcoin Wiki"
 
 ---

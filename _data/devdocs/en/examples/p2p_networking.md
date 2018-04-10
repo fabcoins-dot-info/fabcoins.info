@@ -68,7 +68,7 @@ We also should choose a value for *nTweak*.  In this case, we'll simply
 use zero.
 
 {% highlight python %}
-import pyhash  # from https://github.com/flier/pyfasthash
+import pyhash  # from http://github.com/flier/pyfasthash
 murmur3 = pyhash.murmur3_32()
 
 def bloom_hash(nHashNum, data):
@@ -146,8 +146,8 @@ filter. (To maintain the same false-positive rate, you would need a
 larger filter size as computed earlier.)
 
 Note: for a more optimized Python implementation with fewer external
-dependencies, see [python-bitcoinlib's][python-bitcoinlib] bloom filter
-module which is based directly on Bitcoin Core's C++ implementation.
+dependencies, see [python-fabcoinlib's][python-fabcoinlib] bloom filter
+module which is based directly on Fabcoin Core's C++ implementation.
 
 Using the `filterload` message format, the complete filter created above 
 would be the binary form of the annotated hexdump shown below:
@@ -345,8 +345,8 @@ for practically any platform. For example, with the original netcat and
 using hexdump (`hd`) to display the output:
 
 {% highlight bash %}
-## Connect to the Bitcoin Core peer running on localhost
-python get-merkle.py | nc localhost 8333 | hd
+## Connect to the Fabcoin Core peer running on localhost
+python get-merkle.py | nc localhost 8665 | hd
 {% endhighlight %}
 
 Part of the response is shown in the section below.

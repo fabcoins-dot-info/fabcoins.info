@@ -9,7 +9,7 @@ required:
     summary_max_255_characters_no_formatting: >
         A method for verifying if particular transactions are included
         in a block without downloading the entire block.  The method is
-        used by some lightweight Bitcoin clients.
+        used by some lightweight Fabcoin clients.
 
     synonyms_shown_in_glossary_capitalize_first_letter:
         - SPV
@@ -29,8 +29,8 @@ optional:
     not_to_be_confused_with_capitalize_first_letter:
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[SPV](/en/developer-guide#simplified-payment-verification-spv) --- Bitcoin.org Developer Guide"
-        - "[Thin client security](https://en.bitcoin.it/wiki/Thin_Client_Security) --- Bitcoin Wiki"
-        - "[What is a thin client?](http://bitcoin.stackexchange.com/questions/32529) --- Bitcoin StackExchange"
+        - "[SPV](/en/developer-guide#simplified-payment-verification-spv) --- Fabcoin.org Developer Guide"
+        - "[Thin client security](http://en.fabcoin.it/wiki/Thin_Client_Security) --- Fabcoin Wiki"
+        - "[What is a thin client?](http://fabcoin.stackexchange.com/questions/32529) --- Fabcoin StackExchange"
 
 ---

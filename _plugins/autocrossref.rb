@@ -12,7 +12,7 @@
 ## If you have a patten you usually want to match (such as "satoshi"
 ## (currency)) but which may appear a few times where you don't want it
 ## to match (such as "Satoshi" (name)), append a <!--noref--> HTML comment.
-## E.g.: Bitcoin was invented by Satoshi<!--noref--> Nakamoto.
+## E.g.: Fabcoin was invented by Satoshi<!--noref--> Nakamoto.
 
 ## An alternative match-prevention method, useful for strings inside ``
 ## (code) is to make it look to the parser like the string is inside of

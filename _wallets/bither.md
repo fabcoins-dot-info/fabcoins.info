@@ -13,8 +13,8 @@ platform:
     os:
       - name: ios
         text: "walletbither"
-        link: "https://itunes.apple.com/us/app/bither/id899478936"
-        source: "https://github.com/bither/bither-ios"
+        link: "http://itunes.apple.com/us/app/bither/id899478936"
+        source: "http://github.com/bither/bither-ios"
         screenshot: "bithermobile.png"
         check:
           control: "checkgoodcontrolfull"
@@ -29,8 +29,8 @@ platform:
           privacynetwork: "checkfailprivacynetworknosupporttor"
       - name: android
         text: "walletbither"
-        link: "https://play.google.com/store/apps/details?id=net.bither"
-        source: "https://github.com/bither/bither-android"
+        link: "http://play.google.com/store/apps/details?id=net.bither"
+        source: "http://github.com/bither/bither-android"
         screenshot: "bithermobile.png"
         check:
           control: "checkgoodcontrolfull"
@@ -47,8 +47,8 @@ platform:
     name: desktop
     default: &DEFAULT
       text: "walletbither"
-      link: "https://bither.net"
-      source: "https://github.com/bither/bither-desktop-java"
+      link: "http://bither.net"
+      source: "http://github.com/bither/bither-desktop-java"
       screenshot: "bitherdesktop.png"
       check:
         control: "checkgoodcontrolfull"

@@ -26,8 +26,8 @@ optional:
         - Address reuse
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Change address](/en/developer-guide#term-change-output) --- Bitcoin.org Developer Guide"
-        - "[Change](https://en.bitcoin.it/wiki/Change) --- Bitcoin Wiki"
-        - "[Why does Bitcoin Core use separate change addresses?](http://bitcoin.stackexchange.com/q/35412) --- Bitcoin StackExchange"
+        - "[Change address](/en/developer-guide#term-change-output) --- Fabcoin.org Developer Guide"
+        - "[Change](http://en.fabcoin.it/wiki/Change) --- Fabcoin Wiki"
+        - "[Why does Fabcoin Core use separate change addresses?](http://fabcoin.stackexchange.com/q/35412) --- Fabcoin StackExchange"
 
 ---

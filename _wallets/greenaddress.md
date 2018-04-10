@@ -13,8 +13,8 @@ platform:
     os:
       - name: ios
         text: "walletgreenaddress"
-        link: "https://itunes.apple.com/app/id1206035886"
-        source: "https://github.com/greenaddress/WalletCordova"
+        link: "http://itunes.apple.com/app/id1206035886"
+        source: "http://github.com/greenaddress/WalletCordova"
         screenshot: "greenaddressandroid.png"
         check:
           control: "checkpasscontrolmulti"
@@ -29,8 +29,8 @@ platform:
           privacynetwork: "checkfailprivacynetworknosupporttor"
       - name: android
         text: "walletgreenaddress"
-        link: "https://play.google.com/store/apps/details?id=it.greenaddress.cordova"
-        source: "https://github.com/greenaddress/WalletCordova"
+        link: "http://play.google.com/store/apps/details?id=it.greenaddress.cordova"
+        source: "http://github.com/greenaddress/WalletCordova"
         screenshot: "greenaddressandroid.png"
         check:
           control: "checkpasscontrolmulti"
@@ -47,8 +47,8 @@ platform:
     name: desktop
     default: &DEFAULT
       text: "walletgreenaddress"
-      link: "https://chrome.google.com/webstore/detail/greenaddressit/dgbimgjoijjemhdamicmljbncacfndmp"
-      source: "https://github.com/greenaddress/WalletCrx"
+      link: "http://chrome.google.com/webstore/detail/greenaddressit/dgbimgjoijjemhdamicmljbncacfndmp"
+      source: "http://github.com/greenaddress/WalletCrx"
       screenshot: "greenaddressdesktop.png"
       check:
         control: "checkpasscontrolmulti"
@@ -73,8 +73,8 @@ platform:
     os:
       - name: web
         text: "walletgreenaddress"
-        link: "https://chrome.google.com/webstore/detail/greenaddressit/dgbimgjoijjemhdamicmljbncacfndmp"
-        source: "https://github.com/greenaddress/WalletCrx"
+        link: "http://chrome.google.com/webstore/detail/greenaddressit/dgbimgjoijjemhdamicmljbncacfndmp"
+        source: "http://github.com/greenaddress/WalletCrx"
         screenshot: "greenaddressdesktop.png"
         check:
           control: "checkpasscontrolmulti"

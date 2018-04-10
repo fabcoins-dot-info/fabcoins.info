@@ -5,7 +5,7 @@
 layout: devdoc-category
 id: developer-examples
 breadcrumbs:
-  - bitcoin
+  - fabcoin
   - dev docs
   - dev docs examples
 show_fragments: true

@@ -15,7 +15,7 @@ The following subsections briefly document core block details.
 {% autocrossref %}
 
 Block headers are serialized in the 80-byte format described below and then
-hashed as part of Bitcoin's proof-of-work algorithm, making the
+hashed as part of Fabcoin's proof-of-work algorithm, making the
 serialized header format part of the consensus rules.
 
 | Bytes | Name                | Data Type | Description
@@ -55,29 +55,29 @@ fe9f0864 ........................... Nonce
 * **Version 1** was introduced in the genesis block (January 2009).
 
 * **[Version 2][v2 block]{:#term-v2-block}{:.term}** was introduced in
-  Bitcoin Core 0.7.0 (September 2012) as a soft fork. As described in
+  Fabcoin Core 0.7.0 (September 2012) as a soft fork. As described in
   BIP34, valid version 2 blocks require a [block height parameter in the
   coinbase][coinbase block height]. Also described in BIP34 are rules
-  for rejecting certain blocks; based on those rules, Bitcoin Core 0.7.0
+  for rejecting certain blocks; based on those rules, Fabcoin Core 0.7.0
   and later versions began to reject version 2 blocks without the block
   height in coinbase at block height 224,412 (March 2013) and began to
   reject new version 1 blocks three weeks later at block height 227,930.
   <!-- source for heights: my (@harding) own headers dump and counting
   script -->
 
-* **Version 3** blocks were introduced in Bitcoin Core 0.10.0 (February
+* **Version 3** blocks were introduced in Fabcoin Core 0.10.0 (February
   2015) as a soft fork. When the fork reach full enforcement (July
   2015), it required strict DER encoding of all ECDSA signatures in new
   blocks as described in BIP66. Transactions that do not use strict DER
-  encoding had previously been non-standard since Bitcoin Core 0.8.0
+  encoding had previously been non-standard since Fabcoin Core 0.8.0
   (February 2012).
 
-* **Version 4** blocks specified in BIP65 and introduced in Bitcoin Core 0.11.2 
+* **Version 4** blocks specified in BIP65 and introduced in Fabcoin Core 0.11.2 
   (November 2015) as a soft fork became active in December 2015.  These blocks now support the new
   `OP_CHECKLOCKTIMEVERIFY` opcode described in that BIP.
 
 The mechanism used for the version 2, 3, and 4 upgrades is commonly
-called IsSuperMajority() after the function added to Bitcoin Core to
+called IsSuperMajority() after the function added to Fabcoin Core to
 manage those soft forking changes. See BIP34 for a full description of
 this method.
 
@@ -159,7 +159,7 @@ you might parse a decimal number in base-10 scientific notation:
 
 ![Quickly Converting nBits](/img/dev/en-nbits-quick-parse.svg)
 
-<!-- Source for paragraph below: Bitcoin Core src/tests/bignum_tests.cpp:
+<!-- Source for paragraph below: Fabcoin Core src/tests/bignum_tests.cpp:
 num.SetCompact(0x04923456);
 BOOST_CHECK_EQUAL(num.GetHex(), "-12345600");
 BOOST_CHECK_EQUAL(num.GetCompact(), 0x04923456U);
@@ -170,20 +170,20 @@ original nBits implementation inherits properties from a signed data
 class, allowing the target threshold to be negative if the high bit of
 the significand is set. This is useless---the header hash is
 treated as an unsigned number, so it can never be equal to or lower than a
-negative target threshold. Bitcoin Core deals with this in two ways:
+negative target threshold. Fabcoin Core deals with this in two ways:
 
-<!-- source for "Bitcoin Core converts..." src/main.h GetBlockWork() -->
+<!-- source for "Fabcoin Core converts..." src/main.h GetBlockWork() -->
 
-* When parsing nBits, Bitcoin Core converts a negative target
+* When parsing nBits, Fabcoin Core converts a negative target
   threshold into a target of zero, which the header hash can equal (in
   theory, at least).
 
-* When creating a value for nBits, Bitcoin Core checks to see if it will
+* When creating a value for nBits, Fabcoin Core checks to see if it will
   produce an nBits which will be interpreted as negative; if so, it
   divides the significand by 256 and increases the exponent by 1 to
   produce the same number with a different encoding.
 
-Some examples taken from the Bitcoin Core test cases:
+Some examples taken from the Fabcoin Core test cases:
 
 | nBits      |  Target          | Notes
 |------------|------------------|----------------
@@ -222,10 +222,10 @@ transaction][/en/glossary/coinbase-transaction]{:#term-coinbase-tx}{:.term} whic
 spend any transaction fees paid by transactions included in this block.
 
 All blocks with a block height less than 6,930,000 are entitled to
-receive a block subsidy of newly created bitcoin value, which also
+receive a block subsidy of newly created fabcoin value, which also
 should be spent in the coinbase transaction. (The block subsidy started
-at 50 bitcoins and is being halved every 210,000 blocks---approximately
-once every four years. As of November 2017, it's 12.5 bitcoins.)
+at 50 fabcoins and is being halved every 210,000 blocks---approximately
+once every four years. As of November 2017, it's 12.5 fabcoins.)
 
 Together, the transaction fees and block subsidy are called the [block
 reward][/en/glossary/block-reward]{:#term-block-reward}{:.term}. A coinbase transaction is

@@ -12,7 +12,7 @@ http://opensource.org/licenses/MIT.
 - n: "{{DEPTH}}<br>`account`"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "*Deprecated: will be removed in a later version of Bitcoin Core*<br><br>The account which the payment was credited to or debited from.  May be an empty string (\"\") for the default account"
+  d: "*Deprecated: will be removed in a later version of Fabcoin Core*<br><br>The account which the payment was credited to or debited from.  May be an empty string (\"\") for the default account"
 
 - n: "{{DEPTH}}<br>`address`"
   t: "string (base58)"
@@ -25,9 +25,9 @@ http://opensource.org/licenses/MIT.
   d: "Set to one of the following values:<br>• `send` if sending payment<br>• `receive` if this wallet received payment in a regular transaction<br>• `generate` if a matured and spendable coinbase<br>• `immature` if a coinbase that is not spendable yet<br>• `orphan` if a coinbase from a block that's not in the local best block chain"
 
 - n: "{{DEPTH}}<br>`amount`"
-  t: "number (bitcoins)"
+  t: "number (fabcoins)"
   p: "Required<br>(exactly 1)"
-  d: "A negative bitcoin amount if sending payment; a positive bitcoin amount if receiving payment (including coinbases)"
+  d: "A negative fabcoin amount if sending payment; a positive fabcoin amount if receiving payment (including coinbases)"
 
 - n: "{{DEPTH}}<br>`vout`"
   t: "number (int)"
@@ -35,9 +35,9 @@ http://opensource.org/licenses/MIT.
   d: "For an output, the output index (vout) for this output in this transaction.  For an input, the output index for the output being spent in its transaction.  Because inputs list the output indexes from previous transactions, more than one entry in the details array may have the same output index"
 
 - n: "{{DEPTH}}<br>`fee`"
-  t: "number (bitcoins)"
+  t: "number (fabcoins)"
   p: "Optional<br>(0 or 1)"
-  d: "If sending payment, the fee paid as a negative bitcoins value.  May be `0`. Not returned if receiving payment"
+  d: "If sending payment, the fee paid as a negative fabcoins value.  May be `0`. Not returned if receiving payment"
 
 {% endcapture %}
 
@@ -96,7 +96,7 @@ http://opensource.org/licenses/MIT.
 - n: "{{DEPTH}}<br>`bip125-replaceable`"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.12.0*<br><br>Indicates if a transaction is replaceable under BIP 125:<br>• `yes` is replaceable<br>• `no` not replaceable<br>• `unknown` for unconfirmed transactions not in the mempool"
+  d: "*Added in Fabcoin Core 0.12.0*<br><br>Indicates if a transaction is replaceable under BIP 125:<br>• `yes` is replaceable<br>• `no` not replaceable<br>• `unknown` for unconfirmed transactions not in the mempool"
   
 - n: "{{DEPTH}}<br>`comment`"
   t: "string"
@@ -122,7 +122,7 @@ http://opensource.org/licenses/MIT.
 ![Warning icon](/img/icons/icon_warning.svg)
 **Warning:** if account1 receives an unconfirmed payment and transfers
 it to account2 with the `move` RPC, account2 will be able to spend those
-bitcoins even if this parameter is set to `1` or higher.{% endcapture %}
+fabcoins even if this parameter is set to `1` or higher.{% endcapture %}
 
 
 {% capture INCLUDE_DECODE_RAW_TRANSACTION %}
@@ -134,17 +134,17 @@ bitcoins even if this parameter is set to `1` or higher.{% endcapture %}
 - n: "{{DEPTH}} →<br>`hash`"
   t: "string (hex)"
   p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.13.0*<br><br>The transaction hash.  Differs from txid for witness transactions"
+  d: "*Added in Fabcoin Core 0.13.0*<br><br>The transaction hash.  Differs from txid for witness transactions"
   
 - n: "{{DEPTH}} →<br>`size`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.12.0*<br><br>The serialized transaction size"
+  d: "*Added in Fabcoin Core 0.12.0*<br><br>The serialized transaction size"
 
 - n: "{{DEPTH}} →<br>`vsize`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.13.0*<br><br>The virtual transaction size.  Differs from size for witness transactions"
+  d: "*Added in Fabcoin Core 0.13.0*<br><br>The virtual transaction size.  Differs from size for witness transactions"
   
 - n: "{{DEPTH}} →<br>`version`"
   t: "number (int)"
@@ -204,7 +204,7 @@ bitcoins even if this parameter is set to `1` or higher.{% endcapture %}
 - n: "{{DEPTH}} → → →<br>`txinwitness`"
   t: "string : array"
   p: "Optional<br>(0 or 1)"
-  d: "*Added in Bitcoin Core 0.13.0*<br><br>Hex-encoded witness data. Only for segregated witness transactions"  
+  d: "*Added in Fabcoin Core 0.13.0*<br><br>Hex-encoded witness data. Only for segregated witness transactions"  
   
 - n: "{{DEPTH}} →<br>`vout`"
   t: "array"
@@ -217,9 +217,9 @@ bitcoins even if this parameter is set to `1` or higher.{% endcapture %}
   d: "An object describing one of this transaction's outputs"
 
 - n: "{{DEPTH}} → → →<br>`value`"
-  t: "number (bitcoins)"
+  t: "number (fabcoins)"
   p: "Required<br>(exactly 1)"
-  d: "The number of bitcoins paid to this output.  May be `0`"
+  d: "The number of fabcoins paid to this output.  May be `0`"
 
 - n: "{{DEPTH}} → → →<br>`n`"
   t: "number (int)"
@@ -287,4 +287,4 @@ bitcoins even if this parameter is set to `1` or higher.{% endcapture %}
 
 {% assign WARNING="![Warning icon](/img/icons/icon_warning.svg) **Warning:**" %}
 
-{% assign reindexNote="Note: if you begin using `txindex=1` after downloading the block chain, you must rebuild your indexes by starting Bitcoin Core with the option  `-reindex`.  This may take several hours to complete, during which time your node will not process new blocks or transactions. This reindex only needs to be done once." %}
+{% assign reindexNote="Note: if you begin using `txindex=1` after downloading the block chain, you must rebuild your indexes by starting Fabcoin Core with the option  `-reindex`.  This may take several hours to complete, during which time your node will not process new blocks or transactions. This reindex only needs to be done once." %}

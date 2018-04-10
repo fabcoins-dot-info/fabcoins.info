@@ -8,7 +8,7 @@ date: 2014-04-11
 
 <h2 id="what-happened">What happened</h2>
  
-<p>The version of OpenSSL used by Bitcoin Core software version 0.9.0 and earlier
+<p>The version of OpenSSL used by Fabcoin Core software version 0.9.0 and earlier
 contains a bug that can reveal memory to a remote attacker. See 
 <a href="http://heartbleed.com/">http://heartbleed.com/</a>
 for details.
@@ -16,12 +16,12 @@ for details.
  
 <h2 id="what-you-should-do">What you should do</h2>
  
-<p>Immediately upgrade to <a href="/en/download">Bitcoin Core version 0.9.1</a> which is linked against
+<p>Immediately upgrade to <a href="/en/download">Fabcoin Core version 0.9.1</a> which is linked against
 OpenSSL version 1.0.1g. 
  
 If you use the official binaries, you can verify the version of OpenSSL being
-used from the Bitcoin Core GUI's Debug window (accessed from the Help menu).
-If you compiled Bitcoin Core yourself or use the Ubuntu PPA, update your
+used from the Fabcoin Core GUI's Debug window (accessed from the Help menu).
+If you compiled Fabcoin Core yourself or use the Ubuntu PPA, update your
 system's OpenSSL.
  
 Linux users should also upgrade their system's version of OpenSSL.
@@ -30,16 +30,16 @@ Linux users should also upgrade their system's version of OpenSSL.
 <h3 id="android">Android</h3>
 
 <p>Android version 4.1.1 is vulnerable to Heartbleed. Try if you can upgrade to at
-least Android 4.1.2. If you are using Bitcoin Wallet on an Android phone, you
+least Android 4.1.2. If you are using Fabcoin Wallet on an Android phone, you
 should upgrade the app to at least version 3.45.</p>
  
 <h2 id="how-serious-is-the-risk">How serious is the risk</h2>
  
-<p>If you are using the Windows version of the Bitcoin Core GUI without a wallet
+<p>If you are using the Windows version of the Fabcoin Core GUI without a wallet
 passphrase, it is possible that your wallet could be compromised by clicking
-on a bitcoin: payment request link.
+on a fabcoin: payment request link.
  
-If you are using bitcoind (on Linux, OSX, or Windows),
+If you are using fabcoind (on Linux, OSX, or Windows),
 have enabled the -rpcssl option, and allow RPC connections
 from the Internet, an attacker from a whitelisted (-allowip) IP address can
 very likely discover the rpcpassword and the last rpc request. It is possible

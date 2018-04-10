@@ -5,7 +5,7 @@
 layout: devdoc-category
 id: developer-glossary
 breadcrumbs:
-  - bitcoin
+  - fabcoin
   - dev docs
   - dev docs glossary
 show_fragments: false
@@ -67,13 +67,13 @@ show_toc: false
 
   {% case first_character %}
   {% when 'b' %}
-   See also: [Bitcoin Improvement Proposals (BIPs)](https://github.com/bitcoin/bips#readme)
+   See also: [Fabcoin Improvement Proposals (BIPs)](http://github.com/fabcoin/bips#readme)
   {% when 'o' %}
-   See also: [Opcodes](https://en.bitcoin.it/wiki/Script#Words)
+   See also: [Opcodes](http://en.fabcoin.it/wiki/Script#Words)
   {% when 'p' %}
    See also: [P2P protocol messages](/en/developer-reference#data-messages)
   {% when 'r' %}
-   See also: [Bitcoin Core RPCs](/en/developer-reference#rpc-quick-reference)
+   See also: [Fabcoin Core RPCs](/en/developer-reference#rpc-quick-reference)
   {% endcase %}
 
   <ul class="wrapped_list">
@@ -89,4 +89,4 @@ show_toc: false
 <span markdown="span">{% translate suggestnewterm %}</span>
 </div>
 
-[1]: https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?title=New%20glossary%20term%20suggestion:
+[1]: http://github.com/fabcoin-dot-org/fabcoins.info/issues/new?title=New%20glossary%20term%20suggestion:

@@ -14,7 +14,7 @@
 
 #If "shorturl" variable is set in one alert file, a short alias
 #file for the alert (like /android.html) is generated for
-#Bitcoin Core non-clickable alerts.
+#Fabcoin Core non-clickable alerts.
 
 require 'yaml'
 

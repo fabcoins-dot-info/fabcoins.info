@@ -13,8 +13,8 @@ platform:
     os:
       - name: hardware
         text: "walletkeepkey"
-        link: "https://www.keepkey.com/"
-        source: "https://github.com/keepkey/"
+        link: "http://www.keepkey.com/"
+        source: "http://github.com/keepkey/"
         screenshot: "keepkey.png"
         check:
           control: "checkgoodcontrolfull"

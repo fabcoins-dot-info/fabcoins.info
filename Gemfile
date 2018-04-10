@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 ## If you update the version here, also update it in .travis.yml and
 ## docs/setting-up-your-environment.md. Then push your branch and

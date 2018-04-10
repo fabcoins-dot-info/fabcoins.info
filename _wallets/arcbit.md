@@ -12,8 +12,8 @@ platform:
     name: desktop
     default: &DEFAULT
       text: "walletarcbit"
-      link: "https://chrome.google.com/webstore/detail/arcbit-bitcoin-wallet/dkceiphcnbfahjbomhpdgjmphnpgogfk"
-      source: "https://github.com/arcbit/arcbit-web"
+      link: "http://chrome.google.com/webstore/detail/arcbit-fabcoin-wallet/dkceiphcnbfahjbomhpdgjmphnpgogfk"
+      source: "http://github.com/arcbit/arcbit-web"
       screenshot: "arcbitdesktop.png"
       check:
         control: "checkgoodcontrolfull"
@@ -38,8 +38,8 @@ platform:
     os:
       - name: ios
         text: "walletarcbit"
-        link: "https://itunes.apple.com/app/arcbit-bitcoin-wallet/id999487888"
-        source: "https://github.com/arcbit/arcbit-ios"
+        link: "http://itunes.apple.com/app/arcbit-fabcoin-wallet/id999487888"
+        source: "http://github.com/arcbit/arcbit-ios"
         screenshot: "arcbitios.png"
         check:
           control: "checkgoodcontrolfull"
@@ -54,8 +54,8 @@ platform:
           privacynetwork: "checkfailprivacynetworknosupporttor"
       - name: android
         text: "walletarcbit"
-        link: "https://play.google.com/store/apps/details?id=com.arcbit.arcbit"
-        source: "https://github.com/arcbit/arcbit-android"
+        link: "http://play.google.com/store/apps/details?id=com.arcbit.arcbit"
+        source: "http://github.com/arcbit/arcbit-android"
         screenshot: "arcbitios.png"
         check:
           control: "checkgoodcontrolfull"

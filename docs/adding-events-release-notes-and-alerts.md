@@ -2,28 +2,28 @@
 
 ### Events
 
-Events added to Bitcoin.org should have clear agendas that relate to Bitcoin
+Events added to Fabcoin.org should have clear agendas that relate to Fabcoin
 in some way - e.g. it being used as a currency, harnessing its technology,
-speakers from bitcoin-related companies, etc.
+speakers from fabcoin-related companies, etc.
 
-If you're not comfortable with GitHub pull requests, please open a [new issue](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?title=New%20event&body=%20%20%20%20-%20date%3A%20YYYY-MM-DD%0A%20%20%20%20%20%20title%3A%20%22%22%0A%20%20%20%20%20%20venue%3A%20%22%22%0A%20%20%20%20%20%20address%3A%20%22%22%0A%20%20%20%20%20%20city%3A%20%22%22%0A%20%20%20%20%20%20country%3A%20%22%22%0A%20%20%20%20%20%20link%3A%20%22%22).
+If you're not comfortable with GitHub pull requests, please open a [new issue](http://github.com/fabcoin-dot-org/fabcoins.info/issues/new?title=New%20event&body=%20%20%20%20-%20date%3A%20YYYY-MM-DD%0A%20%20%20%20%20%20title%3A%20%22%22%0A%20%20%20%20%20%20venue%3A%20%22%22%0A%20%20%20%20%20%20address%3A%20%22%22%0A%20%20%20%20%20%20city%3A%20%22%22%0A%20%20%20%20%20%20country%3A%20%22%22%0A%20%20%20%20%20%20link%3A%20%22%22).
 
 To create an event pull request, place the event in `_events.yml` and adhere to
 this format:
 
 ```
 - date: 2014-02-21
-  title: "2014 Texas Bitcoin Conference"
+  title: "2014 Texas Fabcoin Conference"
   venue: "Circuit of the Americas™ - Technology and Conference Center"
   address: "9201 Circuit of the Americas Blvd"
   city: "Austin, TX"
   country: "United States"
-  link: "http://texasbitcoinconference.com/"
+  link: "http://texasfabcoinconference.com/"
 ```
 
 ### Release Notes
 
-To create a new Bitcoin Core release, create a new file in the
+To create a new Fabcoin Core release, create a new file in the
 `_releases/` directory. Any file name ending in `.md` is fine, but we
 recommend naming it after the release, such as `0.10.0.md`
 
@@ -38,8 +38,8 @@ in YAML if it starts a value)
 required_version: 0.10.0
 ## Optional release date.  May be filled in hours/days after a release
 optional_date: 2015-02-16
-## Optional title.  If not set, default is: Bitcoin Core version %v released
-optional_title: Bitcoin Core version %v released
+## Optional title.  If not set, default is: Fabcoin Core version %v released
+optional_title: Fabcoin Core version %v released
 ## Optional magnet link.  To get it, open the torrent in a good BitTorrent
 client
 ## and View Details, or install the transmission-cli Debian/Ubuntu package
@@ -50,12 +50,12 @@ optional_magnetlink:
 
 ## The --- below ends the YAML header. After that, paste the release notes.
 ## Warning: this site's Markdown parser commonly requires you make two
-## changes to the release notes from the Bitcoin Core source tree:
+## changes to the release notes from the Fabcoin Core source tree:
 ##
 ## 1. Make sure both ordered and unordered lists are preceded by an empty
 ## (whitespace only) line, like the empty line before this list item.
 ##
-## 2. Place URLs inside angle brackets, like <http://bitcoin.org/bin>
+## 2. Place URLs inside angle brackets, like <http://fabcoins.info/bin>
 ---
 ```
 
@@ -80,19 +80,19 @@ release date) that you didn't have when you created the file.
 #### Preparing a release in advance
 
 It's nice to prepare a release pull request in advance so that the
-Bitcoin Core developers can just click "Merge Pull Request" when the new
+Fabcoin Core developers can just click "Merge Pull Request" when the new
 version is released.  Here's the recommended recipe, where `<VERSION>`
 is the particular version:
 
-1. Create a new branch named `bitcoin-core-<VERSION>`.  You can either
+1. Create a new branch named `fabcoin-core-<VERSION>`.  You can either
    do this locally or in GitHub's web GUI.
 
 2. Follow the instructions in the [Release
-   Notes](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/adding-events-release-notes-and-alerts.md#release-notes)
+   Notes](http://github.com/fabcoin-dot-org/fabcoins.info/blob/master/docs/adding-events-release-notes-and-alerts.md#release-notes)
    section to create a new release.  You should leave the `optional_date` blank
    unless you happen to know the date of the planned release.
 
-3. Push the branch to the https://github.com/bitcoin-dot-org/bitcoin.org
+3. Push the branch to the http://github.com/fabcoin-dot-org/fabcoins.info
    repository so any contributor can edit it. **Don't** open a pull
    request yet.
 
@@ -104,22 +104,22 @@ is the particular version:
 5. Open the failed Travis CI log.  At the end, it will say something like:
 ```
 ERROR:
-Error: Could not retrieve /bin/bitcoin-core-0.10.1/bitcoin-0.10.1-win64-setup.exe
-Error: Could not retrieve /bin/bitcoin-core-0.10.1/bitcoin-0.10.1-win32-setup.exe
+Error: Could not retrieve /bin/fabcoin-core-0.10.1/fabcoin-0.10.1-win64-setup.exe
+Error: Could not retrieve /bin/fabcoin-core-0.10.1/fabcoin-0.10.1-win32-setup.exe
 [...]
 ```
 6. Copy the errors from above into a text file and remove everything
    except for the URLs so that what's left are lines that look like:
 ```
-/bin/bitcoin-core-0.10.1/bitcoin-0.10.1-win64-setup.exe
-/bin/bitcoin-core-0.10.1/bitcoin-0.10.1-win32-setup.exe
+/bin/fabcoin-core-0.10.1/fabcoin-0.10.1-win64-setup.exe
+/bin/fabcoin-core-0.10.1/fabcoin-0.10.1-win32-setup.exe
 [...]
 ```
 7. Optional, but nice: sort the lines into alphabetical order.
 
-8. Now open a pull request from the `bitcoin-core-<VERSION>` branch to
+8. Now open a pull request from the `fabcoin-core-<VERSION>` branch to
    the `master` branch. We recommend that you use this title: "Releases:
-   Add Bitcoin Core <VERSION>".
+   Add Fabcoin Core <VERSION>".
 
    We recommend that you use the following text with any changes you
    think are appropriate. **Note:** read all the way to the end of this
@@ -145,18 +145,18 @@ Optional TODO (may be done in commits after merge):
 * [ ] Add the magnet URI to the YAML header in `_releases/0.10.1.md` (brief
   instructions for creating the link are provided as comments in that file)
 
-Expected URLs for the Bitcoin Core binaries:
+Expected URLs for the Fabcoin Core binaries:
 
 Underneath the line 'Expected URLs', paste the URLs you retrieved from Travis CI
 earlier.
 
 Note that @laanwj is Wladimir J. van der Laan, who is usually responsible for
-uploading the Bitcoin Core binaries.  If someone else is responsible for this
+uploading the Fabcoin Core binaries.  If someone else is responsible for this
 release, CC them instead.  If you don't know who is responsible, ask in
-#bitcoin-dev on Freenode.
+#fabcoin-dev on Freenode.
 
 9. After creating the pull request, use the Labels menu to assign it the
-   "Releases" label. This is important because it's what the Bitcoin
+   "Releases" label. This is important because it's what the Fabcoin
    Core release manager will be looking for.
 
 10. After each new Release Candidate (RC) is released, update the
@@ -173,39 +173,39 @@ release, CC them instead.  If you don't know who is responsible, ask in
 
 #### Who to Contact
 
-The following people can publish alerts on Bitcoin.org.  Their email
+The following people can publish alerts on Fabcoin.org.  Their email
 addresses are on the linked GitHub profiles.
 
-- Will Binns, [@wbnns](https://github.com/wbnns), wbnns on Freenode
-- Wladimir van der Laan, [@laanwj](https://github.com/laanwj), wumpus on
+- Will Binns, [@wbnns](http://github.com/wbnns), wbnns on Freenode
+- Wladimir van der Laan, [@laanwj](http://github.com/laanwj), wumpus on
   Freenode
-- Theymos, [@theymos](https://github.com/theymos), theymos on Freenode
+- Theymos, [@theymos](http://github.com/theymos), theymos on Freenode
 
 #### Basic Alert
 
 1. Open your editor on a file named `_alerts/YYYY-MM-DD-short-title.md`
    (the alert will appear as
-<https://bitcoin.org/en/alert/YYYY-MM-DD-short-title>).
+<http://fabcoins.info/en/alert/YYYY-MM-DD-short-title>).
 
 2. Paste the following text into the top of the file:
 ```
 ---
 ## Title displayed on alert page
 title: "11/12 March 2017 Chain Fork"
-## Short URL for use in P2P network alerts: https://bitcoin.org/<shorturl>
+## Short URL for use in P2P network alerts: http://fabcoins.info/<shorturl>
 shorturl: "chainfork"
-## Active alerts will display the banner (below) on all bitcoin.org content pages
+## Active alerts will display the banner (below) on all fabcoins.info content pages
 active: true
-## Banner displayed if 'active: true'.  Can use HTML formatting banner: "<b>Chain fork</b> - Please stop mining on bitcoin version 0.14.1. Click here for more information."
+## Banner displayed if 'active: true'.  Can use HTML formatting banner: "<b>Chain fork</b> - Please stop mining on fabcoin version 0.14.1. Click here for more information."
 ## Date of the alert in YYYY-MM-DD format
 date: 2017-03-11
 ---
 
 {% comment %}
-First paragraph should indicate whose bitcoins are safe, to avoid starting a panic.
+First paragraph should indicate whose fabcoins are safe, to avoid starting a panic.
 {% endcomment %}
 
-Your bitcoins are safe if you received them in transactions confirmed before 2015-07-06 00:00 UTC.
+Your fabcoins are safe if you received them in transactions confirmed before 2015-07-06 00:00 UTC.
 
 {% comment %}
 Second paragraph should summarize the problem, and subsequent
@@ -214,7 +214,7 @@ Consider: users (by wallet type), merchants, and miners.
 {% endcomment %}
 
 However, there has been a problem with a planned upgrade. For
-bitcoins received later than the time above, confirmation scores are
+fabcoins received later than the time above, confirmation scores are
 significantly less reliable then they usually are for users of
 certain software:
 
@@ -223,7 +223,7 @@ certain software:
   please see this note.
 ```
 
-- Edit the file.  It is written in [Markdown format](https://guides.github.com/features/mastering-markdown/).
+- Edit the file.  It is written in [Markdown format](http://guides.github.com/features/mastering-markdown/).
 
 - Commit it.
 
@@ -238,7 +238,7 @@ certain software:
       displayed on the live site.  The site build aborts and starts over
       when new commits are found.
 
-- Give the `shorturl` URL (`bitcoin.org/<shorturl>`) to the P2P alert message
+- Give the `shorturl` URL (`fabcoins.info/<shorturl>`) to the P2P alert message
   key holders to use in any alert messages they send.
 
 - Proceed to the next section to improve the alert.
@@ -256,14 +256,14 @@ The following fields may be defined in the the alert YAML header:
 ## (Required; HTML text) Title displayed on alert page
 title: "11/12 March 2017 Chain Fork"
 ## (Optional; display ASCII only) Short URL for use in P2P network alerts:
-https://bitcoin.org/<shorturl>
+http://fabcoins.info/<shorturl>
 shorturl: "chainfork"
 ## (Optional; default=false) Active alerts will display the banner (below) on
-all bitcoin.org content pages
+all fabcoins.info content pages
 active: true
 ## (Optional; HTML text) Banner displayed if 'active: true'.  Can use HTML
 formatting
-banner: "<b>Chain fork</b> - Please stop mining on bitcoin version 0.14.1. Click
+banner: "<b>Chain fork</b> - Please stop mining on fabcoin version 0.14.1. Click
 here for more information."
 ## (Optional; default=alert) CSS class to set banner color
 ##   alert = red  |  warning = orange  |  success = green  | info = blue
@@ -288,12 +288,12 @@ alert.
 
 #### Clearing An Alert
 
-To stop advertising an alert on every Bitcoin.org page, change the YAML
+To stop advertising an alert on every Fabcoin.org page, change the YAML
 header field `active` to *false*:
 
 ```yaml
 ## (Optional; default=false) Active alerts will display the banner (below) on
-all bitcoin.org content pages
+all fabcoins.info content pages
 active: false
 ```
 
@@ -309,4 +309,4 @@ banner: "<b>Chain fork</b> - situation resolved"
 bannerclass: success
 ```
 
-[markdown format]: https://help.github.com/articles/markdown-basics/
+[markdown format]: http://help.github.com/articles/markdown-basics/

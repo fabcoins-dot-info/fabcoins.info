@@ -13,24 +13,24 @@ node [ shape = box ];
 subgraph cluster_nemo {
     label = "Nemo's UTXOs"
 
-    nemo_out1 [ label = "10 mBTC" ];
-    nemo_out2 [ label = "90 mBTC" ];
+    nemo_out1 [ label = "10 mFAB" ];
+    nemo_out2 [ label = "90 mFAB" ];
 }
 
 
 subgraph cluster_neminem {
     label = "Neminem's UTXOs"
 
-    neminem_out1 [ label = "100 mBTC" ];
+    neminem_out1 [ label = "100 mFAB" ];
 
 }
 
 subgraph cluster_alice {
     label = "AnonGirl's UTXOs"
 
-    alice_out1 [ label = "55 mBTC" ];
-    alice_out2 [ label = "25 mBTC" ];
-    alice_out3 [ label = "20 mBTC" ];
+    alice_out1 [ label = "55 mFAB" ];
+    alice_out2 [ label = "25 mFAB" ];
+    alice_out3 [ label = "20 mFAB" ];
 
 }
 
@@ -62,7 +62,7 @@ subgraph cluster_coinjoin {
 
     subgraph cluster_outputs {
         label = "Outputs"
-        node [ label = "100 mBTC" ];
+        node [ label = "100 mFAB" ];
         out1;
         out2;
         out3;

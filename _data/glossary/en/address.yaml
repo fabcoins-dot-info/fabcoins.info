@@ -8,7 +8,7 @@ required:
 
     summary_max_255_characters_no_formatting: >
         A 20-byte hash formatted using base58check to produce either a
-        P2PKH or P2SH Bitcoin address.  Currently the most common way
+        P2PKH or P2SH Fabcoin address.  Currently the most common way
         users exchange payment information.
 
     synonyms_shown_in_glossary_capitalize_first_letter:
@@ -22,8 +22,8 @@ optional:
         - IP address
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Address](/en/developer-guide#term-address) --- Bitcoin.org Developer Guide"
-        - "[Address](https://en.bitcoin.it/wiki/Address) --- Bitcoin Wiki"
+        - "[Address](/en/developer-guide#term-address) --- Fabcoin.org Developer Guide"
+        - "[Address](http://en.fabcoin.it/wiki/Address) --- Fabcoin Wiki"
 
 
 ---

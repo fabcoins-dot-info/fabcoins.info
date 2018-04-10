@@ -9,7 +9,7 @@
 <g id="graph1" class="graph" transform="scale(0.668524 0.668524) rotate(0) translate(4 538)">
 <title>paymentchannel</title>
 <polygon fill="white" stroke="white" points="-4,5 -4,-538 715,-538 715,5 -4,5"/>
-<text text-anchor="middle" x="355" y="-8.4" font-family="Sans" font-size="14.00">The Bitcoin Payment Protocol As Described In BIP70</text>
+<text text-anchor="middle" x="355" y="-8.4" font-family="Sans" font-size="14.00">The Fabcoin Payment Protocol As Described In BIP70</text>
 <g id="graph2" class="cluster"><title>cluster_client</title>
 <polygon fill="none" stroke="black" points="8,-58 8,-411 152,-411 152,-58 8,-58"/>
 <text text-anchor="middle" x="80" y="-394.4" font-family="Sans" font-size="14.00">Spender</text>
@@ -35,12 +35,12 @@
 <path fill="none" stroke="black" d="M107.102,-360C157.491,-360 265.657,-360 322.827,-360"/>
 <polygon fill="black" stroke="black" points="322.883,-363.5 332.883,-360 322.883,-356.5 322.883,-363.5"/>
 <text text-anchor="middle" x="228" y="-381.4" font-family="Sans" font-size="14.00">I clicked a</text>
-<text text-anchor="middle" x="228" y="-364.4" font-family="Sans" font-size="14.00">bitcoin: URI</text>
+<text text-anchor="middle" x="228" y="-364.4" font-family="Sans" font-size="14.00">fabcoin: URI</text>
 </g>
 <!-- c2 -->
 <g id="node3" class="node"><title>c2</title>
 <polygon fill="none" stroke="black" points="143,-313.5 17,-313.5 17,-220.5 143,-220.5 143,-313.5"/>
-<text text-anchor="middle" x="80" y="-296.9" font-family="Sans" font-size="14.00">Pay 10 mBTC</text>
+<text text-anchor="middle" x="80" y="-296.9" font-family="Sans" font-size="14.00">Pay 10 mFAB</text>
 <text text-anchor="middle" x="80" y="-279.9" font-family="Sans" font-size="14.00">To example.com</text>
 <text text-anchor="middle" x="80" y="-262.9" font-family="Sans" font-size="14.00">(VERIFIED)</text>
 <text text-anchor="middle" x="80" y="-245.9" font-family="Sans" font-size="14.00">Exp. In 10 Min.</text>
@@ -154,7 +154,7 @@
 <g id="edge6" class="edge"><title>uri&#45;&gt;c0</title>
 <path fill="none" stroke="black" d="M80,-388.443C80,-418.379 80,-464.815 80,-491.726"/>
 <polygon fill="black" stroke="black" points="83.5,-388.228 80,-378.228 76.5,-388.228 83.5,-388.228"/>
-<text text-anchor="middle" x="194.5" y="-464.9" font-family="Sans" font-size="14.00">bitcoin:</text>
+<text text-anchor="middle" x="194.5" y="-464.9" font-family="Sans" font-size="14.00">fabcoin:</text>
 <text text-anchor="middle" x="194.5" y="-447.9" font-family="Sans" font-size="14.00"> &#160;?r=http://example.com/pay/123</text>
 <text text-anchor="middle" x="194.5" y="-430.9" font-family="Sans" font-size="14.00"> </text>
 <text text-anchor="middle" x="194.5" y="-413.9" font-family="Sans" font-size="14.00"> </text>

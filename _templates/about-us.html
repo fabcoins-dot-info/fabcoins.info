@@ -5,7 +5,7 @@
 layout: base
 id: about-us
 ---
-{% if site.env.BITCOINORG_BUILD_TYPE %}
+{% if site.env.FABCOINORG_BUILD_TYPE %}
 <!-- Note: this file is built non-deterministically -->
 <h1>{% translate pagetitle %}</h1>
 <p class="summary">{% translate pagedesc %}</p>
@@ -40,14 +40,14 @@ id: about-us
 <h3 id="maintenance">{% translate maintenance %}</h3>
 
 <div class="credit">
-  <p><a href="https://github.com/wbnns">Will Binns</a><span>Website maintainer</span></p>
-  <p><a href="https://github.com/crwatkins">Craig Watkins</a><span>Wallet maintainer</span></p>
+  <p><a href="http://github.com/wbnns">Will Binns</a><span>Website maintainer</span></p>
+  <p><a href="http://github.com/crwatkins">Craig Watkins</a><span>Wallet maintainer</span></p>
 </div>
 
 <h3 id="sponsorship">{% translate sponsorship %}</h3>
 
 <div class="credit">
-  <p><a href="https://bitcoinfoundation.org/">The Bitcoin Foundation</a><span>2014 - 2015</span></p>
+  <p><a href="http://fabcoinfoundation.org/">The Fabcoin Foundation</a><span>2014 - 2015</span></p>
 </div>
 
 <h3 id="translation">{% translate translation %}</h3>
@@ -67,23 +67,23 @@ id: about-us
 <h3 id="service_contributors">{% translate service_contributors %}</h3>
 
 <div class="credit">
-  <p><a href="https://www.browserstack.com/">BrowserStack</a><span>Browser testing</span></p>
-  <p><a href="https://github.com/">GitHub</a><span>Repository hosting</span></p>
-  <p><a href="https://www.transifex.com/">Transifex</a><span>Translation tools</span></p>
-  <p><a href="https://travis-ci.org/">Travis CI</a><span>Continuous integration</span></p>
+  <p><a href="http://www.browserstack.com/">BrowserStack</a><span>Browser testing</span></p>
+  <p><a href="http://github.com/">GitHub</a><span>Repository hosting</span></p>
+  <p><a href="http://www.transifex.com/">Transifex</a><span>Translation tools</span></p>
+  <p><a href="http://travis-ci.org/">Travis CI</a><span>Continuous integration</span></p>
 </div>
 
 <h3 id="inactive-contributors">{% translate inactive_contributors %}</h3>
 
 <div class="credit">
-  <p><a href="https://github.com/instagibbs">Greg Sanders</a><span>Documentation writing</span></p>
+  <p><a href="http://github.com/instagibbs">Greg Sanders</a><span>Documentation writing</span></p>
 </div>
 
 <h3 id="owners">{% translate owners %}</h3>
 
 <div class="credit">
-  <p><a href="https://github.com/cobra-bitcoin">Cøbra</a><span>Co-Owner</span></p>
-  <p><a href="https://github.com/theymos">theymos</a><span>Co-Owner</span></p>
+  <p><a href="http://github.com/cobra-fabcoin">Cøbra</a><span>Co-Owner</span></p>
+  <p><a href="http://github.com/theymos">theymos</a><span>Co-Owner</span></p>
 </div>
 
 <h3 id="github">{% translate github %}</h3>
@@ -91,17 +91,17 @@ id: about-us
 <div class="contributors">
   {% for c in site.sitecontributors %}
   <div>
-    <div><a{% if c.login %} href="https://github.com/{{c.login}}"{% endif %}>{{ c.name | htmlescape }}</a></div>
+    <div><a{% if c.login %} href="http://github.com/{{c.login}}"{% endif %}>{{ c.name | htmlescape }}</a></div>
     <div>({{ c.contributions }})</div>
   </div>
   {% endfor %}
 </div>
 {% else %}
 {% comment %}
-<!-- if you've cloned bitcoin.org, feel free to fill in your own About
-Us below. It would be appreciated it if you link back to Bitcoin.org,
+<!-- if you've cloned fabcoins.info, feel free to fill in your own About
+Us below. It would be appreciated it if you link back to Fabcoin.org,
 but please make it clear that your site is not affiliated with
-Bitcoin.org.
+Fabcoin.org.
 
 It would also be appreciated if you would remove our names and email
 addresses from the README.md file in the top-level directory.  -->
@@ -109,6 +109,6 @@ addresses from the README.md file in the top-level directory.  -->
 <h1>About this site</h1>
 
 This site includes content originally published on <a
-href="https://bitcoin.org">Bitcoin.org</a>, but it is not affiliated with
-Bitcoin.org.
+href="http://fabcoins.info">Fabcoin.org</a>, but it is not affiliated with
+Fabcoin.org.
 {% endif %}

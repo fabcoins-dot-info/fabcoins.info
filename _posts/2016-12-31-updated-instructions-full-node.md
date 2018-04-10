@@ -10,49 +10,49 @@ title: "Updated Instructions: How to Run a Full Node"
 permalink: /en/posts/how-to-run-a-full-node.html
 date: 2016-12-31
 author: |
-  <a href="https://github.com/wbnns">Will Binns</a>
+  <a href="http://github.com/wbnns">Will Binns</a>
 ---
 
 {:.center}
-![How to Run a Full Node](/img/blog/free/how-to-run-a-full-bitcoin-node.png)
+![How to Run a Full Node](/img/blog/free/how-to-run-a-full-fabcoin-node.png)
 
-Updated instructions for [how to run a full node](https://bitcoin.org/en/full-node)
-as of version **0.13.1** are now available on Bitcoin.org. These instructions allow
+Updated instructions for [how to run a full node](http://fabcoins.info/en/full-node)
+as of version **0.13.1** are now available on Fabcoin.org. These instructions allow
 one to quickly get set up and running with a full node on the following
 operating systems:
 
-- [Linux](https://bitcoin.org/en/full-node#linux-instructions)
+- [Linux](http://fabcoins.info/en/full-node#linux-instructions)
 
-- [MacOS](https://bitcoin.org/en/full-node#mac-os-x-instructions)
+- [MacOS](http://fabcoins.info/en/full-node#mac-os-x-instructions)
 
-- [Windows](https://bitcoin.org/en/full-node#windows-instructions)
+- [Windows](http://fabcoins.info/en/full-node#windows-instructions)
 
 In addition to the above operating systems, tips on [how to configure a full
-bitcoin node for a local area network](https://bitcoin.org/en/full-node#network-configuration)
-and [how to tweak the reference client configuration](https://bitcoin.org/en/full-node#configuration-tuning)
+fabcoin node for a local area network](http://fabcoins.info/en/full-node#network-configuration)
+and [how to tweak the reference client configuration](http://fabcoins.info/en/full-node#configuration-tuning)
 are available.
 
-## Why is running a full bitcoin node important?
-Full nodes help enforce the consensus rules of the Bitcoin network. When a full
+## Why is running a full fabcoin node important?
+Full nodes help enforce the consensus rules of the Fabcoin network. When a full
 node client is running, it downloads every new block and every new transaction
 and checks them to make sure they are valid. Here are some examples of consensus
 rules, though there are many more:
 
-- Blocks may only [create](https://en.bitcoin.it/wiki/Controlled_supply) a
-  certain number of bitcoins.
+- Blocks may only [create](http://en.fabcoin.it/wiki/Controlled_supply) a
+  certain number of fabcoins.
 
-- Transactions must have correct signatures for the bitcoins being spent.
+- Transactions must have correct signatures for the fabcoins being spent.
 
 - Transactions/blocks must be in the correct data format.
 
-- Within the [block chain](https://en.bitcoin.it/wiki/Block_chain), a transaction
+- Within the [block chain](http://en.fabcoin.it/wiki/Block_chain), a transaction
   output cannot be double-spent.
 
 *Read more about what a full node is, the consensus rules above and other
-incentives for supporting the network in the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Full_node).*
+incentives for supporting the network in the [Fabcoin Wiki](http://en.fabcoin.it/wiki/Full_node).*
 
 ## Minimum Requirements
-Bitcoin Core full nodes have certain requirements. If you try running a node on
+Fabcoin Core full nodes have certain requirements. If you try running a node on
 weak hardware, it may work — but you’ll likely spend more time dealing with
 issues. If you can meet the following requirements, you’ll have an easy-to-use
 node.
@@ -85,7 +85,7 @@ desktops. Check your screensaver settings and disable automatic “sleep” or
 running.
 
 ## What to do if you need help
-Please seek out assistance in the [community](https://bitcoin.org/en/community)
+Please seek out assistance in the [community](http://fabcoins.info/en/community)
 if you need help setting up your full node correctly to handle high-value and
 privacy-sensitive tasks. Do your own diligence to ensure who you get help from
 is ethical, reputable and qualified to assist you.
@@ -94,28 +94,28 @@ is ethical, reputable and qualified to assist you.
 A special thanks goes to the contributors (in no preferential order) who have
 worked to improve this page over time:
 
-- [David Harding](https://github.com/harding)
+- [David Harding](http://github.com/harding)
 
-- [Kevin Cooper](https://github.com/kevcooper)
+- [Kevin Cooper](http://github.com/kevcooper)
 
-- [Joseph Becher](https://github.com/drazisil)
+- [Joseph Becher](http://github.com/drazisil)
 
-- [Jorgeminator](https://github.com/Jorgeminator)
+- [Jorgeminator](http://github.com/Jorgeminator)
 
-- [Gyomu](https://github.com/Gyomu)
+- [Gyomu](http://github.com/Gyomu)
 
-- [Jonas Schnelli](https://github.com/jonasschnelli)
+- [Jonas Schnelli](http://github.com/jonasschnelli)
 
-- [Marko Falke](https://github.com/MarcoFalke)
+- [Marko Falke](http://github.com/MarcoFalke)
 
-- [cpmx](https://github.com/cpmx)
+- [cpmx](http://github.com/cpmx)
 
-- [anduck](https://github.com/anduck)
+- [anduck](http://github.com/anduck)
 
-- [dabura667](https://github.com/dabura667)
+- [dabura667](http://github.com/dabura667)
 
-- [seusher](https://github.com/seusher)
+- [seusher](http://github.com/seusher)
 
 **Interested in getting involved?**
 
-[Learn how you can participate](https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate).
+[Learn how you can participate](http://github.com/fabcoin-dot-org/fabcoins.info#how-to-participate).

@@ -9,7 +9,7 @@
 <g id="graph1" class="graph" transform="scale(0.745033 0.745033) rotate(0) translate(4 140)">
 <title>_anonymous_0</title>
 <polygon fill="white" stroke="white" points="-4,5 -4,-140 601,-140 601,5 -4,5"/>
-<text text-anchor="middle" x="298" y="-8.4" font-family="Sans" font-size="14.00">Solo Bitcoin Mining Workflow</text>
+<text text-anchor="middle" x="298" y="-8.4" font-family="Sans" font-size="14.00">Solo Fabcoin Mining Workflow</text>
 <!-- p2pnetwork -->
 <g id="node1" class="node"><title>p2pnetwork</title>
 <polygon fill="none" stroke="black" points="77,-100 1,-100 1,-58 77,-58 77,-100"/>
@@ -19,7 +19,7 @@
 <!-- pool0 -->
 <g id="node4" class="node"><title>pool0</title>
 <polygon fill="none" stroke="black" points="241,-97 171,-97 171,-61 241,-61 241,-97"/>
-<text text-anchor="middle" x="206" y="-74.9" font-family="Sans" font-size="14.00">bitcoind</text>
+<text text-anchor="middle" x="206" y="-74.9" font-family="Sans" font-size="14.00">fabcoind</text>
 </g>
 <!-- p2pnetwork&#45;&gt;pool0 -->
 <g id="edge4" class="edge"><title>p2pnetwork&#45;&gt;pool0</title>

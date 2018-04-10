@@ -11,7 +11,7 @@
 <polygon fill="white" stroke="white" points="-4,5 -4,-317 586,-317 586,5 -4,5"/>
 <text text-anchor="middle" x="290.5" y="-42.4" font-family="Sans" font-size="14.00">(Certificates are loaded into X509Certificates() in reverse signing order)</text>
 <text text-anchor="middle" x="290.5" y="-25.4" font-family="Sans" font-size="14.00"> </text>
-<text text-anchor="middle" x="290.5" y="-8.4" font-family="Sans" font-size="14.00">Example Certificate Loading Order For Payment Requests From Bitcoin.org</text>
+<text text-anchor="middle" x="290.5" y="-8.4" font-family="Sans" font-size="14.00">Example Certificate Loading Order For Payment Requests From Fabcoin.org</text>
 <g id="graph2" class="cluster"><title>cluster_signing</title>
 <polygon fill="none" stroke="black" points="8,-67 8,-305 229,-305 229,-67 8,-67"/>
 <text text-anchor="middle" x="118.5" y="-288.4" font-family="Sans" font-size="14.00"> Certificates In Signing Order </text>
@@ -25,7 +25,7 @@
 <!-- btcorg -->
 <g id="node2" class="node"><title>btcorg</title>
 <polygon fill="none" stroke="black" points="183,-111 53,-111 53,-75 183,-75 183,-111"/>
-<text text-anchor="middle" x="118" y="-88.9" font-family="Sans" font-size="14.00">www.bitcoin.org</text>
+<text text-anchor="middle" x="118" y="-88.9" font-family="Sans" font-size="14.00">www.fabcoins.info</text>
 </g>
 <!-- rapidssl -->
 <g id="node3" class="node"><title>rapidssl</title>
@@ -50,7 +50,7 @@
 <!-- one -->
 <g id="node7" class="node"><title>one</title>
 <polygon fill="none" stroke="black" points="565,-255 245,-255 245,-219 565,-219 565,-255"/>
-<text text-anchor="middle" x="405" y="-232.9" font-family="Sans" font-size="14.00"> &#160;&#160;&#160;x509.certificate.append(bitcoin_org&#45;cert) </text>
+<text text-anchor="middle" x="405" y="-232.9" font-family="Sans" font-size="14.00"> &#160;&#160;&#160;x509.certificate.append(fabcoins.info&#45;cert) </text>
 </g>
 <!-- two -->
 <g id="node8" class="node"><title>two</title>

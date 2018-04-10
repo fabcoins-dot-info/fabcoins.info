@@ -13,8 +13,8 @@ platform:
     os:
       - name: hardware
         text: "walletnanos"
-        link: "https://www.ledgerwallet.com/"
-        source: "https://github.com/LedgerHQ/"
+        link: "http://www.ledgerwallet.com/"
+        source: "http://github.com/LedgerHQ/"
         screenshot: "ledgernanos.png"
         check:
           control: "checkgoodcontrolfull"

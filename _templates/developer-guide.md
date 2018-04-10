@@ -5,7 +5,7 @@
 layout: devdoc-category
 id: developer-guide
 breadcrumbs:
-  - bitcoin
+  - fabcoin
   - dev docs
   - dev docs guides
 show_fragments: true

@@ -7,7 +7,7 @@ required:
     title_max_40_characters_no_formatting: Soft Fork, Soft-Forking Change
 
     summary_max_255_characters_no_formatting: >
-        A softfork is a change to the bitcoin protocol 
+        A softfork is a change to the fabcoin protocol 
         wherein only previously valid blocks/transactions 
         are made invalid. Since old nodes will recognise 
         the new blocks as valid, a softfork is backward-compatible.
@@ -28,8 +28,8 @@ optional:
         - Git fork (when one or more developers temporarily develops a codebase separately from other developers
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Soft fork](/en/developer-guide#term-soft-fork) --- Bitcoin.org Developer Guide"
-        - "[Soft fork](https://en.bitcoin.it/wiki/Softfork) --- Bitcoin Wiki"
-        - "[What is a soft fork?](http://bitcoin.stackexchange.com/questions/30817) --- Bitcoin StackExchange"
+        - "[Soft fork](/en/developer-guide#term-soft-fork) --- Fabcoin.org Developer Guide"
+        - "[Soft fork](http://en.fabcoin.it/wiki/Softfork) --- Fabcoin Wiki"
+        - "[What is a soft fork?](http://fabcoin.stackexchange.com/questions/30817) --- Fabcoin StackExchange"
 
 ---

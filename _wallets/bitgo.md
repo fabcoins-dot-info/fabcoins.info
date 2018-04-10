@@ -13,7 +13,7 @@ platform:
     os:
       - name: web
         text: "walletbitgo"
-        link: "https://www.bitgo.com/"
+        link: "http://www.bitgo.com/"
         screenshot: "bitgo.png"
         check:
           control: "checkpasscontrolmulti"

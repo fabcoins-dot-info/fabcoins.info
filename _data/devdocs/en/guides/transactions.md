@@ -10,7 +10,7 @@ http://opensource.org/licenses/MIT.
 {% autocrossref %}
 
 <!-- reference tx (made by Satoshi in block 170):
-    bitcoind decoderawtransaction $( bitcoind getrawtransaction f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16 )
+    fabcoind decoderawtransaction $( fabcoind getrawtransaction f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16 )
 -->
 
 <!-- SOMEDAY: we need more terms than just output/input to denote the
@@ -25,22 +25,22 @@ transactions. This section will describe each part and
 demonstrate how to use them together to build complete transactions.
 
 To keep things simple, this section pretends coinbase transactions do
-not exist. Coinbase transactions can only be created by Bitcoin miners
+not exist. Coinbase transactions can only be created by Fabcoin miners
 and they're an exception to many of the rules listed below. Instead of
 pointing out the coinbase exception to each rule, we invite you to read
 about coinbase transactions in the block chain section of this guide.
 
 ![The Parts Of A Transaction](/img/dev/en-tx-overview.svg)
 
-The figure above shows the main parts of a Bitcoin transaction. Each
+The figure above shows the main parts of a Fabcoin transaction. Each
 transaction has at least one input and one output. Each [input][/en/glossary/input]{:#term-input}{:.term} spends the
 satoshis paid to a previous output. Each [output][/en/glossary/output]{:#term-output}{:.term} then waits as an Unspent
 Transaction Output (UTXO) until a later input spends it. When your
-Bitcoin wallet tells you that you have a 10,000 satoshi balance, it really
+Fabcoin wallet tells you that you have a 10,000 satoshi balance, it really
 means that you have 10,000 satoshis waiting in one or more UTXOs.
 
 Each transaction is prefixed by a four-byte [transaction version number][]{:#term-transaction-version-number}{:.term} which tells
-Bitcoin peers and miners which set of rules to use to validate it.  This
+Fabcoin peers and miners which set of rules to use to validate it.  This
 lets developers create new rules for future transactions without
 invalidating previous transactions.
 
@@ -63,14 +63,14 @@ The figures below help illustrate how these features are used by
 showing the workflow Alice uses to send Bob a transaction and which Bob
 later uses to spend that transaction. Both Alice and Bob will use the
 most common form of the standard Pay-To-Public-Key-Hash (P2PKH) transaction
-type. [P2PKH][/en/glossary/p2pkh-address]{:#term-p2pkh}{:.term} lets Alice spend satoshis to a typical Bitcoin address,
+type. [P2PKH][/en/glossary/p2pkh-address]{:#term-p2pkh}{:.term} lets Alice spend satoshis to a typical Fabcoin address,
 and then lets Bob further spend those satoshis using a simple
 cryptographic key pair.
 
 ![Creating A P2PKH Public Key Hash To Receive Payment](/img/dev/en-creating-p2pkh-output.svg)
 
 Bob must first generate a private/public [key pair][]{:#term-key-pair}{:.term} before Alice can create the
-first transaction. Bitcoin uses the Elliptic Curve Digital Signature Algorithm (ECDSA) with
+first transaction. Fabcoin uses the Elliptic Curve Digital Signature Algorithm (ECDSA) with
 the secp256k1 curve; secp256k1 [private keys][/en/glossary/private-key]{:#term-private-key}{:.term} are 256 bits of random
 data. A copy of that data is deterministically transformed into an secp256k1 [public
 key][/en/glossary/public-key]{:#term-public-key}{:.term}. Because the transformation can be reliably repeated later, the
@@ -89,12 +89,12 @@ different states of a public key and to help the text better match the
 space-constrained diagrams where "public-key hash" wouldn't fit. -harding -->
 
 Bob provides the pubkey hash to Alice. Pubkey hashes are almost always
-sent encoded as Bitcoin [addresses][/en/glossary/address]{:#term-address}{:.term}, which are base58-encoded strings
+sent encoded as Fabcoin [addresses][/en/glossary/address]{:#term-address}{:.term}, which are base58-encoded strings
 containing an address version number, the hash, and an error-detection
 checksum to catch typos. The address can be transmitted
 through any medium, including one-way mediums which prevent the spender
 from communicating with the receiver, and it can be further encoded
-into another format, such as a QR code containing a `bitcoin:`
+into another format, such as a QR code containing a `fabcoin:`
 URI.
 
 Once Alice has the address and decodes it back into a standard hash, she
@@ -149,7 +149,7 @@ signed except for any signature scripts, which hold the full public keys and
 secp256k1 signatures.
 
 After putting his signature and public key in the signature script, Bob
-broadcasts the transaction to Bitcoin miners through the peer-to-peer
+broadcasts the transaction to Fabcoin miners through the peer-to-peer
 network. Each peer and miner independently validates the transaction
 before broadcasting it further or attempting to include it in a new block of
 transactions.
@@ -185,7 +185,7 @@ and full public key (pubkey), creating the following concatenation:
 {% autocrossref %}
 
 The script language is a
-[Forth-like](https://en.wikipedia.org/wiki/Forth_%28programming_language%29)
+[Forth-like](http://en.wikipedia.org/wiki/Forth_%28programming_language%29)
 stack-based language deliberately designed to be stateless and not
 Turing complete. Statelessness ensures that once a transaction is added
 to the block chain, there is no condition which renders it permanently
@@ -257,7 +257,7 @@ Pubkey scripts are created by spenders who have little interest what
 that script does. Receivers do care about the script conditions and, if
 they want, they can ask spenders to use a particular pubkey script.
 Unfortunately, custom pubkey scripts are less convenient than short
-Bitcoin addresses and there was no standard way to communicate them
+Fabcoin addresses and there was no standard way to communicate them
 between programs prior to widespread implementation of the BIP70 Payment
 Protocol discussed later.
 
@@ -285,7 +285,7 @@ Bob spend the output if the redeem script does not return false.
 ![Unlocking A P2SH Output For Spending](/img/dev/en-unlocking-p2sh-output.svg)
 
 The hash of the redeem script has the same properties as a pubkey
-hash---so it can be transformed into the standard Bitcoin address format
+hash---so it can be transformed into the standard Fabcoin address format
 with only one small change to differentiate it from a standard address.
 This makes collecting a P2SH-style address as simple as collecting a
 P2PKH-style address. The hash also obfuscates any public keys in the
@@ -299,7 +299,7 @@ redeem script, so P2SH scripts are as secure as P2PKH pubkey hashes.
 {% autocrossref %}
 
 After the discovery of several dangerous bugs in early versions of
-Bitcoin, a test was added which only accepted transactions from the
+Fabcoin, a test was added which only accepted transactions from the
 network if their pubkey scripts and signature scripts matched a small set of
 believed-to-be-safe templates, and if the rest of the transaction didn't
 violate another small set of rules enforcing good network behavior. This
@@ -307,11 +307,11 @@ is the `IsStandard()` test, and transactions which pass it are called
 standard transactions.
 
 Non-standard transactions---those that fail the test---may be accepted
-by nodes not using the default Bitcoin Core settings. If they are
+by nodes not using the default Fabcoin Core settings. If they are
 included in blocks, they will also avoid the IsStandard test and be
 processed.
 
-Besides making it more difficult for someone to attack Bitcoin for
+Besides making it more difficult for someone to attack Fabcoin for
 free by broadcasting harmful transactions, the standard transaction
 test also helps prevent users from creating transactions today that
 would make adding new transaction features in the future more
@@ -321,7 +321,7 @@ number, it would become useless as a tool for introducing
 backwards-incompatible features.
 
 
-As of Bitcoin Core 0.9, the standard pubkey script types are:
+As of Fabcoin Core 0.9, the standard pubkey script types are:
 
 {% endautocrossref %}
 
@@ -332,7 +332,7 @@ As of Bitcoin Core 0.9, the standard pubkey script types are:
 {% autocrossref %}
 
 P2PKH is the most common form of pubkey script used to send a transaction to one
-or multiple Bitcoin addresses.
+or multiple Fabcoin addresses.
 
 {% endautocrossref %}
 
@@ -372,7 +372,7 @@ which must match a public key; *n* is the *number* of public keys being
 provided. Both *m* and *n* should be opcodes `OP_1` through `OP_16`,
 corresponding to the number desired.
 
-Because of an off-by-one error in the original Bitcoin implementation
+Because of an off-by-one error in the original Fabcoin implementation
 which must be preserved for compatibility, `OP_CHECKMULTISIG`
 consumes one more value from the stack than indicated by *m*, so the
 list of secp256k1 signatures in the signature script must be prefaced with an extra value
@@ -427,7 +427,7 @@ Signature script: <sig>
 {% autocrossref %}
 
 [Null data][/en/glossary/null-data-transaction]{:#term-null-data}{:.term}
-transaction type relayed and mined by default in Bitcoin Core 0.9.0 and
+transaction type relayed and mined by default in Fabcoin Core 0.9.0 and
 later that adds arbitrary data to a provably unspendable pubkey script
 that full nodes don't have to store in their UTXO database. It is
 preferable to use null data transactions over transactions that bloat
@@ -439,7 +439,7 @@ Consensus rules allow null data outputs up to the maximum allowed pubkey
 script size of 10,000 bytes provided they follow all other consensus
 rules, such as not having any data pushes larger than 520 bytes.
 
-Bitcoin Core 0.9.x to 0.10.x will, by default, relay and mine null data
+Fabcoin Core 0.9.x to 0.10.x will, by default, relay and mine null data
 transactions with up to 40 bytes in a single data push and only one null
 data output that pays exactly 0 satoshis:
 
@@ -450,16 +450,16 @@ Pubkey Script: OP_RETURN <0 to 40 bytes of data>
 (Null data scripts cannot be spent, so there's no signature script.)
 ~~~
 
-Bitcoin Core 0.11.x increases this default to 80 bytes, with the other
+Fabcoin Core 0.11.x increases this default to 80 bytes, with the other
 rules remaining the same.
 
-Bitcoin Core 0.12.0 defaults
+Fabcoin Core 0.12.0 defaults
 to relaying and mining null data outputs with up to 83 bytes with any
 number of data pushes, provided the total byte limit is not exceeded.
 There must still only be a single null data output and it must still pay
 exactly 0 satoshis.
 
-The `-datacarriersize` Bitcoin Core configuration option allows you to
+The `-datacarriersize` Fabcoin Core configuration option allows you to
 set the maximum number of bytes in null data outputs that you will relay
 or mine.
 
@@ -469,7 +469,7 @@ or mine.
 {% autocrossref %}
 
 If you use anything besides a standard pubkey script in an output, peers
-and miners using the default Bitcoin Core settings will neither
+and miners using the default Fabcoin Core settings will neither
 accept, broadcast, nor mine your transaction. When you try to broadcast
 your transaction to a peer running the default settings, you will
 receive an error.
@@ -477,7 +477,7 @@ receive an error.
 If you create a redeem script, hash it, and use the hash
 in a P2SH output, the network sees only the hash, so it will accept the
 output as valid no matter what the redeem script says.
-This allows payment to non-standard scripts, and as of Bitcoin Core
+This allows payment to non-standard scripts, and as of Fabcoin Core
 0.11, almost all valid redeem scripts can be spent. The exception is
 scripts that use unassigned [NOP opcodes][]; these opcodes are
 reserved for future soft forks and can only be relayed or mined by nodes
@@ -487,7 +487,7 @@ Note: standard transactions are designed to protect and help the
 network, not prevent you from making mistakes. It's easy to create
 standard transactions which make the satoshis sent to them unspendable.
 
-As of Bitcoin Core 0.9.3, standard transactions must also meet the following
+As of Fabcoin Core 0.9.3, standard transactions must also meet the following
 conditions:
 
 * The transaction must be finalized: either its locktime must be in the
@@ -511,8 +511,8 @@ conditions:
 
 * The transaction must not include any outputs which receive fewer than
   1/3 as many satoshis as it would take to spend it in a typical input.
-  That's [currently 546 satoshis][bitcoin core fee drop commit] for a
-  P2PKH or P2SH output on a Bitcoin Core node with the default relay fee.
+  That's [currently 546 satoshis][fabcoin core fee drop commit] for a
+  P2PKH or P2SH output on a Fabcoin Core node with the default relay fee.
   Exception: standard null data outputs must receive zero satoshis.
 
 {% endautocrossref %}
@@ -587,7 +587,7 @@ hash types sign, including the procedure for inserting the subscript -->
 {% autocrossref %}
 
 One thing all signature hash types sign is the transaction's [locktime][/en/glossary/locktime]{:#term-locktime}{:.term}.
-(Called nLockTime in the Bitcoin Core source code.)
+(Called nLockTime in the Fabcoin Core source code.)
 The locktime indicates the earliest time a transaction can be added to
 the block chain.
 
@@ -609,7 +609,7 @@ to two hours before its time lock officially expires. Also, blocks are
 not created at guaranteed intervals, so any attempt to cancel a valuable
 transaction should be made a few hours before the time lock expires.
 
-Previous versions of Bitcoin Core provided a feature which prevented
+Previous versions of Fabcoin Core provided a feature which prevented
 transaction signers from using the method described above to cancel a
 time-locked transaction, but a necessary part of this feature was
 disabled to prevent denial of service attacks. A legacy of this system are four-byte
@@ -621,7 +621,7 @@ allowing the transaction to be added to a block even if its time lock
 had not expired.
 
 Even today, setting all sequence numbers to 0xffffffff (the default in
-Bitcoin Core) can still disable the time lock, so if you want to use
+Fabcoin Core) can still disable the time lock, so if you want to use
 locktime, at least one input must have a sequence number below the
 maximum. Since sequence numbers are not used by the network for any
 other purpose, setting any sequence number to zero is sufficient to
@@ -646,15 +646,15 @@ enable locktime.
 {% autocrossref %}
 
 Transactions pay fees based on the total byte size of the signed transaction. Fees per byte are calculated based on current demand for space in mined blocks with fees rising as demand increases.  The transaction fee is given to the
-Bitcoin miner, as explained in the [block chain section][section block chain], and so it is
+Fabcoin miner, as explained in the [block chain section][section block chain], and so it is
 ultimately up to each miner to choose the minimum transaction fee they
 will accept.
 
 There is also a concept of so-called "[high-priority transactions][/en/glossary/high-priority-transaction]{:#term-high-priority-transactions}{:.term}" which spend satoshis that have not moved for a long time.
 
-In the past, these "priority" transaction were often exempt from the normal fee requirements. Before Bitcoin Core 0.12, 50 KB of each block would be reserved for these high-priority transactions, however this is now set to 0 KB by default.  After the priority area, all transactions are prioritized based on their fee per byte, with higher-paying transactions being added in sequence until all of the available space is filled. <!-- Consider adding links to blockmaxsize and blockmaxweight options once available in the glossary. -->
+In the past, these "priority" transaction were often exempt from the normal fee requirements. Before Fabcoin Core 0.12, 50 KB of each block would be reserved for these high-priority transactions, however this is now set to 0 KB by default.  After the priority area, all transactions are prioritized based on their fee per byte, with higher-paying transactions being added in sequence until all of the available space is filled. <!-- Consider adding links to blockmaxsize and blockmaxweight options once available in the glossary. -->
 
-As of Bitcoin Core 0.9, a [minimum fee][/en/glossary/minimum-relay-fee]{:#term-minimum-fee}{:.term} (currently 1,000 satoshis) has been required to
+As of Fabcoin Core 0.9, a [minimum fee][/en/glossary/minimum-relay-fee]{:#term-minimum-fee}{:.term} (currently 1,000 satoshis) has been required to
 broadcast a transaction across the network. Any transaction paying only the minimum fee
 should be prepared to wait a long time before there's enough spare space
 in a block to include it. Please see the [verifying payment section][section verifying payment]
@@ -685,7 +685,7 @@ person to use the public block chain to track past and future
 transactions involving the other person's same public keys or addresses.
 
 If the same public key is reused often, as happens when people use
-Bitcoin addresses (hashed public keys) as static payment addresses,
+Fabcoin addresses (hashed public keys) as static payment addresses,
 other people can easily track the receiving and spending habits of that
 person, including how many satoshis they control in known addresses.
 
@@ -718,13 +718,13 @@ described below, with more general attacks hypothesized).
    Existing comparison-based attacks are only practical today when
    insufficient entropy is used in signing or when the entropy used
    is exposed by some means, such as a
-   [side-channel attack](https://en.wikipedia.org/wiki/Side_channel_attack).
+   [side-channel attack](http://en.wikipedia.org/wiki/Side_channel_attack).
 
 So, for both privacy and security, we encourage you to build your
 applications to avoid public key reuse and, when possible, to discourage
 users from reusing addresses. If your application needs to provide a
 fixed URI to which payments should be sent, please see the
-[`bitcoin:` URI section][bitcoin URI subsection] below.
+[`fabcoin:` URI section][fabcoin URI subsection] below.
 
 {% endautocrossref %}
 
@@ -733,7 +733,7 @@ fixed URI to which payments should be sent, please see the
 
 {% autocrossref %}
 
-None of Bitcoin's signature hash types protect the signature script, leaving
+None of Fabcoin's signature hash types protect the signature script, leaving
 the door open for a limited denial of service attack called [transaction
 malleability][/en/glossary/malleability]{:.term}{:#term-transaction-malleability}. The signature script
 contains the secp256k1 signature, which can't sign itself, allowing attackers to
@@ -748,20 +748,20 @@ links to previous transactions using hashes as a transaction
 identifier (txid), a modified transaction will not have the txid its
 creator expected.
 
-This isn't a problem for most Bitcoin transactions which are designed to
+This isn't a problem for most Fabcoin transactions which are designed to
 be added to the block chain immediately. But it does become a problem
 when the output from a transaction is spent before that transaction is
 added to the block chain.
 
-Bitcoin developers have been working to reduce transaction malleability
+Fabcoin developers have been working to reduce transaction malleability
 among standard transaction types, one outcome of those efforts is
-[BIP 141: Segregated Witness](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki),
-which is supported by Bitcoin Core and was activated in August 2017. 
+[BIP 141: Segregated Witness](http://github.com/fabcoin/bips/blob/master/bip-0141.mediawiki),
+which is supported by Fabcoin Core and was activated in August 2017. 
 When SegWit is not being used, new transactions should not depend on
 previous transactions which have not been added to the block chain yet,
 especially if large amounts of satoshis are at stake.
 
-Transaction malleability also affects payment tracking.  Bitcoin Core's
+Transaction malleability also affects payment tracking.  Fabcoin Core's
 RPC interface lets you track transactions by their txid---but if that
 txid changes because the transaction was modified, it may appear that
 the transaction has disappeared from the network.

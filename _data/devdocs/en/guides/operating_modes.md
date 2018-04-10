@@ -18,7 +18,7 @@ Currently there are two primary methods of validating the block chain as a clien
 
 {% autocrossref %}
 
-The first and most secure model is the one followed by Bitcoin Core, also known as a “thick” or “full chain” client. This security model assures the validity of the block chain by downloading and validating blocks from the genesis block all the way to the most recently discovered block. This is known as using the *height* of a particular block to verify the client’s view of the network. 
+The first and most secure model is the one followed by Fabcoin Core, also known as a “thick” or “full chain” client. This security model assures the validity of the block chain by downloading and validating blocks from the genesis block all the way to the most recently discovered block. This is known as using the *height* of a particular block to verify the client’s view of the network. 
 
 For a client to be fooled, an adversary would need to give a complete alternative block chain history that is of greater difficulty than the current “true” chain, which is computationally expensive (if not impossible) due to the fact that the chain with the most cumulative proof of work is by definition the "true" chain. Due to the computational difficulty required to generate a new block at the tip of the chain, the ability to fool a full node becomes very expensive after 6 confirmations. This form of verification is highly resistent to sybil attacks---only a single honest network peer is required in order to receive and verify the complete state of the "true" block chain. 
 
@@ -31,7 +31,7 @@ For a client to be fooled, an adversary would need to give a complete alternativ
 
 {% autocrossref %}
 
-An alternative approach detailed in the [original Bitcoin paper][bitcoinpdf] is a client that only downloads the headers of blocks during the initial syncing process and then requests transactions from full nodes as needed. This scales linearly with the height of the block chain at only 80 bytes per block header, or up to 4.2MB per year, regardless of total block size. 
+An alternative approach detailed in the [original Fabcoin paper][fabcoinpdf] is a client that only downloads the headers of blocks during the initial syncing process and then requests transactions from full nodes as needed. This scales linearly with the height of the block chain at only 80 bytes per block header, or up to 4.2MB per year, regardless of total block size. 
 
 As described in the white paper, the merkle root in the block header along with a merkle branch can prove to the SPV client that the transaction in question is embedded in a block in the block chain. This does not guarantee validity of the transactions that are embedded. Instead it demonstrates the amount of work required to perform a double-spend attack. 
 
@@ -85,9 +85,9 @@ scripts and pubkey scripts, and more. This enables P2SH transaction finding.
 
 If a user is more privacy-conscious, he can set the Bloom filter to include more false positives, at the expense of extra bandwidth used for transaction discovery. If a user is on a tight bandwidth budget, he can set the false-positive rate to low, knowing that this will allow full nodes a clear view of what transactions are associated with his client. 
 
-**Resources:** [BitcoinJ][], a Java implementation of Bitcoin that is based on the SPV security model and Bloom filters. Used in most Android wallets.
+**Resources:** [FabcoinJ][], a Java implementation of Fabcoin that is based on the SPV security model and Bloom filters. Used in most Android wallets.
 
-Bloom filters were standardized for use via [BIP37](https://github.com/bitcoin/bips/blob/master/bip-0037.mediawiki). Review the BIP for implementation details.
+Bloom filters were standardized for use via [BIP37](http://github.com/fabcoin/bips/blob/master/bip-0037.mediawiki). Review the BIP for implementation details.
 
 {% endautocrossref %}
 
@@ -98,8 +98,8 @@ Bloom filters were standardized for use via [BIP37](https://github.com/bitcoin/b
 
 There are future proposals such as Unspent Transaction Output (UTXO) commitments in the block chain to find a more satisfactory middle-ground for clients between needing a complete copy of the block chain, or trusting that a majority of your connected peers are not lying. UTXO commitments would enable a very secure client using a finite amount of storage using a data structure that is authenticated in the block chain. These type of proposals are, however, in very early stages, and will require soft forks in the network.
 
-Until these types of operating modes are implemented, modes should be chosen based on the likely threat model, computing and bandwidth constraints, and liability in bitcoin value.
+Until these types of operating modes are implemented, modes should be chosen based on the likely threat model, computing and bandwidth constraints, and liability in fabcoin value.
 
-**Resources:** [Original Thread on UTXO Commitments](https://bitcointalk.org/index.php?topic=88208.0), [Authenticated Prefix Trees BIP Proposal](https://github.com/maaku/bips/blob/master/drafts/auth-trie.mediawiki)
+**Resources:** [Original Thread on UTXO Commitments](http://fabcointalk.org/index.php?topic=88208.0), [Authenticated Prefix Trees BIP Proposal](http://github.com/maaku/bips/blob/master/drafts/auth-trie.mediawiki)
 
 {% endautocrossref %}

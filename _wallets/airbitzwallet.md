@@ -3,7 +3,7 @@
 # http://opensource.org/licenses/MIT.
 
 id: airbitzwallet
-title: "Airbitz Bitcoin Wallet"
+title: "Airbitz Fabcoin Wallet"
 titleshort: "Airbitz"
 compat: "mobile android ios"
 level: 3
@@ -13,8 +13,8 @@ platform:
     os:
       - name: android
         text: "walletairbitzwallet"
-        link: "https://play.google.com/store/apps/details?id=com.airbitz"
-        source: "https://github.com/Airbitz"
+        link: "http://play.google.com/store/apps/details?id=com.airbitz"
+        source: "http://github.com/Airbitz"
         screenshot: "airbitzwalletandroid.png"
         check:
           control: "checkpasscontrolhybrid"
@@ -29,8 +29,8 @@ platform:
           privacynetwork: "checkfailprivacynetworknosupporttor"
       - name: ios
         text: "walletairbitzwallet"
-        link: "https://itunes.apple.com/us/app/bitcoin-wallet-map-directory/id843536046?mt=8"
-        source: "https://github.com/Airbitz"
+        link: "http://itunes.apple.com/us/app/fabcoin-wallet-map-directory/id843536046?mt=8"
+        source: "http://github.com/Airbitz"
         screenshot: "airbitzwalletios.png"
         check:
           control: "checkpasscontrolhybrid"

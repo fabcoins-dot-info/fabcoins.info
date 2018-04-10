@@ -4,10 +4,10 @@
 
 required:
                                            #-------------40 characters-------------#
-    title_max_40_characters_no_formatting: Mainnet, Bitcoin Main Network
+    title_max_40_characters_no_formatting: Mainnet, Fabcoin Main Network
 
     summary_max_255_characters_no_formatting: >
-        The original and main network for Bitcoin transactions, where
+        The original and main network for Fabcoin transactions, where
         satoshis have real economic value.
 
     synonyms_shown_in_glossary_capitalize_first_letter:
@@ -21,6 +21,6 @@ optional:
         - Regtest (a private testing node similar to testnet)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Mainnet](/en/developer-examples#term-mainnet) --- Bitcoin.org Developer Examples"
+        - "[Mainnet](/en/developer-examples#term-mainnet) --- Fabcoin.org Developer Examples"
 
 ---

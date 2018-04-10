@@ -20,10 +20,10 @@ optional:
         - payment requests
 
     not_to_be_confused_with_capitalize_first_letter:
-        - IP-to-IP payment protocol (an insecure, discontinued protocol included in early versions of Bitcoin)
+        - IP-to-IP payment protocol (an insecure, discontinued protocol included in early versions of Fabcoin)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Payment Protocol](/en/developer-guide#term-payment-protocol) --- Bitcoin.org Developer Guide"
-        - "[BIP70: payment protocol](https://github.com/bitcoin/bips/blob/master/bip-0070.mediawiki) --- Bitcoin Improvement Proposals"
+        - "[Payment Protocol](/en/developer-guide#term-payment-protocol) --- Fabcoin.org Developer Guide"
+        - "[BIP70: payment protocol](http://github.com/fabcoin/bips/blob/master/bip-0070.mediawiki) --- Fabcoin Improvement Proposals"
 
 ---

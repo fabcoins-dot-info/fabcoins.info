@@ -9,7 +9,7 @@ http://opensource.org/licenses/MIT.
 
 {% autocrossref %}
 
-A Bitcoin wallet can refer to either a wallet program or a wallet file.
+A Fabcoin wallet can refer to either a wallet program or a wallet file.
 Wallet programs create public keys to receive satoshis and use the
 corresponding private keys to spend those satoshis. Wallet files
 store private keys and (optionally) other information related to
@@ -262,7 +262,7 @@ Processing][devguide payment processing] section for details.
 
 {% autocrossref %}
 
-Bitcoin wallets at their core are a collection of private keys. These
+Fabcoin wallets at their core are a collection of private keys. These
 collections are stored digitally in a file, or can even be physically
 stored on pieces of paper.
 
@@ -273,9 +273,9 @@ stored on pieces of paper.
 
 {% autocrossref %}
 
-Private keys are what are used to unlock satoshis from a particular address. In Bitcoin, a private key in standard format is simply a 256-bit number, between the values:
+Private keys are what are used to unlock satoshis from a particular address. In Fabcoin, a private key in standard format is simply a 256-bit number, between the values:
 
-0x01 and 0xFFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFE BAAE DCE6 AF48 A03B BFD2 5E8C D036 4140, representing nearly the entire range of 2<sup>256</sup>-1 values. The range is governed by the secp256k1 ECDSA encryption standard used by Bitcoin. 
+0x01 and 0xFFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFE BAAE DCE6 AF48 A03B BFD2 5E8C D036 4140, representing nearly the entire range of 2<sup>256</sup>-1 values. The range is governed by the secp256k1 ECDSA encryption standard used by Fabcoin. 
 
 {% endautocrossref %}
 
@@ -284,7 +284,7 @@ Private keys are what are used to unlock satoshis from a particular address. In 
 
 {% autocrossref %}
 
-In order to make copying of private keys less prone to error, [Wallet Import Format][/en/glossary/wallet-import-format]{:#term-wallet-import-format}{:.term} may be utilized. WIF uses base58Check encoding on an private key, greatly decreasing the chance of copying error, much like standard Bitcoin addresses.
+In order to make copying of private keys less prone to error, [Wallet Import Format][/en/glossary/wallet-import-format]{:#term-wallet-import-format}{:.term} may be utilized. WIF uses base58Check encoding on an private key, greatly decreasing the chance of copying error, much like standard Fabcoin addresses.
 
 1. Take a private key.
 
@@ -313,7 +313,7 @@ The process is easily reversible, using the Base58 decoding function, and removi
 
 {% autocrossref %}
 
-Mini private key format is a method for encoding a private key in under 30 characters, enabling keys to be embedded in a small physical space, such as physical bitcoin tokens, and more damage-resistant QR codes. 
+Mini private key format is a method for encoding a private key in under 30 characters, enabling keys to be embedded in a small physical space, such as physical fabcoin tokens, and more damage-resistant QR codes. 
 
 1. The first character of mini keys is 'S'. 
 
@@ -325,7 +325,7 @@ Mini private key format is a method for encoding a private key in under 30 chara
 
 Many implementations disallow the character '1' in the mini private key due to its visual similarity to 'l'.
 
-**Resource:** A common tool to create and redeem these keys is the [Casascius Bitcoin Address Utility][casascius
+**Resource:** A common tool to create and redeem these keys is the [Casascius Fabcoin Address Utility][casascius
 address utility].
 
 {% endautocrossref %}
@@ -338,11 +338,11 @@ address utility].
 
 {% autocrossref %}
 
-Bitcoin ECDSA public keys represent a point on a particular Elliptic
+Fabcoin ECDSA public keys represent a point on a particular Elliptic
 Curve (EC) defined in secp256k1. In their traditional uncompressed form,
 public keys contain an identification byte, a 32-byte X coordinate, and
 a 32-byte Y coordinate. The extremely simplified illustration below
-shows such a point on the elliptic curve used by Bitcoin,
+shows such a point on the elliptic curve used by Fabcoin,
 y<sup>2</sup>&nbsp;=&nbsp;x<sup>3</sup>&nbsp;+&nbsp;7, over a field of
 contiguous numbers.
 
@@ -367,17 +367,17 @@ default in the widely-used OpenSSL library.
 
 Because they're easy to use, and because they reduce almost by half
 the block chain space used to store public keys for every spent output,
-compressed public keys are the default in Bitcoin Core and are the
-recommended default for all Bitcoin software.
+compressed public keys are the default in Fabcoin Core and are the
+recommended default for all Fabcoin software.
 
-However, Bitcoin Core prior to 0.6 used uncompressed keys.  This creates
+However, Fabcoin Core prior to 0.6 used uncompressed keys.  This creates
 a few complications, as the hashed form of an uncompressed key is
 different than the hashed form of a compressed key, so the same key
 works with two different P2PKH addresses.   This also means that the key
 must be submitted in the correct format in the signature script so it
 matches the hash in the previous output's pubkey script.
 
-For this reason, Bitcoin Core uses several different identifier bytes to
+For this reason, Fabcoin Core uses several different identifier bytes to
 help programs identify how keys should be used:
 
 * Private keys meant to be used with compressed public keys have 0x01
@@ -429,7 +429,7 @@ existing [(parent) public key][/en/glossary/parent-key]{:#term-parent-public-key
 integer (*i*) value. This child public key is the same public key which
 would be created by the `point()` function if you added the *i* value to
 the original (parent) private key and then found the remainder of that
-sum divided by a global constant used by all Bitcoin software (*p*):
+sum divided by a global constant used by all Fabcoin software (*p*):
 
 {% endautocrossref %}
 
@@ -606,7 +606,7 @@ make descriptions easy, many developers use the [prime symbol][] to indicate
 hardened keys, so the first normal key (0x00) is 0 and the first hardened
 key (0x80000000) is 0´.
 
-(Bitcoin developers typically use the ASCII apostrophe rather than
+(Fabcoin developers typically use the ASCII apostrophe rather than
 the unicode prime symbol, a convention we will henceforth follow.)
 
 This compact description is further combined with slashes prefixed by
@@ -674,7 +674,7 @@ For implementation details, please see BIP39.
 
 {% autocrossref %}
 
-Loose-Key wallets, also called "Just a Bunch Of Keys (JBOK)", are a deprecated form of wallet that originated from the Bitcoin Core client wallet. The Bitcoin Core client wallet would create 100 private key/public key pairs automatically via a Pseudo-Random-Number Generator (PRNG) for later use.
+Loose-Key wallets, also called "Just a Bunch Of Keys (JBOK)", are a deprecated form of wallet that originated from the Fabcoin Core client wallet. The Fabcoin Core client wallet would create 100 private key/public key pairs automatically via a Pseudo-Random-Number Generator (PRNG) for later use.
 
 These unused private keys are stored in a virtual "key pool", with new
 keys being generated whenever a previously-generated key was used,

@@ -12,8 +12,8 @@ platform:
     name: desktop
     default: &DEFAULT
       text: "walletarmory"
-      link: "https://btcarmory.com/"
-      source: "https://github.com/goatpig/BitcoinArmory"
+      link: "http://btcarmory.com/"
+      source: "http://github.com/goatpig/FabcoinArmory"
       screenshot: "armory.png"
       check:
         control: "checkgoodcontrolfull"

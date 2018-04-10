@@ -21,24 +21,24 @@ confirmations or to switch to a safer wallet.**
 
 ##Summary
 
-Your bitcoins are safe if you received them in transactions confirmed before 2015-07-15 12:00 UTC.
+Your fabcoins are safe if you received them in transactions confirmed before 2015-07-15 12:00 UTC.
 
 However, there has been a problem with a planned upgrade. For
-bitcoins received later than the time above, confirmation scores are
+fabcoins received later than the time above, confirmation scores are
 significantly less reliable then they usually are for users of
 certain software:
 
 - **Lightweight ([SPV][SPV]) wallet users** should wait an additional {{confs}}
 confirmations more than you would normally wait.  Electrum users,
 please see [this note][electrum note].
-- **Bitcoin Core 0.9.4 or earlier users** should wait an
+- **Fabcoin Core 0.9.4 or earlier users** should wait an
 additional {{confs}} confirmations more than you would normally
-wait or upgrade to [Bitcoin Core 0.10.2][bitcoin core].
+wait or upgrade to [Fabcoin Core 0.10.2][fabcoin core].
 - **Web wallet users** should wait an additional {{confs}} confirmations
 more than you would normally wait, unless you know for sure that your
-wallet is secured by Bitcoin Core 0.9.5 or later.
-- **Bitcoin Core 0.9.5 or later users are unaffected.**  (Note:
-[upgrade to 0.10.2][bitcoin core] is recommended due to
+wallet is secured by Fabcoin Core 0.9.5 or later.
+- **Fabcoin Core 0.9.5 or later users are unaffected.**  (Note:
+[upgrade to 0.10.2][fabcoin core] is recommended due to
 denial-of-service vulnerabilities unrelated to this alert.)
 
 ##Miners
@@ -47,7 +47,7 @@ If you pool mine, please switch to a pool that properly validates
 blocks.  The Wiki Mining Pool Comparison page currently contains a list of [known (or
 suspected) good and bad pools][pool list].
 
-If you solo mine, please switch to Bitcoin Core 0.10.2.
+If you solo mine, please switch to Fabcoin Core 0.10.2.
 
 <h2 id="solution">When Will Things Go Back To Normal?</h2>
 
@@ -56,26 +56,26 @@ that those blocks are invalid and reject them; other software can't
 detect that blocks are invalid, so they show confirmations that aren't
 real.
 
-- **Bitcoin Core 0.9.5 and later** never had any problems because
+- **Fabcoin Core 0.9.5 and later** never had any problems because
 it could detect which blocks were invalid.
-- **Bitcoin Core 0.9.4 and earlier** will never provide as much
-security as later versions of Bitcoin Core because it doesn't know
+- **Fabcoin Core 0.9.4 and earlier** will never provide as much
+security as later versions of Fabcoin Core because it doesn't know
 about the additional [BIP66][BIP66]
-consensus rules. [Upgrade][bitcoin core] is recommended
+consensus rules. [Upgrade][fabcoin core] is recommended
 to return to full node security.
 - **Lightweight (SPV) wallets** are not safe for less than
 {{confs}} confirmations until all the major pools switch to full
 validation.
 - **Web wallets** are very diverse in what infrastructure they
 run and how they handle double spends, so unless you know for sure
-that they use Bitcoin Core 0.9.5 or later for full validation, you
+that they use Fabcoin Core 0.9.5 or later for full validation, you
 should assume they have the same security as the lightweight
 wallets described above.
 
 <h2 id="cause">What's Happening</h2>
 
 Summary: Some miners are currently generating invalid blocks. Almost
-all software (besides Bitcoin Core 0.9.5 and later) will accept these
+all software (besides Fabcoin Core 0.9.5 and later) will accept these
 invalid blocks under certain conditions.
 
 So far, the following forks of two or more blocks have occurred:
@@ -113,13 +113,13 @@ of mining income so far.
 All software that assumes blocks are valid (because invalid blocks
 cost miners money) is at risk of showing transactions as confirmed
 when they really aren't. This particularly affects lightweight (SPV)
-wallets and software such as old versions of Bitcoin Core which have
+wallets and software such as old versions of Fabcoin Core which have
 been downgraded to SPV-level security by the new BIP66 consensus
 rules.
 
 The recommended fix, which was attempted, was to
 get all miners off of SPV mining and back to full validation (at
-least temporarily). If this happens, Bitcoin.org will reduce its
+least temporarily). If this happens, Fabcoin.org will reduce its
 current recommendation of waiting {{confs}} extra confirmations to a
 lower number.
 
@@ -134,7 +134,7 @@ accepting a transaction.
 
 ## Invalid Blocks
 
-Please see the list of [invalid block hashes][] on the Bitcoin Wiki.
+Please see the list of [invalid block hashes][] on the Fabcoin Wiki.
 
 <!--
 <div style="text-align:right">
@@ -142,9 +142,9 @@ Please see the list of [invalid block hashes][] on the Bitcoin Wiki.
 </div>
 -->
 
-[BIP66]: https://github.com/bitcoin/bips/blob/master/bip-0066.mediawiki
-[pool list]: https://en.bitcoin.it/wiki/Comparison_of_mining_pools#SPV_Mining_.2F_Old_Bitcoin_Core
-[bitcoin core]: /en/download
-[SPV]: http://bitcoin.stackexchange.com/questions/4649/what-is-an-spv-client
-[electrum note]: https://en.bitcoin.it/wiki/July_2015_Forks#Electrum
-[invalid block hashes]: https://en.bitcoin.it/wiki/July_2015_Forks#Invalid_Block_Hashes
+[BIP66]: http://github.com/fabcoin/bips/blob/master/bip-0066.mediawiki
+[pool list]: http://en.fabcoin.it/wiki/Comparison_of_mining_pools#SPV_Mining_.2F_Old_Fabcoin_Core
+[fabcoin core]: /en/download
+[SPV]: http://fabcoin.stackexchange.com/questions/4649/what-is-an-spv-client
+[electrum note]: http://en.fabcoin.it/wiki/July_2015_Forks#Electrum
+[invalid block hashes]: http://en.fabcoin.it/wiki/July_2015_Forks#Invalid_Block_Hashes

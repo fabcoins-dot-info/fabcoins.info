@@ -13,8 +13,8 @@ platform:
     os:
       - name: ios
         text: "walletbreadwallet"
-        link: "https://itunes.apple.com/app/breadwallet/id885251393"
-        source: "https://github.com/voisine/breadwallet"
+        link: "http://itunes.apple.com/app/breadwallet/id885251393"
+        source: "http://github.com/voisine/breadwallet"
         screenshot: "breadwallet.png"
         check:
           control: "checkgoodcontrolfull"
@@ -29,8 +29,8 @@ platform:
           privacynetwork: "checkfailprivacynetworknosupporttor"
       - name: android
         text: "walletbreadwallet"
-        link: "https://play.google.com/store/apps/details?id=com.breadwallet"
-        source: "https://github.com/breadwallet/breadwallet-android"
+        link: "http://play.google.com/store/apps/details?id=com.breadwallet"
+        source: "http://github.com/breadwallet/breadwallet-android"
         screenshot: "breadwallet.png"
         check:
           control: "checkgoodcontrolfull"

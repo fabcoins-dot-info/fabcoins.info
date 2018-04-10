@@ -10,19 +10,19 @@ http://opensource.org/licenses/MIT.
 {% autocrossref %}
 
 Contracts are
-transactions which use the decentralized Bitcoin system to enforce financial
+transactions which use the decentralized Fabcoin system to enforce financial
 agreements.
-Bitcoin contracts can often be crafted to minimize dependency on outside
+Fabcoin contracts can often be crafted to minimize dependency on outside
 agents, such as the court system, which significantly decreases the risk
 of dealing with unknown entities in financial transactions. 
 
-The following subsections will describe a variety of Bitcoin contracts
+The following subsections will describe a variety of Fabcoin contracts
 already in use. Because contracts deal with real people, not just
 transactions, they are framed below in story format.
 
 Besides the contract types described below, many other contract types
 have been proposed. Several of them are collected on the [Contracts
-page](https://en.bitcoin.it/wiki/Contracts) of the Bitcoin Wiki.
+page](http://en.fabcoin.it/wiki/Contracts) of the Fabcoin Wiki.
 
 {% endautocrossref %}
 
@@ -122,7 +122,7 @@ to another 2-of-3 multisig redeem script hash, this one including a public
 key from that second arbitrator. This means that Bob and Charlie never
 need to worry about their arbitrator stealing their money.
 
-**Resource:** [BitRated](https://www.bitrated.com/) provides a multisig arbitration
+**Resource:** [BitRated](http://www.bitrated.com/) provides a multisig arbitration
 service interface using HTML/JavaScript on a GNU AGPL-licensed website.
 
 {% endautocrossref %}
@@ -144,14 +144,14 @@ him thousands of satoshis in transaction fees, so Alice suggests they use a
 [micropayment channel][]{:#term-micropayment-channel}{:.term}.
 
 Bob asks Alice for her public key and then creates two transactions.
-The first transaction pays 100 millibitcoins to a P2SH output whose
+The first transaction pays 100 millifabcoins to a P2SH output whose
 2-of-2 multisig redeem script requires signatures from both Alice and Bob.
 This is the bond transaction.
-Broadcasting this transaction would let Alice hold the millibitcoins
+Broadcasting this transaction would let Alice hold the millifabcoins
 hostage, so Bob keeps this transaction private for now and creates a
 second transaction.
 
-The second transaction spends all of the first transaction's millibitcoins
+The second transaction spends all of the first transaction's millifabcoins
 (minus a transaction fee) back to Bob after a 24 hour delay enforced
 by locktime. This is the refund transaction. Bob can't sign the refund transaction by himself, so he gives
 it to Alice to sign, as shown in the
@@ -164,14 +164,14 @@ future, signs it, and gives a copy of it back to Bob. She then asks Bob
 for the bond transaction and checks that the refund transaction spends
 the output of the bond transaction. She can now broadcast the bond
 transaction to the network to ensure Bob has to wait for the time lock
-to expire before further spending his millibitcoins. Bob hasn't actually
+to expire before further spending his millifabcoins. Bob hasn't actually
 spent anything so far, except possibly a small transaction fee, and
 he'll be able to broadcast the refund transaction in 24 hours for a
 full refund.
 
-Now, when Alice does some work worth 1 millibitcoin, she asks Bob to create
+Now, when Alice does some work worth 1 millifabcoin, she asks Bob to create
 and sign a new version of the refund transaction.  Version two of the
-transaction spends 1 millibitcoin to Alice and the other 99 back to Bob; it does
+transaction spends 1 millifabcoin to Alice and the other 99 back to Bob; it does
 not have a locktime, so Alice can sign it and spend it whenever she
 wants.  (But she doesn't do that immediately.)
 
@@ -190,17 +190,17 @@ near the time lock expiry, she could be cheated out of her payment.
 Transaction malleability, discussed above in the Transactions section,
 is another reason to limit the value of micropayment channels.
 If someone uses transaction malleability to break the link between the
-two transactions, Alice could hold Bob's 100 millibitcoins hostage even if she
+two transactions, Alice could hold Bob's 100 millifabcoins hostage even if she
 hadn't done any work.
 
-For larger payments, Bitcoin transaction fees are very low as a
+For larger payments, Fabcoin transaction fees are very low as a
 percentage of the total transaction value, so it makes more sense to
 protect payments with immediately-broadcast separate transactions.
 
-**Resource:** The [bitcoinj][] Java library
+**Resource:** The [fabcoinj][] Java library
 provides a complete set of micropayment functions, an example
 implementation, and [a
-tutorial][bitcoinj micropayment tutorial]
+tutorial][fabcoinj micropayment tutorial]
 all under an Apache license.
 
 {% endautocrossref %}
@@ -212,7 +212,7 @@ all under an Apache license.
 
 Alice is concerned about her privacy.  She knows every transaction gets
 added to the public block chain, so when Bob and Charlie pay her, they
-can each easily track those satoshis to learn what Bitcoin
+can each easily track those satoshis to learn what Fabcoin
 addresses she pays, how much she pays them, and possibly how many
 satoshis she has left.
 
@@ -233,7 +233,7 @@ of them can steal the others' satoshis.
 ![Example CoinJoin Transaction](/img/dev/en-coinjoin.svg)
 
 Each contributor looks through their collection of Unspent Transaction
-Outputs (UTXOs) for 100 millibitcoins they can spend. They then each generate
+Outputs (UTXOs) for 100 millifabcoins they can spend. They then each generate
 a brand new public key and give UTXO details and pubkey hashes to the
 facilitator.  In this case, the facilitator is AnonGirl; she creates
 a transaction spending each of the UTXOs to three equally-sized outputs.
@@ -243,7 +243,7 @@ AnonGirl then signs her inputs using `SIGHASH_ALL` to ensure nobody can
 change the input or output details.  She gives the partially-signed
 transaction to Nemo who signs his inputs the same way and passes it
 to Neminem, who also signs it the same way.  Neminem then broadcasts
-the transaction to the peer-to-peer network, mixing all of the millibitcoins in
+the transaction to the peer-to-peer network, mixing all of the millifabcoins in
 a single transaction.
 
 As you can see in the illustration, there's no way for anyone besides

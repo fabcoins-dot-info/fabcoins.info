@@ -9,17 +9,17 @@ http://opensource.org/licenses/MIT.
 
 {% autocrossref %}
 
-The block chain provides Bitcoin's public ledger, an ordered and timestamped record
+The block chain provides Fabcoin's public ledger, an ordered and timestamped record
 of transactions. This system is used to protect against double spending
 and modification of previous transaction records.
 
-Each full node in the Bitcoin network independently stores a block chain
+Each full node in the Fabcoin network independently stores a block chain
 containing only blocks validated by that node. When several nodes all
 have the same blocks in their block chain, they are considered to be in
 [consensus][/en/glossary/consensus]{:#term-consensus}{:.term}. The validation rules these
 nodes follow to maintain consensus are called [consensus
 rules][/en/glossary/consensus-rules]{:#term-consensus-rules}{:.term}. This section describes many of
-the consensus rules used by Bitcoin Core.
+the consensus rules used by Fabcoin Core.
 
 {% endautocrossref %}
 
@@ -42,9 +42,9 @@ stores the hash of the previous block's header, chaining the blocks
 together. This ensures a transaction cannot be modified without
 modifying the block that records it and all following blocks.
 
-Transactions are also chained together. Bitcoin wallet software gives
+Transactions are also chained together. Fabcoin wallet software gives
 the impression that satoshis are sent from and to wallets, but
-bitcoins really move from transaction to transaction. Each
+fabcoins really move from transaction to transaction. Each
 transaction spends the satoshis previously received in one or more earlier
 transactions, so the input of one transaction is the output of a
 previous transaction.
@@ -69,7 +69,7 @@ Ignoring coinbase transactions (described later), if the value of a
 transaction's outputs exceed its inputs, the transaction will be
 rejected---but if the inputs exceed the value of the outputs, any
 difference in value may be claimed as a [transaction
-fee][/en/glossary/transaction-fee]{:#term-transaction-fee}{:.term} by the Bitcoin
+fee][/en/glossary/transaction-fee]{:#term-transaction-fee}{:.term} by the Fabcoin
 [miner][/en/glossary/mining]{:#term-miner}{:.term} who creates the block containing that
 transaction.
 For example, in the illustration above, each transaction spends 10,000 satoshis
@@ -84,7 +84,7 @@ satoshi transaction fee.
 {% autocrossref %}
 
 The block chain is collaboratively maintained by anonymous peers on the network, so
-Bitcoin requires that each block prove a significant amount of work was invested in
+Fabcoin requires that each block prove a significant amount of work was invested in
 its creation to ensure that untrustworthy peers who want to modify past blocks have
 to work harder than honest peers who only want to add new blocks to the
 block chain.
@@ -94,7 +94,7 @@ in any block without modifying all following blocks. As a
 result, the cost to modify a particular block increases with every new block
 added to the block chain, magnifying the effect of the proof of work.
 
-The [proof of work][/en/glossary/proof-of-work]{:#term-proof-of-work}{:.term} used in Bitcoin
+The [proof of work][/en/glossary/proof-of-work]{:#term-proof-of-work}{:.term} used in Fabcoin
 takes advantage of the apparently random nature of cryptographic hashes.
 A good cryptographic hash algorithm converts arbitrary data into a
 seemingly-random number. If the data is modified in any way and
@@ -112,7 +112,7 @@ In the example given above, you will produce a successful hash on average every 
 You can even estimate the probability
 that a given hash attempt will generate a number below the [target][/en/glossary/nbits]{:#term-target}{:.term}
 threshold.
-Bitcoin assumes a linear probability that the lower it makes the target threshold, the more hash attempts (on average) will need to be tried.
+Fabcoin assumes a linear probability that the lower it makes the target threshold, the more hash attempts (on average) will need to be tried.
 
 New blocks will only be added to the block chain if their hash is at
 least as challenging as a [difficulty][/en/glossary/difficulty]{:#term-difficulty}{:.term} value expected by the consensus protocol.
@@ -130,14 +130,14 @@ of the first and last of those last 2,016 blocks. The ideal value is
   difficulty value is decreased proportionally (by as much as 75%) for
   the same reason.
 
-(Note: an off-by-one error in the Bitcoin Core implementation causes the
+(Note: an off-by-one error in the Fabcoin Core implementation causes the
 difficulty to be updated every 2,01*6* blocks using timestamps from only
 2,01*5* blocks, creating a slight skew.)
 
 Because each block header must hash to a value below the target
 threshold, and because each block is linked to the block that
 preceded it, it requires (on average) as much hashing power to
-propagate a modified block as the entire Bitcoin network expended
+propagate a modified block as the entire Fabcoin network expended
 between the time the original block was created and the present time.
 Only if you acquired a majority of the network's hashing power
 could you reliably execute such a [51 percent attack][/en/glossary/51-percent-attack]{:#term-51-attack}{:.term} against
@@ -158,11 +158,11 @@ the merkle tree.
 
 {% autocrossref %}
 
-Any Bitcoin miner who successfully hashes a block header to a value
+Any Fabcoin miner who successfully hashes a block header to a value
 below the target threshold can add the entire block to the block chain
 (assuming the block is otherwise valid).
 These blocks are commonly addressed
-by their [block height][/en/glossary/block-height]{:#term-block-height}{:.term}---the number of blocks between them and the first Bitcoin
+by their [block height][/en/glossary/block-height]{:#term-block-height}{:.term}---the number of blocks between them and the first Fabcoin
 block (block 0, most commonly known as the [genesis block][/en/glossary/genesis-block]{:#term-genesis-block}{:.term}). For example,
 block 2016 is where difficulty could have first been adjusted.
 
@@ -317,7 +317,7 @@ a hard or soft fork. For example, "increasing the block size above 1 MB
 requires a hard fork." In this example, an actual block chain fork is
 not required---but it is a possible outcome.
 
-Consensus rule changes may be activated in various ways. During Bitcoin's 
+Consensus rule changes may be activated in various ways. During Fabcoin's 
 first two years, Satoshi Nakamoto performed several soft forks by just 
 releasing the backwards-compatible change in a client that began immediately 
 enforcing the new rule. Multiple soft forks such as BIP30 have
@@ -339,7 +339,7 @@ accidental hard fork, resolved by temporary downgrading the capabilities
 of upgraded nodes, and an intentional hard fork when the temporary
 downgrade was removed. A document from Gavin Andresen outlines [how
 future rule changes may be
-implemented](https://gist.github.com/gavinandresen/2355445).
+implemented](http://gist.github.com/gavinandresen/2355445).
 
 {% endautocrossref %}
 
@@ -359,7 +359,7 @@ provide incomplete information.
 
 <!-- paragraph below based on src/main.cpp CheckForkWarningConditions() -->
 
-Bitcoin Core includes code that detects a hard fork by looking at block
+Fabcoin Core includes code that detects a hard fork by looking at block
 chain proof of work. If a non-upgraded node receives block chain headers
 demonstrating at least six blocks more proof of work than the best chain
 it considers valid, the node reports a warning in the `getnetworkinfo` RPC
@@ -370,7 +370,7 @@ best block chain.
 Full nodes can also check block and transaction version numbers. If the
 block or transaction version numbers seen in several recent blocks are
 higher than the version numbers the node uses, it can assume it doesn't
-use the current consensus rules. Bitcoin Core reports this situation 
+use the current consensus rules. Fabcoin Core reports this situation 
 through the `getnetworkinfo` RPC and `-alertnotify` command if set.
 
 In either case, block and transaction data should not be relied upon 

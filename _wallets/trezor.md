@@ -13,8 +13,8 @@ platform:
     os:
       - name: hardware
         text: "wallettrezor"
-        link: "https://trezor.io/"
-        source: "https://github.com/trezor/"
+        link: "http://trezor.io/"
+        source: "http://github.com/trezor/"
         screenshot: "trezor.png"
         check:
           control: "checkgoodcontrolfull"

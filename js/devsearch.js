@@ -8,7 +8,7 @@ var search_data = {{ site.devsearches_json }}
 
 {% raw %}
 // code adapted from http://jqueryui.com/autocomplete/#categories
-// MIT license: https://jquery.org/license/
+// MIT license: http://jquery.org/license/
 
 $.widget("custom.catcomplete", $.ui.autocomplete, {
   _create: function() {

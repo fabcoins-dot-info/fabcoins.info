@@ -39,8 +39,8 @@ optional:
         - SIGHASH_SINGLE (which signs this input, its corresponding output, and other inputs partially)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[SIGHASH_ANYONECANPAY](/en/developer-guide#term-sighash-anyonecanpay) --- Bitcoin.org Developer Guide"
-        - "[OP_CHECKSIG](https://en.bitcoin.it/wiki/OP_CHECKSIG) --- Bitcoin Wiki"
-        - "[Contracts](https://en.bitcoin.it/wiki/Contracts#Theory) --- Bitcoin Wiki"
+        - "[SIGHASH_ANYONECANPAY](/en/developer-guide#term-sighash-anyonecanpay) --- Fabcoin.org Developer Guide"
+        - "[OP_CHECKSIG](http://en.fabcoin.it/wiki/OP_CHECKSIG) --- Fabcoin Wiki"
+        - "[Contracts](http://en.fabcoin.it/wiki/Contracts#Theory) --- Fabcoin Wiki"
 
 ---

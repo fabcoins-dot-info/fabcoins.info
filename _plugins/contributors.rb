@@ -1,7 +1,7 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
-#contributors.rb fetches Bitcoin Core contributors list and set
+#contributors.rb fetches Fabcoin Core contributors list and set
 #site.contributors array. This is later used to display the
 #list of contributors on the "Development" page.
 
@@ -19,7 +19,7 @@ module Jekyll
       data = []
       while page < 10 do
         begin
-          ar = JSON.parse(open("https://api.github.com/repos/"+repo+"/contributors?page=#{page}&per_page=100","User-Agent"=>"Ruby/#{RUBY_VERSION}").read)
+          ar = JSON.parse(open("http://api.github.com/repos/"+repo+"/contributors?page=#{page}&per_page=100","User-Agent"=>"Ruby/#{RUBY_VERSION}").read)
         # Prevent any error to stop the build process, return an empty array instead
         rescue
           print 'GitHub API Call Failed!'
@@ -130,7 +130,7 @@ module Jekyll
         File.open(corecontributors_cache,'w') do |file|
           Marshal.dump(site.corecontributors, file)
         end
-        site.sitecontributors = contributors('bitcoin-dot-org/bitcoin.org',site.config['aliases'])
+        site.sitecontributors = contributors('bitcoin-dot-org/bitcoin.info',site.config['aliases'])
         File.open(sitecontributors_cache,'w') do |file|
           Marshal.dump(site.sitecontributors, file)
         end

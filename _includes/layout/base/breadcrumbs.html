@@ -13,7 +13,7 @@ http://opensource.org/licenses/MIT.
             {% if forloop.first %}{{synonym}}{% endif %}
           {% endfor %}
         {% when "RELEASE" %}
-          {% comment %}<!-- for Bitcoin Core releases, show the version number -->{% endcomment %}
+          {% comment %}<!-- for Fabcoin Core releases, show the version number -->{% endcomment %}
           {{page.required_version}}
         {% when "dev docs" %}{% translate pagetitle developer-documentation %}
         {% when "dev docs glossary" %}{% translate docreferencemenuglossary developer-documentation %}
@@ -25,13 +25,13 @@ http://opensource.org/licenses/MIT.
     {% else %}
       {% case crumb %}
         {% comment %}/// Alphabetical order by crumb \\\{% endcomment %}
-        {% when "bcc" %}<a href="/en/bitcoin-core/">Core</a>
-        {% when "bcc contribute" %}<a href="/en/bitcoin-core/contribute/">Contribute</a>
-        {% when "bcc documentation" %}<a href="/en/bitcoin-core/help#documentation">Documentation</a>
-        {% when "bcc features" %}<a href="/en/bitcoin-core/features/">Features</a>
-        {% when "bcc help" %}<a href="/en/bitcoin-core/help">Help</a>
+        {% when "bcc" %}<a href="/en/fabcoin-core/">Core</a>
+        {% when "bcc contribute" %}<a href="/en/fabcoin-core/contribute/">Contribute</a>
+        {% when "bcc documentation" %}<a href="/en/fabcoin-core/help#documentation">Documentation</a>
+        {% when "bcc features" %}<a href="/en/fabcoin-core/features/">Features</a>
+        {% when "bcc help" %}<a href="/en/fabcoin-core/help">Help</a>
         {% when "bcc news" %}<a href="/en/version-history">News</a>
-        {% when "bitcoin" %}<a href="/{{ page.lang }}/">{% translate bitcoin vocabulary %}</a>
+        {% when "fabcoin" %}<a href="/{{ page.lang }}/">{% translate fabcoin vocabulary %}</a>
         {% when "dev docs" %}<a href="/{{ page.lang }}/developer-documentation">{% translate pagetitle developer-documentation %}</a>
         {% when "dev docs glossary" %}<a href="/{{ page.lang }}/developer-glossary">{% translate docreferencemenuglossary developer-documentation %}</a>
         {% when "dev docs examples" %}<a href="/{{ page.lang }}/developer-examples">{% translate docreferencemenuexamples developer-documentation %}</a>

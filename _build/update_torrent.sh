@@ -7,8 +7,8 @@ SAVEIFS=$IFS
 IFS=$(echo -en "\n\b")
 
 BINDIR='/var/www/bin'
-DATADIR='/bitcoin.org/torrent'
-PREFIX='bitcoin-core-'
+DATADIR='/fabcoins.info/torrent'
+PREFIX='fabcoin-core-'
 
 # Stop script in case a single command fails
 set -e
@@ -38,8 +38,8 @@ done
 
 # Get current last modification time for the torrent.
 lasttorrenttime=0
-if [[ -e "$BINDIR/$PREFIX$version/bitcoin-$version.torrent" ]]; then
-	lasttorrenttime=`stat -c%Y "$BINDIR/$PREFIX$version/bitcoin-$version.torrent"`
+if [[ -e "$BINDIR/$PREFIX$version/fabcoin-$version.torrent" ]]; then
+	lasttorrenttime=`stat -c%Y "$BINDIR/$PREFIX$version/fabcoin-$version.torrent"`
 fi
 
 # Get current last modification time for binary files.
@@ -76,7 +76,7 @@ if [[ $lastfilestime > $lastminute ]]; then
 fi
 
 # Abort if torrent file exists, version is unchanged and binary files are unchanged.
-if [[ -e "$BINDIR/$PREFIX$version/bitcoin-$version.torrent" && $lasthash == "$version;"* && $lasttorrenttime > $lastfilestime ]]; then
+if [[ -e "$BINDIR/$PREFIX$version/fabcoin-$version.torrent" && $lasthash == "$version;"* && $lasttorrenttime > $lastfilestime ]]; then
 	exit
 fi
 
@@ -91,18 +91,18 @@ for f in `find "$BINDIR/$PREFIX$version" -maxdepth 1 ! -path "$BINDIR/$PREFIX$ve
 done
 
 # Update torrent modification time and abort if files are unchanged.
-if [[ $currenthash == $lasthash && -e "$BINDIR/$PREFIX$version/bitcoin-$version.torrent" ]]; then
-	touch "$BINDIR/$PREFIX$version/bitcoin-$version.torrent"
+if [[ $currenthash == $lasthash && -e "$BINDIR/$PREFIX$version/fabcoin-$version.torrent" ]]; then
+	touch "$BINDIR/$PREFIX$version/fabcoin-$version.torrent"
 	exit
 fi
 
 # Save previous torrent file.
-if [[ -e "$BINDIR/$PREFIX$version/bitcoin-$version.torrent" ]]; then
+if [[ -e "$BINDIR/$PREFIX$version/fabcoin-$version.torrent" ]]; then
 	n=0
-	while [[ -e $DATADIR/bitcoin-$version.torrent.$n ]]; do
+	while [[ -e $DATADIR/fabcoin-$version.torrent.$n ]]; do
 		n=$[n+1]
 	done
-	mv "$BINDIR/$PREFIX$version/bitcoin-$version.torrent" "$DATADIR/bitcoin-$version.torrent.$n"
+	mv "$BINDIR/$PREFIX$version/fabcoin-$version.torrent" "$DATADIR/fabcoin-$version.torrent.$n"
 fi
 
 # Copy files non-recursively to temporary directory.
@@ -110,7 +110,7 @@ tmpdir=`mktemp -d`
 rsync -rt -f '- /*/' --delete "$BINDIR/$PREFIX$version/" "$tmpdir/$PREFIX$version/"
 
 # Build new torrent file.
-buildtorrent -a "udp://tracker.openbittorrent.com:80/announce" -A "udp://tracker.openbittorrent.com:80/announce,udp://tracker.publicbt.com:80/announce,udp://tracker.ccc.de:80/announce,udp://tracker.coppersurfer.tk:6969,udp://open.demonii.com:1337" -w "https://bitcoin.org/bin/" -D -C "$tmpdir/$PREFIX$version" "$BINDIR/$PREFIX$version/bitcoin-$version.torrent"
+buildtorrent -a "udp://tracker.openbittorrent.com:80/announce" -A "udp://tracker.openbittorrent.com:80/announce,udp://tracker.publicbt.com:80/announce,udp://tracker.ccc.de:80/announce,udp://tracker.coppersurfer.tk:6969,udp://open.demonii.com:1337" -w "http://fabcoins.info/bin/" -D -C "$tmpdir/$PREFIX$version" "$BINDIR/$PREFIX$version/fabcoin-$version.torrent"
 
 # Update last combined hash and version.
 echo $currenthash > $DATADIR/lasthash

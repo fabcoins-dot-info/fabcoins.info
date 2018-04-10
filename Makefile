@@ -58,7 +58,7 @@ pre-build-tests-fast: check-for-non-ascii-urls check-for-wrong-filename-assignme
     check-for-missing-copyright-licenses \
     check-bundle \
     check-for-english-in-en-dir \
-    check-for-consistent-bitcoin-core-titles \
+    check-for-consistent-fabcoin-core-titles \
     check-for-too-many-wallets-on-one-platform \
     check-validate-yaml \
 
@@ -78,7 +78,7 @@ pre-build-tests: pre-build-tests-fast
 
 ## All post-build tests, including those which might take multiple minutes
 post-build-tests: post-build-tests-fast \
-    check-for-broken-bitcoin-core-download-links \
+    check-for-broken-fabcoin-core-download-links \
     check-html-proofer
 
 ## All manual updates to content that should be run by a human. This
@@ -222,9 +222,9 @@ check-for-missing-copyright-licenses:
 check-for-missing-rpc-summaries:
 ## Make sure the Quick Reference section has a summary for each RPC we
 ## have documented
-	$S for f in _data/devdocs/en/bitcoin-core/rpcs/rpcs/*.md ;\
-	do grep -q "\[$$( grep '^##### ' $$f | sed 's/^##### *\([a-zA-Z]*\).*/\1/')\]\[" _data/devdocs/en/bitcoin-core/rpcs/quick-reference.md \
-	|| echo 'missing summary for '$$f', you need to add the summary to _data/devdocs/en/bitcoin-core/rpcs/quick-ref.md and run make manual-updates' \
+	$S for f in _data/devdocs/en/fabcoin-core/rpcs/rpcs/*.md ;\
+	do grep -q "\[$$( grep '^##### ' $$f | sed 's/^##### *\([a-zA-Z]*\).*/\1/')\]\[" _data/devdocs/en/fabcoin-core/rpcs/quick-reference.md \
+	|| echo 'missing summary for '$$f', you need to add the summary to _data/devdocs/en/fabcoin-core/rpcs/quick-ref.md and run make manual-updates' \
 	; done | eval $(ERROR_ON_OUTPUT)
 
 manual-update-summaries-file:
@@ -241,19 +241,19 @@ manual-check-diff-sha256sums:
 ## see if any files were built differently upstream from what we have
 ## locally
 	$S echo "Files listed below (if any) have different hashes"
-	$S curl -s -o- https://bitcoin.org/sha256sums.txt \
+	$S curl -s -o- http://fabcoins.info/sha256sums.txt \
 	  | sort - _site/sha256sums.txt \
 	  | uniq -u \
 	  | sort -k2
 
-check-for-broken-bitcoin-core-download-links:
-## Ensure that the links from the Download page to the current Bitcoin
+check-for-broken-fabcoin-core-download-links:
+## Ensure that the links from the Download page to the current Fabcoin
 ## Core binaries are correct
 	$S grep 'class="dl"' _site/en/download.html \
 	  | sed 's/.*href="//; s/".*//' \
 	  | while read url ; do \
 	    if [ "$${url##http*}" ]; then \
-	      curl -sI "https://bitcoin.org$$url" ; \
+	      curl -sI "http://fabcoins.info$$url" ; \
 	    else \
 	      curl -sI "$$url" ; \
 	    fi | grep -q '200 OK' || echo "Error: Could not retrieve $$url" ; \
@@ -290,10 +290,10 @@ check-for-english-in-en-dir:
 ## All pages must have page.lang set to work properly with the site templates
 	$S grep -rl -- '---' en/ | xargs grep -L '^ *lang: *en' | eval $(ERROR_ON_OUTPUT)
 
-check-for-consistent-bitcoin-core-titles:
-## Ensure all page titles in the en/bitcoin-core/ hierarchy mention
-## Bitcoin Core
-	$S grep -r -L '^title:.*Bitcoin Core' en/bitcoin-core/ | eval $(ERROR_ON_OUTPUT)
+check-for-consistent-fabcoin-core-titles:
+## Ensure all page titles in the en/fabcoin-core/ hierarchy mention
+## Fabcoin Core
+	$S grep -r -L '^title:.*Fabcoin Core' en/fabcoin-core/ | eval $(ERROR_ON_OUTPUT)
 
 check-for-too-many-wallets-on-one-platform:
 	$S for platform in desktop windows mac linux mobile android ios blackberry windowsphone web hardware \

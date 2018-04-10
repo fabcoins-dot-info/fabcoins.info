@@ -9,7 +9,7 @@
 <g id="graph1" class="graph" transform="scale(0.765306 0.765306) rotate(0) translate(4 140)">
 <title>_anonymous_0</title>
 <polygon fill="white" stroke="white" points="-4,5 -4,-140 585,-140 585,5 -4,5"/>
-<text text-anchor="middle" x="290" y="-8.4" font-family="Sans" font-size="14.00">Pool&#45;Based Bitcoin Mining Workflow</text>
+<text text-anchor="middle" x="290" y="-8.4" font-family="Sans" font-size="14.00">Pool&#45;Based Fabcoin Mining Workflow</text>
 <!-- p2pnetwork -->
 <g id="node1" class="node"><title>p2pnetwork</title>
 <polygon fill="none" stroke="black" points="77,-100 1,-100 1,-58 77,-58 77,-100"/>

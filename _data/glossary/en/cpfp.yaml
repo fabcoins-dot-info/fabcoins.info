@@ -24,6 +24,6 @@ optional:
         - RBF
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[More intelligent transaction selection for mining](https://bitcoincore.org/en/2016/08/23/release-0.13.0/#more-intelligent-transaction-selection-for-mining) --- Bitcoin Core 0.13.0 release (BitcoinCore.org)"
+        - "[More intelligent transaction selection for mining](http://fabcoincore.org/en/2016/08/23/release-0.13.0/#more-intelligent-transaction-selection-for-mining) --- Fabcoin Core 0.13.0 release (FabcoinCore.org)"
 
 ---

@@ -48,7 +48,7 @@ The opcodes used in the pubkey scripts of standard transactions are:
   the next values (signatures) plus one extra value.
 
     The "one extra value" it consumes is the result of an off-by-one
-    error in the Bitcoin Core implementation. This value is not used, so
+    error in the Fabcoin Core implementation. This value is not used, so
     signature scripts prefix the list of secp256k1 signatures with a
     single OP_0 (0x00).
 
@@ -67,9 +67,9 @@ The opcodes used in the pubkey scripts of standard transactions are:
 
 * [`OP_RETURN`][op_return]{:#term-op-return}{:.term} terminates the script in failure when executed.
 
-A complete list of opcodes can be found on the Bitcoin Wiki [Script
+A complete list of opcodes can be found on the Fabcoin Wiki [Script
 Page][wiki script], with an authoritative list in the `opcodetype` enum
-of the Bitcoin Core [script header file][core script.h]
+of the Fabcoin Core [script header file][core script.h]
 
 ![Warning icon](/img/icons/icon_warning.svg)
 **<span id="signature_script_modification_warning">Signature script modification warning</span>:**
@@ -131,7 +131,7 @@ Failure, aborted: two signature matches required but none found so
 
 {% autocrossref %}
 
-The hashes used in P2PKH and P2SH outputs are commonly encoded as Bitcoin
+The hashes used in P2PKH and P2SH outputs are commonly encoded as Fabcoin
 addresses.  This is the procedure to encode those hashes and decode the
 addresses.
 
@@ -142,11 +142,11 @@ format used in raw transactions (described in a [following
 sub-section][raw transaction format]).  Taking the resulting hash:
 
 1. Add an address version byte in front of the hash.  The version
-bytes commonly used by Bitcoin are:
+bytes commonly used by Fabcoin are:
 
-    * 0x00 for P2PKH addresses on the main Bitcoin network (mainnet)
+    * 0x00 for P2PKH addresses on the main Fabcoin network (mainnet)
 
-    * 0x6f for P2PKH addresses on the Bitcoin testing network (testnet)
+    * 0x6f for P2PKH addresses on the Fabcoin testing network (testnet)
 
     * 0x05 for P2SH addresses on mainnet
 
@@ -161,10 +161,10 @@ bytes commonly used by Bitcoin are:
 4. Append the checksum to the version and hash, and encode it as a base58
    string: <!--[-->`BASE58(version . hash . checksum)`<!--]-->
  
-Bitcoin's base58 encoding, called [Base58Check][/en/glossary/base58check]{:#term-base58check}{:.term} may not match other implementations. Tier
-Nolan provided the following example encoding algorithm to the Bitcoin
+Fabcoin's base58 encoding, called [Base58Check][/en/glossary/base58check]{:#term-base58check}{:.term} may not match other implementations. Tier
+Nolan provided the following example encoding algorithm to the Fabcoin
 Wiki [Base58Check
-encoding](https://en.bitcoin.it/wiki/Base58Check_encoding) page under
+encoding](http://en.fabcoin.it/wiki/Base58Check_encoding) page under
 the [Creative Commons Attribution 3.0 license][]:
 
 {% highlight c %}
@@ -187,7 +187,7 @@ repeat(number_of_leading_zero_bytes_in_hash)
 output_string.reverse();
 {% endhighlight %}
 
-Bitcoin's own code can be traced using the [base58 header
+Fabcoin's own code can be traced using the [base58 header
 file][core base58.h].
 
 To convert addresses back into hashes, reverse the base58 encoding, extract
@@ -201,16 +201,16 @@ against the extracted checksum, and then remove the version byte.
 
 {% autocrossref %}
 
-Bitcoin transactions are broadcast between peers
+Fabcoin transactions are broadcast between peers
 in a serialized byte format, called [raw format][/en/glossary/serialized-transaction]{:#term-raw-format}{:.term}.
 It is this form of a transaction which is SHA256(SHA256()) hashed to create
 the TXID and, ultimately, the merkle root of a block containing the
 transaction---making the transaction format part of the consensus rules.
 
-Bitcoin Core and many other tools print and accept raw transactions
+Fabcoin Core and many other tools print and accept raw transactions
 encoded as hex.
 
-As of Bitcoin Core 0.9.3 (October 2014), all transactions use the
+As of Fabcoin Core 0.9.3 (October 2014), all transactions use the
 version 1 format described below. (Note: transactions in the block chain
 are allowed to list a higher version number to permit soft forks, but
 they are treated as version 1 transactions by current software.)
@@ -247,7 +247,7 @@ Each non-coinbase input spends an outpoint from a previous transaction.
 | 36       | previous_output  | outpoint             | The previous outpoint being spent.  See description of outpoint below.
 | *Varies* | script bytes     | compactSize uint     | The number of bytes in the signature script.  Maximum is 10,000 bytes.
 | *Varies* | signature script | char[]               | A script-language script which satisfies the conditions placed in the outpoint's pubkey script.  Should only contain data pushes; see the [signature script modification warning][].
-| 4        | sequence         | uint32_t             | Sequence number.  Default for Bitcoin Core and almost all other programs is 0xffffffff.
+| 4        | sequence         | uint32_t             | Sequence number.  Default for Fabcoin Core and almost all other programs is 0xffffffff.
 
 {% endautocrossref %}
 
@@ -310,7 +310,7 @@ to a new pay-to-pubkey-hash (P2PKH) output.
 | ffffffff ................................. Sequence number: UINT32_MAX
 
 01 ......................................... Number of outputs
-| f0ca052a01000000 ......................... Satoshis (49.99990000 BTC)
+| f0ca052a01000000 ......................... Satoshis (49.99990000 FAB)
 |
 | 19 ....................................... Bytes in pubkey script: 25
 | | 76 ..................................... OP_DUP
@@ -376,7 +376,7 @@ An itemized coinbase transaction:
 | 00000000 ............................ Sequence
 
 01 .................................... Output count
-| 2c37449500000000 .................... Satoshis (25.04275756 BTC)
+| 2c37449500000000 .................... Satoshis (25.04275756 FAB)
 | 1976a914a09be8040cbf399926aeb1f4
 | 70c37d1341f3b46588ac ................ P2PKH script
 | 00000000 ............................ Locktime
@@ -393,10 +393,10 @@ The raw transaction format and several peer-to-peer network messages use
 a type of variable-length integer to indicate the number of bytes in a
 following piece of data.
 
-Bitcoin Core code and this document refers to these variable length
+Fabcoin Core code and this document refers to these variable length
 integers as compactSize. Many other documents refer to them as var_int
 or varInt, but this risks conflation with other variable-length integer
-encodings---such as the CVarInt class used in Bitcoin Core for
+encodings---such as the CVarInt class used in Fabcoin Core for
 serializing data to disk.  Because it's used in the transaction format,
 the format of compactSize unsigned integers is part of the consensus
 rules.

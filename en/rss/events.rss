@@ -8,13 +8,13 @@ lang: en
 <rss version="2.0">
 <!-- Note: this file is built non-deterministically -->
 <channel>
-	<title>Bitcoin conferences and events</title>
-	<link>https://bitcoin.org/en/events</link>
-	<description>This RSS feed allows to follow Bitcoin events and conferences.</description>
+	<title>Fabcoin conferences and events</title>
+	<link>http://fabcoins.info/en/events</link>
+	<description>This RSS feed allows to follow Fabcoin events and conferences.</description>
 	<image>
-		<title>Bitcoin conferences and events</title>
-		<url>https://bitcoin.org/img/icons/logo_rss.png</url>
-		<link>https://bitcoin.org/en/events</link>
+		<title>Fabcoin conferences and events</title>
+		<url>http://fabcoins.info/img/icons/logo_rss.png</url>
+		<link>http://fabcoins.info/en/events</link>
 	</image>
         {% assign date_sorted_conferences = site.conferences | sort: 'date' %}
 	{% for p in date_sorted_conferences %}

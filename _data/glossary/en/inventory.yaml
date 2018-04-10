@@ -8,7 +8,7 @@ required:
 
     summary_max_255_characters_no_formatting: >
         A data type identifier and a hash; used to identify transactions
-        and blocks available for download through the Bitcoin P2P network.
+        and blocks available for download through the Fabcoin P2P network.
 
     synonyms_shown_in_glossary_capitalize_first_letter:
         - Inventory
@@ -21,7 +21,7 @@ optional:
         - Inv message (one of the P2P messages that transmits inventories)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Inventory](/en/developer-reference#term-inventory) --- Bitcoin.org Developer Reference"
-        - "[Inventory vectors](https://en.bitcoin.it/wiki/Protocol_documentation#Inventory_Vectors) --- Bitcoin Wiki"
+        - "[Inventory](/en/developer-reference#term-inventory) --- Fabcoin.org Developer Reference"
+        - "[Inventory vectors](http://en.fabcoin.it/wiki/Protocol_documentation#Inventory_Vectors) --- Fabcoin Wiki"
 
 ---

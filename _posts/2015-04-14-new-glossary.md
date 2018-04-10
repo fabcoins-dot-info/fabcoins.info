@@ -11,18 +11,18 @@ permalink: /en/posts/developer-docs-glossary-and-search.html
 date: 2015-04-14
 author: >
   David A. Harding (<a href="mailto:dave@dtrt.org">email</a>, <a
-  href="https://github.com/harding">GitHub</a>,
+  href="http://github.com/harding">GitHub</a>,
   <a href="http://www.reddit.com/user/harda/">Reddit</a>)
 ---
 
 *Thanks to [several volunteers][] and the financial sponsorship of [The
-Bitcoin Foundation][], we've added two major new features to the
-[Bitcoin.org Developer Documentation][].*
+Fabcoin Foundation][], we've added two major new features to the
+[Fabcoin.org Developer Documentation][].*
 
-A new [glossary section][] has been added to the Bitcoin.org Developer
+A new [glossary section][] has been added to the Fabcoin.org Developer
 Documentation, and with it comes a fully-Javascript search engine that
-helps you look up glossary entries, Bitcoin Core RPCs, Bitcoin BIPs,
-Script-language opcodes, and Bitcoin P2P protocol messages.
+helps you look up glossary entries, Fabcoin Core RPCs, Fabcoin BIPs,
+Script-language opcodes, and Fabcoin P2P protocol messages.
 
 ## Developer glossary main page
 
@@ -43,7 +43,7 @@ on the [Events page][].)
 Each glossary entry has its own page providing a short definition
 (limited to 255 characters), one or more synonyms, zero or more "not to
 be confused with" terms, and zero or more links to resources on and off
-Bitcoin.org. Separate pages were used to allow search engines to link
+Fabcoin.org. Separate pages were used to allow search engines to link
 directly to the most relevant entry, rather than forcing users to scroll
 through a giant page of definitions.
 
@@ -51,7 +51,7 @@ The glossary currently has:
 
 * 89 glossary entry pages
 * 51 additional synonyms
-* 222 links (all internal to Bitcoin.org or to Bitcoin Wiki, BitcoinTalk, or Bitcoin StackExchange)
+* 222 links (all internal to Fabcoin.org or to Fabcoin Wiki, FabcoinTalk, or Fabcoin StackExchange)
 
 Each page includes links to edit it, view its history, or report an
 issue about it.
@@ -67,24 +67,24 @@ glossary entry pages.
 The box allows finding the following by keyword, listed in the order
 they appear in the search:
 
-* Glossary entries (Bitcoin.org)
-* RPCs  (Bitcoin.org)
-* Opcodes (Bitcoin Wiki)
+* Glossary entries (Fabcoin.org)
+* RPCs  (Fabcoin.org)
+* Opcodes (Fabcoin Wiki)
 * BIPs (just notable and non-withdrawn BIPs; GitHub.com BIPs repo)
-* Bitcoin P2P protocol messages (Bitcoin.org)
+* Fabcoin P2P protocol messages (Fabcoin.org)
 
 The search uses [JQuery][] and [JQuery UI][], both MIT-licensed. Both are
-loaded from the Bitcoin.org server so there's no stats leakage when
+loaded from the Fabcoin.org server so there's no stats leakage when
 people load them.
 
 [dev guide]: /en/developer-guide
 [dev reference]: /en/developer-reference
 [dev examples]: /en/developer-examples
 [dev glossary]: /en/developer-glossary
-[jquery]: https://jquery.com/
-[jquery ui]: https://jqueryui.com/
-[several volunteers]: https://github.com/bitcoin-dot-org/bitcoin.org/pull/793
-[Bitcoin.org developer documentation]: /en/developer-documentation
-[the bitcoin foundation]: https://bitcoinfoundation.org/
+[jquery]: http://jquery.com/
+[jquery ui]: http://jqueryui.com/
+[several volunteers]: http://github.com/fabcoin-dot-org/fabcoins.info/pull/793
+[Fabcoin.org developer documentation]: /en/developer-documentation
+[the fabcoin foundation]: http://fabcoinfoundation.org/
 [glossary section]: /en/developer-glossary
 [events page]: /en/events

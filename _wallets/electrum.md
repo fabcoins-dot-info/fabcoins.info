@@ -12,8 +12,8 @@ platform:
     name: desktop
     default: &DEFAULT
       text: "walletelectrum"
-      link: "https://electrum.org"
-      source: "https://github.com/spesmilo/electrum"
+      link: "http://electrum.org"
+      source: "http://github.com/spesmilo/electrum"
       screenshot: "electrum.png"
       check:
         control: "checkgoodcontrolfull"
@@ -38,8 +38,8 @@ platform:
     os:
       - name: android
         text: "walletelectrum"
-        link: "https://play.google.com/store/apps/details?id=org.electrum.electrum"
-        source: "https://github.com/spesmilo/electrum"
+        link: "http://play.google.com/store/apps/details?id=org.electrum.electrum"
+        source: "http://github.com/spesmilo/electrum"
         screenshot: "electrumandroid.png"
         check:
           control: "checkgoodcontrolfull"

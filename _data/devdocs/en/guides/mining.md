@@ -30,13 +30,13 @@ hard to modify.  Mining today takes on two forms:
 
 {% autocrossref %}
 
-As illustrated below, solo miners typically use `bitcoind` to get new
+As illustrated below, solo miners typically use `fabcoind` to get new
 transactions from the network. Their mining software periodically polls
-`bitcoind` for new transactions using the `getblocktemplate` RPC, which
+`fabcoind` for new transactions using the `getblocktemplate` RPC, which
 provides the list of new transactions plus the public key to which the
 coinbase transaction should be sent.
 
-![Solo Bitcoin Mining](/img/dev/en-solo-mining-overview.svg)
+![Solo Fabcoin Mining](/img/dev/en-solo-mining-overview.svg)
 
 The mining software constructs a block using the template (described below) and creates a
 block header. It then sends the 80-byte block header to its mining
@@ -52,7 +52,7 @@ coinbase field of the coinbase transaction.
 On the other hand, if a hash is found below the target threshold, the
 mining hardware returns the block header with the successful nonce to
 the mining software. The mining software combines the header with the
-block and sends the completed block to `bitcoind` to be broadcast to the network for addition to the
+block and sends the completed block to `fabcoind` to be broadcast to the network for addition to the
 block chain.
 
 {% endautocrossref %}
@@ -65,11 +65,11 @@ block chain.
 Pool miners follow a similar workflow, illustrated below, which allows
 mining pool operators to pay miners based on their share of the work
 done. The mining pool gets new transactions from the network using
-`bitcoind`. Using one of the methods discussed later, each miner's mining
+`fabcoind`. Using one of the methods discussed later, each miner's mining
 software connects to the pool and requests the information it needs to
 construct block headers.
 
-![Pooled Bitcoin Mining](/img/dev/en-pooled-mining-overview.svg)
+![Pooled Fabcoin Mining](/img/dev/en-pooled-mining-overview.svg)
 
 In pooled mining, the mining pool sets the target threshold a few orders
 of magnitude higher (less difficult) than the network
@@ -118,7 +118,7 @@ are used to keep ASIC hashers working at maximum capacity,
 
 {% autocrossref %}
 
-The simplest and earliest method was the now-deprecated Bitcoin Core
+The simplest and earliest method was the now-deprecated Fabcoin Core
 `getwork` RPC, which constructs a header for the miner directly. Since a
 header only contains a single 4-byte nonce good for about 4 gigahashes,
 many modern miners need to make dozens or hundreds of `getwork` requests
@@ -132,13 +132,13 @@ discourage or disallow its use.
 
 {% autocrossref %}
 
-An improved method is the Bitcoin Core `getblocktemplate` RPC. This
+An improved method is the Fabcoin Core `getblocktemplate` RPC. This
 provides the mining software with much more information:
 
 1. The information necessary to construct a coinbase transaction
-   paying the pool or the solo miner's `bitcoind` wallet.
+   paying the pool or the solo miner's `fabcoind` wallet.
 
-2. A complete dump of the transactions `bitcoind` or the mining pool
+2. A complete dump of the transactions `fabcoind` or the mining pool
    suggests including in the block, allowing the mining software to
    inspect the transactions, optionally add additional transactions, and
    optionally remove non-required transactions.
@@ -156,7 +156,7 @@ Whenever the extra nonce field needs to be changed, the mining software
 rebuilds the necessary parts of the merkle tree and updates the time and
 merkle root fields in the block header.
 
-Like all `bitcoind` RPCs, `getblocktemplate` is sent over HTTP. To
+Like all `fabcoind` RPCs, `getblocktemplate` is sent over HTTP. To
 ensure they get the most recent work, most miners use [HTTP longpoll][] to
 leave a `getblocktemplate` request open at all times. This allows the
 mining pool to push a new `getblocktemplate` to the miner as soon as any

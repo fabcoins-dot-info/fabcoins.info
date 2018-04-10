@@ -13,7 +13,7 @@ platform:
     os:
       - name: web
         text: "walletcoinapult"
-        link: "https://coinapult.com/"
+        link: "http://coinapult.com/"
         screenshot: "coinapult.png"
         check:
           control: "checkfailcontrolthirdparty"

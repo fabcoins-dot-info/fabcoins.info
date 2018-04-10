@@ -12,17 +12,17 @@ http://opensource.org/licenses/MIT.
 
 {% autocrossref %}
 
-Creating transactions is something most Bitcoin applications do.
-This section describes how to use Bitcoin Core's RPC interface to
+Creating transactions is something most Fabcoin applications do.
+This section describes how to use Fabcoin Core's RPC interface to
 create transactions with various attributes.
 
-Your applications may use something besides Bitcoin Core to create
+Your applications may use something besides Fabcoin Core to create
 transactions, but in any system, you will need to provide the same kinds
 of data to create transactions with the same attributes as those
 described below.
 
-In order to use this tutorial, you will need to setup [Bitcoin Core][core executable]
-and create a regression test mode environment with 50 BTC in your test
+In order to use this tutorial, you will need to setup [Fabcoin Core][core executable]
+and create a regression test mode environment with 50 FAB in your test
 wallet.
 
 {% endautocrossref %}
@@ -37,26 +37,26 @@ wallet.
 
 {% autocrossref %}
 
-Bitcoin Core provides several RPCs which handle all the details of
+Fabcoin Core provides several RPCs which handle all the details of
 spending, including creating change outputs and paying appropriate fees.
 Even advanced users should use these RPCs whenever possible to decrease
 the chance that satoshis will be lost by mistake.
 
 {% highlight bash %}
-> bitcoin-cli -regtest getnewaddress
+> fabcoin-cli -regtest getnewaddress
 mvbnrCX3bg1cDRUu8pkecrvP6vQkSLDSou
 
 > NEW_ADDRESS=mvbnrCX3bg1cDRUu8pkecrvP6vQkSLDSou
 {% endhighlight %}
 
-Get a new Bitcoin address and save it in the shell variable `$NEW_ADDRESS`.
+Get a new Fabcoin address and save it in the shell variable `$NEW_ADDRESS`.
 
 {% highlight bash %}
-> bitcoin-cli -regtest sendtoaddress $NEW_ADDRESS 10.00
+> fabcoin-cli -regtest sendtoaddress $NEW_ADDRESS 10.00
 263c018582731ff54dc72c7d67e858c002ae298835501d80200f05753de0edf0
 {% endhighlight %}
 
-Send 10 bitcoins to the address using the `sendtoaddress` RPC.  The
+Send 10 fabcoins to the address using the `sendtoaddress` RPC.  The
 returned hex string is the transaction identifier (txid).
 
 The `sendtoaddress` RPC automatically selects an unspent transaction
@@ -66,7 +66,7 @@ transaction for block #1 which matured with the creation of block #101.
 To spend a specific UTXO, you could use the `sendfrom` RPC instead.
 
 {% highlight bash %}
-> bitcoin-cli -regtest listunspent
+> fabcoin-cli -regtest listunspent
 [
 ]
 {% endhighlight %}
@@ -77,7 +77,7 @@ UTXOs and we just spent our only confirmed UTXO.
 
 <div markdown="1" class="multicode">
 {% highlight bash %}
-> bitcoin-cli -regtest listunspent 0
+> fabcoin-cli -regtest listunspent 0
 {% endhighlight %}
 {% highlight json %}
 [
@@ -119,7 +119,7 @@ someone else, that second transaction would not be displayed in our
 list of UTXOs.
 
 {% highlight bash %}
-> bitcoin-cli -regtest generate 1
+> fabcoin-cli -regtest generate 1
 
 > unset NEW_ADDRESS
 {% endhighlight %}
@@ -141,7 +141,7 @@ second) and clear the shell variable.
 
 The raw transaction RPCs allow users to create custom transactions and
 delay broadcasting those transactions. However, mistakes made in raw
-transactions may not be detected by Bitcoin Core, and a number of raw
+transactions may not be detected by Fabcoin Core, and a number of raw
 transaction users have permanently lost large numbers of satoshis, so
 please be careful using raw transactions on mainnet.
 
@@ -149,7 +149,7 @@ This subsection covers one of the simplest possible raw transactions.
 
 <div markdown="1" class="multicode">
 {% highlight bash %}
-> bitcoin-cli -regtest listunspent
+> fabcoin-cli -regtest listunspent
 {% endhighlight %}
 {% highlight json %}
 [
@@ -205,7 +205,7 @@ txid and output index number (vout) of that coinbase UTXO to shell
 variables.
 
 {% highlight bash %}
-> bitcoin-cli -regtest getnewaddress
+> fabcoin-cli -regtest getnewaddress
 mz6KvC4aoUeo6wSxtiVQTo7FDwPnkp6URG
 
 > NEW_ADDRESS=mz6KvC4aoUeo6wSxtiVQTo7FDwPnkp6URG
@@ -215,7 +215,7 @@ Get a new address to use in the raw transaction.
 
 {% highlight bash %}
 ## Outputs - inputs = transaction fee, so always double-check your math!
-> bitcoin-cli -regtest createrawtransaction '''
+> fabcoin-cli -regtest createrawtransaction '''
     [
       {
         "txid": "'$UTXO_TXID'",
@@ -238,24 +238,24 @@ raw format transaction. The first argument (a JSON array) references
 the txid of the coinbase transaction from block #2 and the index
 number (0) of the output from that transaction we want to spend. The
 second argument (a JSON object) creates the output with the address
-(public key hash) and number of bitcoins we want to transfer.
+(public key hash) and number of fabcoins we want to transfer.
 We save the resulting raw format transaction to a shell variable.
 
 ![Warning icon](/img/icons/icon_warning.svg)
  **Warning:** `createrawtransaction` does not automatically create change
 outputs, so you can easily accidentally pay a large transaction fee. In
-this example, our input had 50.0000 bitcoins and our output
-(`$NEW_ADDRESS`) is being paid 49.9999 bitcoins, so the transaction will
-include a fee of 0.0001 bitcoins. If we had paid `$NEW_ADDRESS` only 10
-bitcoins with no other changes to this transaction, the transaction fee
-would be a whopping 40 bitcoins. See the Complex Raw Transaction
+this example, our input had 50.0000 fabcoins and our output
+(`$NEW_ADDRESS`) is being paid 49.9999 fabcoins, so the transaction will
+include a fee of 0.0001 fabcoins. If we had paid `$NEW_ADDRESS` only 10
+fabcoins with no other changes to this transaction, the transaction fee
+would be a whopping 40 fabcoins. See the Complex Raw Transaction
 subsection below for how to create a transaction with multiple outputs so you
 can send the change back to yourself.
 
 
 <div markdown="1" class="multicode">
 {% highlight bash %}
-> bitcoin-cli -regtest decoderawtransaction $RAW_TX
+> fabcoin-cli -regtest decoderawtransaction $RAW_TX
 {% endhighlight %}
 {% highlight json %}
 {
@@ -304,7 +304,7 @@ we just created does.
 
 <div markdown="1" class="multicode">
 {% highlight bash %}
-> bitcoin-cli -regtest signrawtransaction $RAW_TX
+> fabcoin-cli -regtest signrawtransaction $RAW_TX
 {% endhighlight %}
 {% highlight json %}
 {
@@ -328,14 +328,14 @@ Use the `signrawtransaction` RPC to sign the transaction created by
 `createrawtransaction` and save the returned "hex" raw format signed
 transaction to a shell variable. 
 
-Even though the transaction is now complete, the Bitcoin Core node we're
+Even though the transaction is now complete, the Fabcoin Core node we're
 connected to doesn't know anything about the transaction, nor does any
 other part of the network. We've created a spend, but we haven't
 actually spent anything because we could simply unset the
 `$SIGNED_RAW_TX` variable to eliminate the transaction.
 
 {% highlight bash %}
-> bitcoin-cli -regtest sendrawtransaction $SIGNED_RAW_TX
+> fabcoin-cli -regtest sendrawtransaction $SIGNED_RAW_TX
 c7736a0a0046d5a8cc61c8c3c2821d4d7517f5de2bc66a966011aaa79965ffba
 {% endhighlight %}
 
@@ -345,7 +345,7 @@ would usually then broadcast it to other peers, but we're not currently
 connected to other peers because we started in regtest mode.
 
 {% highlight bash %}
-> bitcoin-cli -regtest generate 1
+> fabcoin-cli -regtest generate 1
 
 > unset UTXO_TXID UTXO_VOUT NEW_ADDRESS RAW_TX SIGNED_RAW_TX
 {% endhighlight %}
@@ -371,7 +371,7 @@ transaction together (such as a CoinJoin transaction).
 
 <div markdown="1" class="multicode">
 {% highlight bash %}
-> bitcoin-cli -regtest listunspent
+> fabcoin-cli -regtest listunspent
 {% endhighlight %}
 {% highlight json %}
 [
@@ -446,10 +446,10 @@ transactions. We need the addresses so we can get the corresponding
 private keys from our wallet.
 
 {% highlight bash %}
-> bitcoin-cli -regtest dumpprivkey $UTXO1_ADDRESS
+> fabcoin-cli -regtest dumpprivkey $UTXO1_ADDRESS
 cSp57iWuu5APuzrPGyGc4PGUeCg23PjenZPBPoUs24HtJawccHPm
 
-> bitcoin-cli -regtest dumpprivkey $UTXO2_ADDRESS
+> fabcoin-cli -regtest dumpprivkey $UTXO2_ADDRESS
 cT26DX6Ctco7pxaUptJujRfbMS2PJvdqiSMaGaoSktHyon8kQUSg
 
 > UTXO1_PRIVATE_KEY=cSp57iWuu5APuzrPGyGc4PGUeCg23PjenZPBPoUs24Ht[...]
@@ -470,9 +470,9 @@ These examples are to help you learn, not for you to emulate on
 mainnet.
 
 {% highlight bash %}
-> bitcoin-cli -regtest getnewaddress
+> fabcoin-cli -regtest getnewaddress
 n4puhBEeEWD2VvjdRC9kQuX2abKxSCMNqN
-> bitcoin-cli -regtest getnewaddress
+> fabcoin-cli -regtest getnewaddress
 n4LWXU59yM5MzQev7Jx7VNeq1BqZ85ZbLj
 
 > NEW_ADDRESS1=n4puhBEeEWD2VvjdRC9kQuX2abKxSCMNqN
@@ -483,7 +483,7 @@ For our two outputs, get two new addresses.
 
 {% highlight bash %}
 ## Outputs - inputs = transaction fee, so always double-check your math!
-> bitcoin-cli -regtest createrawtransaction '''
+> fabcoin-cli -regtest createrawtransaction '''
     [
       {
         "txid": "'$UTXO1_TXID'", 
@@ -514,7 +514,7 @@ before, except now we have two inputs and two outputs.
 
 <div markdown="1" class="multicode">
 {% highlight bash %}
-> bitcoin-cli -regtest signrawtransaction $RAW_TX '[]' '''
+> fabcoin-cli -regtest signrawtransaction $RAW_TX '[]' '''
     [
       "'$UTXO1_PRIVATE_KEY'"
     ]'''
@@ -567,7 +567,7 @@ transaction hex to a shell variable.
 
 <div markdown="1" class="multicode">
 {% highlight bash %}
-> bitcoin-cli -regtest signrawtransaction $PARTLY_SIGNED_RAW_TX '[]' '''
+> fabcoin-cli -regtest signrawtransaction $PARTLY_SIGNED_RAW_TX '[]' '''
     [
       "'$UTXO2_PRIVATE_KEY'"
     ]'''
@@ -654,7 +654,7 @@ variable.
 
 <div markdown="1" class="multicode">
 {% highlight bash %}
-> bitcoin-cli -regtest decoderawtransaction $OLD_SIGNED_RAW_TX
+> fabcoin-cli -regtest decoderawtransaction $OLD_SIGNED_RAW_TX
 {% endhighlight %}
 {% highlight json %}
 {
@@ -751,7 +751,7 @@ specific one of its UTXOs to spend and save that UTXO's output index number
 (vout) and hex pubkey script (scriptPubKey) into shell variables.
 
 {% highlight bash %}
-> bitcoin-cli -regtest getnewaddress
+> fabcoin-cli -regtest getnewaddress
 mfdCHEFL2tW9eEUpizk7XLZJcnFM4hrp78
 
 > NEW_ADDRESS=mfdCHEFL2tW9eEUpizk7XLZJcnFM4hrp78
@@ -761,7 +761,7 @@ Get a new address to spend the satoshis to.
 
 {% highlight bash %}
 ## Outputs - inputs = transaction fee, so always double-check your math!
-> bitcoin-cli -regtest createrawtransaction '''
+> fabcoin-cli -regtest createrawtransaction '''
     [
       {
         "txid": "'$UTXO_TXID'",
@@ -784,7 +784,7 @@ subsections.
 
 <div markdown="1" class="multicode">
 {% highlight bash %}
-    > bitcoin-cli -regtest signrawtransaction $RAW_TX
+    > fabcoin-cli -regtest signrawtransaction $RAW_TX
 {% endhighlight %}
 {% highlight json %}
     {
@@ -821,7 +821,7 @@ so it can't automatically insert the previous pubkey script.
 
 <div markdown="1" class="multicode">
 {% highlight bash %}
-> bitcoin-cli -regtest signrawtransaction $RAW_TX '''
+> fabcoin-cli -regtest signrawtransaction $RAW_TX '''
     [
       {
         "txid": "'$UTXO_TXID'", 
@@ -862,7 +862,7 @@ broadcasts it.
 
 <div markdown="1" class="multicode">
 {% highlight bash %}
-> bitcoin-cli -regtest sendrawtransaction $SIGNED_RAW_TX
+> fabcoin-cli -regtest sendrawtransaction $SIGNED_RAW_TX
 {% endhighlight %}
 {% highlight json %}
 error: {"code":-22,"message":"TX rejected"}
@@ -874,9 +874,9 @@ first transaction.  The node rejects this attempt because the second
 transaction spends an output which is not a UTXO the node knows about.
 
 {% highlight bash %}
-> bitcoin-cli -regtest sendrawtransaction $OLD_SIGNED_RAW_TX
+> fabcoin-cli -regtest sendrawtransaction $OLD_SIGNED_RAW_TX
 682cad881df69cb9df8f0c996ce96ecad758357ded2da03bad40cf18ffbb8e09
-> bitcoin-cli -regtest sendrawtransaction $SIGNED_RAW_TX
+> fabcoin-cli -regtest sendrawtransaction $SIGNED_RAW_TX
 67d53afa1a8167ca093d30be7fb9dcb8a64a5fdecacec9d93396330c47052c57
 {% endhighlight %}
 
@@ -886,7 +886,7 @@ the UTXO.
 
 <div markdown="1" class="multicode">
 {% highlight bash %}
-> bitcoin-cli -regtest getrawmempool
+> fabcoin-cli -regtest getrawmempool
 {% endhighlight %}
 {% highlight json %}
 [
@@ -928,11 +928,11 @@ parameters, the *minimum* number of signatures required (*m*) and the
 called m-of-n, and in this case we'll be using 2-of-3.
 
 {% highlight bash %}
-    > bitcoin-cli -regtest getnewaddress
+    > fabcoin-cli -regtest getnewaddress
     mhAXF4Eq7iRyvbYk1mpDVBiGdLP3YbY6Dm
-    > bitcoin-cli -regtest getnewaddress
+    > fabcoin-cli -regtest getnewaddress
     moaCrnRfP5zzyhW8k65f6Rf2z5QpvJzSKe
-    > bitcoin-cli -regtest getnewaddress
+    > fabcoin-cli -regtest getnewaddress
     mk2QpYatsKicvFVuTAQLBryyccRXMUaGHP
 
     > NEW_ADDRESS1=mhAXF4Eq7iRyvbYk1mpDVBiGdLP3YbY6Dm
@@ -943,7 +943,7 @@ called m-of-n, and in this case we'll be using 2-of-3.
 Generate three new P2PKH addresses. P2PKH addresses cannot be used with
 the multisig redeem script created below. (Hashing each public key is
 unnecessary anyway---all the public keys are protected by a hash when
-the redeem script is hashed.) However, Bitcoin Core uses addresses as a
+the redeem script is hashed.) However, Fabcoin Core uses addresses as a
 way to reference the underlying full (unhashed) public keys it knows
 about, so we get the three new addresses above in order to use their
 public keys.
@@ -955,7 +955,7 @@ redeem script. You must give them a full public key.
 
 <div markdown="1" class="multicode">
 {% highlight bash %}
-> bitcoin-cli -regtest validateaddress $NEW_ADDRESS3
+> fabcoin-cli -regtest validateaddress $NEW_ADDRESS3
 {% endhighlight %}
 {% highlight json %}
 {
@@ -987,7 +987,7 @@ We save the address returned to a shell variable.
 
 <div markdown="1" class="multicode">
 {% highlight bash %}
-> bitcoin-cli -regtest createmultisig 2 '''
+> fabcoin-cli -regtest createmultisig 2 '''
     [
       "'$NEW_ADDRESS1'",
       "'$NEW_ADDRESS2'", 
@@ -1024,7 +1024,7 @@ provided when we spend satoshis sent to the P2SH address.
 ![Warning icon](/img/icons/icon_warning.svg)
  **Warning:** You must not lose the redeem script, especially if you
 don't have a record of which public keys you used to create the P2SH
-multisig address. You need the redeem script to spend any bitcoins sent
+multisig address. You need the redeem script to spend any fabcoins sent
 to the P2SH address. If you lose the redeem script, you can recreate it
 by running the same command above, with the public keys listed in the
 same order. However, if you lose both the redeem script and even one of
@@ -1037,13 +1037,13 @@ you use `createmultisig`. To store them in the wallet, use the
 you should also make a new backup.
 
 {% highlight bash %}
-> bitcoin-cli -regtest sendtoaddress $P2SH_ADDRESS 10.00
+> fabcoin-cli -regtest sendtoaddress $P2SH_ADDRESS 10.00
 7278d7d030f042ebe633732b512bcb31fff14a697675a1fe1884db139876e175
 
 > UTXO_TXID=7278d7d030f042ebe633732b512bcb31fff14a697675a1fe1884[...]
 {% endhighlight %}
 
-Paying the P2SH multisig address with Bitcoin Core is as simple as
+Paying the P2SH multisig address with Fabcoin Core is as simple as
 paying a more common P2PKH address. Here we use the same command (but
 different variable) we used in the Simple Spending subsection. As
 before, this command automatically selects an UTXO, creates a change
@@ -1054,7 +1054,7 @@ We save that txid to a shell variable as the txid of the UTXO we plan to spend n
 
 <div markdown="1" class="multicode">
 {% highlight bash %}
-> bitcoin-cli -regtest getrawtransaction $UTXO_TXID 1
+> fabcoin-cli -regtest getrawtransaction $UTXO_TXID 1
 {% endhighlight %}
 {% highlight json %}
 {
@@ -1127,7 +1127,7 @@ We use the `getrawtransaction` RPC with the optional second argument
 its output index number (vout) and pubkey script (scriptPubKey).
 
 {% highlight bash %}
-> bitcoin-cli -regtest getnewaddress
+> fabcoin-cli -regtest getnewaddress
 mxCNLtKxzgjg8yyNHeuFSXvxCvagkWdfGU
 
 > NEW_ADDRESS4=mxCNLtKxzgjg8yyNHeuFSXvxCvagkWdfGU
@@ -1138,7 +1138,7 @@ create.
 
 {% highlight bash %}
 ## Outputs - inputs = transaction fee, so always double-check your math!
-> bitcoin-cli -regtest createrawtransaction '''
+> fabcoin-cli -regtest createrawtransaction '''
     [
       {
         "txid": "'$UTXO_TXID'",
@@ -1161,9 +1161,9 @@ We generate the raw transaction the same way we did in the Simple Raw
 Transaction subsection.
 
 {% highlight bash %}
-> bitcoin-cli -regtest dumpprivkey $NEW_ADDRESS1
+> fabcoin-cli -regtest dumpprivkey $NEW_ADDRESS1
 cVinshabsALz5Wg4tGDiBuqEGq4i6WCKWXRQdM8RFxLbALvNSHw7
-> bitcoin-cli -regtest dumpprivkey $NEW_ADDRESS3
+> fabcoin-cli -regtest dumpprivkey $NEW_ADDRESS3
 cNmbnwwGzEghMMe1vBwH34DFHShEj5bcXD1QpFRPHgG9Mj1xc5hq
 
 > NEW_ADDRESS1_PRIVATE_KEY=cVinshabsALz5Wg4tGDiBuqEGq4i6WCKWXRQd[...]
@@ -1182,7 +1182,7 @@ complex raw transaction].
 
 <div markdown="1" class="multicode">
 {% highlight bash %}
-> bitcoin-cli -regtest signrawtransaction $RAW_TX '''
+> fabcoin-cli -regtest signrawtransaction $RAW_TX '''
     [
       {
         "txid": "'$UTXO_TXID'", 
@@ -1224,7 +1224,7 @@ to the signature script after the two signatures.
 
 <div markdown="1" class="multicode">
 {% highlight bash %}
-> bitcoin-cli -regtest signrawtransaction $PARTLY_SIGNED_RAW_TX '''
+> fabcoin-cli -regtest signrawtransaction $PARTLY_SIGNED_RAW_TX '''
     [
       {
         "txid": "'$UTXO_TXID'",
@@ -1269,7 +1269,7 @@ two required signatures have been provided, the transaction is marked as
 complete.
 
 {% highlight bash %}
-> bitcoin-cli -regtest sendrawtransaction $SIGNED_RAW_TX
+> fabcoin-cli -regtest sendrawtransaction $SIGNED_RAW_TX
 430a4cee3a55efb04cbb8718713cab18dea7f2521039aa660ffb5aae14ff3f50
 {% endhighlight %}
 

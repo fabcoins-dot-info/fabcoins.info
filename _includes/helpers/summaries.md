@@ -21,10 +21,10 @@ This file is licensed under the terms of its source texts{%endcomment%}
 {% assign summary_generate="nearly instantly generates blocks." %}
 {% assign summary_generateToAddress="mines blocks immediately to a specified address." %}
 {% assign summary_getAccount="returns the name of the account associated with the given address." %}
-{% assign summary_getAccountAddress="returns the current Bitcoin address for receiving payments to this account. If the account doesn't exist, it creates both the account and a new address for receiving payment.  Once a payment has been received to an address, future calls to this RPC for the same account will return a different address." %}
+{% assign summary_getAccountAddress="returns the current Fabcoin address for receiving payments to this account. If the account doesn't exist, it creates both the account and a new address for receiving payment.  Once a payment has been received to an address, future calls to this RPC for the same account will return a different address." %}
 {% assign summary_getAddedNodeInfo="returns information about the given added node, or all added nodes (except onetry nodes). Only nodes which have been manually added using the `addnode` RPC will have their information displayed." %}
 {% assign summary_getAddressesByAccount="returns a list of every address assigned to a particular account." %}
-{% assign summary_getBalance="gets the balance in decimal bitcoins across all accounts or for a particular account." %}
+{% assign summary_getBalance="gets the balance in decimal fabcoins across all accounts or for a particular account." %}
 {% assign summary_getBestBlockHash="returns the header hash of the most recent block on the best block chain." %}
 {% assign summary_getBlock="gets a block with a particular header hash from the local block database either as a JSON object or as a serialized block." %}
 {% assign summary_getBlockChainInfo="provides information about the current state of the block chain." %}
@@ -35,8 +35,8 @@ This file is licensed under the terms of its source texts{%endcomment%}
 {% assign summary_getChainTips="returns information about the highest-height block (tip) of each local block chain." %}
 {% assign summary_getConnectionCount="returns the number of connections to other nodes." %}
 {% assign summary_getDifficultly="returns the proof-of-work difficulty as a multiple of the minimum difficulty." %}
-{% assign summary_getGenerate="was removed in Bitcoin Core 0.13.0." %}
-{% assign summary_getHashesPerSec="was removed in Bitcoin Core 0.11.0." %}
+{% assign summary_getGenerate="was removed in Fabcoin Core 0.13.0." %}
+{% assign summary_getHashesPerSec="was removed in Fabcoin Core 0.11.0." %}
 {% assign summary_getInfo="prints various information about the node and the network." %}
 {% assign summary_getMemPoolAncestors="returns all in-mempool ancestors for a transaction in the mempool." %}
 {% assign summary_getMemPoolDescendants="returns all in-mempool descendants for a transaction in the mempool." %}
@@ -47,11 +47,11 @@ This file is licensed under the terms of its source texts{%endcomment%}
 {% assign summary_getNetTotals="returns information about network traffic, including bytes in, bytes out, and the current time." %}
 {% assign summary_getNetworkHashPS="returns the estimated current or historical network hashes per second based on the last *n* blocks." %}
 {% assign summary_getNetworkInfo="returns information about the node's connection to the network." %}
-{% assign summary_getNewAddress="returns a new Bitcoin address for receiving payments. If an account is specified, payments received with the address will be credited to that account." %}
+{% assign summary_getNewAddress="returns a new Fabcoin address for receiving payments. If an account is specified, payments received with the address will be credited to that account." %}
 {% assign summary_getPeerInfo="returns data about each connected network node." %}
-{% assign summary_getRawChangeAddress="returns a new Bitcoin address for receiving change. This is for use with raw transactions, not normal use." %}
+{% assign summary_getRawChangeAddress="returns a new Fabcoin address for receiving change. This is for use with raw transactions, not normal use." %}
 {% assign summary_getRawMemPool="returns all transaction identifiers (TXIDs) in the memory pool as a JSON array, or detailed information about each transaction in the memory pool as a JSON object." %}
-{% assign summary_getRawTransaction="gets a hex-encoded serialized transaction or a JSON object describing the transaction. By default, Bitcoin Core only stores complete transaction data for UTXOs and your own transactions, so the RPC may fail on historic transactions unless you use the non-default `txindex=1` in your Bitcoin Core startup settings." %}
+{% assign summary_getRawTransaction="gets a hex-encoded serialized transaction or a JSON object describing the transaction. By default, Fabcoin Core only stores complete transaction data for UTXOs and your own transactions, so the RPC may fail on historic transactions unless you use the non-default `txindex=1` in your Fabcoin Core startup settings." %}
 {% assign summary_getReceivedByAccount="returns the total amount received by addresses in a particular account from transactions with the specified number of confirmations.  It does not count coinbase transactions." %}
 {% assign summary_getReceivedByAddress="returns the total amount received by the specified address in transactions with the specified number of confirmations. It does not count coinbase transactions." %}
 {% assign summary_getTransaction="gets detailed information about an in-wallet transaction." %}
@@ -60,7 +60,7 @@ This file is licensed under the terms of its source texts{%endcomment%}
 {% assign summary_getTxOutSetInfo="returns statistics about the confirmed unspent transaction output (UTXO) set. Note that this call may take some time and that it only counts outputs from confirmed transactions---it does not count outputs from the memory pool." %}
 {% assign summary_getUnconfirmedBalance="returns the wallet's total unconfirmed balance." %}
 {% assign summary_getWalletInfo="provides information about the wallet." %}
-{% assign summary_getWork="was removed in Bitcoin Core 0.10.0." %}
+{% assign summary_getWork="was removed in Fabcoin Core 0.10.0." %}
 {% assign summary_help="lists all available public RPC commands, or gets help for the specified RPC.  Commands which are unavailable will not be listed, such as wallet RPCs if wallet support is disabled." %}
 {% assign summary_importAddress="adds an address or pubkey script to the wallet without the associated private key, allowing you to watch for transactions affecting that address or pubkey script without being able to spend any of its outputs." %}
 {% assign summary_importMulti="imports addresses or scripts (with private keys, public keys, or P2SH redeem scripts) and optionally performs the minimum necessary rescan for all imports." %}
@@ -72,12 +72,12 @@ This file is licensed under the terms of its source texts{%endcomment%}
 {% assign summary_listAddressGroupings="lists groups of addresses that may have had their common ownership made public by common use as inputs in the same transaction or from being used as change from a previous transaction." %}
 {% assign summary_listBanned="lists all banned IPs/Subnets." %}
 {% assign summary_listLockUnspent="returns a list of temporarily unspendable (locked) outputs." %}
-{% assign summary_listReceivedByAccount="lists the total number of bitcoins received by each account." %}
-{% assign summary_listReceivedByAddress="lists the total number of bitcoins received by each address." %}
+{% assign summary_listReceivedByAccount="lists the total number of fabcoins received by each account." %}
+{% assign summary_listReceivedByAddress="lists the total number of fabcoins received by each address." %}
 {% assign summary_listSinceBlock="gets all transactions affecting the wallet which have occurred since a particular block, plus the header hash of a block at a particular depth." %}
 {% assign summary_listTransactions="returns the most recent transactions that affect the wallet." %}
 {% assign summary_listUnspent="returns an array of unspent transaction outputs belonging to this wallet." %}
-{% assign summary_lockUnspent="temporarily locks or unlocks specified transaction outputs. A locked transaction output will not be chosen by automatic coin selection when spending bitcoins. Locks are stored in memory only, so nodes start with zero locked outputs and the locked output list is always cleared when a node stops or fails." %}
+{% assign summary_lockUnspent="temporarily locks or unlocks specified transaction outputs. A locked transaction output will not be chosen by automatic coin selection when spending fabcoins. Locks are stored in memory only, so nodes start with zero locked outputs and the locked output list is always cleared when a node stops or fails." %}
 {% assign summary_move="moves a specified amount from one account in your wallet to another using an off-block-chain transaction." %}
 {% assign summary_ping-rpc="sends a P2P ping message to all connected nodes to measure ping time. Results are provided by the `getpeerinfo` RPC pingtime and pingwait fields as decimal seconds. The P2P `ping` message is handled in a queue with all other commands, so it measures processing backlog, not just network ping." %}
 {% assign summary_preciousBlock="treats a block as if it were received before others with the same work." %}
@@ -91,22 +91,22 @@ This file is licensed under the terms of its source texts{%endcomment%}
 {% assign summary_restGetHeaders="returns a specified amount of block headers in upward direction." %}
 {% assign summary_restGetMemPool-contents="returns all transaction in the memory pool with detailed information." %}
 {% assign summary_restGetMemPool-info="returns information about the node's current transaction memory pool." %}
-{% assign summary_restGetTx="gets a hex-encoded serialized transaction or a JSON object describing the transaction. By default, Bitcoin Core only stores complete transaction data for UTXOs and your own transactions, so this method may fail on historic transactions unless you use the non-default `txindex=1` in your Bitcoin Core startup settings." %}
-{% assign summary_sendFrom="spends an amount from a local account to a bitcoin address." %}
+{% assign summary_restGetTx="gets a hex-encoded serialized transaction or a JSON object describing the transaction. By default, Fabcoin Core only stores complete transaction data for UTXOs and your own transactions, so this method may fail on historic transactions unless you use the non-default `txindex=1` in your Fabcoin Core startup settings." %}
+{% assign summary_sendFrom="spends an amount from a local account to a fabcoin address." %}
 {% assign summary_sendMany="creates and broadcasts a transaction which sends outputs to multiple addresses." %}
 {% assign summary_sendRawTransaction="validates a transaction and broadcasts it to the peer-to-peer network." %}
 {% assign summary_sendToAddress="spends an amount to a given address." %}
 {% assign summary_setAccount="puts the specified address in the given account." %}
 {% assign summary_setBan="attempts add or remove a IP/Subnet from the banned list." %}
-{% assign summary_setGenerate="was removed in Bitcoin Core 0.13.0." %}
+{% assign summary_setGenerate="was removed in Fabcoin Core 0.13.0." %}
 {% assign summary_setNetworkActive="disables/enables all P2P network activity." %}
 {% assign summary_setTxFee="sets the transaction fee per kilobyte paid by transactions created by this wallet." %}
 {% assign summary_signMessage="signs a message with the private key of an address." %}
 {% assign summary_signMessageWithPrivKey="signs a message with a given private key." %}
 {% assign summary_signRawTransaction="signs a transaction in the serialized transaction format using private keys stored in the wallet or provided in the call." %}
-{% assign summary_stop="safely shuts down the Bitcoin Core server." %}
-{% assign summary_submitBlock="accepts a block, verifies it is a valid addition to the block chain, and broadcasts it to the network. Extra parameters are ignored by Bitcoin Core but may be used by mining pools or other programs." %}
-{% assign summary_validateAddress="returns information about the given Bitcoin address." %}
+{% assign summary_stop="safely shuts down the Fabcoin Core server." %}
+{% assign summary_submitBlock="accepts a block, verifies it is a valid addition to the block chain, and broadcasts it to the network. Extra parameters are ignored by Fabcoin Core but may be used by mining pools or other programs." %}
+{% assign summary_validateAddress="returns information about the given Fabcoin address." %}
 {% assign summary_verifyChain="verifies each entry in the local block chain database." %}
 {% assign summary_verifyMessage="verifies a signed message." %}
 {% assign summary_verifyTxOutProof="verifies that a proof points to one or more transactions in a block, returning the transactions the proof commits to and throwing an RPC error if the block is not in our best block chain." %}

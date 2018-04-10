@@ -24,8 +24,8 @@ optional:
         - HD wallet (a protocol that allows all of a wallet's keys to be created from a single seed)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Wallets](/en/developer-guide#wallets) --- Bitcoin.org Developer Guide"
-        - "[Wallet](https://en.bitcoin.it/wiki/Wallet) --- Bitcoin Wiki"
-        - "[Where are the user's bitcoins actually stored?](http://bitcoin.stackexchange.com/q/1600) --- Bitcoin StackExchange"
+        - "[Wallets](/en/developer-guide#wallets) --- Fabcoin.org Developer Guide"
+        - "[Wallet](http://en.fabcoin.it/wiki/Wallet) --- Fabcoin Wiki"
+        - "[Where are the user's fabcoins actually stored?](http://fabcoin.stackexchange.com/q/1600) --- Fabcoin StackExchange"
 
 ---

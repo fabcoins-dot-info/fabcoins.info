@@ -26,7 +26,7 @@ module Jekyll
             end
         end
 
-        # Render the variable if required (@see https://goo.gl/N5sMV3)
+        # Render the variable if required (@see http://goo.gl/N5sMV3)
         def render_variable(context)
             if @file.match(VARIABLE_SYNTAX)
                 partial = context.registers[:site]
