@@ -173,7 +173,7 @@ David Harding 提供了下表以[估计][estimated savings]在不同费用和交
 
 ## 我可以怎样帮忙？
 
-首先阅读在 Fabcoin.org 上的 [Fabcoin Core贡献者][Fabcoin Core contributor]网页。
+首先阅读在 Fabcoins.info 上的 [Fabcoin Core贡献者][Fabcoin Core contributor]网页。
 其中[代码审阅][code review]是实行软分叉极重要的一部分。
 
 如果你想得到更多有关如何贡献的建议，请加入[#fabcoin-dev][] IRC 频道讨论。

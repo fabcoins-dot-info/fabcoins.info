@@ -2,11 +2,11 @@
 
 ### Events
 
-Events added to Fabcoin.org should have clear agendas that relate to Fabcoin
+Events added to Fabcoins.info should have clear agendas that relate to Fabcoin
 in some way - e.g. it being used as a currency, harnessing its technology,
 speakers from fabcoin-related companies, etc.
 
-If you're not comfortable with GitHub pull requests, please open a [new issue](http://github.com/fabcoin-dot-org/fabcoins.info/issues/new?title=New%20event&body=%20%20%20%20-%20date%3A%20YYYY-MM-DD%0A%20%20%20%20%20%20title%3A%20%22%22%0A%20%20%20%20%20%20venue%3A%20%22%22%0A%20%20%20%20%20%20address%3A%20%22%22%0A%20%20%20%20%20%20city%3A%20%22%22%0A%20%20%20%20%20%20country%3A%20%22%22%0A%20%20%20%20%20%20link%3A%20%22%22).
+If you're not comfortable with GitHub pull requests, please open a [new issue](http://github.com/fabcoins-dot-info/fabcoins.info/issues/new?title=New%20event&body=%20%20%20%20-%20date%3A%20YYYY-MM-DD%0A%20%20%20%20%20%20title%3A%20%22%22%0A%20%20%20%20%20%20venue%3A%20%22%22%0A%20%20%20%20%20%20address%3A%20%22%22%0A%20%20%20%20%20%20city%3A%20%22%22%0A%20%20%20%20%20%20country%3A%20%22%22%0A%20%20%20%20%20%20link%3A%20%22%22).
 
 To create an event pull request, place the event in `_events.yml` and adhere to
 this format:
@@ -88,11 +88,11 @@ is the particular version:
    do this locally or in GitHub's web GUI.
 
 2. Follow the instructions in the [Release
-   Notes](http://github.com/fabcoin-dot-org/fabcoins.info/blob/master/docs/adding-events-release-notes-and-alerts.md#release-notes)
+   Notes](http://github.com/fabcoins-dot-info/fabcoins.info/blob/master/docs/adding-events-release-notes-and-alerts.md#release-notes)
    section to create a new release.  You should leave the `optional_date` blank
    unless you happen to know the date of the planned release.
 
-3. Push the branch to the http://github.com/fabcoin-dot-org/fabcoins.info
+3. Push the branch to the http://github.com/fabcoins-dot-info/fabcoins.info
    repository so any contributor can edit it. **Don't** open a pull
    request yet.
 
@@ -173,7 +173,7 @@ release, CC them instead.  If you don't know who is responsible, ask in
 
 #### Who to Contact
 
-The following people can publish alerts on Fabcoin.org.  Their email
+The following people can publish alerts on Fabcoins.info.  Their email
 addresses are on the linked GitHub profiles.
 
 - Will Binns, [@wbnns](http://github.com/wbnns), wbnns on Freenode
@@ -288,7 +288,7 @@ alert.
 
 #### Clearing An Alert
 
-To stop advertising an alert on every Fabcoin.org page, change the YAML
+To stop advertising an alert on every Fabcoins.info page, change the YAML
 header field `active` to *false*:
 
 ```yaml

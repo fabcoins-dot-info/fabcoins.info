@@ -74,7 +74,7 @@ Optional criteria (some could become requirements):
 ### Adding a wallet
 
 *Before adding a wallet,* please make sure your wallet meets all of the
-Basic Requirements listed above, or open a [new issue](http://github.com/fabcoin-dot-org/fabcoins.info/issues/new)
+Basic Requirements listed above, or open a [new issue](http://github.com/fabcoins-dot-info/fabcoins.info/issues/new)
 to request an exemption or policy change. Feel free to email Will Binns
 ([will@fabcoins.info](mailto:will@fabcoins.info)) or Dave Harding ([dave@dtrt.org](mailto:dave@dtrt.org))
 if you have any questions.

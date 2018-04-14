@@ -356,7 +356,7 @@ blocchi il che permette di aumentare i loro ricavi per blocco minato.
 ## Come posso contribuire?
 
 Comincia con il leggere la pagina del
-[contributor di Fabcoin Core][Fabcoin Core contributor] su Fabcoin.org.
+[contributor di Fabcoin Core][Fabcoin Core contributor] su Fabcoins.info.
 in particolare, la [revisione del codice][code review] è una parte critica nel
 mettere in atto i soft fork.
 

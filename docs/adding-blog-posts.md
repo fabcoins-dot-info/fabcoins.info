@@ -1,6 +1,6 @@
 ## Blog Posts
 
-Posts for the [Fabcoin.org Site Blog](http://fabcoins.info/en/blog) should be 
+Posts for the [Fabcoins.info Site Blog](http://fabcoins.info/en/blog) should be 
 added to the `_posts` directory with the naming convention:
 `YEAR-MONTH-DAY-ARBITRARY_FILE_NAME` (with year, month, and day as
 two-digit numbers).  The YAML front matter should be similar to this:

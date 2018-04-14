@@ -6,6 +6,6 @@ http://opensource.org/licenses/MIT.
 <!--Temporary disclaimer BEGIN-->
 <p class="devdoc_translation_warning">
     <b>BETA</b>: {% translate fragmenttranslationwarning developer-documentation %}
-    <a href="http://github.com/fabcoin-dot-org/fabcoins.info/docs/assisting-with-translation#translate">{% translate fragmenttranslationdoclink developer-documentation %}</a>
+    <a href="http://github.com/fabcoins-dot-info/fabcoins.info/docs/assisting-with-translation#translate">{% translate fragmenttranslationdoclink developer-documentation %}</a>
 </p>
 <!--Temporary disclaimer END-->

@@ -23,7 +23,7 @@ moved_url: "http://fabcoincore.org/zh_CN/2015/12/21/%E6%AF%94%E7%89%B9%E5%B8%81%
 
 ---
 
-如果你想参与连署，请到[#1165](http://github.com/fabcoin-dot-org/fabcoins.info/pull/1165)。
+如果你想参与连署，请到[#1165](http://github.com/fabcoins-dot-info/fabcoins.info/pull/1165)。
 
 [1]: http://lists.linuxfoundation.org/pipermail/fabcoin-dev/2015-December/011865.html
 

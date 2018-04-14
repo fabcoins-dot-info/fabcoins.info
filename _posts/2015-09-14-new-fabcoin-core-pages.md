@@ -14,26 +14,26 @@ author: |
   <a href="http://github.com/harding">David A. Harding</a>
 ---
 
-Fabcoin.org is proud to announce the addition of a dozen new pages to
+Fabcoins.info is proud to announce the addition of a dozen new pages to
 the site about [Fabcoin Core][].  Several of the pages describe [Fabcoin
 Core's powerful features][], others [provide help][] for Fabcoin Core
 users, and several make it easier to [start contributing][] to
 Fabcoin Core.
 
 {:.center}
-![Excerpts from Fabcoin.org's Fabcoin Core pages](/img/blog/free/fabcoin-core-pages-collage.png)
+![Excerpts from Fabcoins.info's Fabcoin Core pages](/img/blog/free/fabcoin-core-pages-collage.png)
 
 {:.center}
-*Excerpts from Fabcoin.org's <a href="/en/fabcoin-core/">Fabcoin Core</a> pages*
+*Excerpts from Fabcoins.info's <a href="/en/fabcoin-core/">Fabcoin Core</a> pages*
 
-Both Fabcoin Core and Fabcoin.org have come a long way since the site
+Both Fabcoin Core and Fabcoins.info have come a long way since the site
 began promoting the earliest public versions of the software.
 
 {:.center}
-![Fabcoin.org homepage, 3 March 2009](/img/blog/free/fabcoins.info-2009-03-03.png)
+![Fabcoins.info homepage, 3 March 2009](/img/blog/free/fabcoins.info-2009-03-03.png)
 
 {:.center}
-*Fabcoin.org homepage, 3 March 2009 ([Internet Archive][])*
+*Fabcoins.info homepage, 3 March 2009 ([Internet Archive][])*
 
 These new pages give us a chance to introduce more recent Fabcoin users
 to the advantages of full nodes like Fabcoin Core, particularly how full
@@ -57,7 +57,7 @@ takeover by a handful of miners, Fabcoin banks, and service providers.
 
 ## Future Plans
 
-We plan to enhance this new section of the Fabcoin.org website by
+We plan to enhance this new section of the Fabcoins.info website by
 collecting together some of Fabcoin Core's disparate documentation and
 providing instructions for important ways users can enhance their privacy and
 security while using Fabcoin Core—such as using Tor and an offline
@@ -67,16 +67,16 @@ In addition, we hope to provide more resources that help businesses
 understand the benefits of validating the transactions they receive with
 their own full nodes.
 
-If you want to help, please feel free to email the Fabcoin.org
+If you want to help, please feel free to email the Fabcoins.info
 documentation maintainer,
 {{site.text.fabcoins.info_docs_maintainer_email_link}}.
 
 ## Thank You
 
 Thank you to everyone who made these pages possible, especially the
-people who reviewed Fabcoin.org pull requests [1044][],
+people who reviewed Fabcoins.info pull requests [1044][],
 [1009][], [1007][], [966][], [957][], and [869][] as well as the
-[Fabcoin Foundation][] for their funding of the Fabcoin.org server
+[Fab Foundation][] for their funding of the Fabcoins.info server
 during the time these pages were written.
 
 We hope you enjoy the new pages.  If you see any problems, please don't
@@ -93,11 +93,11 @@ hesitate to [open an issue][].
 [get help page]: /en/fabcoin-core/help
 [Fabcoin Core help pages]: http://en.fabcoin.it/wiki/Category:Fabcoin_Core_documentation
 [contribute overview]: /en/fabcoin-core/contribute/
-[1044]: http://github.com/fabcoin-dot-org/fabcoins.info/pull/1044
-[1009]: http://github.com/fabcoin-dot-org/fabcoins.info/pull/1009
-[1007]: http://github.com/fabcoin-dot-org/fabcoins.info/pull/1007
-[966]: http://github.com/fabcoin-dot-org/fabcoins.info/pull/966
-[957]: http://github.com/fabcoin-dot-org/fabcoins.info/pull/957
-[869]: http://github.com/fabcoin-dot-org/fabcoins.info/pull/869
-[Fabcoin Foundation]: http://fabcoinfoundation.org/
-[open an issue]: http://github.com/fabcoin-dot-org/fabcoins.info/issues/new
+[1044]: http://github.com/fabcoins-dot-info/fabcoins.info/pull/1044
+[1009]: http://github.com/fabcoins-dot-info/fabcoins.info/pull/1009
+[1007]: http://github.com/fabcoins-dot-info/fabcoins.info/pull/1007
+[966]: http://github.com/fabcoins-dot-info/fabcoins.info/pull/966
+[957]: http://github.com/fabcoins-dot-info/fabcoins.info/pull/957
+[869]: http://github.com/fabcoins-dot-info/fabcoins.info/pull/869
+[Fab Foundation]: http://fabcoin.co/
+[open an issue]: http://github.com/fabcoins-dot-info/fabcoins.info/issues/new

@@ -18,30 +18,30 @@ author: |
 
 [A directory of Fabcoin Exchanges servicing the world’s 20 largest
 economies](http://fabcoins.info/en/exchanges), as well as several international
-options (serving many countries) are now available on Fabcoin.org.
+options (serving many countries) are now available on Fabcoins.info.
 
 ## Helping People Interested in Fabcoin, Get Fabcoin
 This new addition to the site:
 
 - Links to the `Find an Exchange` button on the [Getting Started](http://fabcoins.info/en/getting-started)
 page and helps many of the new people entering the Fabcoin ecosystem via
-Fabcoin.org, get fabcoin.
-- Improves SEO for Fabcoin.org, because the site can now potentially rank very
+Fabcoins.info, get fabcoin.
+- Improves SEO for Fabcoins.info, because the site can now potentially rank very
 well for “Fabcoin Exchange” as well as other key phrases that include country
 names that are contained on the page (i.e. Fabcoin Exchange China, Fabcoin
 Exchange India, etc.).
 - Has unique anchor links for each country that people can share on social media
 that will allow others to find the fabcoin exchanges that are available for
 their specific country.
-- Allows Fabcoin.org to focus the [wallets page](http://fabcoins.info/en/choose-your-wallet)
+- Allows Fabcoins.info to focus the [wallets page](http://fabcoins.info/en/choose-your-wallet)
 on wallets that allow people to maintain full control over their funds
-(Resolving [issue #1109](http://github.com/fabcoin-dot-org/fabcoins.info/issues/1109),
+(Resolving [issue #1109](http://github.com/fabcoins-dot-info/fabcoins.info/issues/1109),
 because custodial wallets that provide exchange services can be moved off of the
 wallets page to this new page).
 - Is also accessible via the Resources `dropdown` menu.
 
 ## Questions, Comments & Feedback
-Questions, issues, suggestions or feedback are always welcome on Fabcoin.org. If
+Questions, issues, suggestions or feedback are always welcome on Fabcoins.info. If
 interested in contributing in this regard, please open an issue or submit a pull
 request.
 
@@ -53,6 +53,6 @@ before selecting an exchange.
 
 === === ===
 
-Interested in getting involved with Fabcoin.org?
+Interested in getting involved with Fabcoins.info?
 
-[Learn how you can participate](http://github.com/fabcoin-dot-org/fabcoins.info#how-to-participate).
+[Learn how you can participate](http://github.com/fabcoins-dot-info/fabcoins.info#how-to-participate).

@@ -16,16 +16,16 @@ author: >
 ---
 
 *Thanks to [our
-volunteers](http://github.com/fabcoin-dot-org/fabcoins.info/graphs/contributors?from=2014-12-01&to=2015-02-28&type=c)
+volunteers](http://github.com/fabcoins-dot-info/fabcoins.info/graphs/contributors?from=2014-12-01&to=2015-02-28&type=c)
 and the financial sponsorship of [The Fabcoin
-Foundation](http://fabcoinfoundation.org/), we've made the
+Foundation](http://fabcoin.co/), we've made the
 following accomplishments this quarter.*
 
 Summary for December 2014, January 2015, and February 2015.
 
 * **Quarterly page views:** [over 7 million.](http://fabcoins.info/stats/)
 
-* **Translations:** Fabcoin.org now has fully proofread and complete
+* **Translations:** Fabcoins.info now has fully proofread and complete
   translations for 26 languages. New and significantly-improved
   translations added this quarter include Bulgarian, Greek, Polish,
   and Turkish.
@@ -40,7 +40,7 @@ Summary for December 2014, January 2015, and February 2015.
 
 * **Contributors:** long-time site maintainer Saïvann Carignan, who has
   made [over 1,000
-  commits](http://github.com/fabcoin-dot-org/fabcoins.info/commits/master?author=saivann)
+  commits](http://github.com/fabcoins-dot-info/fabcoins.info/commits/master?author=saivann)
   during the past two years, has announced he no longer has time to lead
   the project. A search is on for new volunteers who are willing to
   contribute to one of most trusted Fabcoin resources on the Internet.
@@ -61,9 +61,9 @@ Summary for December 2014, January 2015, and February 2015.
 > realizado!" (Many thanks for doing this immediately, and for all the
 > work done!) --Adamantike on Transifex.com
 
-![Fabcoin.org available in 26 languages](/img/blog/free/translations.png)
+![Fabcoins.info available in 26 languages](/img/blog/free/translations.png)
 
-Non-US/UK visitors accounted for 35% percent of Fabcoin.org's traffic
+Non-US/UK visitors accounted for 35% percent of Fabcoins.info's traffic
 this quarter, about 2.5 million page views. Future translation work will
 likely depend on how the English portion of the site is changed in the
 coming months.
@@ -93,7 +93,7 @@ many reviews made by Saïvann Carignan.
 ## Developer documentation
 
 > "Nice work!" ---Jonas Schnelli about the new HTTP REST documentation
-> ([source](http://github.com/fabcoin-dot-org/fabcoins.info/pull/720#issuecomment-71515413))
+> ([source](http://github.com/fabcoins-dot-info/fabcoins.info/pull/720#issuecomment-71515413))
 
 ![Illustration from new headers-first documentation](/img/blog/free/en-headers-first-moving-window.png)
 
@@ -102,31 +102,31 @@ of about 90,000 page views this quarter. Accomplishments this
 quarter include:
 
 * **RPC rewrite:** added [114 new or completely
-  rewritten](http://github.com/fabcoin-dot-org/fabcoins.info/pull/693) printed
+  rewritten](http://github.com/fabcoins-dot-info/fabcoins.info/pull/693) printed
   pages worth of text describing Fabcoin Core's RPC interface and [8
-  more pages](http://github.com/fabcoin-dot-org/fabcoins.info/pull/720)
+  more pages](http://github.com/fabcoins-dot-info/fabcoins.info/pull/720)
   describing its new HTTP REST interface.
 
 * **What's headers first?** Fabcoin Core 0.10.0's new
   headers-first sync [is now
-  documented](http://github.com/fabcoin-dot-org/fabcoins.info/pull/736) as is
+  documented](http://github.com/fabcoins-dot-info/fabcoins.info/pull/736) as is
   [the older blocks-first
-  sync](http://github.com/fabcoin-dot-org/fabcoins.info/pull/685).
+  sync](http://github.com/fabcoins-dot-info/fabcoins.info/pull/685).
 
 * **P2P protocol:** begun in the previous quarter, this quarter also saw
-  the [completion](http://github.com/fabcoin-dot-org/fabcoins.info/pull/657) of
+  the [completion](http://github.com/fabcoins-dot-info/fabcoins.info/pull/657) of
   over 30 printed pages worth of text [describing the Fabcoin
   peer-to-peer network](http://fabcoins.info/en/developer-reference#p2p-network).
 
 * **Ease contribution:** nearly every subheading [now
-  includes](http://github.com/fabcoin-dot-org/fabcoins.info/pull/682) links that
+  includes](http://github.com/fabcoins-dot-info/fabcoins.info/pull/682) links that
   allow instant submission of corrections or reporting of issues related
   to the text.
 
 * **Documentation is not a specification:** relaying comments frequently
   made by Fabcoin Core developers, we now make clear that the
   [documentation is not a
-  specification](http://github.com/fabcoin-dot-org/fabcoins.info/pull/679)
+  specification](http://github.com/fabcoins-dot-info/fabcoins.info/pull/679)
 
 * **Fabcoin Core 0.10.0:** many small changes were made to update the
   documentation to accurately describe Fabcoin Core 0.10.0 behavior.
@@ -140,9 +140,9 @@ conducted by Saïvann Carignan, Jonas Schnelli, and others.
 > "Thanks."
 > "Thank you!"
 > ---Users after we helped promote their Fabcoin events (sources:
-> [1](http://github.com/fabcoin-dot-org/fabcoins.info/issues/702),
-> [2](http://github.com/fabcoin-dot-org/fabcoins.info/issues/741),
-> [3](http://github.com/fabcoin-dot-org/fabcoins.info/issues/741))
+> [1](http://github.com/fabcoins-dot-info/fabcoins.info/issues/702),
+> [2](http://github.com/fabcoins-dot-info/fabcoins.info/issues/741),
+> [3](http://github.com/fabcoins-dot-info/fabcoins.info/issues/741))
 
 ![Excerpt from the Events page map](/img/blog/free/events.png)
 
@@ -177,7 +177,7 @@ pull requests to keep the site content current and useful.
 
 > "Thank you! Good catch!" ---GreenAddress on GitHub after we discovered
 > a bug in the new GreenBits wallet
-> ([source](http://github.com/fabcoin-dot-org/fabcoins.info/pull/725#issuecomment-73322654))
+> ([source](http://github.com/fabcoins-dot-info/fabcoins.info/pull/725#issuecomment-73322654))
 
 ![Just some of the wallets currently listed](/img/blog/free/wallets.png)
 
@@ -189,9 +189,9 @@ to the number of wallet authors who want us to include their wallet on
 the page.
 
 * **New wallets:** we reviewed and added three new wallets
-  [Airbitz](http://github.com/fabcoin-dot-org/fabcoins.info/pull/652),
-  [Circle](http://github.com/fabcoin-dot-org/fabcoins.info/pull/697), and
-  [Coinapult](http://github.com/fabcoin-dot-org/fabcoins.info/pull/577).
+  [Airbitz](http://github.com/fabcoins-dot-info/fabcoins.info/pull/652),
+  [Circle](http://github.com/fabcoins-dot-info/fabcoins.info/pull/697), and
+  [Coinapult](http://github.com/fabcoins-dot-info/fabcoins.info/pull/577).
 
 * **Made HSTS a requirement:** after contacting eight wallet
   providers and asking them to enable HTTP Strict Transport Security
@@ -201,15 +201,15 @@ the page.
 
 * **Removed Blockchain.info:** although a very popular wallet service,
   Blockchain.info was
-  [delisted](http://github.com/fabcoin-dot-org/fabcoins.info/pull/663) after a
+  [delisted](http://github.com/fabcoins-dot-info/fabcoins.info/pull/663) after a
   polite online discussion with its CEO. A period of 60 days was chosen,
   after which they may apply to be relisted.
 
 * **Published wallet requirements:** a set of wallet requirements and
   guidelines [were
-  discussed](http://github.com/fabcoin-dot-org/fabcoins.info/pull/670) and
+  discussed](http://github.com/fabcoins-dot-info/fabcoins.info/pull/670) and
   published, allowing wallet authors to evaluate for themselves whether
-  their wallet would be a good fit for Fabcoin.org.
+  their wallet would be a good fit for Fabcoins.info.
 
 Saïvann Carignan spearheaded all the wallet efforts above, although we
 are also grateful to the many people who commented on the wallet issues
@@ -217,7 +217,7 @@ and pull requests.
 
 As Saïvann has become too busy to continue maintenance of the wallet
 section of the site, we are actively [looking for a
-volunteer](http://github.com/fabcoin-dot-org/fabcoins.info/issues/778) to take
+volunteer](http://github.com/fabcoins-dot-info/fabcoins.info/issues/778) to take
 over reviewing wallets and managing wallet requirements. This is a great
 volunteer position for anyone who likes trying new wallets and who wants
 to interact directly with wallet authors.
@@ -228,7 +228,7 @@ to interact directly with wallet authors.
 
 > "Awesome, thanks for writing this down!" ---Andreas Schildbach on
 > GitHub
-> ([source](http://github.com/fabcoin-dot-org/fabcoins.info/pull/711#issuecomment-70187037))
+> ([source](http://github.com/fabcoins-dot-info/fabcoins.info/pull/711#issuecomment-70187037))
 
 ![Screenshot included in the full node guide](/img/blog/free/fabcoin-core.png)
 
@@ -245,7 +245,7 @@ five days and has received over 4,000 page views.
 * **Target multiple OSes:** initial instructions are provided for Ubuntu
   Desktop and Ubuntu Server, other Linux distributions (desktop or
   server), and Windows 7 (desktop only). New volunteers have [begun the
-  process](http://github.com/fabcoin-dot-org/fabcoins.info/issues/763) of
+  process](http://github.com/fabcoins-dot-info/fabcoins.info/issues/763) of
   contributing Windows 8.1 instructions, and we are still looking for a
   Mac user to contribute OS X instructions.
 
@@ -272,7 +272,7 @@ Saïvann Carignan and Jameson Lopp, and promotion also by Jameson.
 
 > "Confirmed it works. Thanks a lot!" --Wladimir J. van der Laan on
 > GitHub about the updated Download page
-> ([source](http://github.com/fabcoin-dot-org/fabcoins.info/pull/664#issuecomment-74473907))
+> ([source](http://github.com/fabcoins-dot-info/fabcoins.info/pull/664#issuecomment-74473907))
 
 Sometimes small tweaks to the site can have a large impact. Some of the
 changes made this quarter include:
@@ -281,21 +281,21 @@ changes made this quarter include:
 
 * **Fabcoin Core 0.10.0:** it is our privilege to help the
   core developers release new versions of Fabcoin Core by
-  [updating](http://github.com/fabcoin-dot-org/fabcoins.info/pull/664) the
+  [updating](http://github.com/fabcoins-dot-info/fabcoins.info/pull/664) the
   [Download page](http://fabcoins.info/en/download) and the [hosted
   release notes.](http://fabcoins.info/en/version-history) For the
   0.10.0 release, we added a [torrent
   file](http://fabcoins.info/bin/fabcoin-core-0.10.0/fabcoin-0.10.0.torrent)
   and [magnet
   link](magnet:?xt=urn:btih:170c61fe09dafecfbb97cb4dccd32173383f4e68&dn=0.10.0&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&ws=http%3A%2F%2Ffabcoins.info%2Fbin%2F)
-  to help ensure availability of the files even if Fabcoin.org
+  to help ensure availability of the files even if Fabcoins.info
   goes down.
 
     The new torrent has been downloaded over 900 times and there are at
     least 44 active seeders as of February 28th.
 
 * **Image optimization:** 83 SVG images were
-  [optimized,](http://github.com/fabcoin-dot-org/fabcoins.info/pull/774) saving
+  [optimized,](http://github.com/fabcoins-dot-info/fabcoins.info/pull/774) saving
   over 250 KB of disk space and a significant amount of bandwidth, as
   well as helping users on slow connections read the site more quickly.
 
@@ -312,13 +312,13 @@ SVG images.
 ## Server And Development Tools
 
 > "I don't know what people are complaining about... I think it's pretty
-> great actually!" ---/u/itsgremlin on Reddit about Fabcoin.org in
+> great actually!" ---/u/itsgremlin on Reddit about Fabcoins.info in
 > general
 > ([source](http://www.reddit.com/r/Fabcoin/comments/2oessw/fabcoinorg_what_would_you_want_here/cmmg9r7))
 
 ![Travis CI verifying the site builds correctly](/img/blog/free/travis.png)
 
-With 7 million page views per quarter, Fabcoin.org serves an average of
+With 7 million page views per quarter, Fabcoins.info serves an average of
 54 pages a minute---so even a single second of downtime might prevent us
 from helping a Fabcoin user. This quarter we took additional steps to
 ensure that the site works correctly while also attempting to make it
@@ -327,12 +327,12 @@ updated.
 
 * **Continuous integration:** each new pull request improving the site
   is now [automatically built using Travis
-  CI](http://github.com/fabcoin-dot-org/fabcoins.info/pull/771), allowing
+  CI](http://github.com/fabcoins-dot-info/fabcoins.info/pull/771), allowing
   contributors to quickly discover bugs in their code even if they don't
   compile the site themselves.
 
 * **Troubleshooting:**
-  [investigated](http://github.com/fabcoin-dot-org/fabcoins.info/issues/712) slow
+  [investigated](http://github.com/fabcoins-dot-info/fabcoins.info/issues/712) slow
   bandwidth issues with downloads.
 
 * **Preventive maintenance:** mitigated DDoS attacks and made sure stats
@@ -340,9 +340,9 @@ updated.
   against XSS attacks.
 
 * **Guide volunteers:** [added a
-  list](http://github.com/fabcoin-dot-org/fabcoins.info/pull/742) of [suggestions
+  list](http://github.com/fabcoins-dot-info/fabcoins.info/pull/742) of [suggestions
   for new
-  contributors](http://github.com/fabcoin-dot-org/fabcoins.info#how-to-participate)
+  contributors](http://github.com/fabcoins-dot-info/fabcoins.info#how-to-participate)
   so they can dive in immediately.
 
 * **Audits:** wrote an automated script that will send an alert when
@@ -388,14 +388,14 @@ volunteer quick start guide was contributed by David.
 > "I'm running a full node (~20 connections) with Fabcoin Core Version
 > v0.10.0rc1 (64-Bit) on Windows 8.1 and willing to help out!"\
 > ---Volunteer on GitHub for the Full Node page
-> ([source](http://github.com/fabcoin-dot-org/fabcoins.info/issues/763))
+> ([source](http://github.com/fabcoins-dot-info/fabcoins.info/issues/763))
 
-In addition to Fabcoin.org's recurring goals, such as funding the
+In addition to Fabcoins.info's recurring goals, such as funding the
 servers (currently about $600 USD per month), we hope to accomplish the
 following three major goals during the next quarter:
 
 1. **New wallet maintainer:** we're [seeking a
-   volunteer](http://github.com/fabcoin-dot-org/fabcoins.info/issues/778) to
+   volunteer](http://github.com/fabcoins-dot-info/fabcoins.info/issues/778) to
    review new wallets for inclusion on the Choose Your Wallet page, as
    well as to monitor existing wallets for problems and to propose new
    criteria that allow us to only recommend the very best wallets.
@@ -403,8 +403,8 @@ following three major goals during the next quarter:
 2. **New developer documentation:** the developer documentation is
    currently 250 printed pages long, and on May 24th it will celebrate
    its [one-year
-   anniversary](http://github.com/fabcoin-dot-org/fabcoins.info/pull/393#issuecomment-44089996)
-   on Fabcoin.org. In the upcoming quarter we plan to add about 50 more
+   anniversary](http://github.com/fabcoins-dot-info/fabcoins.info/pull/393#issuecomment-44089996)
+   on Fabcoins.info. In the upcoming quarter we plan to add about 50 more
    printed pages worth of content, including:
 
     * A [glossary/vocabulary
@@ -418,7 +418,7 @@ following three major goals during the next quarter:
       page](http://en.fabcoin.it/wiki/Script)
 
     * [Improved type
-      information](http://github.com/fabcoin-dot-org/fabcoins.info/pull/753) in
+      information](http://github.com/fabcoins-dot-info/fabcoins.info/pull/753) in
       the RPC and REST sections, as
       [requested](http://www.mail-archive.com/fabcoin-development@lists.sourceforge.net/msg07069.html)
       by Ocaml-Fabcoin developer Dario Teixeira.
@@ -431,7 +431,7 @@ following three major goals during the next quarter:
       protocol](http://fabcoins.info/en/developer-guide#p2p-network).
 
 3. **Better volunteer resources:** we want to make it easier for
-   community members to volunteer to contribute to Fabcoin.org in ways
+   community members to volunteer to contribute to Fabcoins.info in ways
    both small and large. New documentation about site procedures is
    forthcoming and we will be looking for other ways to encourage and
    simplify first-time contributions.
@@ -449,10 +449,10 @@ following three major goals during the next quarter:
 > ---David A. Harding on Reddit
 > ([source](http://www.reddit.com/r/Fabcoin/comments/2wvdko/new_page_on_fabcoinorg_running_a_full_node/couu1cv))
 
-We thank [The Fabcoin Foundation](http://fabcoinfoundation.org/) for
+We thank [The Fab Foundation](http://fabcoin.co/) for
 their continued financial support of the site, and extend our heartfelt
 appreciation to the [15
-people](http://github.com/fabcoin-dot-org/fabcoins.info/graphs/contributors?from=2014-12-01&to=2015-02-28&type=c)
+people](http://github.com/fabcoins-dot-info/fabcoins.info/graphs/contributors?from=2014-12-01&to=2015-02-28&type=c)
 who contributed commits this quarter and the much larger number of
 people who provided valuable feedback in over 439 comments on pull
 requests and issues.
@@ -460,5 +460,5 @@ requests and issues.
 ---
 
 *If you have any questions about the content of this report, please
-[open an issue](http://github.com/fabcoin-dot-org/fabcoins.info/issues/new) on
+[open an issue](http://github.com/fabcoins-dot-info/fabcoins.info/issues/new) on
 GitHub or email Dave Harding, <dave@dtrt.org>.*

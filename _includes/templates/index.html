@@ -4,11 +4,12 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 
 <p class="mainsummary">{% translate listintro %}</p>
-<div class="mainvideo"><div onclick="loadYoutubeVideo(event);" ontouchstart="loadYoutubeVideo(event);" data-youtubeurl="//www.youtube.com/embed/{% if page.lang == 'ro' %}JPNwbWu0tMQ{% else %}Gc2en3nHxA4{% endif %}?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;autoplay=1{% if page.lang != 'en' %}&amp;cc_load_policy=1&amp;hl={{ page.lang }}&amp;cc_lang_pref={{ page.lang }}{% endif %}">
-  <img src="/img/video/video_wuc.jpg" alt="Youtube video">
-  <div class="mainvideoicon"></div>
-  <div class="mainvideoiconhover"></div>
-</div></div>
+
+<div class="mainvideo">
+<iframe src="https://player.vimeo.com/video/249231792" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</p>
+
+</div>
 <div class="mainlist">
   <div><div><img src="/img/icons/main_ico_instant.svg" alt="Icon"><div>{% translate list1 %}</div></div></div>
   <div><div><img src="/img/icons/main_ico_worldwide.svg" alt="Icon"><div>{% translate list2 %}</div></div></div>

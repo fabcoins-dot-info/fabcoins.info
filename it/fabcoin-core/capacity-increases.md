@@ -33,6 +33,6 @@ Altre versioni di questa pagina:
 - [简体中文](/zh_CN/fabcoin-core/capacity-increases)
 - [繁體中文](/zh_TW/fabcoin-core/capacity-increases)
 
-Le firme possono essere aggiunte alla pull request di Fabcoin.org [#1165](http://github.com/fabcoin-dot-org/fabcoins.info/pull/1165)
+Le firme possono essere aggiunte alla pull request di Fabcoins.info [#1165](http://github.com/fabcoins-dot-info/fabcoins.info/pull/1165)
 
 [1]: http://lists.linuxfoundation.org/pipermail/fabcoin-dev/2015-December/011865.html

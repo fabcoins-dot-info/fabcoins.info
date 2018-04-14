@@ -355,7 +355,7 @@ http://opensource.org/licenses/MIT.
 [bcc pulls]: http://github.com/fabcoin/fabcoin/pulls
 [bcc tor]: http://en.fabcoin.it/wiki/Tor
 [bcc tor hs]: http://en.fabcoin.it/wiki/Tor#Hidden_services
-[core github tag]: http://github.com/fabcoin-dot-org/fabcoins.info/labels/Core
+[core github tag]: http://github.com/fabcoins-dot-info/fabcoins.info/labels/Core
 [BFGMiner]: http://github.com/luke-jr/bfgminer
 [Fabcoin beginners]: http://www.reddit.com/r/fabcoinbeginners
 [Fabcoin Core]: http://fabcoins.info/en/download
@@ -392,12 +392,12 @@ http://opensource.org/licenses/MIT.
 [dig command]: http://en.wikipedia.org/wiki/Dig_%28Unix_command%29
 [DNS A records]: http://tools.ietf.org/html/rfc1035#section-3.2.2
 [DNS Seed Policy]: http://github.com/fabcoin/fabcoin/blob/master/doc/dnsseed-policy.md
-[docs issue]: http://github.com/fabcoin-dot-org/fabcoins.info/issues
+[docs issue]: http://github.com/fabcoins-dot-info/fabcoins.info/issues
 [ECDSA]: http://en.wikipedia.org/wiki/Elliptic_Curve_DSA
-[edit bandwidth sharing guide]: http://github.com/fabcoin-dot-org/fabcoins.info/edit/master/en/full-node.md
+[edit bandwidth sharing guide]: http://github.com/fabcoins-dot-info/fabcoins.info/edit/master/en/full-node.md
 [Electrum server]: http://github.com/spesmilo/electrum-server
 [Eloipool]: http://github.com/luke-jr/eloipool
-[errors in docs]: http://github.com/fabcoin-dot-org/fabcoins.info/issues?q=is%3Aissue+label%3A%22Dev+Docs%22
+[errors in docs]: http://github.com/fabcoins-dot-info/fabcoins.info/issues?q=is%3Aissue+label%3A%22Dev+Docs%22
 [fake satoshi transaction]: http://www.reddit.com/r/Fabcoin/comments/3fv42j/blockchaininfo_spoofed_transactions_problem_aug_4/
 [forum tech support]: http://fabcointalk.org/index.php?board=4.0
 [ghash betcoin double spend]: http://fabcointalk.org/index.php?topic=321630.msg3445371
@@ -428,8 +428,8 @@ http://opensource.org/licenses/MIT.
 [netcat]: http://en.wikipedia.org/wiki/Netcat
 [nop opcodes]: http://en.fabcoin.it/wiki/Script#Reserved_words
 [offline transactions]: http://fabcoin.stackexchange.com/a/34122/21052
-[open a pull request]: http://github.com/fabcoin-dot-org/fabcoins.info#working-with-github
-[open an issue]: http://github.com/fabcoin-dot-org/fabcoins.info/issues/new
+[open a pull request]: http://github.com/fabcoins-dot-info/fabcoins.info#working-with-github
+[open an issue]: http://github.com/fabcoins-dot-info/fabcoins.info/issues/new
 [Payment Request Generator]: http://github.com/gavinandresen/paymentrequest/blob/master/php/demo_website/createpaymentrequest.php
 [Piotr Piasecki's testnet faucet]: http://tpfaucet.appspot.com/
 [prime symbol]: http://en.wikipedia.org/wiki/Prime_%28symbol%29

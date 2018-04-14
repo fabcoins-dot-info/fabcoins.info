@@ -73,7 +73,7 @@ interaction with your node:
 
 
 {% capture complete_list_of_commands_and_ibd %}
-A complete list of commands is available in the [Fabcoin.org developer
+A complete list of commands is available in the [Fabcoins.info developer
 reference](/en/developer-reference#rpc-quick-reference).
 
 When Fabcoin Core daemon first starts, it will begin to download the block
@@ -102,8 +102,8 @@ Core running.
 * Table of contents
 {:toc}
 
-<ul class="reportissue"><li><a href="http://github.com/fabcoin-dot-org/fabcoins.info/issues/new">Report An Issue</a></li></ul>
-<ul class="editsource"><li><a href="http://github.com/fabcoin-dot-org/fabcoins.info/tree/master/en/full-node.md">Edit On GitHub</a></li></ul>
+<ul class="reportissue"><li><a href="http://github.com/fabcoins-dot-info/fabcoins.info/issues/new">Report An Issue</a></li></ul>
+<ul class="editsource"><li><a href="http://github.com/fabcoins-dot-info/fabcoins.info/tree/master/en/full-node.md">Edit On GitHub</a></li></ul>
 
 </div></div>
 <div markdown="1" class="toccontent">
@@ -1389,7 +1389,7 @@ anything, search the web for help with "port forwarding", and ask for
 help on sites like [SuperUser](http://superuser.com).
 
 We can't provide direct support, but if you see a way to improve these
-instructions, please [open an issue.](http://github.com/fabcoin-dot-org/fabcoins.info/issues/new)
+instructions, please [open an issue.](http://github.com/fabcoins-dot-info/fabcoins.info/issues/new)
 
 #### Firewall Configuration
 
@@ -1422,7 +1422,7 @@ web for help with "port forwarding" and "opening firewall ports", and
 ask for help on sites like [SuperUser](http://superuser.com).
 
 We can't provide direct support, but if you see a way to improve these
-instructions, please [open an issue.](http://github.com/fabcoin-dot-org/fabcoins.info/issues/new)
+instructions, please [open an issue.](http://github.com/fabcoins-dot-info/fabcoins.info/issues/new)
 
 ## Configuration Tuning
 

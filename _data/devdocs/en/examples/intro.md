@@ -57,7 +57,7 @@ or regression test mode (regtest) described below.
 
 Questions about Fabcoin use are best sent to the [FabcoinTalk forum][forum
 tech support] and [IRC channels][]. Errors or suggestions related to
-documentation on Fabcoin.org can be [submitted as an issue][docs issue]
+documentation on Fabcoins.info can be [submitted as an issue][docs issue]
 or posted to the [fabcoin-documentation mailing list][].
 
 In the following documentation, some strings have been shortened or wrapped: "[...]"

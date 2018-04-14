@@ -22,11 +22,11 @@ module Jekyll
           ar = JSON.parse(open("http://api.github.com/repos/"+repo+"/contributors?page=#{page}&per_page=100","User-Agent"=>"Ruby/#{RUBY_VERSION}").read)
         # Prevent any error to stop the build process, return an empty array instead
         rescue
-          print 'GitHub API Call Failed!'
+          print 'GitHub API Call Failed-1!'
           break
         end
         if !ar.is_a?(Array)
-          print 'GitHub API Call Failed!'
+          print 'GitHub API Call Failed-2!'
           return contributors
         end
         if ar.length > 100

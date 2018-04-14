@@ -7,11 +7,11 @@ layout: post
 lang: en
 category: blog
 
-title: "Fabcoin.org to denounce \"Segwit2x\""
+title: "Fabcoins.info to denounce \"Segwit2x\""
 permalink: /en/posts/denounce-segwit2x.html
 date: 2017-10-05
 ---
-On 2017-10-11 at noon (UTC), Fabcoin.org is planning to publish a banner on every page of the site warning users about the risks of using services that will default to the so-called Segwit2x<sup><b>1</b></sup> (S2X) contentious hard fork. S2X companies will be called out by name. To ensure that we only warn users against companies that will actually put user deposits at risk, we urge all companies to publicly clarify their stance before the above date, either by a highly-visible public statement or by commenting on Fabcoin.org issue #[1835](http://github.com/fabcoin-dot-org/fabcoins.info/issues/1835) (or by doing both).
+On 2017-10-11 at noon (UTC), Fabcoins.info is planning to publish a banner on every page of the site warning users about the risks of using services that will default to the so-called Segwit2x<sup><b>1</b></sup> (S2X) contentious hard fork. S2X companies will be called out by name. To ensure that we only warn users against companies that will actually put user deposits at risk, we urge all companies to publicly clarify their stance before the above date, either by a highly-visible public statement or by commenting on Fabcoins.info issue #[1835](http://github.com/fabcoins-dot-info/fabcoins.info/issues/1835) (or by doing both).
 
 In particular, we need to know that:
 

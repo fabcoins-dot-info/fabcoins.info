@@ -8,13 +8,13 @@ one](http://www.atlassian.com/git/tutorial/git-basics).
 In order to use GitHub, you need to [sign up](http://github.com/signup) and [set
 up git](http://help.github.com/articles/set-up-git). You will also need to
 click the **Fork** button on the fabcoins.info [GitHub
-page](http://github.com/fabcoin-dot-org/fabcoins.info) and clone your GitHub
+page](http://github.com/fabcoins-dot-info/fabcoins.info) and clone your GitHub
 repository into a local directory with the following command lines:
 
 ```
 git clone (url provided by GitHub on your fork's page) fabcoins.info
 cd fabcoins.info
-git remote add upstream http://github.com/fabcoin-dot-org/fabcoins.info.git
+git remote add upstream http://github.com/fabcoins-dot-info/fabcoins.info.git
 ```
 
 **How to send a pull request**
@@ -36,7 +36,7 @@ changes into separate branches and pull requests.
 **Travis Continuous Integration (CI)**
 
 Shortly after your Pull Request (PR) is submitted, a Travis CI job will
-be added to [our queue](http://travis-ci.org/fabcoin-dot-org/fabcoins.info). This
+be added to [our queue](http://travis-ci.org/fabcoins-dot-info/fabcoins.info). This
 will build the site and run some basic checks. If the job fails, you
 will be emailed a link to the build log and the PR will indicate a
 failed job. Read the build report and try to correct the problem---but
@@ -50,7 +50,7 @@ If you'd like to setup Travis on your own repository so you can test
 builds before opening a pull request, it's really simple:
 
 1. Make sure the master branch of your repository is up to date with the
-   fabcoin-dot-org/fabcoins.info master branch.
+   fabcoins-dot-info/fabcoins.info master branch.
 
 2. Open [this guide](http://docs.travis-ci.com/user/getting-started/)
    and perform steps one, two, and four. (The other steps are already
@@ -78,6 +78,6 @@ need to re-create the branch and the pull request.
 
 **Advanced GitHub Workflow**
 
-If you continue to contribute to Fabcoin.org beyond a single pull
+If you continue to contribute to Fabcoins.info beyond a single pull
 request, you may want to use a more [advanced GitHub
 workflow](http://gist.github.com/harding/1a99b0bad37f9498709f).

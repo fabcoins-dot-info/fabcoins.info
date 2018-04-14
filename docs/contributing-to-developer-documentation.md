@@ -1,7 +1,7 @@
 ## Developer Documentation
 
 Most parts of the documentation can be found in the
-[_includes](http://github.com/fabcoin-dot-org/fabcoins.info/tree/master/_includes)
+[_includes](http://github.com/fabcoins-dot-info/fabcoins.info/tree/master/_includes)
 directory. Updates, fixes and improvements are welcome and can submitted using
 [pull requests](#working-with-github) on GitHub.
 
@@ -10,11 +10,11 @@ directory. Updates, fixes and improvements are welcome and can submitted using
 
 **TODO List**: New content and suggestions for improvements can be submitted
 to the [TODO
-list](http://github.com/fabcoin-dot-org/fabcoins.info/wiki/Documentation-TODO).
+list](http://github.com/fabcoins-dot-info/fabcoins.info/wiki/Documentation-TODO).
 You are also welcome if you want to assign yourself to any task.
 
 **Style Guide**: For better consistency, the [style
-guide](http://github.com/fabcoin-dot-org/fabcoins.info/wiki/Documentation-Style-Guide)
+guide](http://github.com/fabcoins-dot-info/fabcoins.info/wiki/Documentation-Style-Guide)
 can be used as a reference for terminology, style and formatting. Suggested
 changes
 can also be submitted to this guide to keep it up to date.

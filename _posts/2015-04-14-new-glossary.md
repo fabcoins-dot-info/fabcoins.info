@@ -16,10 +16,10 @@ author: >
 ---
 
 *Thanks to [several volunteers][] and the financial sponsorship of [The
-Fabcoin Foundation][], we've added two major new features to the
-[Fabcoin.org Developer Documentation][].*
+Fab Foundation][], we've added two major new features to the
+[Fabcoins.info Developer Documentation][].*
 
-A new [glossary section][] has been added to the Fabcoin.org Developer
+A new [glossary section][] has been added to the Fabcoins.info Developer
 Documentation, and with it comes a fully-Javascript search engine that
 helps you look up glossary entries, Fabcoin Core RPCs, Fabcoin BIPs,
 Script-language opcodes, and Fabcoin P2P protocol messages.
@@ -43,7 +43,7 @@ on the [Events page][].)
 Each glossary entry has its own page providing a short definition
 (limited to 255 characters), one or more synonyms, zero or more "not to
 be confused with" terms, and zero or more links to resources on and off
-Fabcoin.org. Separate pages were used to allow search engines to link
+Fabcoins.info. Separate pages were used to allow search engines to link
 directly to the most relevant entry, rather than forcing users to scroll
 through a giant page of definitions.
 
@@ -51,7 +51,7 @@ The glossary currently has:
 
 * 89 glossary entry pages
 * 51 additional synonyms
-* 222 links (all internal to Fabcoin.org or to Fabcoin Wiki, FabcoinTalk, or Fabcoin StackExchange)
+* 222 links (all internal to Fabcoins.info or to Fabcoin Wiki, FabcoinTalk, or Fabcoin StackExchange)
 
 Each page includes links to edit it, view its history, or report an
 issue about it.
@@ -67,14 +67,14 @@ glossary entry pages.
 The box allows finding the following by keyword, listed in the order
 they appear in the search:
 
-* Glossary entries (Fabcoin.org)
-* RPCs  (Fabcoin.org)
+* Glossary entries (Fabcoins.info)
+* RPCs  (Fabcoins.info)
 * Opcodes (Fabcoin Wiki)
 * BIPs (just notable and non-withdrawn BIPs; GitHub.com BIPs repo)
-* Fabcoin P2P protocol messages (Fabcoin.org)
+* Fabcoin P2P protocol messages (Fabcoins.info)
 
 The search uses [JQuery][] and [JQuery UI][], both MIT-licensed. Both are
-loaded from the Fabcoin.org server so there's no stats leakage when
+loaded from the Fabcoins.info server so there's no stats leakage when
 people load them.
 
 [dev guide]: /en/developer-guide
@@ -83,8 +83,8 @@ people load them.
 [dev glossary]: /en/developer-glossary
 [jquery]: http://jquery.com/
 [jquery ui]: http://jqueryui.com/
-[several volunteers]: http://github.com/fabcoin-dot-org/fabcoins.info/pull/793
-[Fabcoin.org developer documentation]: /en/developer-documentation
-[the fabcoin foundation]: http://fabcoinfoundation.org/
+[several volunteers]: http://github.com/fabcoins-dot-info/fabcoins.info/pull/793
+[Fabcoins.info developer documentation]: /en/developer-documentation
+[the fabcoin foundation]: http://fabcoin.co/
 [glossary section]: /en/developer-glossary
 [events page]: /en/events

@@ -7,7 +7,7 @@ layout: post
 lang: en
 category: blog
 
-title: "Fabcoin.org Hard Fork Policy"
+title: "Fabcoins.info Hard Fork Policy"
 permalink: /en/posts/hard-fork-policy.html
 date: 2015-06-16
 ---
@@ -18,9 +18,9 @@ permanently lose their value. In between are many possible outcomes, but
 none of them are good.
 
 The danger of a contentious hard fork is potentially so significant
-that Fabcoin.org has decided to adopt a new policy:
+that Fabcoins.info has decided to adopt a new policy:
 
-> Fabcoin.org will not promote software or services that will leave the
+> Fabcoins.info will not promote software or services that will leave the
 > previous consensus because of an intentional and contentious hard fork attempt.
 
 This policy applies to full node software, such as Fabcoin Core,

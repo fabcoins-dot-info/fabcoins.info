@@ -16,7 +16,7 @@ breadcrumbs:
 # Writing Fabcoin Core Documentation
 
 Fabcoin Core documentation is spread across three projects: Fabcoin
-Core, the Fabcoin Wiki, and Fabcoin.org---and is further subdivided into
+Core, the Fabcoin Wiki, and Fabcoins.info---and is further subdivided into
 different parts. The sections below briefly describe what documentation
 is available and how you can contribute.
 
@@ -46,9 +46,9 @@ GitHub's web interface:
 *Need help getting started?  Stop by the [#fabcoin-dev][] IRC chatroom
 and tell us what documentation you want to write.*
 
-## Fabcoin.org Bandwidth Sharing Guide
+## Fabcoins.info Bandwidth Sharing Guide
 
-The [Fabcoin.org bandwidth sharing guide][bandwidth sharing guide]
+The [Fabcoins.info bandwidth sharing guide][bandwidth sharing guide]
 currently provides instructions for how to install Fabcoin Core on
 multiple operating systems, configure it to automatically start at boot,
 and manually open port 8665 so it accepts incoming connections.
@@ -57,7 +57,7 @@ To contribute, you can [edit the guide][edit bandwidth sharing
 guide] using the same GitHub web interface as described in the
 previous section.
 
-*Need help getting started? You can [open an issue][] or email Fabcoin.org
+*Need help getting started? You can [open an issue][] or email Fabcoins.info
 documentation maintainer {{site.text.fabcoins.info_docs_maintainer_email_link}}.*
 
 ## Fabcoin Wiki
@@ -81,16 +81,16 @@ Core documentation category.
 *Need help getting started?  Stop by the [#fabcoin-wiki][] IRC chatroom and
 tell us what documentation you want to write.*
 
-## Fabcoin.org RPC/REST API Reference
+## Fabcoins.info RPC/REST API Reference
 
-The [Fabcoin.org developer reference][devref] contains over 100 printed
+The [Fabcoins.info developer reference][devref] contains over 100 printed
 pages worth of documentation for the Fabcoin Core RPC and REST
 interfaces, which are mainly used by Fabcoin Core command line users and
 developers of apps depending on Fabcoin Core.
 
 To contribute RPC edits, the easiest way is to:
 
-1. Go to the [Fabcoin.org developer documentation main page][developer documentation].
+1. Go to the [Fabcoins.info developer documentation main page][developer documentation].
 
 2. Search for the RPC you want to edit.
 
@@ -98,7 +98,7 @@ To contribute RPC edits, the easiest way is to:
 
 To create new RPC/REST documentation or edit the REST documentation:
 
-1. Follow [these instructions][open a pull request] to clone the Fabcoin.org repository.
+1. Follow [these instructions][open a pull request] to clone the Fabcoins.info repository.
 
 2. RPC files are in the `_includes/ref/fabcoin-core/rpcs` directory.
 
@@ -107,7 +107,7 @@ To create new RPC/REST documentation or edit the REST documentation:
     New files need to be added to the list in `en/developer-reference.md`
 
 *Need help getting started? You can [open an issue][] or email
-Fabcoin.org documentation maintainer {{site.text.fabcoins.info_docs_maintainer_email_link}}.*
+Fabcoins.info documentation maintainer {{site.text.fabcoins.info_docs_maintainer_email_link}}.*
 
 <br class="clear big">
 <div class="prevnext">

@@ -126,7 +126,7 @@ Gox](http://en.fabcoin.it/wiki/Collapse_of_Mt._Gox)
   community---are [released publicly][gitian sigs].
 
 <div class="callout" markdown="block">
-Fabcoin.org's [Choose Your Wallet][] page tells you whether or not
+Fabcoins.info's [Choose Your Wallet][] page tells you whether or not
 wallet builds are audited in the *Transparency* score for each wallet.
 </div>
 

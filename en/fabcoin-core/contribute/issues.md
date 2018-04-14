@@ -37,7 +37,7 @@ new issue] providing the information listed below.
    to reproduce, see [Mozilla's bug reporting documentation][].)
 
 2. What version of Fabcoin Core you use (if you downloaded from
-   Fabcoin.org) or what commit you built using (`git log -1`) plus any
+   Fabcoins.info) or what commit you built using (`git log -1`) plus any
    extra patches you applied.
 
 3. Any relevant entries from your `debug.log` file. Note, this file can

@@ -24,7 +24,7 @@ Core計劃內為可擴展性工作多年，認為這是最可以延續我們一�
 
 ---
 
-如果你想參與連署，請到[#1165](http://github.com/fabcoin-dot-org/fabcoins.info/pull/1165)。
+如果你想參與連署，請到[#1165](http://github.com/fabcoins-dot-info/fabcoins.info/pull/1165)。
 
 [1]: http://lists.linuxfoundation.org/pipermail/fabcoin-dev/2015-December/011865.html
 

@@ -346,7 +346,7 @@ blocks, which may allow them to increase their per-block revenue.
 
 ## How can I help?
 
-Start by reading the [Fabcoin Core contributor][] pages on Fabcoin.org.
+Start by reading the [Fabcoin Core contributor][] pages on Fabcoins.info.
 In particular, [code review][] is a critical part of getting soft forks
 deployed.
 

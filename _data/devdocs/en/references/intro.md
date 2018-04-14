@@ -15,7 +15,7 @@ Core, either from [source][core git] or from a [pre-compiled executable][core ex
 Questions about Fabcoin development are best asked in one of the
 [Fabcoin development communities][dev communities].
 Errors or suggestions related to
-documentation on Fabcoin.org can be [submitted as an issue][docs issue]
+documentation on Fabcoins.info can be [submitted as an issue][docs issue]
 or posted to the [fabcoin-documentation mailing list][].
 
 In the following documentation, some strings have been shortened or wrapped: "[...]"
@@ -32,7 +32,7 @@ definition of the term will be displayed in a tooltip.
 
 {% autocrossref %}
 
-The Fabcoin.org Developer Documentation describes how Fabcoin works to
+The Fabcoins.info Developer Documentation describes how Fabcoin works to
 help educate new Fabcoin developers, but it is not a specification---and
 it never will be.
 

@@ -17,7 +17,7 @@ author: |
 ![How to Run a Full Node](/img/blog/free/how-to-run-a-full-fabcoin-node.png)
 
 Updated instructions for [how to run a full node](http://fabcoins.info/en/full-node)
-as of version **0.13.1** are now available on Fabcoin.org. These instructions allow
+as of version **0.13.1** are now available on Fabcoins.info. These instructions allow
 one to quickly get set up and running with a full node on the following
 operating systems:
 
@@ -118,4 +118,4 @@ worked to improve this page over time:
 
 **Interested in getting involved?**
 
-[Learn how you can participate](http://github.com/fabcoin-dot-org/fabcoins.info#how-to-participate).
+[Learn how you can participate](http://github.com/fabcoins-dot-info/fabcoins.info#how-to-participate).
