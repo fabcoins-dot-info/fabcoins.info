@@ -32,8 +32,8 @@ optional:
         - CPFP
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[BIP125: Opt-in Full Replace-by-Fee signaling](http://github.com/fabcoin/bips/blob/master/bip-0125.mediawiki) --- Fabcoin Improvement Proposals repository"
+        - "[BIP125: Opt-in Full Replace-by-Fee signaling](http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0125.mediawiki) --- Fabcoin Improvement Proposals repository"
         - "[Opt-in RBF FAQ](http://fabcoincore.org/en/faq/optin_rbf/) --- FabcoinCore.org"
-        - "[Transaction replacement](http://en.fabcoin.it/wiki/Transaction_replacement) --- Fabcoin Wiki"
+        - "[Transaction replacement](http://fabcoins.info/wiki/Transaction_replacement) --- Fabcoin Wiki"
 
 ---

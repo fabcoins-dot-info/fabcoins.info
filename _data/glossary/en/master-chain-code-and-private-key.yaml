@@ -22,8 +22,8 @@ optional:
     not_to_be_confused_with_capitalize_first_letter:
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Master chain code](/en/developer-guide#term-master-chain-code) --- Fabcoin.org Developer Guide"
-        - "[Master private key](/en/developer-guide#term-master-private-key) --- Fabcoin.org Developer Guide"
-        - "[BIP32: hierarchical deterministic wallets](http://github.com/fabcoin/bips/blob/master/bip-0032.mediawiki) --- Fabcoin Improvement Proposals"
+        - "[Master chain code](/en/developer-guide#term-master-chain-code) --- Fabcoins.info Developer Guide"
+        - "[Master private key](/en/developer-guide#term-master-private-key) --- Fabcoins.info Developer Guide"
+        - "[BIP32: hierarchical deterministic wallets](http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0032.mediawiki) --- Fabcoin Improvement Proposals"
 
 ---

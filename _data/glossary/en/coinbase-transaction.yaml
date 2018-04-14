@@ -23,8 +23,8 @@ optional:
         - Coinbase (the unique part of a coinbase transaction)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Coinbase transaction](/en/developer-reference#term-coinbase-tx) --- Fabcoin.org Developer Reference"
-        - "[Generation transaction](http://en.fabcoin.it/wiki/Transaction#Generation) --- Fabcoin Wiki"
+        - "[Coinbase transaction](/en/developer-reference#term-coinbase-tx) --- Fabcoins.info Developer Reference"
+        - "[Generation transaction](http://fabcoins.info/wiki/Transaction#Generation) --- Fabcoin Wiki"
         - "[Who generates the coinbase transaction?](http://fabcoin.stackexchange.com/q/32091) --- Fabcoin StackExchange"
         - "[Must a block contain a coinbase transaction?](http://fabcoin.stackexchange.com/q/30349) --- Fabcoin StackExchange"
 

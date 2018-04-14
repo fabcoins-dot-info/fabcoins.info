@@ -21,9 +21,9 @@ optional:
         - Bloom filter (general computer science term, of which Fabcoin's bloom filters are a specific implementation)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Bloom filter](/en/developer-guide#bloom-filters) --- Fabcoin.org Developer Guide"
-        - "[BIP37: Connection Bloom Filtering](http://github.com/fabcoin/bips/blob/master/bip-0037.mediawiki)--- Fabcoin Improvement Proposals"
-        - "[Pull request that implemented bloom filters in Fabcoin Core](http://github.com/fabcoin/fabcoin/pull/1795) --- GitHub"
+        - "[Bloom filter](/en/developer-guide#bloom-filters) --- Fabcoins.info Developer Guide"
+        - "[BIP37: Connection Bloom Filtering](http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0037.mediawiki)--- Fabcoin Improvement Proposals"
+        - "[Pull request that implemented bloom filters in Fabcoin Core](http://github.com/blockchaingate/fabcoin/pull/1795) --- GitHub"
         - "[Discussion about bloom filtering and SPV clients](http://fabcointalk.org/index.php?topic=252937.0) --- FabcoinTalk"
 
 ---

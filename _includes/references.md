@@ -7,7 +7,7 @@ http://opensource.org/licenses/MIT.
 [fabcoin URI]: /en/developer-guide#term-fabcoin-uri "A URI which allows receivers to encode payment details so spenders don't have to manually enter addresses and other details"
 [certificate chain]: /en/developer-examples#term-certificate-chain "A chain of certificates connecting a individual's leaf certificate to the certificate authority's root certificate"
 [coinbase block height]: /en/developer-reference#term-coinbase-block-height "The current block's height encoded into the first bytes of the coinbase field"
-[data-pushing opcode]: http://en.fabcoin.it/wiki/Script#Constants "Any opcode from 0x01 to 0x4e which pushes data on to the script evaluation stack"
+[data-pushing opcode]: http://fabcoins.info/wiki/Script#Constants "Any opcode from 0x01 to 0x4e which pushes data on to the script evaluation stack"
 [fiat]: /en/developer-guide#term-fiat "National currencies such as the dollar or euro"
 [intermediate certificate]: /en/developer-examples#term-intermediate-certificate "A intermediate certificate authority certificate which helps connect a leaf (receiver) certificate to a root certificate authority"
 [key index]: /en/developer-guide#term-key-index "An index number used in the HD wallet formula to generate child keys from a parent key"
@@ -307,37 +307,37 @@ http://opensource.org/licenses/MIT.
 
 {% comment %}<!-- Official reference documents (BIPs should not use zero padding:
      BIP32 not BIP0032); alphabetical order -->{% endcomment %}
-[BIP9]: http://github.com/fabcoin/bips/blob/master/bip-0009.mediawiki
-[BIP9 assignments]: http://github.com/fabcoin/bips/blob/master/bip-0009/assignments.mediawiki
-[BIP14]: http://github.com/fabcoin/bips/blob/master/bip-0014.mediawiki
-[BIP16]: http://github.com/fabcoin/bips/blob/master/bip-0016.mediawiki
-[BIP21]: http://github.com/fabcoin/bips/blob/master/bip-0021.mediawiki
-[BIP22]: http://github.com/fabcoin/bips/blob/master/bip-0022.mediawiki
-[BIP23]: http://github.com/fabcoin/bips/blob/master/bip-0023.mediawiki
-[BIP30]: http://github.com/fabcoin/bips/blob/master/bip-0030.mediawiki
-[BIP31]: http://github.com/fabcoin/bips/blob/master/bip-0031.mediawiki
-[BIP32]: http://github.com/fabcoin/bips/blob/master/bip-0032.mediawiki
-[BIP34]: http://github.com/fabcoin/bips/blob/master/bip-0034.mediawiki
-[BIP35]: http://github.com/fabcoin/bips/blob/master/bip-0035.mediawiki
-[BIP37]: http://github.com/fabcoin/bips/blob/master/bip-0037.mediawiki
-[BIP39]: http://github.com/fabcoin/bips/blob/master/bip-0039.mediawiki
-[BIP50]: http://github.com/fabcoin/bips/blob/master/bip-0050.mediawiki
-[BIP61]: http://github.com/fabcoin/bips/blob/master/bip-0061.mediawiki
-[BIP62]: http://github.com/fabcoin/bips/blob/master/bip-0062.mediawiki
-[BIP66]: http://github.com/fabcoin/bips/blob/master/bip-0066.mediawiki
-[BIP70]: http://github.com/fabcoin/bips/blob/master/bip-0070.mediawiki
-[BIP71]: http://github.com/fabcoin/bips/blob/master/bip-0071.mediawiki
-[BIP72]: http://github.com/fabcoin/bips/blob/master/bip-0072.mediawiki
-[BIP111]: http://github.com/fabcoin/bips/blob/master/bip-0111.mediawiki
-[BIP112]: http://github.com/fabcoin/bips/blob/master/bip-0112.mediawiki
-[BIP113]: http://github.com/fabcoin/bips/blob/master/bip-0113.mediawiki
-[BIP125]: http://github.com/fabcoin/bips/blob/master/bip-0125.mediawiki
-[BIP130]: http://github.com/fabcoin/bips/blob/master/bip-0130.mediawiki
-[BIP133]: http://github.com/fabcoin/bips/blob/master/bip-0133.mediawiki
-[BIP141]: http://github.com/fabcoin/bips/blob/master/bip-0141.mediawiki
-[BIP151]: http://github.com/fabcoin/bips/blob/master/bip-0151.mediawiki
-[BIP152]: http://github.com/fabcoin/bips/blob/master/bip-0152.mediawiki
-[CVE-2012-2459]: http://en.fabcoin.it/wiki/CVEs#CVE-2012-2459
+[BIP9]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0009.mediawiki
+[BIP9 assignments]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0009/assignments.mediawiki
+[BIP14]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0014.mediawiki
+[BIP16]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0016.mediawiki
+[BIP21]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0021.mediawiki
+[BIP22]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0022.mediawiki
+[BIP23]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0023.mediawiki
+[BIP30]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0030.mediawiki
+[BIP31]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0031.mediawiki
+[BIP32]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0032.mediawiki
+[BIP34]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0034.mediawiki
+[BIP35]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0035.mediawiki
+[BIP37]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0037.mediawiki
+[BIP39]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0039.mediawiki
+[BIP50]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0050.mediawiki
+[BIP61]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0061.mediawiki
+[BIP62]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0062.mediawiki
+[BIP66]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0066.mediawiki
+[BIP70]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0070.mediawiki
+[BIP71]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0071.mediawiki
+[BIP72]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0072.mediawiki
+[BIP111]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0111.mediawiki
+[BIP112]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0112.mediawiki
+[BIP113]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0113.mediawiki
+[BIP125]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0125.mediawiki
+[BIP130]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0130.mediawiki
+[BIP133]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0133.mediawiki
+[BIP141]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0141.mediawiki
+[BIP151]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0151.mediawiki
+[BIP152]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0152.mediawiki
+[CVE-2012-2459]: http://fabcoins.info/wiki/CVEs#CVE-2012-2459
 [RFC5737]: http://tools.ietf.org/html/rfc5737
 [secp256k1]: http://www.secg.org/sec2-v2.pdf
 
@@ -347,29 +347,29 @@ http://opensource.org/licenses/MIT.
 [#fabcoin-mining]: http://webchat.freenode.net/?channels=fabcoin-mining&uio=d4
 [#fabcoin-wiki]: http://webchat.freenode.net/?channels=fabcoin-wiki&uio=d4
 [0bin]: http://0bin.net/
-[bcc automated testing]: http://github.com/fabcoin/fabcoin/blob/master/README.md#automated-testing
-[bcc configuration]: http://en.fabcoin.it/wiki/Running_Fabcoin
-[bcc data directory]: http://en.fabcoin.it/wiki/Data_directory
-[bcc issues]: http://github.com/fabcoin/fabcoin/issues
-[bcc new issue]: http://github.com/fabcoin/fabcoin/issues/new
-[bcc pulls]: http://github.com/fabcoin/fabcoin/pulls
-[bcc tor]: http://en.fabcoin.it/wiki/Tor
-[bcc tor hs]: http://en.fabcoin.it/wiki/Tor#Hidden_services
+[bcc automated testing]: http://github.com/blockchaingate/fabcoin/blob/master/README.md#automated-testing
+[bcc configuration]: http://fabcoins.info/wiki/Running_Fabcoin
+[bcc data directory]: http://fabcoins.info/wiki/Data_directory
+[bcc issues]: http://github.com/blockchaingate/fabcoin/issues
+[bcc new issue]: http://github.com/blockchaingate/fabcoin/issues/new
+[bcc pulls]: http://github.com/blockchaingate/fabcoin/pulls
+[bcc tor]: http://fabcoins.info/wiki/Tor
+[bcc tor hs]: http://fabcoins.info/wiki/Tor#Hidden_services
 [core github tag]: http://github.com/fabcoins-dot-info/fabcoins.info/labels/Core
 [BFGMiner]: http://github.com/luke-jr/bfgminer
 [Fabcoin beginners]: http://www.reddit.com/r/fabcoinbeginners
 [Fabcoin Core]: http://fabcoins.info/en/download
-[Fabcoin Core 0.1.6]: http://github.com/fabcoin/fabcoin/commit/cc0b4c3b62367a2aebe5fc1f4d0ed4b97e9c2ac9
-[Fabcoin Core 0.2.9]: http://github.com/fabcoin/fabcoin/commit/42605ce8bcc9bd01b86491c74fee14de77960868
-[Fabcoin Core 0.3.11]: http://github.com/fabcoin/fabcoin/commit/343328c6b8db85e58a1feea85f0d10e62967fa19
-[Fabcoin Core 0.3.15]: http://github.com/fabcoin/fabcoin/commit/c891967b6fcab2e8dc4ce0c787312b36c07efa4d
-[Fabcoin Core 0.3.18]: http://github.com/fabcoin/fabcoin/commit/82201801336f64ee77851b9eaab9383ee4e442f0
-[Fabcoin Core build unix]: http://github.com/fabcoin/fabcoin/blob/master/doc/build-unix.md
-[Fabcoin Core docs directory]: http://github.com/fabcoin/fabcoin/tree/master/doc
-[fabcoin core fee drop commit]: http://github.com/fabcoin/fabcoin/commit/6a4c196dd64da2fd33dc7ae77a8cdd3e4cf0eff1
-[Fabcoin Core issue #2381]: http://github.com/fabcoin/fabcoin/issues/2381
-[Fabcoin Core master]: http://github.com/fabcoin/fabcoin
-[Fabcoin Core pull #4468]: http://github.com/fabcoin/fabcoin/pull/4468
+[Fabcoin Core 0.1.6]: http://github.com/blockchaingate/fabcoin/commit/cc0b4c3b62367a2aebe5fc1f4d0ed4b97e9c2ac9
+[Fabcoin Core 0.2.9]: http://github.com/blockchaingate/fabcoin/commit/42605ce8bcc9bd01b86491c74fee14de77960868
+[Fabcoin Core 0.3.11]: http://github.com/blockchaingate/fabcoin/commit/343328c6b8db85e58a1feea85f0d10e62967fa19
+[Fabcoin Core 0.3.15]: http://github.com/blockchaingate/fabcoin/commit/c891967b6fcab2e8dc4ce0c787312b36c07efa4d
+[Fabcoin Core 0.3.18]: http://github.com/blockchaingate/fabcoin/commit/82201801336f64ee77851b9eaab9383ee4e442f0
+[Fabcoin Core build unix]: http://github.com/blockchaingate/fabcoin/blob/master/doc/build-unix.md
+[Fabcoin Core docs directory]: http://github.com/blockchaingate/fabcoin/tree/master/doc
+[fabcoin core fee drop commit]: http://github.com/blockchaingate/fabcoin/commit/6a4c196dd64da2fd33dc7ae77a8cdd3e4cf0eff1
+[Fabcoin Core issue #2381]: http://github.com/blockchaingate/fabcoin/issues/2381
+[Fabcoin Core master]: http://github.com/blockchaingate/fabcoin/fabcoin
+[Fabcoin Core pull #4468]: http://github.com/blockchaingate/fabcoin/pull/4468
 [Fabcoin core transifex]: http://www.transifex.com/projects/p/fabcoin/
 [Fabcoin reddit]: http://www.reddit.com/r/Fabcoin
 [Fabcoin reddit new]: http://www.reddit.com/r/Fabcoin/new
@@ -382,16 +382,16 @@ http://opensource.org/licenses/MIT.
 [fabcoinj micropayment tutorial]: http://fabcoinj.github.io/working-with-micropayments
 [block170]: http://www.biteasy.com/block/00000000d1145790a8694403d4063f323d499e655c83426834d4ce2f8dd4a2ee
 [casascius address utility]: http://github.com/casascius/Fabcoin-Address-Utility
-[core base58.h]: http://github.com/fabcoin/fabcoin/blob/master/src/base58.h
-[core chainparams.cpp]: http://github.com/fabcoin/fabcoin/blob/master/src/chainparams.cpp
-[core git]: http://github.com/fabcoin/fabcoin
-[core paymentrequest.proto]: http://github.com/fabcoin/fabcoin/blob/master/src/qt/paymentrequest.proto
-[core script.h]: http://github.com/fabcoin/fabcoin/blob/master/src/script/script.h
+[core base58.h]: http://github.com/blockchaingate/fabcoin/blob/master/src/base58.h
+[core chainparams.cpp]: http://github.com/blockchaingate/fabcoin/blob/master/src/chainparams.cpp
+[core git]: http://github.com/blockchaingate/fabcoin/fabcoin
+[core paymentrequest.proto]: http://github.com/blockchaingate/fabcoin/blob/master/src/qt/paymentrequest.proto
+[core script.h]: http://github.com/blockchaingate/fabcoin/blob/master/src/script/script.h
 [creative commons attribution 3.0 license]: http://creativecommons.org/licenses/by/3.0/
 [DER]: http://en.wikipedia.org/wiki/X.690#DER_encoding
 [dig command]: http://en.wikipedia.org/wiki/Dig_%28Unix_command%29
 [DNS A records]: http://tools.ietf.org/html/rfc1035#section-3.2.2
-[DNS Seed Policy]: http://github.com/fabcoin/fabcoin/blob/master/doc/dnsseed-policy.md
+[DNS Seed Policy]: http://github.com/blockchaingate/fabcoin/blob/master/doc/dnsseed-policy.md
 [docs issue]: http://github.com/fabcoins-dot-info/fabcoins.info/issues
 [ECDSA]: http://en.wikipedia.org/wiki/Elliptic_Curve_DSA
 [edit bandwidth sharing guide]: http://github.com/fabcoins-dot-info/fabcoins.info/edit/master/en/full-node.md
@@ -401,23 +401,23 @@ http://opensource.org/licenses/MIT.
 [fake satoshi transaction]: http://www.reddit.com/r/Fabcoin/comments/3fv42j/blockchaininfo_spoofed_transactions_problem_aug_4/
 [forum tech support]: http://fabcointalk.org/index.php?board=4.0
 [ghash betcoin double spend]: http://fabcointalk.org/index.php?topic=321630.msg3445371
-[gitian sigs]: http://github.com/fabcoin/gitian.sigs
+[gitian sigs]: http://github.com/blockchaingate/fabcoin/gitian.sigs
 [high-speed block relay network]: http://www.mail-archive.com/fabcoin-development@lists.sourceforge.net/msg03189.html
 [HMAC-SHA512]: http://en.wikipedia.org/wiki/HMAC
 [HTTP basic authentication]: http://en.wikipedia.org/wiki/Basic_access_authentication
 [HTTP longpoll]: http://en.wikipedia.org/wiki/Push_technology#Long_polling
 [information theoretic security]: http://en.wikipedia.org/wiki/Information_theoretic_security
 [inherit fabcoins]: http://fabcoin.stackexchange.com/q/38692/21052
-[IP-to-IP payment protocol]: http://en.fabcoin.it/wiki/IP_Transactions
+[IP-to-IP payment protocol]: http://fabcoins.info/wiki/IP_Transactions
 [IPv4-mapped IPv6 addresses]: http://en.wikipedia.org/wiki/IPv6#IPv4-mapped_IPv6_addresses
-[irc channels]: http://en.fabcoin.it/wiki/IRC_channels
+[irc channels]: http://fabcoins.info/wiki/IRC_channels
 [JSON-RPC version 1.0]: http://json-rpc.org/wiki/specification
 [JSON-RPC request batching]: http://www.jsonrpc.org/specification#batch
-[july 2015 chain forks]: http://en.fabcoin.it/wiki/July_2015_chain_forks
-[libblkmaker]: http://github.com/fabcoin/libblkmaker
+[july 2015 chain forks]: http://fabcoins.info/wiki/July_2015_chain_forks
+[libblkmaker]: http://github.com/blockchaingate/fabcoin/libblkmaker
 [localhost]: http://en.wikipedia.org/wiki/Localhost
 [lying consistently is hard]: http://groups.google.com/forum/#!msg/fabcoinj/Ys13qkTwcNg/9qxnhwnkeoIJ
-[makeseeds script]: http://github.com/fabcoin/fabcoin/tree/master/contrib/seeds
+[makeseeds script]: http://github.com/blockchaingate/fabcoin/tree/master/contrib/seeds
 [mozilla's bug reporting documentation]: http://developer.mozilla.org/en-US/docs/Mozilla/QA/Bug_writing_guidelines#Writing_precise_steps_to_reproduce
 [murmur3]: http://en.wikipedia.org/wiki/MurmurHash
 [man-in-the-middle]: http://en.wikipedia.org/wiki/Man-in-the-middle_attack
@@ -426,7 +426,7 @@ http://opensource.org/licenses/MIT.
 [mozrootstore]: http://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 [native irc client]: http://en.wikipedia.org/wiki/List_of_IRC_clients
 [netcat]: http://en.wikipedia.org/wiki/Netcat
-[nop opcodes]: http://en.fabcoin.it/wiki/Script#Reserved_words
+[nop opcodes]: http://fabcoins.info/wiki/Script#Reserved_words
 [offline transactions]: http://fabcoin.stackexchange.com/a/34122/21052
 [open a pull request]: http://github.com/fabcoins-dot-info/fabcoins.info#working-with-github
 [open an issue]: http://github.com/fabcoins-dot-info/fabcoins.info/issues/new
@@ -436,7 +436,7 @@ http://opensource.org/licenses/MIT.
 [protobuf]: http://developers.google.com/protocol-buffers/
 [python-fabcoinlib]: http://github.com/petertodd/python-fabcoinlib
 [python-blkmaker]: http://gitorious.org/fabcoin/python-blkmaker
-[Satoshi Nakamoto]: http://en.fabcoin.it/wiki/Satoshi_Nakamoto
+[Satoshi Nakamoto]: http://fabcoins.info/wiki/Satoshi_Nakamoto
 [setup tor]: http://www.torproject.org/
 [SHA256]: http://en.wikipedia.org/wiki/SHA-2
 [Stratum mining protocol]: http://mining.fabcoin.cz/stratum-mining
@@ -445,19 +445,19 @@ http://opensource.org/licenses/MIT.
 [transifex]: http://www.transifex.com/projects/p/fabcoinorg/
 [unix epoch time]: http://en.wikipedia.org/wiki/Unix_time
 [URI encoded]: http://tools.ietf.org/html/rfc3986
-[wiki fabcoin core compatible devices arm]: http://en.fabcoin.it/wiki/Fabcoin_Core_compatible_devices#ARM-based_Chipsets
-[wiki fabcoin core documentation]: http://en.fabcoin.it/wiki/Category:Fabcoin_Core_documentation
-[wiki create account]: http://en.fabcoin.it/w/index.php?title=Special:UserLogin&type=signup
-[wiki enable editing]: http://en.fabcoin.it/wiki/Fabcoin_Wiki:Editing_privileges
-[wiki getblocktemplate]: http://en.fabcoin.it/wiki/Getblocktemplate
-[wiki proper money handling]: http://en.fabcoin.it/wiki/Proper_Money_Handling_%28JSON-RPC%29
-[wiki template fabcoin core documentation]: http://en.fabcoin.it/wiki/Template:Fabcoin_Core_documentation
-[wiki script]: http://en.fabcoin.it/wiki/Script
+[wiki fabcoin core compatible devices arm]: http://fabcoins.info/wiki/Fabcoin_Core_compatible_devices#ARM-based_Chipsets
+[wiki fabcoin core documentation]: http://fabcoins.info/wiki/Category:Fabcoin_Core_documentation
+[wiki create account]: http://fabcoins.info/wikiw/index.php?title=Special:UserLogin&type=signup
+[wiki enable editing]: http://fabcoins.info/wiki/Fabcoin_Wiki:Editing_privileges
+[wiki getblocktemplate]: http://fabcoins.info/wiki/Getblocktemplate
+[wiki proper money handling]: http://fabcoins.info/wiki/Proper_Money_Handling_%28JSON-RPC%29
+[wiki template fabcoin core documentation]: http://fabcoins.info/wiki/Template:Fabcoin_Core_documentation
+[wiki script]: http://fabcoins.info/wiki/Script
 [x509]: http://en.wikipedia.org/wiki/X.509
 
 {% comment %}<!-- Direct links to code; link to a specific commit to prevent code
 changes from moving the referenced object, but also update links
 periodically to point to recent code. Last update: 2014-11-12 --> {% endcomment %}
-[core bloom.cpp hash]: http://github.com/fabcoin/fabcoin/blob/cbf28c6619fe348a258dfd7d08bdbd2392d07511/src/bloom.cpp#L46
-[MAX_SIZE]: http://github.com/fabcoin/fabcoin/blob/60abd463ac2eaa8bc1d616d8c07880dc53d97211/src/serialize.h#L23
-[rpcprotocol.h]: http://github.com/fabcoin/fabcoin/blob/f914f1a746d7f91951c1da262a4a749dd3ebfa71/src/rpcprotocol.h
+[core bloom.cpp hash]: http://github.com/blockchaingate/fabcoin/blob/cbf28c6619fe348a258dfd7d08bdbd2392d07511/src/bloom.cpp#L46
+[MAX_SIZE]: http://github.com/blockchaingate/fabcoin/blob/60abd463ac2eaa8bc1d616d8c07880dc53d97211/src/serialize.h#L23
+[rpcprotocol.h]: http://github.com/blockchaingate/fabcoin/blob/f914f1a746d7f91951c1da262a4a749dd3ebfa71/src/rpcprotocol.h

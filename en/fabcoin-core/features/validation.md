@@ -95,7 +95,7 @@ Even when the bankruptcy proceeding is complete, customers are unlikely to
 recover more than a small fraction of the fabcoins they had on deposit.
 
 **Learn More:** [Collapse of Mt
-Gox](http://en.fabcoin.it/wiki/Collapse_of_Mt._Gox)
+Gox](http://fabcoins.info/wiki/Collapse_of_Mt._Gox)
 </td>
 </tr>
 

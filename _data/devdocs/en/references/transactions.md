@@ -164,7 +164,7 @@ bytes commonly used by Fabcoin are:
 Fabcoin's base58 encoding, called [Base58Check][/en/glossary/base58check]{:#term-base58check}{:.term} may not match other implementations. Tier
 Nolan provided the following example encoding algorithm to the Fabcoin
 Wiki [Base58Check
-encoding](http://en.fabcoin.it/wiki/Base58Check_encoding) page under
+encoding](http://fabcoins.info/wiki/Base58Check_encoding) page under
 the [Creative Commons Attribution 3.0 license][]:
 
 {% highlight c %}

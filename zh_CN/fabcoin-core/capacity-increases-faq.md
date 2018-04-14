@@ -179,23 +179,23 @@ David Harding 提供了下表以[估计][estimated savings]在不同费用和交
 如果你想得到更多有关如何贡献的建议，请加入[#fabcoin-dev][] IRC 频道讨论。
 
 [#fabcoin-dev]: http://webchat.freenode.net/?channels=fabcoin-dev&amp;uio=d4
-[BIP9]: http://github.com/fabcoin/bips/blob/master/bip-0009.mediawiki
-[BIP16]: http://github.com/fabcoin/bips/blob/master/bip-0016.mediawiki
-[BIP34]: http://github.com/fabcoin/bips/blob/master/bip-0034.mediawiki
-[BIP50]: http://github.com/fabcoin/bips/blob/master/bip-0050.mediawiki
-[BIP65]: http://github.com/fabcoin/bips/blob/master/bip-0065.mediawiki
-[BIP66]: http://github.com/fabcoin/bips/blob/master/bip-0066.mediawiki
-[BIP68]: http://github.com/fabcoin/bips/blob/master/bip-0068.mediawiki
-[BIP112]: http://github.com/fabcoin/bips/blob/master/bip-0112.mediawiki
-[BIP113]: http://github.com/fabcoin/bips/blob/master/bip-0113.mediawiki
+[BIP9]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0009.mediawiki
+[BIP16]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0016.mediawiki
+[BIP34]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0034.mediawiki
+[BIP50]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0050.mediawiki
+[BIP65]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0065.mediawiki
+[BIP66]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0066.mediawiki
+[BIP68]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0068.mediawiki
+[BIP112]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0112.mediawiki
+[BIP113]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0113.mediawiki
 [fabcoin core contributor]: /en/fabcoin-core/
 [Fabcoin relay network]: http://fabcoinrelaynetwork.org/
 [code review]: http://fabcoins.info/en/development#code-review
 [estimated savings]: http://www.reddit.com/r/fabcoinxt/comments/3w1i6b/i_attended_scaling_fabcoin_hong_kong_these_are_my/cxtkaih
 [increase in total bandwidth]: http://scalingfabcoins.info/hongkong2015/presentations/DAY1/3_block_propagation_1_rosenbaum.pdf
-[libsecp256k1 verification]: http://github.com/fabcoin/fabcoin/pull/6954
-[max_block_size]: http://github.com/fabcoin/fabcoin/blob/3038eb63e8a674b4818cb5d5e461f1ccf4b2932f/src/consensus/consensus.h#L10
+[libsecp256k1 verification]: http://github.com/blockchaingate/fabcoin/pull/6954
+[max_block_size]: http://github.com/blockchaingate/fabcoin/blob/3038eb63e8a674b4818cb5d5e461f1ccf4b2932f/src/consensus/consensus.h#L10
 [miners' panel]: http://youtu.be/H-ErmmDQRFs?t=1086
 [payment channel efficiency]: http://scalingfabcoins.info/hongkong2015/presentations/DAY2/1_layer2_2_dryja.pdf
-[previous soft forks]: http://github.com/fabcoin/bips/blob/master/bip-0123.mediawiki#classification-of-existing-bips
+[previous soft forks]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0123.mediawiki#classification-of-existing-bips
 [q simple raise]: #size-bump

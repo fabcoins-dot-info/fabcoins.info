@@ -67,9 +67,9 @@ show_toc: false
 
   {% case first_character %}
   {% when 'b' %}
-   See also: [Fabcoin Improvement Proposals (BIPs)](http://github.com/fabcoin/bips#readme)
+   See also: [Fabcoin Improvement Proposals (BIPs)](http://github.com/blockchaingate/fabcoin/bips#readme)
   {% when 'o' %}
-   See also: [Opcodes](http://en.fabcoin.it/wiki/Script#Words)
+   See also: [Opcodes](http://fabcoins.info/wiki/Script#Words)
   {% when 'p' %}
    See also: [P2P protocol messages](/en/developer-reference#data-messages)
   {% when 'r' %}

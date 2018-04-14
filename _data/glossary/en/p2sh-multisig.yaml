@@ -29,8 +29,8 @@ optional:
         - P2SH (general P2SH, of which P2SH multisig is a specific instance that was special cased up until Fabcoin Core 0.10.0)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[P2SH multisig](/en/developer-guide#term-p2sh-multisig) --- Fabcoin.org Developer Guide"
-        - "[BIP16: pay to script hash](http://github.com/fabcoin/bips/blob/master/bip-0016.mediawiki) --- Fabcoin Improvement Proposals"
+        - "[P2SH multisig](/en/developer-guide#term-p2sh-multisig) --- Fabcoins.info Developer Guide"
+        - "[BIP16: pay to script hash](http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0016.mediawiki) --- Fabcoin Improvement Proposals"
         - "[What are the limits of bare multisig and P2SH multisig?](http://fabcoin.stackexchange.com/q/23893) --- Fabcoin StackExchange"
 
 ---

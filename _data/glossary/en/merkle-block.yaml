@@ -21,7 +21,7 @@ optional:
         - MerkleBlock message (a P2P protocol message that transmits a merkle block)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Merkle block](/en/developer-reference#merkleblock) --- Fabcoin.org Developer Reference"
-        - "[MerkleBlock P2P protocol message](http://en.fabcoin.it/wiki/Protocol_documentation#filterload.2C_filteradd.2C_filterclear.2C_merkleblock) --- Fabcoin Wiki"
+        - "[Merkle block](/en/developer-reference#merkleblock) --- Fabcoins.info Developer Reference"
+        - "[MerkleBlock P2P protocol message](http://fabcoins.info/wiki/Protocol_documentation#filterload.2C_filteradd.2C_filterclear.2C_merkleblock) --- Fabcoin Wiki"
 
 ---

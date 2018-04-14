@@ -755,7 +755,7 @@ added to the block chain.
 
 Fabcoin developers have been working to reduce transaction malleability
 among standard transaction types, one outcome of those efforts is
-[BIP 141: Segregated Witness](http://github.com/fabcoin/bips/blob/master/bip-0141.mediawiki),
+[BIP 141: Segregated Witness](http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0141.mediawiki),
 which is supported by Fabcoin Core and was activated in August 2017. 
 When SegWit is not being used, new transactions should not depend on
 previous transactions which have not been added to the block chain yet,

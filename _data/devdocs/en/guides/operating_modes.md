@@ -87,7 +87,7 @@ If a user is more privacy-conscious, he can set the Bloom filter to include more
 
 **Resources:** [FabcoinJ][], a Java implementation of Fabcoin that is based on the SPV security model and Bloom filters. Used in most Android wallets.
 
-Bloom filters were standardized for use via [BIP37](http://github.com/fabcoin/bips/blob/master/bip-0037.mediawiki). Review the BIP for implementation details.
+Bloom filters were standardized for use via [BIP37](http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0037.mediawiki). Review the BIP for implementation details.
 
 {% endautocrossref %}
 

@@ -23,7 +23,7 @@ optional:
         - IP-to-IP payment protocol (an insecure, discontinued protocol included in early versions of Fabcoin)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Payment Protocol](/en/developer-guide#term-payment-protocol) --- Fabcoin.org Developer Guide"
-        - "[BIP70: payment protocol](http://github.com/fabcoin/bips/blob/master/bip-0070.mediawiki) --- Fabcoin Improvement Proposals"
+        - "[Payment Protocol](/en/developer-guide#term-payment-protocol) --- Fabcoins.info Developer Guide"
+        - "[BIP70: payment protocol](http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0070.mediawiki) --- Fabcoin Improvement Proposals"
 
 ---

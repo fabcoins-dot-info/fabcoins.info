@@ -25,8 +25,8 @@ optional:
         - BIP62 (a proposal for an optional new transaction version that reduces the set of known mutations for common transactions)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Transaction malleability](/en/developer-guide#transaction-malleability) --- Fabcoin.org Developer Guide"
-        - "[Transaction malleability](http://en.fabcoin.it/wiki/Transaction_Malleability) --- Fabcoin Wiki"
-        - "[BIP62: dealing with malleability](http://github.com/fabcoin/bips/blob/master/bip-0062.mediawiki) --- Fabcoin Improvement Proposals"
+        - "[Transaction malleability](/en/developer-guide#transaction-malleability) --- Fabcoins.info Developer Guide"
+        - "[Transaction malleability](http://fabcoins.info/wiki/Transaction_Malleability) --- Fabcoin Wiki"
+        - "[BIP62: dealing with malleability](http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0062.mediawiki) --- Fabcoin Improvement Proposals"
 
 ---

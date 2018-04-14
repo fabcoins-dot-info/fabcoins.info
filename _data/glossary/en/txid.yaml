@@ -23,7 +23,7 @@ optional:
         - Outpoint (the combination of a txid with a vout used to identify a specific output)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Txid](/en/developer-guide#term-txid) --- Fabcoin.org Developer Guide"
+        - "[Txid](/en/developer-guide#term-txid) --- Fabcoins.info Developer Guide"
         - "[How do I calculate the txid of this raw transaction?](http://fabcoin.stackexchange.com/q/32765) --- Fabcoin StackExchange"
 
 ---

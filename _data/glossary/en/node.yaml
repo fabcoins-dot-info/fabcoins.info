@@ -26,6 +26,6 @@ optional:
         - SPV node
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Full node](http://en.fabcoin.it/wiki/Full_node) --- Fabcoin Wiki"
+        - "[Full node](http://fabcoins.info/wiki/Full_node) --- Fabcoin Wiki"
 
 ---

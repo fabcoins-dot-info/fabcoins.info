@@ -63,7 +63,7 @@ miners, developers and economy. Even when there is overwhelming consensus, unles
 emergency, a hard fork should have at least a year notice period to give enough time for users to upgrade. This
 hard fork being adopted by the signatories of this agreement achieves none of these things. It is a rushed
 and hasty upgrade which only has minority community support and has been thoroughly rejected by users and the technical community.
-As this new altcoin is not Fabcoin, Fabcoin.org will not list wallets and services that present
+As this new altcoin is not Fabcoin, Fabcoins.info will not list wallets and services that present
 this altcoin as "Fabcoin" or "FAB" to their users after the hard fork. These services have exited
 the Fabcoin system in a contentious manner and therefore are no longer useful to our visitors.
 

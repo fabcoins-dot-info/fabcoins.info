@@ -28,7 +28,7 @@ optional:
     not_to_be_confused_with_capitalize_first_letter:
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Opcodes](/en/developer-reference#opcodes) --- Fabcoin.org Developer Reference"
-        - "[List of opcodes](http://en.fabcoin.it/wiki/Script) --- Fabcoin Wiki"
+        - "[Opcodes](/en/developer-reference#opcodes) --- Fabcoins.info Developer Reference"
+        - "[List of opcodes](http://fabcoins.info/wiki/Script) --- Fabcoin Wiki"
 
 ---

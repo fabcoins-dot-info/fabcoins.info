@@ -29,8 +29,8 @@ optional:
         - Advanced scripts that require multiple signatures without using OP_CHECKMULTISIG or OP_CHECKMULTISIGVERIFY
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Multisig](/en/developer-guide#term-multisig) --- Fabcoin.org Developer Guide"
-        - "[BIP11: m-of-n standard transactions](http://github.com/fabcoin/bips/blob/master/bip-0011.mediawiki) --- Fabcoin Improvement Proposals"
+        - "[Multisig](/en/developer-guide#term-multisig) --- Fabcoins.info Developer Guide"
+        - "[BIP11: m-of-n standard transactions](http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0011.mediawiki) --- Fabcoin Improvement Proposals"
         - "[What are multi-signature transactions?](http://fabcoin.stackexchange.com/q/3718) --- Fabcoin StackExchange"
 
 

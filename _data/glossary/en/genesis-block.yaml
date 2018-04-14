@@ -22,8 +22,8 @@ optional:
         - Generation transaction (the first transaction in a block)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Genesis block](/en/developer-guide#term-genesis-block) --- Fabcoin.org Developer Guide"
-        - "[Genesis block](http://en.fabcoin.it/wiki/Genesis_block) --- Fabcoin Wiki"
+        - "[Genesis block](/en/developer-guide#term-genesis-block) --- Fabcoins.info Developer Guide"
+        - "[Genesis block](http://fabcoins.info/wiki/Genesis_block) --- Fabcoin Wiki"
         - "[Why can't the genesis block coinbase transaction be spent?](http://fabcoin.stackexchange.com/q/10009) --- Fabcoin StackExchange"
 
 ---

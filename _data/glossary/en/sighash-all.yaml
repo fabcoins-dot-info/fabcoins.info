@@ -21,8 +21,8 @@ optional:
     not_to_be_confused_with_capitalize_first_letter:
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[`SIGHASH_ALL`](/en/developer-guide#term-sighash-all) --- Fabcoin.org Developer Guide"
-        - "[OP_CHECKSIG](http://en.fabcoin.it/wiki/OP_CHECKSIG) --- Fabcoin Wiki"
-        - "[Contracts](http://en.fabcoin.it/wiki/Contracts#Theory) --- Fabcoin Wiki"
+        - "[`SIGHASH_ALL`](/en/developer-guide#term-sighash-all) --- Fabcoins.info Developer Guide"
+        - "[OP_CHECKSIG](http://fabcoins.info/wiki/OP_CHECKSIG) --- Fabcoin Wiki"
+        - "[Contracts](http://fabcoins.info/wiki/Contracts#Theory) --- Fabcoin Wiki"
 
 ---

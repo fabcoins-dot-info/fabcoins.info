@@ -21,7 +21,7 @@ author: |
 This is a new major version release, including new features, various bugfixes
 and performance improvements, as well as updated translations.
 
-Please report bugs using the [issue tracker on GitHub](http://github.com/fabcoin/fabcoin/issues).
+Please report bugs using the [issue tracker on GitHub](http://github.com/blockchaingate/fabcoin/issues).
 
 [Subscribe here](http://fabcoincore.org/en/list/announcements/join/) to receive
 security and update notifications.
@@ -36,7 +36,7 @@ Microsoft ended support for Windows XP on [April 8th,
 No attempt is made to prevent installing or running the software on Windows XP,
 you can still do so at your own risk but be aware that there are known
 instabilities and issues. Please do not report issues about Windows XP to the
-[issue tracker](http://github.com/fabcoin/fabcoin/issues).
+[issue tracker](http://github.com/blockchaingate/fabcoin/issues).
 
 Fabcoin Core should also work on most other Unix-like systems but is not
 frequently tested on them.
@@ -89,7 +89,7 @@ shows where each field has been moved to:
 Previously the ZeroMQ notification system was unavailable on Windows
 due to various issues with ZMQ. These have been fixed upstream and
 now ZMQ can be used on Windows. Please see [this
-document](http://github.com/fabcoin/fabcoin/blob/master/doc/zmq.md) for
+document](http://github.com/blockchaingate/fabcoin/blob/master/doc/zmq.md) for
 help with using ZMQ in general.
 
 ### Nested RPC Commands in Debug Console
@@ -220,7 +220,7 @@ into this release so that all old nodes receive the final alert.
  - A new RPC command `getmemoryinfo` has been added which will return
    information
    about the memory usage of Fabcoin Core. This was added in conjunction with
-   optimizations to memory management. See [Pull #8753](http://github.com/fabcoin/fabcoin/pull/8753)
+   optimizations to memory management. See [Pull #8753](http://github.com/blockchaingate/fabcoin/pull/8753)
    for more information.
  - A new RPC command `bumpfee` has been added which allows replacing an
    unconfirmed wallet transaction that signaled RBF (see the `-walletrbf`

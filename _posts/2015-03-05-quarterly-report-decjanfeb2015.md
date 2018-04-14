@@ -415,7 +415,7 @@ following three major goals during the next quarter:
     * Documentation for at least the most common opcodes, and possibly
       all the enabled opcodes. This section will be essentially a more
       detailed version of the [Fabcoin Wiki script
-      page](http://en.fabcoin.it/wiki/Script)
+      page](http://fabcoins.info/wiki/Script)
 
     * [Improved type
       information](http://github.com/fabcoins-dot-info/fabcoins.info/pull/753) in

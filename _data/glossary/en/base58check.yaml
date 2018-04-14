@@ -26,7 +26,7 @@ optional:
         - IP address
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[base58check](/en/developer-reference#term-base58check) --- Fabcoin.org Developer Reference"
-        - "[Base58Check encoding](http://en.fabcoin.it/wiki/Base58Check_encoding) --- Fabcoin Wiki"
+        - "[base58check](/en/developer-reference#term-base58check) --- Fabcoins.info Developer Reference"
+        - "[Base58Check encoding](http://fabcoins.info/wiki/Base58Check_encoding) --- Fabcoin Wiki"
 
 ---

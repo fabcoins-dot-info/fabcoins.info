@@ -25,7 +25,7 @@ optional:
         - Compact (the data type used for nBits in the block header)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[CompactSize Unsigned Integers](/en/developer-reference#compactsize-unsigned-integers) --- Fabcoin.org Developer Reference"
-        - "[Variable length integers (compactSize)](http://en.fabcoin.it/wiki/Protocol_documentation#Variable_length_integer) --- Fabcoin Wiki"
+        - "[CompactSize Unsigned Integers](/en/developer-reference#compactsize-unsigned-integers) --- Fabcoins.info Developer Reference"
+        - "[Variable length integers (compactSize)](http://fabcoins.info/wiki/Protocol_documentation#Variable_length_integer) --- Fabcoin Wiki"
 
 ---

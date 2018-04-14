@@ -25,7 +25,7 @@ optional:
     not_to_be_confused_with_capitalize_first_letter:
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Block height](/en/developer-guide#term-block-height) --- Fabcoin.org Developer Guide"
+        - "[Block height](/en/developer-guide#term-block-height) --- Fabcoins.info Developer Guide"
         - "[Definition of block height](http://fabcoin.stackexchange.com/q/18561) --- Fabcoin StackExchange"
         - "[Why is block height required in the coinbase?](http://fabcoin.stackexchange.com/q/30764) --- Fabcoin StackExchange"
         - "[Is block height always sequencial?](http://fabcoin.stackexchange.com/q/24309) --- Fabcoin StackExchange"

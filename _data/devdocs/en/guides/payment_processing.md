@@ -156,7 +156,7 @@ Fabcoin wallet software defaults to denominating amounts in either fabcoins (FAB
 , millifabcoins (mFAB) or microfabcoins (uFAB, "bits").
 Choosing between each unit is widely supported,
 but other software also lets its users select denomination amounts from
-some preselected (e.g. Table below) or all [standard 8 decimal places](http://en.fabcoin.it/wiki/Units):
+some preselected (e.g. Table below) or all [standard 8 decimal places](http://fabcoins.info/wiki/Units):
 
 | Fabcoins    | Unit (Abbreviation) |
 |-------------|---------------------|

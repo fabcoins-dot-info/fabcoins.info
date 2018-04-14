@@ -1,10 +1,10 @@
 tr:
   about-us:
-    title: "Fabcoin.org hakkında"
-    pagetitle: "Fabcoin.org hakkında"
-    pagedesc: "Fabcoin.org, Fabcoin'in sürdürülebilir bir şekilde gelişmesine yardım etmeyi amaçlar."
-    own: "Fabcoin.org'un sahibi kim?"
-    owntxt: "Fabcoin.org ilk Fabcoin web sitesinin kullandığı temel addır. <a href=\"#development#\">Fabcoin temel geliştiricileri</a> ile diğer topluluk üyeleri tarafından kayda geçirilmiş ve yönetilmektedir, <a href=\"#community#\">Fabcoin topluluklarının</a> da katkıları vardır. Fabcoin.org resmi bir site değildir. Kimsenin e-posta teknolojisinin sahibi olmadığı gibi, Fabcoin ağının da sahibi yoktur. Buna bağlı olarak kimse Fabcoin adında yetkili olarak konuşamaz."
+    title: "Fabcoins.info hakkında"
+    pagetitle: "Fabcoins.info hakkında"
+    pagedesc: "Fabcoins.info, Fabcoin'in sürdürülebilir bir şekilde gelişmesine yardım etmeyi amaçlar."
+    own: "Fabcoins.info'un sahibi kim?"
+    owntxt: "Fabcoins.info ilk Fabcoin web sitesinin kullandığı temel addır. <a href=\"#development#\">Fabcoin temel geliştiricileri</a> ile diğer topluluk üyeleri tarafından kayda geçirilmiş ve yönetilmektedir, <a href=\"#community#\">Fabcoin topluluklarının</a> da katkıları vardır. Fabcoins.info resmi bir site değildir. Kimsenin e-posta teknolojisinin sahibi olmadığı gibi, Fabcoin ağının da sahibi yoktur. Buna bağlı olarak kimse Fabcoin adında yetkili olarak konuşamaz."
     control: "O halde... Fabcoin'i kim kontrol ediyor?"
     controltxt: "Fabcoin, dünyanın her yerindeki Fabcoin kullanıcıları tarafından kontrol edilir. Geliştiriciler yazılımı onarır ama Fabcoin protokolünde zorla bir değişiklik yapamazlar çünkü kullanıcılar istedikleri yazılımı kullanmakta özgürdür.. Birbirleriyle uyumlu kalmak için bütün kullanıcılar aynı kurallara uyan yazılımları kullanmak zorundadırlar. Fabcoin ancak bütün kullanıcılar arasında bir anlaşma olunca çalışabilir. Bu nedenle bütün kullanıcı ve geliştiriciler bu anlaşmaya bağlı kalmaya ve korumaya teşvik edilir."
     mission: "Misyon"
@@ -16,7 +16,7 @@ tr:
     missiontxt6: "Uluslararasılaştırma ile Fabcoin'in dünya çapındaki erişilebilirliğini geliştirmek."
     missiontxt7: "Fabcoin hakkında tarafsız bilgi kaynağı olmak."
     help: "Bize yardım edin"
-    helptxt: "Herhangi bir problemi yada fabcoins.info'a yardım tekliflerinizi buradan <a href=\"http://github.com/fabcoin-dot-org/fabcoins.info#how-to-participate\">GitHub</a> İngilizce bir talep vererek yada sorgu açarak iletebilirsiniz. Bir talepte bulunurken lütfen değişikliklerinizi değerlendirmek ve işinizi ayarlamak için biraz zaman ayırın.  <a href=\"http://github.com/fabcoin-dot-org/fabcoins.info#translation\">Transifex</a> üzerinde bir takıma kayıt olarak çevirilere yardım edebilirsiniz. Lütfen kişisel işiniz yada websiteniz için, konferanslar gibi özel durumlar hariç, promosyon sormayınız. Fabcoin.org'u geliştirmek için zaman harcayan tüm katkıda bulunanlara teşekkürler!"
+    helptxt: "Herhangi bir problemi yada fabcoins.info'a yardım tekliflerinizi buradan <a href=\"http://github.com/fabcoins-dot-info/fabcoins.info#how-to-participate\">GitHub</a> İngilizce bir talep vererek yada sorgu açarak iletebilirsiniz. Bir talepte bulunurken lütfen değişikliklerinizi değerlendirmek ve işinizi ayarlamak için biraz zaman ayırın.  <a href=\"http://github.com/fabcoins-dot-info/fabcoins.info#translation\">Transifex</a> üzerinde bir takıma kayıt olarak çevirilere yardım edebilirsiniz. Lütfen kişisel işiniz yada websiteniz için, konferanslar gibi özel durumlar hariç, promosyon sormayınız. Fabcoins.info'u geliştirmek için zaman harcayan tüm katkıda bulunanlara teşekkürler!"
     maintenance: "Bakım"
     documentation: "Belgeleme"
     translation: "Çeviri"
@@ -96,7 +96,7 @@ tr:
     meetupfabcointalk: "FabcoinTalk'ta Fabcoin Toplantıları"
     meetupwiki: "Wiki'de Fabcoin Toplantıları"
     nonprofit: "Kar amacı gütmeyen organizasyonlar"
-    wikiportal: "Wiki'deki <a href=\"http://en.fabcoin.it/wiki/Fabcoin:Community_portal\">Topluluk portalını</a> ziyaret edin."
+    wikiportal: "Wiki'deki <a href=\"http://fabcoins.info/wiki/Fabcoin:Community_portal\">Topluluk portalını</a> ziyaret edin."
   choose-your-wallet:
     title: "Cüzdanınızı seçin - Fabcoin"
     pagetitle: "Fabcoin cüzdanınızı seçin"
@@ -208,7 +208,7 @@ tr:
     disclosure: "Sorumlu ifşa"
     disclosuretxt: "Eğer Fabcoin ile alakalı bir açık bulursanız, bu kritik olmayan bir açık ise İngilizce olarak her hangi bir geliştiriciye bir mail atabilirsiniz ya da aşağıda listelenen özel fabcoin-güvenlik mail listesine yollayabilirsiniz. Kritik olmayan açıklara örnek olarak, sunulması pahalı servis engelleme atakları gösterilebilir. Kritik açıklar çok hassas olduklarından şifrelenmemiş bir şekilde gönderilmemeli ve PGP anahtar(lar)ı ile birlikte bir ya da daha fazla geliştiriciye şifreli halde gönderilmelidir. "
     involve: "Siz de katılın"
-    involvetxt1: "Fabcoin ücretsiz bir yazılımdır ve herhangi bir geliştirici projeye katkıda bulunabilir. Gerek duyacağınız her şey <a href=\"http://github.com/fabcoin/fabcoin\">GitHub havuzundadır</a>. Lütfen BENİOKU'daki geliştirme sürecini okuyun ve takip edin, kaliteli kod sağlayın ve bütün yönergelere uyun."
+    involvetxt1: "Fabcoin ücretsiz bir yazılımdır ve herhangi bir geliştirici projeye katkıda bulunabilir. Gerek duyacağınız her şey <a href=\"http://github.com/blockchaingate/fabcoin/fabcoin\">GitHub havuzundadır</a>. Lütfen BENİOKU'daki geliştirme sürecini okuyun ve takip edin, kaliteli kod sağlayın ve bütün yönergelere uyun."
     involvetxt2: "Geliştirme tartışmaları GitHub'da ve sourceforge'da <a href=\"http://lists.linuxfoundation.org/mailman/listinfo/fabcoin-dev\">fabcoin-geliştirme</a> e-posta listesinde gerçekleşir. Daha az resmiyet taşıyan tartışmalar ise irc.freedode.net #fabcoin-dev (<a href=\"#\" onclick=\"freenodeShow(event);\">web ara yüzündedir</a>, <a href=\"http://fabcoinstats.com\">logs</a>)."
     more: "Daha fazla ücretsiz yazılım projeleri"
     morechoose: " Bazı <a href=\"http://whatcanidoforfabcoin.xyz/\">yetenekleriniz hakkındaki soruları</a> yanıtlayarak katkı yapmak üzere bir proje seçebilirsiniz."
@@ -239,7 +239,7 @@ tr:
     upcoming: "Yaklaşan etkinlik ve konferanslar"
     eventsubmit: "Bir etkinlik gönder"
     meetupfabcointalk: "<a href=\"http://fabcointalk.org/index.php?board=86.0\">FabcoinTalk'ta Fabcoin toplantıları</a>"
-    meetupwiki: "<a href=\"http://en.fabcoin.it/wiki/Meetups\">Wiki'de Fabcoin toplantıları</a>"
+    meetupwiki: "<a href=\"http://fabcoins.info/wiki/Meetups\">Wiki'de Fabcoin toplantıları</a>"
     meetupgroup: "<a href=\"http://fabcoin.meetup.com/\">Fabcoin toplantı grupları</a>"
   faq:
     title: "SSS - Fabcoin"
@@ -258,12 +258,12 @@ tr:
     howitworkstxt1: "Bir kullanıcının gözünden bakacak olursak, Fabcoin, kişiye özel bir Fabcoin cüzdanı veren ve bu cüzdan ile kullanıcılar arasından fabcoin alıp, yollamaya yarayan bir uygulamadan ya da bilgisayar programından farklı değildir. Bir çok kişi Fabcoin'i bu şekilde biliyor."
     howitworkstxt2: "Kamera arkasında, Fabcoin ağı \"blok zinciri\" adı verilen bir ana hesap defterini paylaşır. Bu defter yapılan tüm işlemleri kapsar ve kullanıcının bilgisayarının bir işlemin geçerliliğini doğrulamasına izin verir. Her işlemin gerçekliği gönderen adrese karşılık gelen sanal imzalarla korunur ve tüm kullanıcıların kendi Fabcoin adreslerinden fabcoin gönderebilmelerine izin verir. Ayrıca, herkes özel donanımların işlem gücü yardımıyla işlemlerin işlenmesine yardımcı olabilir ve karşılığında fabcoin şeklinde bir ödül alabilir. Buna genelde \"madencilik\" denir. Fabcoin hakkında daha fazla öğrenmek için  <a href=\"#how-it-works#\">ilgili sayfayı</a> ve <a href=\"#fabcoin-paper#\">ilk belgeyi</a> okuyabilirsiniz."
     used: "İnsanlar gerçekten Fabcoin'i kullanıyor mu?"
-    usedtxt1: "Evet. Fabcoin'i kullanan <a href=\"http://usefabcoins.info/\">işletmelerin</a> ve kişilerin sayısı giderek artmaktadır. Bunlar günlük hayattaki restorant, apartman, avukatlık bürosu gibi işletmeler ve Namecheap, WordPress, Reddit ve Flattr gibi popüler online hizmetleri de kapsar. Fabcoin nispeten yeni bir olay olsa da hızlıca büyümektedir. Ağustos 2013'ün sonunda <a href=\"http://fabcoincharts.com/fabcoin/\">tedavüldeki tüm fabcoinlerin değeri</a> $1.5 milyar doları geçti ve günde milyonlarca dolarlık fabcoinler alınıp veriliyordu."
+    usedtxt1: "Evet. Fabcoin'i kullanan <a href=\"http://fabcoins.info/en/usefabcoins/\">işletmelerin</a> ve kişilerin sayısı giderek artmaktadır. Bunlar günlük hayattaki restorant, apartman, avukatlık bürosu gibi işletmeler ve Namecheap, WordPress, Reddit ve Flattr gibi popüler online hizmetleri de kapsar. Fabcoin nispeten yeni bir olay olsa da hızlıca büyümektedir. Ağustos 2013'ün sonunda <a href=\"http://fabcoincharts.com/fabcoin/\">tedavüldeki tüm fabcoinlerin değeri</a> $1.5 milyar doları geçti ve günde milyonlarca dolarlık fabcoinler alınıp veriliyordu."
     acquire: "Fabcoin nasıl elde edilir?"
     acquireli1: "Mal veya hizmet karşılığında ödeme olarak."
     acquireli2: "<a href=\"http://www.buyfabcoinworldwide.com\">Fabcoin exchange</a>'de fabcoin satın alın."
     acquireli3: " <a href=\"http://localfabcoins.com/\">Size yakın biriyle</a> fabcoin takas edin."
-    acquireli4: "Rekabetçi <a href=\"http://www.fabcoinmining.com/\">madencilik</a> yoluyla fabcoin kazanın."
+    acquireli4: "Rekabetçi <a href=\"http://www.fabcoins.info/en/fabcoinmining/\">madencilik</a> yoluyla fabcoin kazanın."
     acquiretxt1: "Her ne kadar fabcoinlerini PayPal ya da kredi kartından para karşılığı bozdurmak isteyen kullanıcılar bulabilmeniz mümkün olsa da bir çok takas çeşidi bu tip bir ödeme metoduna izin vermez. Bunların nedeni bazılarının PayPal ile fabcoin alıp daha sonra kendi işlemlerinin yarısını geri almasıdır. Bu kredi kartı ya da diğer sistemlerin işlemi onaylamadığında başına gelen bir şeydir."
     makepayment: "Fabcoin ödemesi yapmak ne kadar zordur?"
     makepaymenttxt1: "Fabcoin ödemeleri kredi kartı ya da banka kartı ödemelerinden daha kolaydır ve satıcı hesabı olmaksızın ödeme alınabilir. Ödemeler akıllı telefonunuzda ya da bilgisayarınızda ki cüzdan yazılımına ödeme miktarı ve alıcı adresi girilerek gönderilebilir. Ödeme yapılacak olan alıcının adresini daha kolay bulabilmek için bir çok cüzdan QR kodunu arayabilir ya da NFC teknolojisi ile telefonlarınızı birbirine dokundurabilirsiniz."
@@ -290,7 +290,7 @@ tr:
     lost: "Fabcoinler kaybedilince ne olur?"
     losttxt1: "Bir kullanıcı cüzdanını kaybettiğinde bu parasının silinerek dolaşımdan yok olmasına yol açar. Kayıp fabcoinler diğer fabcoinler gibi blok zincirinde yer almaya devam eder.  Fakat bu fabcoinler, kimse onları harcamak için gerekli olan özel anahtar(lar) bulamayacağı için sonsuza kadar etkisiz olarak kalacaktır. Arz talep yasası gereği daha az miktarda fabcoin olduğunda, diğerlerine olan talep artacak ve dengeleme amacı ile değerleri artacak."
     scale: "Fabcoin ileride büyük bir ödeme ağı olabilir mi?"
-    scaletxt1: "Fabcoin ağı şimdiden bugün olduğundan çok daha fazla saniye başına işlem görmeye başladı. Fakat hala başlıca büyük kredi kartı ağlarının seviyesinde değil. Şu anda uygulanan limitleri kaldırma çalışmaları devam ediyor ve ilerideki gereksinimler oldukça iyi biliniyor. Başlangıçtan bu yana olgunlaşma işlemleri, optimizasyon ve daha detaylı geliştirmeler ile Fabcoin bütün açılardan durmadan gelişmeye devam ediyor ve önümüzdeki yıllarda bunun böyle devam edeceğini düşünüyoruz.  Kullanıcı sayısı arttıkça düşük ödemeli işlem sayısı da artacak ve bütün ağ daha sağlam bir servis halini alacak. Daha fazla detay için Wiki sayfamıza bir göz atın, <a href=\"http://en.fabcoin.it/wiki/Scalability\">Ölçeklenirlik</a>."
+    scaletxt1: "Fabcoin ağı şimdiden bugün olduğundan çok daha fazla saniye başına işlem görmeye başladı. Fakat hala başlıca büyük kredi kartı ağlarının seviyesinde değil. Şu anda uygulanan limitleri kaldırma çalışmaları devam ediyor ve ilerideki gereksinimler oldukça iyi biliniyor. Başlangıçtan bu yana olgunlaşma işlemleri, optimizasyon ve daha detaylı geliştirmeler ile Fabcoin bütün açılardan durmadan gelişmeye devam ediyor ve önümüzdeki yıllarda bunun böyle devam edeceğini düşünüyoruz.  Kullanıcı sayısı arttıkça düşük ödemeli işlem sayısı da artacak ve bütün ağ daha sağlam bir servis halini alacak. Daha fazla detay için Wiki sayfamıza bir göz atın, <a href=\"http://fabcoins.info/wiki/Scalability\">Ölçeklenirlik</a>."
     legal: "Yasal"
     islegal: "Fabcoin yasal mıdır?"
     islegaltxt1: "Bilindiği kadarı ile Fabcoin bir çok hükümet tarafından <a href=\"http://en.wikipedia.org/wiki/Legality_of_fabcoin_by_country\">yasa dışı bulunmamıştır</a>. Fakat bazı hükümetler (Arjantin ve Rusya gibi) tüm yabancı para formlarını ya ciddi şekilde kısıtlar ya da yasaklarlar. Bazı diğer hükümetler de (Tayland gibi) Fabcoin takası gibi bazı alış veriş yöntemlerini kısıtlayabilir."
@@ -363,7 +363,7 @@ tr:
     miningsecure: "Madencilik nasıl Fabcoin'in güvenliğine yarıyor?"
     miningsecuretxt1: "Madencilik rekabetçi bir piyangoya eşdeğer birşey yaratarak herhangi birinin blok zincirine yeni işlem blokları eklemesini zorlaştırır. Bu ağın tarafsızlığını, bir kişiye bir işlemi bloğa ekleme gücünü vermeyerek korur. Bu ayrıca bir kişinin blok zincirinin bir kısmını diğer kullanıcıları dolandırabilecek şekilde, harcadığı parayı daha az göstererek değiştirmesini önler. Madencilik, bütün blokların tekrar yazımını gerektirdiği için eski bir işlemin geri dönüşümünü katlanan bir şekilde zorlaştırır."
     miningstart: "Madenciliğe başlamak için ne yapmalıyım?"
-    miningstarttxt1: "Fabcoin'in ilk günlerinde herkes bilgisayarının işlemcisini kullanarak yeni bir blok bulabiliyordu. Çok daha fazla insan madenciliğe başladığı için yeni bloklar bulmak da o kadar zorlaştı ve şu anda madencilik için kullanılan yazılım yapılan işe göre bir ücret çıkarabiliyor. Daha fazla bilgi için <a href=\"http://www.fabcoinmining.com/\">FabcoinMining.com</a>'u ziyaret edebilirsiniz."
+    miningstarttxt1: "Fabcoin'in ilk günlerinde herkes bilgisayarının işlemcisini kullanarak yeni bir blok bulabiliyordu. Çok daha fazla insan madenciliğe başladığı için yeni bloklar bulmak da o kadar zorlaştı ve şu anda madencilik için kullanılan yazılım yapılan işe göre bir ücret çıkarabiliyor. Daha fazla bilgi için <a href=\"http://www.fabcoins.info/en/fabcoinmining/\">FabcoinMining.com</a>'u ziyaret edebilirsiniz."
     security: "Güvenlik"
     secure: "Fabcoin güvenli midir?"
     securetxt1: "Fabcoin teknolojisi - protokol ve kriptografi - çok sağlam güvenlikli bir geçmiş kayıt sistemine sahiptir ve Fabcoin ağı muhtemelen dünyadaki en çok yayılmış bilgisayar yazılımı projesidir. Fabcoin'in en kırılgan özelliği kullanıcı hatalarıdır. İşlem yapabilmek için gerekli olan özel anahtarları içinde bulunduran Fabcoin cüzdanı kazara silinebilir, kaybedilebilir ya da çalınabilir. Bu fiziki paranın dijital bir formda saklanması gibidir. Neyseki kullanıcılar paralarını koruyabilmek için <a href=\"#secure-your-wallet#\">güvenlik pratikleri</a> kullanabiliyor ya da çok sağlam güvenlik oranı vadeden ve kayıpların garantisini veren servisler kullanabiliyorlar."
@@ -377,7 +377,7 @@ tr:
     quantumtxt1: "Evet, çoğu sistem, geleneksel banka sistemleri dahil genelde kriptografiye dayanır. Yine de kuantum bilgisayarlar şu anda yoklar ve bir süre daha olacak gibi görünmüyorlar. Kuantum bilgisayarların çıkışının yaklaşacağı bir durumda protokol post-kuantum algoritmalarla çalışacak şekilde güncellenebilir. Bu güncellemenin gereksinimi geliştiriciler tarafından yüksek oranda onaylanırsa ve tüm kullanıcılar bu değişikliği isterse elbette güncellenecektir."
     help: "Yardım"
     morehelp: "Daha fazla öğrenmek istiyorum. Nasıl yardım alabilirim?"
-    morehelptxt1: "<a href=\"#resources#\">Kaynaklar</a> ve <a href=\"#community#\">topluluklar</a> sayfalarında daha fazla bilgiye ulaşabilirsiniz ya da<a href=\"http://en.fabcoin.it/wiki/FAQ\">Wiki SSS</a>'yi ziyaret edebilirsiniz."
+    morehelptxt1: "<a href=\"#resources#\">Kaynaklar</a> ve <a href=\"#community#\">topluluklar</a> sayfalarında daha fazla bilgiye ulaşabilirsiniz ya da<a href=\"http://fabcoins.info/wiki/FAQ\">Wiki SSS</a>'yi ziyaret edebilirsiniz."
   getting-started:
     title: "Başlarken - Fabcoin"
     pagetitle: "Fabcoin'e başlarken"
@@ -406,7 +406,7 @@ tr:
     taxtxt: "Mağazalar çoğunlukla fiyatları kendi para birimlerine göre gösterir ve yatırırlar. Diğer durumlarda, Fabcoin yabancı para birimlerine benzer olarak çalışır. Hükümetinizle alakalı vergiler hakkında en uygun bilgi için, bilgili bir muhasebeci ile görüşmelisiniz."
     taxbut: "Daha fazla oku"
     visibility: "Daha fazla tanınıyor"
-    visibilitytxt: "Fabcoinlerini harcamak için çeşitli yollar arayan kullanıcıların sayısı giderek artmakta. Siz de şirketinizi online dizinlere ekleyerek onların size ulaşmasını kolaylaştırabilirsiniz. Ayrıca  <a href=\"http://en.fabcoin.it/wiki/Promotional_graphics\">Fabcoin logosunu</a> web sitenizde ya da mağazanızda gösterebilirsiniz."
+    visibilitytxt: "Fabcoinlerini harcamak için çeşitli yollar arayan kullanıcıların sayısı giderek artmakta. Siz de şirketinizi online dizinlere ekleyerek onların size ulaşmasını kolaylaştırabilirsiniz. Ayrıca  <a href=\"http://fabcoins.info/wiki/Promotional_graphics\">Fabcoin logosunu</a> web sitenizde ya da mağazanızda gösterebilirsiniz."
     visibilitybut: "İşinizi sunun"
   how-it-works:
     title: "Fabcoin nasıl çalışır? - Fabcoin"
@@ -421,7 +421,7 @@ tr:
     processing: "İşleme<span class=\"titlelight\"> - madencilik</span>"
     processingtxt: "Madencilik bekleyen işlemleri blok zincirine katarak <a href=\"#vocabulary##[vocabulary.confirmation]\"><i>onaylayan</i></a>  <b>dağıtımlı fikirbirliği sistemi</b>dir. Blok zincirinde kronolojik sıra sağlar, ağın tarafsızlığını korur, ve farklı bilgisayarların sistemin durumunda uzlaşmasını sağlar. Onaylanmaları için işlemler ağ tarafından belirlenen çok sıkı kurallara uyan bir <a href=\"#vocabulary##[vocabulary.block]\"><i>bloğa</i></a> konurlar. Bu kurallar önceki blokların değiştirilmesini önler çünkü değiştirilirlerse bütün sonraki bloklar geçersiz kılınır. Madencilik ayrıca kimsenin kolayca ard arda yeni blokları blok zincirine eklemesini önleyerek rekabetli bir piyangonun eşdeğerini de yaratır. Bu şekilde kimse blok zincirine neyin dahil olup olmadığını  kontrol edemez ve blok zincirinin kısımlarını değiştirip harcadıkları paralarını geri alamaz."
     readmore: "Daha derine dalmak"
-    readmoretxt: "Bu yalnızca sistemin kısa bir özetidir. Eğer detaylarına inmek isterseniz sistemin tasarımını tarif eden <a href=\"#fabcoin-paper#\">özgün makaleyi okuyabilirsiniz</a>, <a href=\"/en/developer-documentation\">geliştirici belgelemesini</a> okuyabilirsiniz, veya <a href=\"http://en.fabcoin.it/wiki/Main_Page\">Fabcoin wiki</a> sayfasını inceleyebilirsiniz."
+    readmoretxt: "Bu yalnızca sistemin kısa bir özetidir. Eğer detaylarına inmek isterseniz sistemin tasarımını tarif eden <a href=\"#fabcoin-paper#\">özgün makaleyi okuyabilirsiniz</a>, <a href=\"/en/developer-documentation\">geliştirici belgelemesini</a> okuyabilirsiniz, veya <a href=\"http://fabcoins.info/wiki/Main_Page\">Fabcoin wiki</a> sayfasını inceleyebilirsiniz."
   index:
     title: "Fabcoin - Açık kaynak P2P dijital para"
     metadescription: "Fabcoin yenilikçi bir ödeme ağı ve yeni bir tür para çeşididir. Bilmeniz gereken herşeyi fabcoins.info'da öğrenerek şimdi kullanmaya başlayın."
@@ -444,7 +444,7 @@ tr:
     donation: "Bahşiş ve bağışlar"
     donationtext: "Fabcoin bir çok durumda bahşiş ve bağış ödemelerine etkili çözümler sunar. Para yollamak bir tık kadar ve bağış toplamak bir QR kodunun gösterilmesi kadar kolaydır. Bağışlar halka görünür olabilir, kar amacı gütmeyen şirketlere muazzam bir şeffaflık sunar. Doğal felaketler gibi acil durumlarda Fabcoin bağışları hızlı cevap verebilmesi nedeni ile katkı sağlayabilir."
     crowdfunding: "Topluluk destekli"
-    crowdfundingtext: "Her ne kadar kullanılması henüz kolay olmasa da, Fabcoin Kickstarter tarzı kitle fonlaması kampanyalarında yani belli bir grup katılımcının paralarını rehin bıraktıkları ve sadece belirlenen hedefe ulaşılanca gönderilen bir sistemde kullanılabilir. Bu tarz güvence kontratları, bir işlemi tüm şartlar karşılanana kadar gerçekleştirmeyen Fabcoin protokolünde yerini alır. Kitle fonlaması hakkında <a href=\"http://en.fabcoin.it/wiki/Contracts#Example_3:_Assurance_contracts\">daha fazla bilgi</a>."
+    crowdfundingtext: "Her ne kadar kullanılması henüz kolay olmasa da, Fabcoin Kickstarter tarzı kitle fonlaması kampanyalarında yani belli bir grup katılımcının paralarını rehin bıraktıkları ve sadece belirlenen hedefe ulaşılanca gönderilen bir sistemde kullanılabilir. Bu tarz güvence kontratları, bir işlemi tüm şartlar karşılanana kadar gerçekleştirmeyen Fabcoin protokolünde yerini alır. Kitle fonlaması hakkında <a href=\"http://fabcoins.info/wiki/Contracts#Example_3:_Assurance_contracts\">daha fazla bilgi</a>."
     micro: "Mikro ödemeler"
     microtext: "Fabcoin bir dolar değerinde ödemeleri ve yakında çok daha düşük miktarda olan işlemleri yapabilirsiniz. Bu gibi ödemeler bugün bile rutin haldedir. Saniyeye göre ödeme yaptığınız bir internet radyosu dinlediğinizi düşünün ya da reklam görünmemesi için bir web sitesine çok düşük miktarda ödeme yaptığınızı, ya da kilobayt başı WiFi hizmeti satın aldığınızı düşünün. Fabcoin tüm bu ödemeleri yapabilecek yeteneğe sahiptir. Fabcoin mikro ödemeler hakkında <a href=\"http://fabcoinj.github.io/working-with-micropayments\">daha fazla</a> bilgi edinin."
     mediation: "Anlaşmazlık tartışmaları"
@@ -465,7 +465,7 @@ tr:
     information: "Bilgi fabcoins.info'da yayınlanmıştır"
     informationtxt1: "http://fabcoins.info websitesi (bundan böyle ''Website'' olarak anılacaktır) genel doğal materyaller vve bilgi sunmaktadır. Website'ye yasal tavsiye, iş tavsiyesi yada herhangi bir tür tavsiye için bel bağlanmamalıdır, yetkiniz de bulunmamaktadır.  Site içeriğinin güvenilirlinin kullanım riski tamamen size aittir. Birşey yapma yada yapmama kararı almanız durumunda ilgili yetki bölgesinde lisanslı bir avukata başvurmalısınız. WEbsitenin ne sahipleri ne de yardımcıları sizin tarafınızdan içeriğin kullanımına dair herhangi bir şekilde sorumlu tutulamaz."
     translations: "Çeviriler"
-    translationstxt1: "Website, İngilizce içeriğin çevirilerini içerebilir. Bu çeviriler sadece kolaylık için sunulmuştur. İngiliz dili versiyonu ile çatışmaların olması durumunda, İngilizce versiyon üstünlüğe sahiptir. Eğer herhangi bir tutarsızlık farkederseniz lütfen <a href=\"http://github.com/fabcoin-dot-org/fabcoins.info\">GitHub</a> üzerinde raporlayın."
+    translationstxt1: "Website, İngilizce içeriğin çevirilerini içerebilir. Bu çeviriler sadece kolaylık için sunulmuştur. İngiliz dili versiyonu ile çatışmaların olması durumunda, İngilizce versiyon üstünlüğe sahiptir. Eğer herhangi bir tutarsızlık farkederseniz lütfen <a href=\"http://github.com/fabcoins-dot-info/fabcoins.info\">GitHub</a> üzerinde raporlayın."
     userisks: "Fabcoin kullanmanın riskleri"
     useriskstxt1: "Website aşağıdaki beş kategori kapsamında herhangi kayıp, hasar yada olaylar neticesinde sorumlu tutulamaz."
     useriskstxt2: "Herhangi Fabcoin ile ilgili yazılım yada hizmetin kullancısı tarafından yapılan hatalar, örneğin unutulan şifreler, yanlış Fabcoin adreslerine yapılan ödemeler ve kazara silinen cüzdanlar."
@@ -494,14 +494,14 @@ tr:
     volunteer: "Ropörtaj için kişiler"
     volunteernonprofit: "<a href=\"http://fabcoin.co/contact/\">Fabcoin Kuruluşu</a> ile yada yerel <a href=\"#community##[community.non-profit]\"> kar amacı gütmeyen kuruluşlar</a> ile iletişime geçin."
     volunteerpresscenter: "Bağımsız <a href=\"http://fabcoinpresscenter.org\">fabcoinpresscenter.org</a> üzerinde daha fazla potansiyel basın kontaklarına ulaşın."
-    faqmore: "Fabcoin hakkında daha fazla bilgi için lütfen <a href=\"/en/faq\">SSS</a> bölümünü yada  <a href=\"http://en.fabcoin.it/wiki/FAQ\">Fabcoin Wiki</a> bölümünü ziyaret edin."
+    faqmore: "Fabcoin hakkında daha fazla bilgi için lütfen <a href=\"/en/faq\">SSS</a> bölümünü yada  <a href=\"http://fabcoins.info/wiki/FAQ\">Fabcoin Wiki</a> bölümünü ziyaret edin."
     materialpicture: "Resimler"
     materialpicturemore: "Daha fazla resim göster..."
   privacy:
     title: "Gizlilik - Fabcoin"
     pagetitle: "Gizlilik"
     datacollect: "Veri toplanıldı"
-    datacollecttxt: "Fabcoin.org anonimize edilmiş sunucu kayıtları toplar. Bu kayıtlar değiştirilen son bit ile birlikte IP adreslerini, ziyaret zamanı, istenilen sayfa, kullanıcı temsilcisi ve başvurulan URL içermektedir."
+    datacollecttxt: "Fabcoins.info anonimize edilmiş sunucu kayıtları toplar. Bu kayıtlar değiştirilen son bit ile birlikte IP adreslerini, ziyaret zamanı, istenilen sayfa, kullanıcı temsilcisi ve başvurulan URL içermektedir."
     datause: "Veri kullanımı"
     datausetxt: "Toplanılan bilgi <a href=\"/stats/\">şeffaf ve açık istatistik</a>.sunmak için kullanılır."
   protect-your-privacy:
@@ -525,8 +525,8 @@ tr:
     pagetitle: "Fabcoin kaynakları"
     pagedesc: "Fabcoin hakkında yararlı siteler ve kaynaklar bulun."
     useful: "Yararlı yerler"
-    linkwiki: "<a href=\"http://en.fabcoin.it/\">Fabcoin Wiki</a>"
-    linkcointelegraph: "<a href=\"http://cointelegraph.com/\">CoinTelegraph</a>"
+    linkwiki: "<a href=\"http://fabcoins.info/wiki\">Fabcoin Wiki</a>"
+    linkcointelegraph: "<a href=\"http://fabcoins.info/en/cointelegraph/\">CoinTelegraph</a>"
     directories: "Dizinler"
     linkwallets: "Cüzdanlar"
     linkmerchants: "Mağazalar"
@@ -585,7 +585,7 @@ tr:
     node: "Ağa katılın"
     nodetxt: "Eğer iyi bir Internet bağlantınız varsa Fabcoin ağını, bilgisayarınızda yada sunucunuzda 8665 portu açık şekilde <a href=\"#download#\">tam düğüm yazılım</a> çalıştırarak güçlendirebilirsiniz. Tam düğüm tüm işlemleri güvenli hale getirir ve aktarım sağlar."
     mining: "Madencilik"
-    miningtxt: "İşlemleri hızlandırmak adına <a href=\"http://www.fabcoinmining.com/\">fabcoin madenciliğine</a> başlayabilirsiniz. Ağı korumak için küçük maden havuzlarına katılmalı ve merkezci olmayan <a href=\"http://p2pool.in/\">P2Pool</a> ya da getblocktemplate (GBT) destekli <a href=\"http://en.fabcoin.it/wiki/Comparison_of_mining_pools\">havuzlar</a> seçmelisiniz."
+    miningtxt: "İşlemleri hızlandırmak adına <a href=\"http://www.fabcoins.info/en/fabcoinmining/\">fabcoin madenciliğine</a> başlayabilirsiniz. Ağı korumak için küçük maden havuzlarına katılmalı ve merkezci olmayan <a href=\"http://p2pool.in/\">P2Pool</a> ya da getblocktemplate (GBT) destekli <a href=\"http://fabcoins.info/wiki/Comparison_of_mining_pools\">havuzlar</a> seçmelisiniz."
     develop: "Geliştirme"
     developtxt: "Fabcoin ücretsiz bir yazılımdır. Yani eğer br geliştiriciyseniz süper güçlerinizi iyiye kullanarak <a href=\"#development#\">Fabcoin'i geliştirebilir</a> veya Fabcoin kullanan yeni servis ve yazılımlar geliştirebilirsiniz."
     donation: "Bağış"
@@ -593,9 +593,9 @@ tr:
     nonprofit: "Organizasyonlar"
     nonprofittxt: "<a href=\"http://fabcoin.co/\">Fabcoin Vakfı</a> ve bir çok diğer <a href=\"#community##[community.non-profit]\">kar amacı gütmeyen kuruluşlar</a>  Fabcoini korumaya ve geliştirmeye adanmıştır. Bunlara katılarak bu gruplara yardım edebilir ve projelerinin, tartışmalarının ve etkinliklerinin bir parçası olabilirsiniz."
     spread: "Yaymaya yardım edin"
-    spreadtxt: "İnsanların ilgisini çekmek için Fabcoin hakkında konuşun. Bloglarınızda bu konu hakkında yazılar yazın. En beğendiğiniz alış veriş merkezlerine Fabcoin ile ödeme yapmak istediğinizi söyleyin.  <a href=\"http://usefabcoins.info/\">Satış dizinlerini</a> güncel tutun. Ya da yaratıcı olup bir Fabcoin tişörtü yaptırın."
+    spreadtxt: "İnsanların ilgisini çekmek için Fabcoin hakkında konuşun. Bloglarınızda bu konu hakkında yazılar yazın. En beğendiğiniz alış veriş merkezlerine Fabcoin ile ödeme yapmak istediğinizi söyleyin.  <a href=\"http://fabcoins.info/en/usefabcoins/\">Satış dizinlerini</a> güncel tutun. Ya da yaratıcı olup bir Fabcoin tişörtü yaptırın."
     wiki: "Belgeleme"
-    wikitxt: "<a href=\"http://github.com/fabcoin-dot-org/fabcoins.info#how-to-participate\">Fabcoin.org</a> ve <a href=\"http://en.fabcoin.it/\">Fabcoin wiki</a> yararlı belgeler sağlar ve sürekli olarak içerdikleri bilgileri geliştirir. Siz de bu kaynakları geliştirebilir ve güncel kalmalarını sağlayabilirsiniz."
+    wikitxt: "<a href=\"http://github.com/fabcoins-dot-info/fabcoins.info#how-to-participate\">Fabcoins.info</a> ve <a href=\"http://fabcoins.info/wiki\">Fabcoin wiki</a> yararlı belgeler sağlar ve sürekli olarak içerdikleri bilgileri geliştirir. Siz de bu kaynakları geliştirebilir ve güncel kalmalarını sağlayabilirsiniz."
     translate: "Çeviri yapın"
     translatetxt: "Fabcoin ekosisteminin önemli kısımlarında çeviri yaparak ya da çevirileri düzelterek Fabcoin kullanılabirliğini artırmaya yardımcı olabilirsiniz. Yardım etmek istediğiniz bir proje varsa seçmeniz yeterli."
     help: "Topluluklarla tanışın"
@@ -615,8 +615,8 @@ tr:
     blockchaintxt: "Blok zinciri, kronolojik bir sırada <b>bütün Fabcoin işlemlerinin halka açık</b> bir kaydıdır. Blok zinciri bütün Fabcoin kullanıcılarıyla paylaşılır. Bu Fabcoin işlemlerinin kalıcılığını doğrular ve  <a href=\"#[vocabulary.doublespend]\">çifte harcama</a> yapmayı önler."
     block: "Blok"
     blocktxt: "Blok, <b>zincirde bekleyen birçok işlemi içeren ve onaylayan bir kayıttır</b>. Yaklaşık her 10 dakikada bir, işlemleri içeren ortalama bir yeni blok <a href=\"#[vocabulary.mining]\">madencilik</a> yoluyla <a href=\"#[vocabulary.blockchain]\">blok zincirine</a> eklenir."
-    btc: "FAB"
-    btctxt: "FAB bir fabcoin için kullanılan ortak bir semboldür."
+    fab: "FAB"
+    fabtxt: "FAB bir fabcoin için kullanılan ortak bir semboldür."
     confirmation: "Onaylama"
     confirmationtxt: "Onaylama <b>ağ tarafından işlemin tamamlandığı anlamına gelir ve kuvvetle muhtemel geri dönüşümsüzdür</b>. İşlemler bir  <a href=\"#vocabulary##[vocabulary.block]\">bloğa</a> ve sonraki her bir bloğa katıldıkları anda onay alırlar. Düşük ücretli bir işlem tek bir onaylama ile güvenli hale gelirken, 1000 $ gibi daha yüksek ücretler 6 ya da daha fazla onay bekleyebilir. Her bir onay işlemin güvenilirliğinin <i>katlanarak</i> artmasını sağlar."
     cryptography: "Kriptografi"
@@ -655,7 +655,7 @@ tr:
     taxtxt: "Fabcoin resmi bir para birimi değildir. Bununla birlikte çoğu hükümet yinede sizden gelir ödeme, satış, ücret bordrosu ve fabcoin dahil değeri olan herşey için vergi ödemenizi ister. Hükümetiniz veya/yada yerel belediyeleriniz tarafından yayınlanan <a href=\"http://en.wikipedia.org/wiki/Legality_of_fabcoin_by_country\">vergi ve diğer mevzuat mandalarını</a> anladığınıza emin olmak sizin sorumluluğunuzdur."
   layout:
     menu-support-fabcoin: "Fabcoin'i Destekleyin"
-    menu-about-us: "Fabcoin.org hakkında"
+    menu-about-us: "Fabcoins.info hakkında"
     menu-fabcoin-for-businesses: İşletmeler
     menu-fabcoin-for-developers: Geliştiriciler
     menu-fabcoin-for-individuals: Bireyler
@@ -675,7 +675,7 @@ tr:
     menu-participate: Katılın
     menu-vocabulary: Sözlük
     menu-you-need-to-know: "Bilmeniz gerekenler"
-    banner-translate: "Bu dil için çeviriler güncel değildir.  <a href=\"http://github.com/fabcoin-dot-org/fabcoins.info#translation\">fabcoins.info'un dilinize çevrilmesine yardım etmek için buraya tıklayın</a>."
+    banner-translate: "Bu dil için çeviriler güncel değildir.  <a href=\"http://github.com/fabcoins-dot-info/fabcoins.info#translation\">fabcoins.info'un dilinize çevrilmesine yardım etmek için buraya tıklayın</a>."
     footer: "<a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT lisansı</a> altında yayınlanmaktadır"
     sponsor: "Sponsor bir topluluğun web sitesi"
     getstarted: "Fabcoin'e başlarken"
@@ -711,7 +711,7 @@ tr:
       fabcoin: fabcoin
       blockchain: blok-zinciri
       block: blok
-      btc: btc
+      fab: fab
       confirmation: onay
       cryptography: kriptografi
       doublespend: cift-harcama

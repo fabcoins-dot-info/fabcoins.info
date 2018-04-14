@@ -33,7 +33,7 @@ can use the following resources:
   directory][bcc data directory], and other articles in the [Fabcoin
   Core documentation category][wiki fabcoin core documentation].
 
-    <form id="searchform" action="http://en.fabcoin.it/w/index.php">
+    <form id="searchform" action="http://fabcoins.info/wikiw/index.php">
       <input id="searchInput" class="glossary_term" type="search" placeholder="Search the Fabcoin Wiki" name="search"></input>
     </form>
 

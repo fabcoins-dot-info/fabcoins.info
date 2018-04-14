@@ -13,7 +13,7 @@ platform:
     default: &DEFAULT
       text: "walletfabcoincore"
       link: "fabcoincore"
-      source: "http://github.com/fabcoin/fabcoin"
+      source: "http://github.com/blockchaingate/fabcoin/fabcoin"
       screenshot: "fabcoincore.png"
       check:
         control: "checkgoodcontrolfull"

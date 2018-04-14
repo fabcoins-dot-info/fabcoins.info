@@ -67,7 +67,7 @@ As of Fabcoin Core 0.14.2, the most recent protocol version is 70015.
 
 | Version | Initial Release                    | Major Changes
 |---------|------------------------------------|--------------
-| 70015   | Fabcoin Core 0.13.2 <br>(Jan 2017) | • New banning behavior for invalid compact blocks [#9026](http://github.com/fabcoin/fabcoin/pull/9026) in v0.14.0, Backported to v0.13.2 in [#9048](http://github.com/fabcoin/fabcoin/pull/9048).
+| 70015   | Fabcoin Core 0.13.2 <br>(Jan 2017) | • New banning behavior for invalid compact blocks [#9026](http://github.com/blockchaingate/fabcoin/pull/9026) in v0.14.0, Backported to v0.13.2 in [#9048](http://github.com/blockchaingate/fabcoin/pull/9048).
 | 70014   | Fabcoin Core 0.13.0 <br>(Aug 2016) | [BIP152][]: <br>• Added `sendcmpct`, `cmpctblock`, `getblocktxn`, `blocktxn` messages <br> • Added `MSG_CMPCT_BLOCK` inventory type to `getdata` message.
 | 70013   | Fabcoin Core 0.13.0 <br>(Aug 2016) | [BIP133][]: <br>• Added `feefilter` message.<br> • Removed `alert` message system. See [Alert System Retirement](http://fabcoins.info/en/alert/2016-11-01-alert-retirement)
 | 70012   | Fabcoin Core 0.12.0 <br>(Feb 2016) | [BIP130][]: <br>• Added `sendheaders` message.

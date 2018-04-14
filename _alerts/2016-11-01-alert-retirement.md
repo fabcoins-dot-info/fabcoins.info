@@ -50,7 +50,7 @@ receive the final alert.
 
 |Action|Description|Date|
 |---|---|---|
-|Pre-final Alert Posts|Posts on Fabcoin.org, various forums, and various mailing lists that the Alert system will be retired|2016-11-01|
+|Pre-final Alert Posts|Posts on Fabcoins.info, various forums, and various mailing lists that the Alert system will be retired|2016-11-01|
 |Pre-final Alert|The alert itself warning that the Alert system will be retired|2016-11-02|
 |Final Alert|Max sequence Alert to disable the Alert system|2017-01-19|
 |Alert key release|The Alert key will be made publicly available|Postponed until further notice.|
@@ -67,7 +67,7 @@ are guaranteed to have removed/disabled the Alert system or allow you to disable
 ## See also
 
 * [Original email proposing retirement](http://lists.linuxfoundation.org/pipermail/fabcoin-dev/2016-September/013104.html)
-* [Pull request removing Alert system](http://github.com/fabcoin/fabcoin/pull/7692)
-* [Removal discussion on github](http://github.com/fabcoin/fabcoin/pull/6260)
-* [Pull request disabling alerts](http://github.com/fabcoin/fabcoin/pull/6274)
+* [Pull request removing Alert system](http://github.com/blockchaingate/fabcoin/pull/7692)
+* [Removal discussion on github](http://github.com/blockchaingate/fabcoin/pull/6260)
+* [Pull request disabling alerts](http://github.com/blockchaingate/fabcoin/pull/6274)
 * [IRC Discussion](http://botbot.me/freenode/fabcoin-core-dev/2016-09-22/?msg=73446303&page=6)

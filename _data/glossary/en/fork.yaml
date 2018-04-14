@@ -27,7 +27,7 @@ optional:
         - Git fork (when one or more developers temporarily develops a codebase separately from other developers)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Fork](/en/developer-guide#term-fork) --- Fabcoin.org Developer Guide"
+        - "[Fork](/en/developer-guide#term-fork) --- Fabcoins.info Developer Guide"
         - "[What is the longest block chain fork that has been made stale so far?](http://fabcoin.stackexchange.com/q/3343) --- Fabcoin StackExchange"
 
 ---

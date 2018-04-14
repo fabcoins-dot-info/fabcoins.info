@@ -21,8 +21,8 @@ optional:
     not_to_be_confused_with_capitalize_first_letter:
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Locktime](/en/developer-guide#term-locktime) --- Fabcoin.org Developer Guide"
-        - "[nLockTime](http://en.fabcoin.it/wiki/NLockTime) --- Fabcoin Wiki"
+        - "[Locktime](/en/developer-guide#term-locktime) --- Fabcoins.info Developer Guide"
+        - "[nLockTime](http://fabcoins.info/wiki/NLockTime) --- Fabcoin Wiki"
         - "[How is locktime enforced in Fabcoin Core?](http://fabcoin.stackexchange.com/q/5914) --- Fabcoin StackExchange"
 
 ---

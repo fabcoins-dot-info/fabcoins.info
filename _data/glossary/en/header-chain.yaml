@@ -30,7 +30,7 @@ optional:
         - Block chain
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Header chain](/en/developer-guide#term-header-chain) --- Fabcoin.org Developer Guide"
+        - "[Header chain](/en/developer-guide#term-header-chain) --- Fabcoins.info Developer Guide"
         - "[Is it a chain of headers rather than a chain of blocks?](http://fabcoin.stackexchange.com/q/35448) --- Fabcoin StackExchange"
 
 ---

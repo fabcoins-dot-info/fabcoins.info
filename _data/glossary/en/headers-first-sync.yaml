@@ -23,7 +23,7 @@ optional:
         - Blocks-first sync (Downloading entire blocks immediately without first getting their headers)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Headers-first sync](/en/developer-guide#headers-first) --- Fabcoin.org Developer Guide"
-        - "[Pull request adding headers-first sync to Fabcoin Core](http://github.com/fabcoin/fabcoin/pull/4468) --- GitHub"
+        - "[Headers-first sync](/en/developer-guide#headers-first) --- Fabcoins.info Developer Guide"
+        - "[Pull request adding headers-first sync to Fabcoin Core](http://github.com/blockchaingate/fabcoin/pull/4468) --- GitHub"
 
 ---

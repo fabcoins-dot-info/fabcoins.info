@@ -21,8 +21,8 @@ optional:
         - HD wallet seeds
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[DNS seed](/en/developer-guide#term-dns-seed) --- Fabcoin.org Developer Guide"
-        - "[DNS seeds](http://en.fabcoin.it/wiki/Satoshi_Client_Node_Discovery#DNS_Addresses) --- Fabcoin Wiki"
+        - "[DNS seed](/en/developer-guide#term-dns-seed) --- Fabcoins.info Developer Guide"
+        - "[DNS seeds](http://fabcoins.info/wiki/Satoshi_Client_Node_Discovery#DNS_Addresses) --- Fabcoin Wiki"
         - "[What is a DNS seed versus a seed node?](http://fabcoin.stackexchange.com/q/14371) --- Fabcoin StackExchange"
 
 ---

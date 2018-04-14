@@ -23,8 +23,8 @@ optional:
         - SIGHASH_ANYONECANPAY (a flag to signature hash types that only signs this single input)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[`SIGHASH_SINGLE`](/en/developer-guide#term-sighash-single) --- Fabcoin.org Developer Guide"
-        - "[OP_CHECKSIG](http://en.fabcoin.it/wiki/OP_CHECKSIG) --- Fabcoin Wiki"
-        - "[Contracts](http://en.fabcoin.it/wiki/Contracts#Theory) --- Fabcoin Wiki"
+        - "[`SIGHASH_SINGLE`](/en/developer-guide#term-sighash-single) --- Fabcoins.info Developer Guide"
+        - "[OP_CHECKSIG](http://fabcoins.info/wiki/OP_CHECKSIG) --- Fabcoin Wiki"
+        - "[Contracts](http://fabcoins.info/wiki/Contracts#Theory) --- Fabcoin Wiki"
 
 ---

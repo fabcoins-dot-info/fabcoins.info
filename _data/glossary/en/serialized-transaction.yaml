@@ -25,8 +25,8 @@ optional:
     not_to_be_confused_with_capitalize_first_letter:
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Serialized transactions](/en/developer-reference#term-raw-format) --- Fabcoin.org Developer Guide"
-        - "[Tx message (serialized transaction)](http://en.fabcoin.it/wiki/Protocol_documentation#tx) --- Fabcoin Wiki"
-        - "[Transaction](http://en.fabcoin.it/wiki/Transaction) --- Bitconi Wiki"
+        - "[Serialized transactions](/en/developer-reference#term-raw-format) --- Fabcoins.info Developer Guide"
+        - "[Tx message (serialized transaction)](http://fabcoins.info/wiki/Protocol_documentation#tx) --- Fabcoin Wiki"
+        - "[Transaction](http://fabcoins.info/wiki/Transaction) --- Bitconi Wiki"
 
 ---

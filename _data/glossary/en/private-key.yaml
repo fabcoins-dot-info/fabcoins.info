@@ -24,8 +24,8 @@ optional:
         - Parent key (a key used to create child keys, not necessarily a private key)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Private key](/en/developer-guide#term-private-key) --- Fabcoin.org Developer Guide"
-        - "[Private key](http://en.fabcoin.it/wiki/Private_key) --- Fabcoin Wiki"
+        - "[Private key](/en/developer-guide#term-private-key) --- Fabcoins.info Developer Guide"
+        - "[Private key](http://fabcoins.info/wiki/Private_key) --- Fabcoin Wiki"
         - "[What is a private key?](http://fabcoin.stackexchange.com/q/4675) --- Fabcoin StackExchange"
 
 ---

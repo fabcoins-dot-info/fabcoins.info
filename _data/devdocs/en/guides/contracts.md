@@ -22,7 +22,7 @@ transactions, they are framed below in story format.
 
 Besides the contract types described below, many other contract types
 have been proposed. Several of them are collected on the [Contracts
-page](http://en.fabcoin.it/wiki/Contracts) of the Fabcoin Wiki.
+page](http://fabcoins.info/wiki/Contracts) of the Fabcoin Wiki.
 
 {% endautocrossref %}
 

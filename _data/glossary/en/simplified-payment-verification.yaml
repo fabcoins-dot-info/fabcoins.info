@@ -29,8 +29,8 @@ optional:
     not_to_be_confused_with_capitalize_first_letter:
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[SPV](/en/developer-guide#simplified-payment-verification-spv) --- Fabcoin.org Developer Guide"
-        - "[Thin client security](http://en.fabcoin.it/wiki/Thin_Client_Security) --- Fabcoin Wiki"
+        - "[SPV](/en/developer-guide#simplified-payment-verification-spv) --- Fabcoins.info Developer Guide"
+        - "[Thin client security](http://fabcoins.info/wiki/Thin_Client_Security) --- Fabcoin Wiki"
         - "[What is a thin client?](http://fabcoin.stackexchange.com/questions/32529) --- Fabcoin StackExchange"
 
 ---

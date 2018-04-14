@@ -368,7 +368,7 @@ your reboot your computer.
 
 If you're an Ubuntu expert and want to use an init script instead, see
 [this Upstart
-script](http://github.com/fabcoin/fabcoin/tree/0.13/contrib/init/fabcoind.conf).
+script](http://github.com/blockchaingate/fabcoin/tree/0.13/contrib/init/fabcoind.conf).
 </div>
 
 {{installFinished}}
@@ -552,7 +552,7 @@ you. On most distributions, this will cause Fabcoin Core daemon to be
 automatically started each time your reboot your computer.
 
 If you're a expert system administrator and want to use an init script instead, see
-[the init scripts directory in Fabcoin Core's source tree](http://github.com/fabcoin/fabcoin/tree/0.13/contrib/init).
+[the init scripts directory in Fabcoin Core's source tree](http://github.com/blockchaingate/fabcoin/tree/0.13/contrib/init).
 </div>
 
 {{installFinished}}
@@ -1132,7 +1132,7 @@ You should now be able to start up your full node by running `fabcoind -daemon` 
 Starting your node automatically each time you login to your computer makes it easy for you to contribute to the network. The easiest way to do this is to tell Fabcoin Core Daemon to start at login. In OS X, the way to start background programs at login is using a Launch Agent. Here is how to install a Launch Agent for Fabcoin Core daemon on your machine:
 
     mkdir ~/Library/LaunchAgents
-    curl http://raw.githubusercontent.com/fabcoin/fabcoin/master/contrib/init/org.fabcoin.fabcoind.plist > ~/Library/LaunchAgents/org.fabcoin.fabcoind.plist
+    curl http://raw.githubusercontent.com/fabcoin/master/contrib/init/org.fabcoin.fabcoind.plist > ~/Library/LaunchAgents/org.fabcoin.fabcoind.plist
 
 The next time you login to your desktop, Fabcoin Core daemon will be automatically started.
 </div>

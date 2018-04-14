@@ -22,8 +22,8 @@ optional:
         - IP address
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Address](/en/developer-guide#term-address) --- Fabcoin.org Developer Guide"
-        - "[Address](http://en.fabcoin.it/wiki/Address) --- Fabcoin Wiki"
+        - "[Address](/en/developer-guide#term-address) --- Fabcoins.info Developer Guide"
+        - "[Address](http://fabcoins.info/wiki/Address) --- Fabcoin Wiki"
 
 
 ---

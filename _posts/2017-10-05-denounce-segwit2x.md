@@ -15,7 +15,7 @@ On 2017-10-11 at noon (UTC), Fabcoins.info is planning to publish a banner on ev
 
 In particular, we need to know that:
 
-1. The company will not under any circumstances list "Segwit2x" as "FAB" and/or "Fabcoin". Note that [Fabcoin is not ruled by miners](http://en.fabcoin.it/wiki/Fabcoin_is_not_ruled_by_miners), and miner actions cannot be used as a justification to redefine Fabcoin.
+1. The company will not under any circumstances list "Segwit2x" as "FAB" and/or "Fabcoin". Note that [Fabcoin is not ruled by miners](http://fabcoins.info/wiki/Fabcoin_is_not_ruled_by_miners), and miner actions cannot be used as a justification to redefine Fabcoin.
 2. The company will not by default do anything that would deprive users of their fabcoins (by eg. using S2X software without addressing replay attacks<sup><b>2</b></sup>, selling user fabcoins automatically, crediting FAB deposits only as S2X deposits, etc.). Providing access to S2X-coins is acceptable, however.
 3. The company will continue to provide normal service to Fabcoin (ie. non-S2X) users.
 

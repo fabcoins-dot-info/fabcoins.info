@@ -25,8 +25,8 @@ optional:
         - Regtest (a local testing environment where developers can control block generation)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Testnet mode](/en/developer-examples#testnet) --- Fabcoin.org Developer Examples"
-        - "[Testnet](http://en.fabcoin.it/wiki/Testnet) --- Fabcoin Wiki"
+        - "[Testnet mode](/en/developer-examples#testnet) --- Fabcoins.info Developer Examples"
+        - "[Testnet](http://fabcoins.info/wiki/Testnet) --- Fabcoin Wiki"
         - "[Get testnet fabcoins][Piotr Piasecki's testnet faucet] --- Testnet Faucet"
 
 ---

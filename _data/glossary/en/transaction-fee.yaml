@@ -27,8 +27,8 @@ optional:
         - Minimum relay fee (the lowest fee a transaction must pay to be accepted into the memory pool and relayed by Fabcoin Core nodes)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Transaction fee](/en/developer-guide#term-transaction-fee) --- Fabcoin.org Developer Guide"
-        - "[Transaction fees](http://en.fabcoin.it/wiki/Transaction_fees) --- Fabcoin Wiki"
+        - "[Transaction fee](/en/developer-guide#term-transaction-fee) --- Fabcoins.info Developer Guide"
+        - "[Transaction fees](http://fabcoins.info/wiki/Transaction_fees) --- Fabcoin Wiki"
         - "[How to calculate transaction fees before sending?](http://fabcoin.stackexchange.com/q/1195) --- Fabcoin StackExchange"
 
 ---

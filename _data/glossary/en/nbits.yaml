@@ -25,9 +25,9 @@ optional:
         - Difficulty (a number measuring the difficulty of finding a header hash relative to the difficulty of finding a header hash with the easiest target)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Target](/en/developer-guide#term-target) --- Fabcoin.org Developer Guide"
-        - "[nBits](/en/developer-reference#target-nbits) --- Fabcoin.org Developer Reference"
-        - "[Target](http://en.fabcoin.it/wiki/Target) --- Fabcoin Wiki"
+        - "[Target](/en/developer-guide#term-target) --- Fabcoins.info Developer Guide"
+        - "[nBits](/en/developer-reference#target-nbits) --- Fabcoins.info Developer Reference"
+        - "[Target](http://fabcoins.info/wiki/Target) --- Fabcoin Wiki"
         - "[How is the target section of the block header calculated?](http://fabcoin.stackexchange.com/q/23912) --- Fabcoin StackExchange"
 
 ---

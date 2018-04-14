@@ -311,7 +311,7 @@ function updateToc() {
 function updateIssue(e) {
   // Update GitHub issue link pre-filled with current page location.
   var t = getEvent(e, 'target');
-  t.href = 'http://github.com/fabcoin-dot-org/fabcoins.info/issues/new?body=' + encodeURIComponent('Location: ' + window.location.href.toString() + "\n\n");
+  t.href = 'http://github.com/fabcoins-dot-info/fabcoins.info/issues/new?body=' + encodeURIComponent('Location: ' + window.location.href.toString() + "\n\n");
 }
 
 function updateSource(e) {
@@ -336,7 +336,7 @@ function updateSource(e) {
   if (pageoffset < first[1]) closer = [first[0], first[1]];
   if (windowy + pageoffset >= getHeight(document.body)) closer = [last[0], last[1]];
   // Set updated url to source file.
-  t.href = 'http://github.com/fabcoin-dot-org/fabcoins.info/edit/master/' + closer[0].getAttribute('data-sourcefile');
+  t.href = 'http://github.com/fabcoins-dot-info/fabcoins.info/edit/master/' + closer[0].getAttribute('data-sourcefile');
 }
 
 function disclaimerClose(e) {
@@ -477,7 +477,7 @@ function loadTickerPrices() {
             return amountBtc.toFixed(8);
         }
 
-        function btcToUsd(amount) {
+        function fabToUsd(amount) {
             var amountBtc = parseFloat(amount);
             if (isNaN(amountBtc)) {
                 return 0;

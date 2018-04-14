@@ -21,7 +21,7 @@ optional:
         - Inv message (one of the P2P messages that transmits inventories)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Inventory](/en/developer-reference#term-inventory) --- Fabcoin.org Developer Reference"
-        - "[Inventory vectors](http://en.fabcoin.it/wiki/Protocol_documentation#Inventory_Vectors) --- Fabcoin Wiki"
+        - "[Inventory](/en/developer-reference#term-inventory) --- Fabcoins.info Developer Reference"
+        - "[Inventory vectors](http://fabcoins.info/wiki/Protocol_documentation#Inventory_Vectors) --- Fabcoin Wiki"
 
 ---

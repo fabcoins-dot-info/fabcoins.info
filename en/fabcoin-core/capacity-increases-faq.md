@@ -355,30 +355,30 @@ To get specific suggestions on how you can help, please join the
 
 [#fabcoin-dev]: http://webchat.freenode.net/?channels=fabcoin-dev&amp;uio=d4
 [actively studied]: http://diyhpl.us/wiki/transcripts/scalingfabcoin/fabcoin-block-propagation-iblt-rusty-russell/
-[bip-segwit]: http://github.com/fabcoin/bips/blob/master/bip-0141.mediawiki
-[BIP9]: http://github.com/fabcoin/bips/blob/master/bip-0009.mediawiki
-[BIP16]: http://github.com/fabcoin/bips/blob/master/bip-0016.mediawiki
-[BIP30]: http://github.com/fabcoin/bips/blob/master/bip-0030.mediawiki
-[BIP34]: http://github.com/fabcoin/bips/blob/master/bip-0034.mediawiki
-[BIP50]: http://github.com/fabcoin/bips/blob/master/bip-0050.mediawiki
-[BIP65]: http://github.com/fabcoin/bips/blob/master/bip-0065.mediawiki
-[BIP66]: http://github.com/fabcoin/bips/blob/master/bip-0066.mediawiki
-[BIP68]: http://github.com/fabcoin/bips/blob/master/bip-0068.mediawiki
-[BIP112]: http://github.com/fabcoin/bips/blob/master/bip-0112.mediawiki
-[BIP113]: http://github.com/fabcoin/bips/blob/master/bip-0113.mediawiki
+[bip-segwit]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0141.mediawiki
+[BIP9]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0009.mediawiki
+[BIP16]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0016.mediawiki
+[BIP30]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0030.mediawiki
+[BIP34]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0034.mediawiki
+[BIP50]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0050.mediawiki
+[BIP65]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0065.mediawiki
+[BIP66]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0066.mediawiki
+[BIP68]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0068.mediawiki
+[BIP112]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0112.mediawiki
+[BIP113]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0113.mediawiki
 [fabcoin core contributor]: /en/fabcoin-core/
 [Fabcoin relay network]: http://fabcoinrelaynetwork.org/
 [code review]: http://fabcoins.info/en/development#code-review
 [commit spreadsheet]: http://docs.google.com/spreadsheets/d/15jtxuA3dVY5NUuYezZ4d_69ASUMYjqFOMxsF9ZX-BKA/edit?usp=sharing
-[commit stats]: http://github.com/fabcoin/fabcoin/graphs/contributors?from=2015-01-01&to=2015-12-31&type=c
+[commit stats]: http://github.com/blockchaingate/fabcoin/graphs/contributors?from=2015-01-01&to=2015-12-31&type=c
 [estimated savings]: http://www.reddit.com/r/fabcoinxt/comments/3w1i6b/i_attended_scaling_fabcoin_hong_kong_these_are_my/cxtkaih
 [increase in total bandwidth]: http://scalingfabcoins.info/hongkong2015/presentations/DAY1/3_block_propagation_1_rosenbaum.pdf
-[libsecp256k1]: http://github.com/fabcoin/secp256k1
-[libsecp256k1 verification]: http://github.com/fabcoin/fabcoin/pull/6954
-[max_block_size]: http://github.com/fabcoin/fabcoin/blob/3038eb63e8a674b4818cb5d5e461f1ccf4b2932f/src/consensus/consensus.h#L10
+[libsecp256k1]: http://github.com/blockchaingate/fabcoin/secp256k1
+[libsecp256k1 verification]: http://github.com/blockchaingate/fabcoin/pull/6954
+[max_block_size]: http://github.com/blockchaingate/fabcoin/blob/3038eb63e8a674b4818cb5d5e461f1ccf4b2932f/src/consensus/consensus.h#L10
 [miners' panel]: http://youtu.be/H-ErmmDQRFs?t=1086
 [payment channel efficiency]: http://scalingfabcoins.info/hongkong2015/presentations/DAY2/1_layer2_2_dryja.pdf
-[previous soft forks]: http://github.com/fabcoin/bips/blob/master/bip-0123.mediawiki#classification-of-existing-bips
+[previous soft forks]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0123.mediawiki#classification-of-existing-bips
 [statement]: /en/fabcoin-core/capacity-increases
 [weak blocks and iblts]: http://www.youtube.com/watch?v=ivgxcEOyWNs&t=1h40m20s
 [q simple raise]: #size-bump

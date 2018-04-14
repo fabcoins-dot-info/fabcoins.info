@@ -91,7 +91,7 @@ hesitate to [open an issue][].
 [fabcoin core overview]: /en/fabcoin-core/
 [feature overview]: /en/fabcoin-core/features/
 [get help page]: /en/fabcoin-core/help
-[Fabcoin Core help pages]: http://en.fabcoin.it/wiki/Category:Fabcoin_Core_documentation
+[Fabcoin Core help pages]: http://fabcoins.info/wiki/Category:Fabcoin_Core_documentation
 [contribute overview]: /en/fabcoin-core/contribute/
 [1044]: http://github.com/fabcoins-dot-info/fabcoins.info/pull/1044
 [1009]: http://github.com/fabcoins-dot-info/fabcoins.info/pull/1009

@@ -27,8 +27,8 @@ optional:
         - Git fork (when one or more developers temporarily develops a codebase separately from other developers
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Hard fork](/en/developer-guide#term-hard-fork) --- Fabcoin.org Developer Guide"
-        - "[Hard fork](http://en.fabcoin.it/wiki/Hardfork) --- Fabcoin Wiki"
+        - "[Hard fork](/en/developer-guide#term-hard-fork) --- Fabcoins.info Developer Guide"
+        - "[Hard fork](http://fabcoins.info/wiki/Hardfork) --- Fabcoin Wiki"
         - "[Has a hard fork ever occurred?](http://fabcoin.stackexchange.com/q/36090) --- Fabcoin StackExchange"
 
 ---

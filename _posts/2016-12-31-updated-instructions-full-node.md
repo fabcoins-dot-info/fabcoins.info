@@ -38,18 +38,18 @@ node client is running, it downloads every new block and every new transaction
 and checks them to make sure they are valid. Here are some examples of consensus
 rules, though there are many more:
 
-- Blocks may only [create](http://en.fabcoin.it/wiki/Controlled_supply) a
+- Blocks may only [create](http://fabcoins.info/wiki/Controlled_supply) a
   certain number of fabcoins.
 
 - Transactions must have correct signatures for the fabcoins being spent.
 
 - Transactions/blocks must be in the correct data format.
 
-- Within the [block chain](http://en.fabcoin.it/wiki/Block_chain), a transaction
+- Within the [block chain](http://fabcoins.info/wiki/Block_chain), a transaction
   output cannot be double-spent.
 
 *Read more about what a full node is, the consensus rules above and other
-incentives for supporting the network in the [Fabcoin Wiki](http://en.fabcoin.it/wiki/Full_node).*
+incentives for supporting the network in the [Fabcoin Wiki](http://fabcoins.info/wiki/Full_node).*
 
 ## Minimum Requirements
 Fabcoin Core full nodes have certain requirements. If you try running a node on

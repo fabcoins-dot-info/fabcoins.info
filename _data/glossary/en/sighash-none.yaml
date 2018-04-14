@@ -20,8 +20,8 @@ optional:
     not_to_be_confused_with_capitalize_first_letter:
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[`SIGHASH_NONE`](/en/developer-guide#term-sighash-none) --- Fabcoin.org Developer Guide"
-        - "[OP_CHECKSIG](http://en.fabcoin.it/wiki/OP_CHECKSIG) --- Fabcoin Wiki"
-        - "[Contracts](http://en.fabcoin.it/wiki/Contracts#Theory) --- Fabcoin Wiki"
+        - "[`SIGHASH_NONE`](/en/developer-guide#term-sighash-none) --- Fabcoins.info Developer Guide"
+        - "[OP_CHECKSIG](http://fabcoins.info/wiki/OP_CHECKSIG) --- Fabcoin Wiki"
+        - "[Contracts](http://fabcoins.info/wiki/Contracts#Theory) --- Fabcoin Wiki"
 
 ---

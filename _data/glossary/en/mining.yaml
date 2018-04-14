@@ -24,8 +24,8 @@ optional:
     not_to_be_confused_with_capitalize_first_letter:
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Mining](/en/developer-guide#term-miner) --- Fabcoin.org Developer Guide"
-        - "[Mining](http://en.fabcoin.it/wiki/Mining) --- Fabcoin Wiki"
+        - "[Mining](/en/developer-guide#term-miner) --- Fabcoins.info Developer Guide"
+        - "[Mining](http://fabcoins.info/wiki/Mining) --- Fabcoin Wiki"
         - "[What exactly is mining?](http://fabcoin.stackexchange.com/q/148) --- Fabcoin StackExchange"
 
 

@@ -25,8 +25,8 @@ optional:
         - Outpoint (a reference to a particular output)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Output](/en/developer-guide#term-output) --- Fabcoin.org Developer Guide"
-        - "[TxOut](/en/developer-reference#txout) --- Fabcoin.org Developer Reference"
-        - "[Output](http://en.fabcoin.it/wiki/Transaction#Output) --- Fabcoin Wiki"
+        - "[Output](/en/developer-guide#term-output) --- Fabcoins.info Developer Guide"
+        - "[TxOut](/en/developer-reference#txout) --- Fabcoins.info Developer Reference"
+        - "[Output](http://fabcoins.info/wiki/Transaction#Output) --- Fabcoin Wiki"
 
 ---

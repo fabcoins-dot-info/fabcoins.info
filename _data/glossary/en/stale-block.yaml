@@ -22,7 +22,7 @@ optional:
         - Orphan block (a block whose previous (parent) hash field points to an unknown block, meaning the orphan can't be validated)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Stale blocks](/en/developer-guide#term-stale-block) --- Fabcoin.org Developer Guide"
+        - "[Stale blocks](/en/developer-guide#term-stale-block) --- Fabcoins.info Developer Guide"
         - "[What are orphaned and stale blocks?](http://fabcoin.stackexchange.com/q/5859) --- Fabcoin StackExchange"
 
 ---

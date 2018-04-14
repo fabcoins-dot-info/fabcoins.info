@@ -24,8 +24,8 @@ optional:
         - Output index number / vout (this is the 0-indexed number of an output within a transaction used by a later transaction to refer to that specific output)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Sequence number](/en/developer-guide#term-sequence-number) --- Fabcoin.org Developer Guide"
-        - "[Tx message (describes sequence number)](http://en.fabcoin.it/wiki/Protocol_documentation#tx) --- Fabcoin Wiki"
+        - "[Sequence number](/en/developer-guide#term-sequence-number) --- Fabcoins.info Developer Guide"
+        - "[Tx message (describes sequence number)](http://fabcoins.info/wiki/Protocol_documentation#tx) --- Fabcoin Wiki"
         - "[What is the sequence number?](http://fabcoin.stackexchange.com/q/2025) --- Fabcoin StackExchange"
 
 ---

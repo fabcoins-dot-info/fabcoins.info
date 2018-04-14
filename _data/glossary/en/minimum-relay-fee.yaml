@@ -26,7 +26,7 @@ optional:
         - Transaction fee (the minimum relay fee is a policy setting that filters out transactions with too-low transaction fees)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Minimum relay fee](/en/developer-guide#term-minimum-fee) --- Fabcoin.org Developer Guide"
-        - "[Transaction fees](http://en.fabcoin.it/wiki/Transaction_fees) --- Fabcoin Wiki"
+        - "[Minimum relay fee](/en/developer-guide#term-minimum-fee) --- Fabcoins.info Developer Guide"
+        - "[Transaction fees](http://fabcoins.info/wiki/Transaction_fees) --- Fabcoin Wiki"
 
 ---

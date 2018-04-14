@@ -90,7 +90,7 @@ network, forcing a user to wait before sending a transaction or checking
 the status of payment.
 
 <!-- reference for "Fabcoin Core...11 seconds" below:
-     http://github.com/fabcoin/fabcoin/pull/4559 -->
+     http://github.com/blockchaingate/fabcoin/pull/4559 -->
 
 To avoid this possible delay, FabcoinJ always uses dynamic DNS seeds to
 get IP addresses for nodes believed to be currently active.

@@ -27,8 +27,8 @@ optional:
         - Transaction malleability / transaction mutability (although non-default sighash flags do allow optional malleability, malleability comprises any way a transaction may be mutated)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Signature hash](/en/developer-guide#term-signature-hash) --- Fabcoin.org Developer Guide"
-        - "[OP_CHECKSIG](http://en.fabcoin.it/wiki/OP_CHECKSIG) --- Fabcoin Wiki"
-        - "[Contracts](http://en.fabcoin.it/wiki/Contracts#Theory) --- Fabcoin Wiki"
+        - "[Signature hash](/en/developer-guide#term-signature-hash) --- Fabcoins.info Developer Guide"
+        - "[OP_CHECKSIG](http://fabcoins.info/wiki/OP_CHECKSIG) --- Fabcoin Wiki"
+        - "[Contracts](http://fabcoins.info/wiki/Contracts#Theory) --- Fabcoin Wiki"
 
 ---

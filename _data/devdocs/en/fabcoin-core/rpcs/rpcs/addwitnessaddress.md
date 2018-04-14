@@ -54,7 +54,7 @@ The RPC is disabled by default on mainnet as long as Segregated Witness has not 
 
 *See also*
 
-* [BIP-141 - Segregated Witness](http://github.com/fabcoin/bips/blob/master/bip-0141.mediawiki)
-* [BIP-142 - Address Format for Segregated Witness](http://github.com/fabcoin/bips/blob/master/bip-0142.mediawiki)
+* [BIP-141 - Segregated Witness](http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0141.mediawiki)
+* [BIP-142 - Address Format for Segregated Witness](http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0142.mediawiki)
 
 {% endautocrossref %}

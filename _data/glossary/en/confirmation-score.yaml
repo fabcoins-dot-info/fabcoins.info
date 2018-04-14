@@ -31,8 +31,8 @@ optional:
     not_to_be_confused_with_capitalize_first_letter:
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Confirmations](/en/developer-guide#term-confirmation) --- Fabcoin.org Developer Guide"
-        - "[Confirmation](http://en.fabcoin.it/wiki/Confirmation) --- Fabcoin Wiki"
+        - "[Confirmations](/en/developer-guide#term-confirmation) --- Fabcoins.info Developer Guide"
+        - "[Confirmation](http://fabcoins.info/wiki/Confirmation) --- Fabcoin Wiki"
         - "[What are confirmations?](http://fabcoin.stackexchange.com/a/160) --- Fabcoin StackExchange"
         - "[When should I worry about 1-confirmation payments?](http://fabcoin.stackexchange.com/q/32562) --- Fabcoin StackExchange"
 

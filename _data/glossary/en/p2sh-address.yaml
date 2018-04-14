@@ -29,8 +29,8 @@ optional:
         - P2SH multisig (a particular instance of P2SH where the script uses a multisig opcode)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[P2SH](/en/developer-guide#term-p2sh) --- Fabcoin.org Developer Guide"
-        - "[BIP16: pay to script hash](http://github.com/fabcoin/bips/blob/master/bip-0016.mediawiki) --- Fabcoin Improvement Proposals"
-        - "[P2SH](http://en.fabcoin.it/wiki/P2SH) --- Fabcoin Wiki"
+        - "[P2SH](/en/developer-guide#term-p2sh) --- Fabcoins.info Developer Guide"
+        - "[BIP16: pay to script hash](http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0016.mediawiki) --- Fabcoin Improvement Proposals"
+        - "[P2SH](http://fabcoins.info/wiki/P2SH) --- Fabcoin Wiki"
 
 ---

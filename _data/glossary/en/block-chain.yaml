@@ -30,7 +30,7 @@ optional:
         - Header chain
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Block chain](/en/developer-guide#block-chain) --- Fabcoin.org Developer Guide"
-        - "[Block chain](http://en.fabcoin.it/wiki/Block_chain) --- Fabcoin Wiki"
+        - "[Block chain](/en/developer-guide#block-chain) --- Fabcoins.info Developer Guide"
+        - "[Block chain](http://fabcoins.info/wiki/Block_chain) --- Fabcoin Wiki"
 
 ---

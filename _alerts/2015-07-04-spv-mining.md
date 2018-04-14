@@ -119,7 +119,7 @@ rules.
 
 The recommended fix, which was attempted, was to
 get all miners off of SPV mining and back to full validation (at
-least temporarily). If this happens, Fabcoin.org will reduce its
+least temporarily). If this happens, Fabcoins.info will reduce its
 current recommendation of waiting {{confs}} extra confirmations to a
 lower number.
 
@@ -142,9 +142,9 @@ Please see the list of [invalid block hashes][] on the Fabcoin Wiki.
 </div>
 -->
 
-[BIP66]: http://github.com/fabcoin/bips/blob/master/bip-0066.mediawiki
-[pool list]: http://en.fabcoin.it/wiki/Comparison_of_mining_pools#SPV_Mining_.2F_Old_Fabcoin_Core
+[BIP66]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0066.mediawiki
+[pool list]: http://fabcoins.info/wiki/Comparison_of_mining_pools#SPV_Mining_.2F_Old_Fabcoin_Core
 [fabcoin core]: /en/download
 [SPV]: http://fabcoin.stackexchange.com/questions/4649/what-is-an-spv-client
-[electrum note]: http://en.fabcoin.it/wiki/July_2015_Forks#Electrum
-[invalid block hashes]: http://en.fabcoin.it/wiki/July_2015_Forks#Invalid_Block_Hashes
+[electrum note]: http://fabcoins.info/wiki/July_2015_Forks#Electrum
+[invalid block hashes]: http://fabcoins.info/wiki/July_2015_Forks#Invalid_Block_Hashes

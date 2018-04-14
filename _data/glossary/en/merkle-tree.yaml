@@ -24,8 +24,8 @@ optional:
         - Merkle block (a partial merkle branch connecting one or more transactions from a single block to the block merkle root)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Merkle tree](/en/developer-guide#term-merkle-tree) --- Fabcoin.org Developer Guide"
-        - "[Merkle trees](http://en.fabcoin.it/wiki/Protocol_documentation#Merkle_Trees) --- Fabcoin Wiki"
+        - "[Merkle tree](/en/developer-guide#term-merkle-tree) --- Fabcoins.info Developer Guide"
+        - "[Merkle trees](http://fabcoins.info/wiki/Protocol_documentation#Merkle_Trees) --- Fabcoin Wiki"
         - "[How do I implement a merkle tree?](http://fabcoin.stackexchange.com/q/1110) --- Fabcoin StackExchange"
         - "[Merkle tree](http://en.wikipedia.org/wiki/Merkle_tree) --- Wikipedia"
 

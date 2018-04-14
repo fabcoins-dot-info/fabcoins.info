@@ -6,7 +6,7 @@
 PATH=/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin
 
 AUTHORIZED_SIGNERS_DIR='/fabcoins.info/auto-build-committers.gnupg'
-REPO='http://github.com/fabcoin-dot-org/fabcoins.info.git'
+REPO='http://github.com/fabcoins-dot-info/fabcoins.info.git'
 BUNDLE_DIR='/fabcoins.info/bundle'
 SITEDIR='/fabcoins.info/site'
 DESTDIR='build@fabcoinorgsite:/var/www/site'

@@ -23,8 +23,8 @@ optional:
         - Target threshold (the value from which difficulty is calculated)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Difficulty](/en/developer-guide#term-difficulty) --- Fabcoin.org Developer Guide"
-        - "[Difficulty](http://en.fabcoin.it/wiki/Difficulty) --- Fabcoin Wiki"
+        - "[Difficulty](/en/developer-guide#term-difficulty) --- Fabcoins.info Developer Guide"
+        - "[Difficulty](http://fabcoins.info/wiki/Difficulty) --- Fabcoin Wiki"
         - "[How is difficulty calculated?](http://fabcoin.stackexchange.com/q/5838) --- Fabcoin StackExchange"
 
 ---

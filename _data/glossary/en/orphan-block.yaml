@@ -21,7 +21,7 @@ optional:
         - Stale block
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Orphan blocks](/en/developer-guide#orphan-blocks) --- Fabcoin.org Developer Guide"
+        - "[Orphan blocks](/en/developer-guide#orphan-blocks) --- Fabcoins.info Developer Guide"
         - "[What are orphaned and stale blocks?](http://fabcoin.stackexchange.com/q/5859) --- Fabcoin StackExchange"
 
 ---

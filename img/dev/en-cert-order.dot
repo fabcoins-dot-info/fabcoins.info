@@ -9,11 +9,11 @@ node [ shape = box ];
 
 
 subgraph cluster_signing {
-    btcorg [ label = "www.fabcoins.info" ]
+    faborg [ label = "www.fabcoins.info" ]
     rapidssl [ label = "RapidSSL CA" ]
     geotrust [ label = "GeoTrust Global CA" ]
 
-    geotrust -> rapidssl -> btcorg
+    geotrust -> rapidssl -> faborg
     label = " Certificates In Signing Order \n "
 }
 
@@ -24,6 +24,6 @@ subgraph cluster_loading {
     label = "Certificates In Loading Order\n(Root CA Certificate Is Not Loaded)"
 }
 
-label = "(Certificates are loaded into X509Certificates() in reverse signing order)\n \nExample Certificate Loading Order For Payment Requests From Fabcoin.org"
+label = "(Certificates are loaded into X509Certificates() in reverse signing order)\n \nExample Certificate Loading Order For Payment Requests From Fabcoins.info"
 
 }

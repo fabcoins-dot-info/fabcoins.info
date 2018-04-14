@@ -20,7 +20,7 @@ author: |
 
 This is a new minor version release, including various bugfixes and performance improvements, as well as updated translations.
 
-Please report bugs using the [issue tracker on GitHub](http://github.com/fabcoin/fabcoin/issues).
+Please report bugs using the [issue tracker on GitHub](http://github.com/blockchaingate/fabcoin/issues).
 
 [Subscribe here](http://fabcoincore.org/en/list/announcements/join/) to receive
 security and update notifications.
@@ -35,7 +35,7 @@ Microsoft ended support for Windows XP on [April 8th,
 No attempt is made to prevent installing or running the software on Windows XP,
 you can still do so at your own risk but be aware that there are known
 instabilities and issues. Please do not report issues about Windows XP to the
-[issue tracker](http://github.com/fabcoin/fabcoin/issues).
+[issue tracker](http://github.com/blockchaingate/fabcoin/issues).
 
 Fabcoin Core should also work on most other Unix-like systems but is not
 frequently tested on them.

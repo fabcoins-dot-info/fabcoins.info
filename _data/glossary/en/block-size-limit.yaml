@@ -22,7 +22,7 @@ optional:
         - Blockchain size
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Serialized Blocks](/en/developer-reference#serialized-blocks) --- Fabcoin.org Developer Guide"
-        - "[Block](http://en.fabcoin.it/wiki/Block) --- Fabcoin Wiki"
+        - "[Serialized Blocks](/en/developer-reference#serialized-blocks) --- Fabcoins.info Developer Guide"
+        - "[Block](http://fabcoins.info/wiki/Block) --- Fabcoin Wiki"
 
 ---

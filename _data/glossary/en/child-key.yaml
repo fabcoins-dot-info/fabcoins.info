@@ -32,7 +32,7 @@ optional:
         - Public key (derived from a private key, not a parent key)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Child key](/en/developer-guide#term-child-public-key) --- Fabcoin.org Developer Guide"
-        - "[BIP32: Hierarchical Deterministic Wallets](http://github.com/fabcoin/bips/blob/master/bip-0032.mediawiki) --- Fabcoin Improvement Proposals"
+        - "[Child key](/en/developer-guide#term-child-public-key) --- Fabcoins.info Developer Guide"
+        - "[BIP32: Hierarchical Deterministic Wallets](http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0032.mediawiki) --- Fabcoin Improvement Proposals"
 
 ---
