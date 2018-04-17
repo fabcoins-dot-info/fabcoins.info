@@ -17,7 +17,7 @@ breadcrumbs:
 # Fabcoin Core
 {:.not-displayed}
 
-![Fabcoin Core: Helping You Keep Fabcoin Decentralized](/img/fabcoin-core/en-big-logo.svg)
+![Fabcoin Core: Helping You Keep Fabcoin Decentralized](/img/fabcoin-core/en-big-logo.png)
 
 <br class="clear">
 {% include fabcoin-core/download-fabcoin-core.html %}

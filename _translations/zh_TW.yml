@@ -362,7 +362,7 @@ zh_TW:
     miningsecure: "挖礦如何幫助保障 Fabcoin 的安全？"
     miningsecuretxt1: "挖礦增加了競爭激烈的等量的運氣機率，這使得每個人都很難連續不斷地添加新的交易區塊到區塊鏈中。通過防止任何個人獲得阻礙某些交易的能力，這個網路的中立性得到了保證。這也阻止了任何個人替換區塊鏈的某些部份以召回他們的花費。召回花費這種方式可能被用於詐騙其他使用者。挖礦通過要求重寫這個交易之後的所有區塊讓取消一個過去的交易變得難上加難。"
     miningstart: "我需要什麽來開始挖礦？"
-    miningstarttxt1: "在 Fabcoin 的早期，任何人都可以用他們的電腦的 CPU 來找到一個新的區塊。隨著越來越多的人開始挖礦，找到新的區塊的難度也大大增加，以至今天划算的挖礦方法只有使用專門的硬體。你可以訪問 <a href=\"http://www.fabcoins.info/en/fabcoinmining/\">FabcoinMining.com</a> 來瞭解更多的資訊。"
+    miningstarttxt1: "在 Fabcoin 的早期，任何人都可以用他們的電腦的 CPU 來找到一個新的區塊。隨著越來越多的人開始挖礦，找到新的區塊的難度也大大增加，以至今天划算的挖礦方法只有使用專門的硬體。你可以訪問 <a href=\"http://www.fabcoins.info/en/fabcoinmining/\">fabcoin mining</a> 來瞭解更多的資訊。"
     security: "安全"
     secure: "Fabcoin 安全嗎？"
     securetxt1: "Fabcoin 技術 - 其協議和密碼技術 - 有很強的安全痕跡記錄，而且 Fabcoin 網路可能是世界上最大的分散的計算器工程。Fabcoin 最常見的安全隱患是用戶的犯錯。存儲必要的私密金鑰的 Fabcoin 錢包文件可能會不小心被刪除、丟失或被盜。這跟實體鈔票存儲成一個數位形式很像。好在，用戶可以實施很好的 <a href=\"#secure-your-wallet#\">安全措施</a>來保護他們的錢或選擇提供良好安全水準和預防被盜或丟失的保險的服務供應商。"
