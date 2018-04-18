@@ -354,7 +354,7 @@ To get specific suggestions on how you can help, please join the
 [#fabcoin-dev][] IRC channel.
 
 [#fabcoin-dev]: http://webchat.freenode.net/?channels=fabcoin-dev&amp;uio=d4
-[actively studied]: http://diyhpl.us/wiki/transcripts/scalingfabcoin/fabcoin-block-propagation-iblt-rusty-russell/
+[actively studied]: http://diyhpl.us/wiki/transcripts/scalingfabcoin-block-propagation-iblt-rusty-russell/
 [bip-segwit]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0141.mediawiki
 [BIP9]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0009.mediawiki
 [BIP16]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0016.mediawiki

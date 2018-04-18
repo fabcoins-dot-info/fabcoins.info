@@ -215,7 +215,7 @@ alternative desktop environment.
 Type the following line to add the Fabcoin Personal Package Archive
 (PPA) to your system:
 
-    sudo apt-add-repository ppa:fabcoin/fabcoin
+    sudo apt-add-repository ppa:fabcoin
 
 You will be prompted for your user password.  Provide it to continue.
 Afterwards, the following text will be displayed:

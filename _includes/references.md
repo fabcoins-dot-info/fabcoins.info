@@ -368,7 +368,7 @@ http://opensource.org/licenses/MIT.
 [Fabcoin Core docs directory]: http://github.com/blockchaingate/fabcoin/tree/master/doc
 [fabcoin core fee drop commit]: http://github.com/blockchaingate/fabcoin/commit/6a4c196dd64da2fd33dc7ae77a8cdd3e4cf0eff1
 [Fabcoin Core issue #2381]: http://github.com/blockchaingate/fabcoin/issues/2381
-[Fabcoin Core master]: http://github.com/blockchaingate/fabcoin/fabcoin
+[Fabcoin Core master]: http://github.com/blockchaingate/fabcoin
 [Fabcoin Core pull #4468]: http://github.com/blockchaingate/fabcoin/pull/4468
 [Fabcoin core transifex]: http://www.transifex.com/projects/p/fabcoin/
 [Fabcoin reddit]: http://www.reddit.com/r/Fabcoin
@@ -384,7 +384,7 @@ http://opensource.org/licenses/MIT.
 [casascius address utility]: http://github.com/casascius/Fabcoin-Address-Utility
 [core base58.h]: http://github.com/blockchaingate/fabcoin/blob/master/src/base58.h
 [core chainparams.cpp]: http://github.com/blockchaingate/fabcoin/blob/master/src/chainparams.cpp
-[core git]: http://github.com/blockchaingate/fabcoin/fabcoin
+[core git]: http://github.com/blockchaingate/fabcoin
 [core paymentrequest.proto]: http://github.com/blockchaingate/fabcoin/blob/master/src/qt/paymentrequest.proto
 [core script.h]: http://github.com/blockchaingate/fabcoin/blob/master/src/script/script.h
 [creative commons attribution 3.0 license]: http://creativecommons.org/licenses/by/3.0/
