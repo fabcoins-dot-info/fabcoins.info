@@ -338,7 +338,7 @@ http://opensource.org/licenses/MIT.
 [BIP151]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0151.mediawiki
 [BIP152]: http://github.com/blockchaingate/fabcoin/bips/blob/master/bip-0152.mediawiki
 [CVE-2012-2459]: http://fabcoins.info/wiki/CVEs#CVE-2012-2459
-[RFC5737]: http://tools.ietf.org/html/rfc5737
+[RFC5737]: http://tools.ietf.org.htmlrfc5737
 [secp256k1]: http://www.secg.org/sec2-v2.pdf
 
 {% comment %}<!-- Other external site links; alphabetical order -->{% endcomment %}
@@ -380,7 +380,7 @@ http://opensource.org/licenses/MIT.
 [FabcoinJ]: http://fabcoinj.github.io
 [FabcoinJ documentation about pending transaction safety]: http://fabcoinj.github.io/security-model#pending-transactions
 [fabcoinj micropayment tutorial]: http://fabcoinj.github.io/working-with-micropayments
-[block170]: http://www.biteasy.com/block/00000000d1145790a8694403d4063f323d499e655c83426834d4ce2f8dd4a2ee
+[block170]: http://www.fabexplorer.com/block/00000000d1145790a8694403d4063f323d499e655c83426834d4ce2f8dd4a2ee
 [casascius address utility]: http://github.com/casascius/Fabcoin-Address-Utility
 [core base58.h]: http://github.com/blockchaingate/fabcoin/blob/master/src/base58.h
 [core chainparams.cpp]: http://github.com/blockchaingate/fabcoin/blob/master/src/chainparams.cpp
@@ -390,7 +390,7 @@ http://opensource.org/licenses/MIT.
 [creative commons attribution 3.0 license]: http://creativecommons.org/licenses/by/3.0/
 [DER]: http://en.wikipedia.org/wiki/X.690#DER_encoding
 [dig command]: http://en.wikipedia.org/wiki/Dig_%28Unix_command%29
-[DNS A records]: http://tools.ietf.org/html/rfc1035#section-3.2.2
+[DNS A records]: http://tools.ietf.org.htmlrfc1035#section-3.2.2
 [DNS Seed Policy]: http://github.com/blockchaingate/fabcoin/blob/master/doc/dnsseed-policy.md
 [docs issue]: http://github.com/fabcoins-dot-info/fabcoins.info/issues
 [ECDSA]: http://en.wikipedia.org/wiki/Elliptic_Curve_DSA
@@ -444,7 +444,7 @@ http://opensource.org/licenses/MIT.
 [Tor]: http://en.wikipedia.org/wiki/Tor_%28anonymity_network%29
 [transifex]: http://www.transifex.com/projects/p/fabcoinorg/
 [unix epoch time]: http://en.wikipedia.org/wiki/Unix_time
-[URI encoded]: http://tools.ietf.org/html/rfc3986
+[URI encoded]: http://tools.ietf.org.htmlrfc3986
 [wiki fabcoin core compatible devices arm]: http://fabcoins.info/wiki/Fabcoin_Core_compatible_devices#ARM-based_Chipsets
 [wiki fabcoin core documentation]: http://fabcoins.info/wiki/Category:Fabcoin_Core_documentation
 [wiki create account]: http://fabcoins.info/wikiw/index.php?title=Special:UserLogin&type=signup

@@ -11,72 +11,22 @@ id: resources
 <div class="resources">
 <div>
  <div>
-    <h2 id="learn"><img src="/img/icons/ico_solve.svg" class="titleicon" alt="Icon">{% translate learn %}</h2>
-    <p>{% translate linkwiki %}</p>
-    {% if page.lang == 'fr' %}<p><a href="http://openclassrooms.com/courses/comprendre-le-fabcoin-et-la-blockchain">OpenClassrooms</a></p>{% endif %}
-    <p><a href="http://www.khanacademy.org/economics-finance-domain/core-finance/money-and-banking/fabcoin/v/fabcoin-what-is-it">Khan Academy</a></p>
-    <p><a href="http://letstalkfabcoin.com/">Let's Talk Fabcoin</a></p>
-    <p><a href="http://www.fabcoin.kn/">Fabcoin Knowledge Podcast</a></p>
-    <p><a href="http://www.weusecoins.com/">WeUseCoins.com</a></p>
-    <p><a href="http://www.fabcoins.info/en/fabcoinmining/">fabcoin mining</a></p>
-    <p><a href="http://www.iamsatoshi.com/category/video-archive/">IamSatoshi</a></p>
-  </div><div>
-    <h2 id="directories"><img src="/img/icons/ico_invoice.svg" class="titleicon" alt="Icon">{% translate directories %}</h2>
-    <p><a href="/{{ page.lang }}/{% translate choose-your-wallet url %}">{% translate linkwallets %}</a> - fabcoins.info</p>
-    <p><a href="http://coinmap.org/">{% translate linkmerchants %}</a> - coinmap.org</p>
-    <p><a href="http://spendabit.co/">{% translate linkmerchants %}</a> - spendabit.co</p>
-    <p><a href="http://airbitz.co/">{% translate linkmerchants %}</a> - airbitz.co</p>
-    <p><a href="http://99fabcoins.com/who-accepts-fabcoins-payment-companies-stores-take-fabcoins/">{% translate linkmerchants %}</a> - 99Fabcoins.com</p>
-    <p><a href="http://www.buyfabcoinworldwide.com/">{% translate linkexchanges %}</a> - buyfabcoinworldwide.com</p>
-    <p><a href="http://fabcoins.info/wiki/Category:Shopping_Cart_Interfaces">{% translate linkmerchantstools %}</a> - en.fabcoin.it</p>
-    <p><a href="http://www.fabcoinprojects.net/">{% translate linkprojects %}</a> - FabcoinProjects.net</p>
-  </div>
-</div>
-<div>
-  <div>
-    <h2 id="news"><img src="/img/icons/ico_spread.svg" class="titleicon" alt="Icon">{% translate news %}</h2>
-    {% if page.lang == 'bg' %}<p><a href="http://hash.bg">Hash.bg</a></p>{% endif %}
-    {% if page.lang == 'de' %}<p><a href="http://fabcoinblog.de">FabcoinBlog.de</a></p>{% endif %}
-    {% if page.lang == 'fr' %}
-    <p><a href="http://le-coin-coin.fr">Le Coin Coin</a></p>
-    <p><a href="http://fabcoin.fr">Fabcoin.fr</a></p>
-    <p><a href="http://achat-fabcoin.fr/">Achat-fabcoin.fr</a></p>
-    {% endif %}
-    {% if page.lang == 'pl' %}<p><a href="http://satoshi.pl/">Satoshi.pl</a></p>{% endif %}
-    {% if page.lang == 'ru' %}
-    <p><a href="http://bitnovosti.com">Bit•Новости</a></p>
-    <p><a href="http://bits.media">Bits Media</a></p>
-    <p><a href="http://coinspot.ru">CoinSpot</a></p>
-    {% endif %}
-    {% if page.lang == 'es' %}<p><a href="http://www.criptonoticias.com/">CriptoNoticias</a></p>{% endif %}
-    <p>{% translate linkcointelegraph %}<p>
-    <p><a href="http://www.coindesk.com">CoinDesk</a></p>
-    <p><a href="http://www.getrevue.co/profile/kyletorpey/">Kyle Torpey's Daily Fabcoin Recap</a></p>
-    <p><a href="http://fabcoinmagazine.com">Fabcoin Magazine</a></p>
-    <p><a href="http://coinjournal.net">CoinJournal</a></p>
-    {% if page.lang == 'ru' %}<p><a href="http://fabcointalk.org/index.php?board=128.0">Fabcoin Форум / Новости</a></p>{% else %}<p><a href="http://fabcointalk.org/index.php?board=77.0">FabcoinTalk press links</a></p>{% endif %}
-  </div><div>
-    <h2 id="charts"><img src="/img/icons/ico_market.svg" class="titleicon" alt="Icon">{% translate charts %}</h2>
-    <p><a href="http://www.biteasy.com">Biteasy</a></p>
-    <p><a href="http://tradeblock.com">Trade Block</a></p>
-    <p><a href="http://fabcoincharts.com/charts/">Fabcoincharts.com</a></p>
-    <p><a href="http://gofabcoin.io/{% if 'en,fr,de,it,es' contains page.lang %}{{ page.lang }}/{% endif %}">GoFabcoin.io</a></p>
-    <p><a href="http://fabcoinaverage.com/{% if 'en,fr,de,it,es,pl,ru,ht,pt,tr,uk' contains page.lang %}{{ page.lang }}/fabcoin-price/btc-to-usd{% endif %}">FabcoinAverage</a></p>
-    <p><a href="http://bitvol.info/">Fabcoin Volatility Index</a></p>
-  </div>
-</div>
-<div>
-  <div>
-    <h2 id="documentaries"><img src="/img/icons/ico_doc.svg" class="titleicon" alt="Icon">{% translate documentaries %}</h2>
-    <p><a href="http://fabcoinfilm.org/">FabcoinFilm.org</a></p>
-    <p><a href="http://iamsatoshi.com/">Ulterior States</a></p>
-    <p><a href="http://www.youtube.com/watch?v=6pWblf8COH4">The Fabcoin Phenomenon</a></p>
-  </div><div>
-    <h2 id="vouchers"><img src="/img/icons/ico_voucher.svg" class="titleicon" alt="Icon">{% translate vouchers %}</h2>
-    <p><a href="http://www.bitrefill.com/">Bitrefill</a></p>
-    <p><a href="http://foldapp.com/">Fold</a></p>
-    <p><a href="http://gyft.com/fabcoin/">Gyft</a></p>
-    <p><a href="http://opendime.com/">Opendime</a></p>
+   <h2> official website </h2>
+   <ul> 
+     <li><a href="http://www.fabcoin.co"> fabcoin.co </a> </li>  
+   </ul>
+
+   <h2> data explorer </h2>
+   <ul> 
+     <li><a href="http://www.fabexplorer.info"> mainnet data explorer</a>  </li>
+     <li><a href="http://www.fabtest.info"> testnet data explorer</a>  </li>
+   </ul>
+
+   <h2> source code and document</h2>
+   <ul> 
+     <li><a href="https://github.com/blockchaingate/fabcoin.git"> github fabcoin</a>  </li>
+     <li><a href="http://fabcoin.pro"> fabcoin developer document</a>  </li>
+   </ul>
   </div>
 </div>
 </div>

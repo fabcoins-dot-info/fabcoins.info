@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require 'html/proofer'
+require .htmlproofer'
 
 if ARGV[0].nil?
   path_to_check="./_site"
