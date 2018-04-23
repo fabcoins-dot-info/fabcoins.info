@@ -730,8 +730,8 @@ en:
     pagetitle: "Press center"
     summary: "Find interviewees, answers and high quality press materials."
     volunteer: "Interviewees"
-    volunteernonprofit: "Communicate with <a href=\"http://www.fabcoin.co \">fabcoin.co </a>, the <a href=\"http://fabcoincore.org/en/contact\">Fabcoin Core Project</a> or local <a href=\"#community##[community.non-profit]\">non-profit organizations</a>."
-    faqmore: "To learn more about Fabcoin, please visit the complete <a href=\"/en/faq\">FAQ</a> or the <a href=\"http://fabcoins.info/wiki/FAQ\">Fabcoin Wiki</a>."
+    volunteernonprofit: "Communicate with <a href=\"http://www.fabcoin.co \">fabcoin.co </a>, the <a href=\"http://fa.biz\">FAB foundation</a> or local <a href=\"#community##[community.non-profit]\">non-profit organizations</a>."
+    faqmore: "To learn more about Fabcoin, please visit the complete <a href=\"/en/faq\">FAQ</a> or the <a href=#>Fabcoin Wiki - (Coming soon)</a>."
   privacy:
     title: "Privacy Policy - Fabcoin"
     pagetitle: "Privacy Policy"
