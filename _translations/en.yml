@@ -142,9 +142,9 @@ en:
     fabcoin-exchange: "Use a Fabcoin Exchange"
     fabcoin-exchange-text: "Our <a href=\"/en/exchanges\">Fabcoin Exchange</a> page, lists many different businesses that can help you buy Fabcoin using your bank account."
     local-fabcoins: "Discover people selling Fabcoin in your community"
-    local-fabcoins-text: "<a href=\"fabcoins.info/en/localfabcoins.html\">Local Fabcoins</a> lets you search and browse through various sellers of Fabcoin in your area. Sellers have reviews and feedback scores to help you choose."
+    local-fabcoins-text: "Search for people selling Fabcoins in your area"
     fabcoin-atm: "Use a Fabcoin ATM"
-    fabcoin-atm-text: "Fabcoin ATMs work like a regular ATM, except they allow you to deposit and withdrawal money so that you can buy and sell Fabcoin. <a href=\"http://coinatmradar.com/\">Coin ATM Radar</a> has an interactive map to help you find the closest Fabcoin ATM near you."
+    fabcoin-atm-text: "Coming soon"
   community:
     title: "Community - Fabcoin"
     pagetitle: "Fabcoin communities"
