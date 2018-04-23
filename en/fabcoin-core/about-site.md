@@ -20,7 +20,7 @@ Core open source projects are run by separate teams.
 
 ## History
 
-Fabcoins.info was originally used by [Satoshi Nakamoto][] to host his
+Fabcoins.info was originally used by FAB team to host the
 [Fabcoin paper][fabcoinpdf]. Soon after, it began linking to
 downloadable versions of the original Fabcoin software, making it the
 homepage for the Fabcoin program.

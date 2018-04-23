@@ -318,7 +318,7 @@ requires a hard fork." In this example, an actual block chain fork is
 not required---but it is a possible outcome.
 
 Consensus rule changes may be activated in various ways. During Fabcoin's 
-first two years, Satoshi Nakamoto performed several soft forks by just 
+first years, the team performed several soft forks by just 
 releasing the backwards-compatible change in a client that began immediately 
 enforcing the new rule. Multiple soft forks such as BIP30 have
 been activated via a flag day where the new rule began to be enforced at a 
