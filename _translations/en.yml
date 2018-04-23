@@ -414,9 +414,9 @@ en:
     pagedesc: "Find events, conferences and meetups all over the world."
     upcoming: "Upcoming events and conferences"
     eventsubmit: "Submit an event"
-    meetupfabcointalk: "<a href=\"http://fabcointalk.org/index.php?board=86.0\">Fabcoin meetups on FabcoinTalk</a>"
-    meetupwiki: "<a href=\"http://fabcoins.info/wiki/Meetups\">Fabcoin meetups on the Wiki</a>"
-    meetupgroup: "<a href=\"http://fabcoin.meetup.com/\">Fabcoin meetup groups</a>"
+    meetupfabcointalk: "<a href=#>Fabcoin meetups on FabcoinTalk - (Coming soon)</a>"
+    meetupwiki: "<a href=#>Fabcoin meetups on the Wiki - (Coming soon)</a>"
+    meetupgroup: "<a href=\"https://www.meetup.com/Fab-Foundation\">Fabcoin meetup group in Toronto</a>"
   faq:
     title: "FAQ - Fabcoin"
     pagetitle: "Frequently Asked Questions"
