@@ -8,13 +8,13 @@ required:
 
     summary_max_255_characters_no_formatting: >
         Denominations of Fabcoin value, usually measured in fractions of
-        a fabcoin but sometimes measured in multiples of a satoshi.  One
-        fabcoin equals 100,000,000 satoshis.
+        a fabcoin but sometimes measured in multiples of a LIU  (Least Interval Unit).  One
+        fabcoin equals 100,000,000 LIUs.
 
     synonyms_shown_in_glossary_capitalize_first_letter:
         - Denomination
         - Fabcoins
-        - Satoshis
+        - LIUs
 
 optional:
     synonyms_and_pluralizations_not_shown_in_glossary:
@@ -35,6 +35,6 @@ optional:
         - Binary bits, a unit of data with two possible values
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Fabcoin Units](http://fabcoins.info/wiki/Units) --- Fabcoin Wiki"
+        - "[Fabcoin Denominations](http://fabcoins.info/en/glossary/denominations.html) --- Fabcoin Denomination page"
 
 ---
