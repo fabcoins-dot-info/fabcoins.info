@@ -52,9 +52,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <li{% if page.id == 'innovation' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate innovation url %}">{% translate menu-innovation layout %}</a></li>
   <li><a>{% translate menu-participate layout %}</a>
     <ul>
+        {% if page.lang == 'en' %}<li{% if page.id == 'buy' %} class="active"{% endif %}><a href="/en/buy">Buy Fabcoin</a></li>{% endif %}
+        
       <li{% if page.id == 'support-fabcoin' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate support-fabcoin url %}">{% translate menu-support-fabcoin layout %}</a>
-      {% if page.lang == 'en' %}<li{% if page.id == 'buy' %} class="active"{% endif %}><a href="/en/buy">Buy Fabcoin</a></li>{% endif %}
-      {% if page.lang == 'en' %}<li{% if page.id == 'full-node' %} class="active"{% endif %}><a href="http://fabcoin.pro/runtime.html">Running a full node</a></li>{% endif %}
+      {% if page.lang == 'en' %}<li{% if page.id == 'full-node' %} class="active"{% endif %}><a href="http://fabcoin.pro/runtime.html">Run a full node</a></li>{% endif %}
+      
       <li{% if page.id == 'development' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate development url %}">{% translate menu-development layout %}</a></li>
     </ul>
   </li>
