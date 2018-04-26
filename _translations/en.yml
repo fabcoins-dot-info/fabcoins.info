@@ -928,9 +928,9 @@ en:
     taxtxt: "Fabcoin is not an official currency. That said, most jurisdictions still require you to pay income, sales, payroll, and capital gains taxes on anything that has value, including fabcoins. It is your responsibility to ensure that you adhere to <a href=\"http://en.wikipedia.org/wiki/Legality_of_fabcoin_by_country\">tax and other legal or regulatory mandates</a> issued by your government and/or local municipalities."
   layout:
     menu-about-us: "About fabcoins.info"
-    menu-fabcoin-for-businesses: Businesses
+    menu-fabcoin-for-businesses: Enterprises
     menu-fabcoin-for-developers: Developers
-    menu-fabcoin-for-individuals: Individuals
+    menu-fabcoin-for-individuals: Users
     menu-community: Community
     menu-development: Development
     menu-developer-documentation: Documentation
@@ -940,7 +940,7 @@ en:
     menu-getting-started: "Getting started"
     menu-how-it-works: "How it works"
     menu-innovation: Innovation
-    menu-intro: Introduction
+    menu-intro: Get Started
     menu-legal: "Legal"
     menu-participate: Participate
     menu-press: "Press"
@@ -949,7 +949,7 @@ en:
     menu-support-fabcoin: "Support Fabcoin"
     menu-buy: "Buy Fabcoin"
     menu-vocabulary: Vocabulary
-    menu-you-need-to-know: "You need to know"
+    menu-you-need-to-know: "Important Information"
     banner-core-moved: |
       This page has moved to the new Fabcoin Core
       website (click here to be redirected)

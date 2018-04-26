@@ -13,11 +13,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <ul id="menusimple" class="menusimple menumain" onclick="mobileMenuHover(event);" ontouchstart="mobileMenuHover(event);">
   <li><a>{% translate menu-intro layout %}</a>
     <ul>
+        <li{% if page.id == 'how-it-works' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate how-it-works url %}">{% translate menu-how-it-works layout %}</a></li>
+        <li{% if page.id == 'getting-started' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate getting-started url %}">{% translate menu-getting-started layout %}</a></li>
       <li{% if page.id == 'fabcoin-for-individuals' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate fabcoin-for-individuals url %}">{% translate menu-fabcoin-for-individuals layout %}</a></li>
       <li{% if page.id == 'fabcoin-for-businesses' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate fabcoin-for-businesses url %}">{% translate menu-fabcoin-for-businesses layout %}</a></li>
       <li{% if page.id == 'fabcoin-for-developers' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate fabcoin-for-developers url %}">{% translate menu-fabcoin-for-developers layout %}</a></li>
-      <li{% if page.id == 'getting-started' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate getting-started url %}">{% translate menu-getting-started layout %}</a></li>
-      <li{% if page.id == 'how-it-works' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate how-it-works url %}">{% translate menu-how-it-works layout %}</a></li>
       <li{% if page.id == 'you-need-to-know' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate you-need-to-know url %}">{% translate menu-you-need-to-know layout %}</a></li>
     </ul>
   </li>
