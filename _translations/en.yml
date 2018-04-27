@@ -371,7 +371,7 @@ en:
     disclosuretxt: "If you find a vulnerability related to Fabcoin, non-critical vulnerabilities can be emailed in English to any of the core developers or sent to the private fabcoin-security mailing list listed above. An example of a non-critical vulnerability would be an expensive-to-carry-out denial of service attack. Critical vulnerabilities that are too sensitive for unencrypted email should be sent to one or more of the core developers, encrypted with their PGP key(s)."
     involve: "Get involved"
     involvetxt1: "Fabcoin is free software and any developer can contribute to the project. Everything you need is in the <a href=\"http://github.com/blockchaingate/fabcoin\">GitHub repository</a>. Please make sure to read and follow the development process described in the README, as well as to provide good quality code and respect all guidelines."
-    involvetxt2: "Development discussion takes place on GitHub and the <a href=\"http://lists.linuxfoundation.org/mailman/listinfo/fabcoin-dev\">fabcoin-dev</a> mailing list. Less formal development discussion happens on irc.freenode.net #fabcoin-core-dev (<a href=\"http://webchat.freenode.net/?channels=fabcoin-core-dev\">web interface</a>, <a href=\"http://fabcoinstats.com/irc/fabcoin-core-dev/logs\">logs</a>)."
+    involvetxt2: "Development discussion takes place on GitHub."
     more: "More free software projects"
     morewant: "Want to contribute to a different project?"
     morechoose: "You can choose a project to contribute to by answering a few <a href=\"http://whatcanidoforfabcoin.xyz/\">questions about your skills</a>."
