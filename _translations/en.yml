@@ -887,6 +887,18 @@ en:
     cryptographytxt: "Cryptography is the branch of mathematics that lets us create <b>mathematical proofs that provide high levels of security</b>. Online commerce and banking already uses cryptography. In the case of Fabcoin, cryptography is used to make it impossible for anybody to spend funds from another user's wallet or to corrupt the <a href=\"#[vocabulary.blockchain]\">block chain</a>. It can also be used to encrypt a wallet, so that it cannot be used without a password."
     doublespend: "Double Spend"
     doublespendtxt: "If a malicious user tries to <b>spend their fabcoins to two different recipients at the same time</b>, this is double spending. Fabcoin <a href=\"#[vocabulary.mining]\">mining</a> and the <a href=\"#[vocabulary.blockchain]\">block chain</a> are there to create a consensus on the network about which of the two transactions will confirm and be considered valid."
+    ark: "Addressed Raw-Data Key"
+    arktxt: "---Description appears here---"
+    ccspv: "Cross Chain Simple Payment Verification Protocol"
+    ccspvtxt: "---Description appears here---"
+    cctip: "Cross Chain Transaction Interexchange Protocol"
+    cctiptxt: "---Description appears here---"
+    ccua: "Cross Chain Unified Address"
+    ccuatxt: "---Description appears here---"
+    osa: "Open Storage Architecture"
+    osatxt:  "---Description appears here---"
+    scar: "Smart Contract Agent Router"
+    scartxt:  "---Description appears here---"
     hashrate: "Hash Rate"
     hashratetxt: "The hash rate is the <b>measuring unit of the processing power of the Fabcoin network</b>. The Fabcoin network must make intensive mathematical operations for security purposes. When the network reached a hash rate of 10 Th/s, it meant it could make 10 trillion calculations per second."
     mining: "Mining"
@@ -932,7 +944,7 @@ en:
     menu-fabcoin-for-developers: Developers
     menu-fabcoin-for-individuals: Users
     menu-community: Community
-    menu-development: Development
+    menu-development: "Develop Fabcoin"
     menu-developer-documentation: Documentation
     menu-events: Events
     menu-exchanges: Exchanges
@@ -942,7 +954,7 @@ en:
     menu-innovation: Technology
     menu-intro: Get Started
     menu-legal: "Legal"
-    menu-participate: Participate
+    menu-participate: "Get Involved"
     menu-press: "Press"
     menu-privacy: "Privacy Policy"
     menu-resources: Information
