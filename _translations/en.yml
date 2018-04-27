@@ -102,32 +102,29 @@ en:
   fabcoin-for-individuals:
     title: "Fabcoin for Individuals - Fabcoin"
     pagetitle: "Fabcoin for Individuals"
-    summary: "Fabcoin is the simplest way to exchange money at very low cost."
-    mobile: "Mobile payments made easy"
+    summary: "Fabcoin is the easiest and quickest way to exchange any amount of money or data at a very low cost."
+    mobile: "Quick Transactions"
     mobiletext: "Fabcoin on mobiles allows you to pay with a simple two step scan-and-pay. No need to sign up, swipe your card, type a PIN, or sign anything. All you need to receive Fabcoin payments is to display the QR code in your Fabcoin wallet app and let your friend scan your mobile, or touch the two phones together (using NFC radio technology)."
-    international: "Fast international payments"
+    international: "International payments"
     internationaltext: >
-      Sending fabcoins across borders is as easy as sending them across
-      the street. There are no banks to make you wait three business
-      days, no extra fees for making an international transfer, and no
-      special limitations on the minimum or maximum amount you can send.
+      Sending fabcoins across borders is as easy as sending to someone in your city. There are no banks to make you wait three business days, no extra fees for making an international transfer, and no special limitations on the minimum or maximum amount you can send.
 
-    simple: "Works everywhere, anytime"
-    simpletext: "Just like with email, you don't need to ask your family to use the same software or the same service providers. Just let them stick to their own favorites. No problem there; they are all compatible as they use the same open technology. The Fabcoin network never sleeps, even on holidays!"
-    secure: "Security and control over your money"
-    securetext: "Fabcoin transactions are secured by military grade cryptography. Nobody can charge you money or make a payment on your behalf. So long as you take the required steps to <a href=\"#secure-your-wallet#\">protect your wallet</a>, Fabcoin can give you control over your money and a strong level of protection against many types of fraud."
-    lowfee: "Choose your own fees"
+    simple: "Global Access 24/7"
+    simpletext: "The Fabcoin network is always open and running. Even better, you can always send Fabcoin to another person as long as they have a Fabcoin wallet. Whether it is a lite wallet, desktop for Mac, Linux or Windows, you can transact with anyone. "
+    secure: "Control of your Information"
+    securetext: "The protection of your currency and data is under your control! The fully decentralized FAB network means you are in control of your information and nobody can access your wallet. When you properly protect your wallet, Fabcoin is a great way to secure your assets, use applications and make contracts with unknown third parties in a safe way. Fabcoin transactions are secured by top level cryptography, giving you a high level of security against most financial and data frauds. "
+    lowfee: "Low Fees, Fast Speeds"
     lowfeetext: >
-      There is no fee to receive fabcoins, and many wallets let you
-      control how large a fee to pay when spending. Most wallets have
-      reasonable default fees, and higher fees can encourage faster <a
-      href="#you-need-to-know##instant">confirmation</a> of your
-      transactions. Fees are unrelated to the amount transferred, so it's
-      possible to send 100,000 fabcoins for the same fee it costs to
-      send 1 fabcoin.
+      Fabcoin has the lowest transaction fees of any cryptocurrency, and much lower fees than using regular fiat processors. Also, Fabcoin has the fastest transactions fees of any network with other 1 million transactions per second. 
+
+    globalaccess: "Global Access 24/7"
+    globalaccesstext: "The Fabcoin network is always open and running. Even better, you can always send Fabcoin to another person as long as they have a Fabcoin wallet. Whether it is a lite wallet, desktop for Mac, Linux or Windows, you can transact with anyone. Even better, the FAB network will be interoperable with other blockchain networks."
+
+    applications: "Applications"
+    applicationstext: "You can access several different applications for business, gaming and more built on the fabcoin network. You can spend and receive fabcoin using these applications, all from one wallet. "
 
     anonymous: "Protect your identity"
-    anonymoustext: "With Fabcoin, there is no credit card number that some malicious actor can collect in order to impersonate you. In fact, it is even possible to send a payment without revealing your identity, almost like with physical money. You should however take note that some effort can be required to <a href=\"#protect-your-privacy#\">protect your privacy</a>."
+    anonymoustext: "With fabcoin, there is no personal identifier that a bad actor can steal or collect in order to impersonate you or sell your identity. You can transact data and payments without revealing your identity, unless you want to. Even with the built in protections of using fabcoin, you can still be at risk through your devices, learn how to <a href=\"#protect-your-privacy#\">protect your privacy</a>."
   fabcoin-paper:
     title: "Fabcoin: A Peer-to-Peer Electronic Cash System"
     pagetitle: "Fabcoin: A Peer-to-Peer Electronic Cash System"
