@@ -102,32 +102,29 @@ en:
   fabcoin-for-individuals:
     title: "Fabcoin for Individuals - Fabcoin"
     pagetitle: "Fabcoin for Individuals"
-    summary: "Fabcoin is the simplest way to exchange money at very low cost."
-    mobile: "Mobile payments made easy"
+    summary: "Fabcoin is the easiest and quickest way to exchange any amount of money or data at a very low cost."
+    mobile: "Quick Transactions"
     mobiletext: "Fabcoin on mobiles allows you to pay with a simple two step scan-and-pay. No need to sign up, swipe your card, type a PIN, or sign anything. All you need to receive Fabcoin payments is to display the QR code in your Fabcoin wallet app and let your friend scan your mobile, or touch the two phones together (using NFC radio technology)."
-    international: "Fast international payments"
+    international: "International payments"
     internationaltext: >
-      Sending fabcoins across borders is as easy as sending them across
-      the street. There are no banks to make you wait three business
-      days, no extra fees for making an international transfer, and no
-      special limitations on the minimum or maximum amount you can send.
+      Sending fabcoins across borders is as easy as sending to someone in your city. There are no banks to make you wait three business days, no extra fees for making an international transfer, and no special limitations on the minimum or maximum amount you can send.
 
-    simple: "Works everywhere, anytime"
-    simpletext: "Just like with email, you don't need to ask your family to use the same software or the same service providers. Just let them stick to their own favorites. No problem there; they are all compatible as they use the same open technology. The Fabcoin network never sleeps, even on holidays!"
-    secure: "Security and control over your money"
-    securetext: "Fabcoin transactions are secured by military grade cryptography. Nobody can charge you money or make a payment on your behalf. So long as you take the required steps to <a href=\"#secure-your-wallet#\">protect your wallet</a>, Fabcoin can give you control over your money and a strong level of protection against many types of fraud."
-    lowfee: "Choose your own fees"
+    simple: "Global Access 24/7"
+    simpletext: "The Fabcoin network is always open and running. Even better, you can always send Fabcoin to another person as long as they have a Fabcoin wallet. Whether it is a lite wallet, desktop for Mac, Linux or Windows, you can transact with anyone. "
+    secure: "Control of your Information"
+    securetext: "The protection of your currency and data is under your control! The fully decentralized FAB network means you are in control of your information and nobody can access your wallet. When you properly protect your wallet, Fabcoin is a great way to secure your assets, use applications and make contracts with unknown third parties in a safe way. Fabcoin transactions are secured by top level cryptography, giving you a high level of security against most financial and data frauds. "
+    lowfee: "Low Fees, Fast Speeds"
     lowfeetext: >
-      There is no fee to receive fabcoins, and many wallets let you
-      control how large a fee to pay when spending. Most wallets have
-      reasonable default fees, and higher fees can encourage faster <a
-      href="#you-need-to-know##instant">confirmation</a> of your
-      transactions. Fees are unrelated to the amount transferred, so it's
-      possible to send 100,000 fabcoins for the same fee it costs to
-      send 1 fabcoin.
+      Fabcoin has the lowest transaction fees of any cryptocurrency, and much lower fees than using regular fiat processors. Also, Fabcoin has the fastest transactions fees of any network with other 1 million transactions per second. 
+
+    globalaccess: "Global Access 24/7"
+    globalaccesstext: "The Fabcoin network is always open and running. Even better, you can always send Fabcoin to another person as long as they have a Fabcoin wallet. Whether it is a lite wallet, desktop for Mac, Linux or Windows, you can transact with anyone. Even better, the FAB network will be interoperable with other blockchain networks."
+
+    applications: "Applications"
+    applicationstext: "You can access several different applications for business, gaming and more built on the fabcoin network. You can spend and receive fabcoin using these applications, all from one wallet. "
 
     anonymous: "Protect your identity"
-    anonymoustext: "With Fabcoin, there is no credit card number that some malicious actor can collect in order to impersonate you. In fact, it is even possible to send a payment without revealing your identity, almost like with physical money. You should however take note that some effort can be required to <a href=\"#protect-your-privacy#\">protect your privacy</a>."
+    anonymoustext: "With fabcoin, there is no personal identifier that a bad actor can steal or collect in order to impersonate you or sell your identity. You can transact data and payments without revealing your identity, unless you want to. Even with the built in protections of using fabcoin, you can still be at risk through your devices, learn how to <a href=\"#protect-your-privacy#\">protect your privacy</a>."
   fabcoin-paper:
     title: "Fabcoin: A Peer-to-Peer Electronic Cash System"
     pagetitle: "Fabcoin: A Peer-to-Peer Electronic Cash System"
@@ -374,7 +371,7 @@ en:
     disclosuretxt: "If you find a vulnerability related to Fabcoin, non-critical vulnerabilities can be emailed in English to any of the core developers or sent to the private fabcoin-security mailing list listed above. An example of a non-critical vulnerability would be an expensive-to-carry-out denial of service attack. Critical vulnerabilities that are too sensitive for unencrypted email should be sent to one or more of the core developers, encrypted with their PGP key(s)."
     involve: "Get involved"
     involvetxt1: "Fabcoin is free software and any developer can contribute to the project. Everything you need is in the <a href=\"http://github.com/blockchaingate/fabcoin\">GitHub repository</a>. Please make sure to read and follow the development process described in the README, as well as to provide good quality code and respect all guidelines."
-    involvetxt2: "Development discussion takes place on GitHub and the <a href=\"http://lists.linuxfoundation.org/mailman/listinfo/fabcoin-dev\">fabcoin-dev</a> mailing list. Less formal development discussion happens on irc.freenode.net #fabcoin-core-dev (<a href=\"http://webchat.freenode.net/?channels=fabcoin-core-dev\">web interface</a>, <a href=\"http://fabcoinstats.com/irc/fabcoin-core-dev/logs\">logs</a>)."
+    involvetxt2: "Development discussion takes place on GitHub."
     more: "More free software projects"
     morewant: "Want to contribute to a different project?"
     morechoose: "You can choose a project to contribute to by answering a few <a href=\"http://whatcanidoforfabcoin.xyz/\">questions about your skills</a>."
@@ -614,55 +611,55 @@ en:
   getting-started:
     title: "Getting started - Fabcoin"
     pagetitle: "Getting started with Fabcoin"
-    pagedesc: "Using Fabcoin to pay and get paid is easy and accessible to everyone."
+    pagedesc: "Using Fabcoin to transact is simple."
     users: "How to use Fabcoin"
-    inform: "Inform yourself"
-    informtxt: "Fabcoin is different than what you know and use every day. Before you start using Fabcoin, there are a few things that you need to know in order to use it securely and avoid common pitfalls."
+    inform: "Learn"
+    informtxt: "Fabcoin is different than the normal applications that you are used to; you are completely in charge. Before using Fabcoin, there are a few things that you need to learn to use it safely and successfully."
     informbut: "Read more"
-    choose: "Choose your wallet"
-    choosetxt: "You can bring a Fabcoin wallet in your everyday life with your mobile or you can have a wallet only for online payments on your computer. In any case, choosing your wallet can be done in a minute."
-    choosebut: "Choose your wallet"
+    choose: "Set up Your Wallet"
+    choosetxt: " You can use a Fabcoin wallet in your everyday life with your mobile lite wallet or you can have a wallet only for online payments on your desktop computer. Either way, setting up a Fabcoin wallet is simple and easy. "
+    choosebut: "Set up your wallet"
     get: "Get Fabcoin"
-    gettxt: "You can get Fabcoin by accepting it as a payment for goods and services. There are also several ways you can buy Fabcoin."
+    gettxt: "You can get Fabcoin by trading with friends, mining or accepting it as a payment method  for services. You can also buy Fabcoin on an exchange."
     getbut: "Buy Fabcoin"
     spend: "Spend Fabcoin"
-    spendtxt: "There is a growing number of services and merchants accepting Fabcoin all over the world. You can use Fabcoin to pay them and rate your experience to help honest businesses to gain more visibility."
+    spendtxt: "Merchants are beginning to accept Fabcoin all over the world. Use Fabcoin to pay them. "
     spendbut: "Find merchants and products"
     merchants: "How to accept Fabcoin"
-    merchantinform: "Inform yourself"
-    merchantinformtxt: "Fabcoin does not require merchants to change their habits. However, Fabcoin is different than what you know and use every day. Before you start using Fabcoin, there are a few things that you need to know in order to use it securely and avoid common pitfalls."
+    merchantinform: "Learn"
+    merchantinformtxt: "Fabcoin does not require service providers to change their habits. However, Fabcoin is different than the payments methods you accept every day. Before using Fabcoin, there are a few things that you need to learn to use it safely and successfully."
     merchantinformbut: "Read more"
     merchantservice: "Processing payments"
-    merchantservicetxt: "You can process payments and invoices by yourself or you can use merchant services and deposit money in your local currency or fabcoins. Most point of sales businesses use a tablet or a mobile phone to let customers pay with their mobile phones."
-    merchantservicebut: "Find merchant services"
+    merchantservicetxt: "Currently, you will need to process payments and invoices by yourself. The good news is that transactions happen rapidly on the Fabcoin network. Learn how to begin accepting payments in Fabcoin, create digital contracts with vendors or trade information with partners."
+    merchantservicebut: "Manuals"
     tax: "Accounting and taxes"
-    taxtxt: "Merchants often deposit and display prices in their local currency. In other cases, Fabcoin works similarly to a foreign currency. To get appropriate guidance regarding tax compliance for your own jurisdiction, you should contact a qualified accountant."
-    taxbut: "Read more"
-    visibility: "Gaining visibility"
-    visibilitytxt: "There is a growing number of users searching for ways to spend their fabcoins. You can submit your business in online directories to help them easily find you. You can also display the <a href=\"http://fabcoins.info/wiki/Promotional_graphics\">Fabcoin logo</a> on your website or your brick and mortar business."
+    taxtxt: "Rules around accounting and taxation with Fabcoin in your local jurisdiction will follow current guidelines with other cryptocurrencies.  In some cases, Fabcoin works similarly to a foreign currency. For appropriate advice regarding tax compliance for your jurisdiction,contact a qualified accountant."
+    taxbut: "Accountant Directory"
+    visibility: "Build Your Market"
+    visibilitytxt: "There are many users searching for ways to spend their fabcoins and use the FAB network. Submit your business or application to the FAB Foundation  so we can list it to help them easily find you. You can also display the Fabcoin logo on your website, application or your brick and mortar business. If you are interested in building an application for your business, contact us."
     visibilitybut: "Submit your business"
   how-it-works:
     title: "How does Fabcoin work? - Fabcoin"
     pagetitle: "How does Fabcoin work?"
-    intro: "This is a question that often causes confusion. Here's a quick explanation!"
-    basics: "The basics for a new user"
-    basicstxt1: "As a new user, you can <a href=\"#getting-started#\">get started</a> with Fabcoin without understanding the technical details. Once you have installed a Fabcoin wallet on your computer or mobile phone, it will generate your first Fabcoin address and you can create more whenever you need one. You can disclose your addresses to your friends so that they can pay you or vice versa. In fact, this is pretty similar to how email works, except that Fabcoin addresses should only be used once."
-    balances: "Balances<span class=\"titlelight\"> - block chain</span>"
-    balancestxt: "The block chain is a <b>shared public ledger</b> on which the entire Fabcoin network relies. All confirmed transactions are included in the block chain. This way, Fabcoin wallets can calculate their spendable balance and new transactions can be verified to be spending fabcoins that are actually owned by the spender. The integrity and the chronological order of the block chain are enforced with <a href=\"#vocabulary##[vocabulary.cryptography]\">cryptography</a>."
-    transactions: "Transactions<span class=\"titlelight\"> - private keys</span>"
-    transactionstxt: "A transaction is <b>a transfer of value between Fabcoin wallets</b> that gets included in the block chain. Fabcoin wallets keep a secret piece of data called a <a href=\"#vocabulary##[vocabulary.privatekey]\"><i>private key</i></a> or seed, which is used to sign transactions, providing a mathematical proof that they have come from the owner of the wallet. The <a href=\"#vocabulary##[vocabulary.signature]\"><i>signature</i></a> also prevents the transaction from being altered by anybody once it has been issued. All transactions are broadcast between users and usually begin to be confirmed by the network in the following 75 seconds, through a process called <a href=\"#vocabulary##[vocabulary.mining]\"><i>mining</i></a>."
-    processing: "Processing<span class=\"titlelight\"> - mining</span>"
-    processingtxt: "Mining is a <b>distributed consensus system</b> that is used to <a href=\"#vocabulary##[vocabulary.confirmation]\"><i>confirm</i></a> waiting transactions by including them in the block chain. It enforces a chronological order in the block chain, protects the neutrality of the network, and allows different computers to agree on the state of the system. To be confirmed, transactions must be packed in a <a href=\"#vocabulary##[vocabulary.block]\"><i>block</i></a> that fits very strict cryptographic rules that will be verified by the network. These rules prevent previous blocks from being modified because doing so would invalidate all following blocks. Mining also creates the equivalent of a competitive lottery that prevents any individual from easily adding new blocks consecutively in the block chain. This way, no individuals can control what is included in the block chain or replace parts of the block chain to roll back their own spends."
-    readmore: "Going down the rabbit hole"
-    readmoretxt: "This is only a very short and concise summary of the system. If you want to get into the details, you can <a href=\"#fabcoin-paper#\">read the original paper</a> that describes the system's design, read the <a href=\"/en/developer-documentation\">developer documentation</a>, and explore the <a href=\"http://fabcoins.info/wiki/Main_Page\">Fabcoin wiki</a>."
+    intro: "Here's a basic rundown of how Fabcoin operates!"
+    basics: "The basics"
+    basicstxt: "As a new user, you can <a href=\"#getting-started#\">get started</a> with Fabcoin without understanding the technical details. Once you have installed a Fabcoin wallet on your computer or mobile phone, it will generate your first Fabcoin address and you can create more whenever you need one. You can disclose your addresses to your friends so that they can pay you or vice versa. In fact, this is pretty similar to how email works, except that Fabcoin addresses should only be used once."
+    balances: "Foundation Blockchain<span class=\"titlelight\"> </span>"
+    balancestxt: "The foundation blockchain is a shared public ledger on which the entire Fabcoin network relies. All confirmed transactions are included in the main blockchain. Fabcoin wallets calculate their balance.  New transactions are verified by the blockchain ledger so that fabcoins are spent  by spender who actually own enough fabcoins. The accuracy and chronological order of the blockchain ledger are enforced with cryptography.The FAB network also has annex chains which host transaction networks between specific participants. Transactions that occur in the annex chains are packaged together and still sent to be verified on the foundation blockchain. This process allows for the great speed of the FAB network and prevents the foundation chain from becoming slow from too many transactions. "
+    transactions: "Transactions<span class=\"titlelight\"> </span>"
+    transactionstxt: "A transaction is a transfer of value or data between Fabcoin wallets that gets included in the blockchain. When you are sent fabcoin, it is sent to your public key. Public keys are similar to account numbers. Fabcoin wallets have a piece of data called a private key, which is used to sign transactions, providing a mathematical proof that they have come from the owner of the wallet. You should view your private key like a PIN number for your bank account.  The signature also prevents the transaction from being altered by anybody once it has been issued.All transactions are broadcast between users and usually begin to be confirmed by the network in the following 75 seconds, through a process called mining. Fabcoin has other great features such as interoperability with other blockchains like Ethereum or Bitcoin. "
+    processing: "Mining<span class=\"titlelight\"> </span>"
+    processingtxt: "Mining is a consensus system between fabcoin nodes that is used to confirm transactions by including them in the blockchain. Once included, the transactions cannot be altered or changed. It enforces a chronological order in the ledger, maintains the trust and decentralization of the network, and allows different nodes to agree on the state of the system. To be confirmed, transactions are packaged into a block that fits very strict cryptographic rules that will be verified by the network. These rules prevent previous blocks from being modified as doing so would invalidate all following blocks. Mining also creates the equivalent of a competitive lottery that prevents any individual from easily adding new blocks consecutively in the blockchain. This way, no individuals can control what is included in the blockchain or hacks parts of the blockchain to double spend."
+    readmore: "Read on"
+    readmoretxt: "This is just a basic overview of the system. If you want to learn more, you can <a href=\"#fabcoin-paper#\">read the original paper</a> that describes the system's design, read the <a href=\"http://fabcoin.pro\">developer documentation</a>" 
   index:
     title: "Fabcoin - Open source P2P money"
     metadescription: "Fabcoin is an innovative payment network and a new kind of money. Find all you need to know and get started with Fabcoin on fabcoins.info."
-    listintro: "Fabcoin is an innovative payment network and a new kind of money."
-    list1: "Peer-to-peer<br>transactions"
-    list2: "Borderless<br>payments"
-    list3: "Fraud<br>protection"
-    desc: "Fabcoin uses peer-to-peer technology to operate with no central authority or banks; managing transactions and the issuing of fabcoins is carried out collectively by the network. <b>Fabcoin is open-source; its design is public, nobody owns or controls Fabcoin and <a href=\"#support-fabcoin#\">everyone can take part</a></b>. Through many of its unique properties, Fabcoin allows exciting uses that could not be covered by any previous payment system."
+    listintro: "Fabcoin is the innovative currency for the next generation of payments and applications."
+    list1: "Peer-to-peer Value and Data Transactions <br> <br> <br> "
+    list2: "Borderless Payments <br> <br> <br> Scalable speed"
+    list3: "Fraud Protection <br><br><br>  Business Applications"
+    desc: "Fabcoin uses peer-to-peer technology along with digital smart contracts to operate a payment & business application network with no central authority or banks; and no central database. The FAB network collectively processes transactions, stores data, issues fabcoins and executes contracts. Most importantly, the Fabcoin network works at enterprise level transaction speeds up to 1 million transactions per second. Fabcoin is the next generation of blockchain technology for both applications and transactions. <br> <br> <br> Join Us ! Fabcoin is open-source and the design is public everyone can take part in building or using the network.</br>"
     overview: "Or get a quick overview for"
   innovation:
     title: "Innovation - Fabcoin"
@@ -833,7 +830,7 @@ en:
   spend-fabcoin:
     title: "Spending Fabcoin - Fabcoin"
     pagetitle: "Spending Fabcoin"
-    summary: "There are thousands of businesses, across the globe, that accept Fabcoin."
+    summary: " Merchant List and Directory coming soon."
     products-online: "Find products for sale online"
     products-online-text: "One common use for Fabcoin is making purchases online. There are hundreds of online shops and retailers that accept Fabcoin. Using a search engine like <a href=\"http://spendabit.co/\">Spendabit</a> you can search through millions of products, all available for purchase with fabcoins."
     directory: "Navigate a business directory"
@@ -887,6 +884,18 @@ en:
     cryptographytxt: "Cryptography is the branch of mathematics that lets us create <b>mathematical proofs that provide high levels of security</b>. Online commerce and banking already uses cryptography. In the case of Fabcoin, cryptography is used to make it impossible for anybody to spend funds from another user's wallet or to corrupt the <a href=\"#[vocabulary.blockchain]\">block chain</a>. It can also be used to encrypt a wallet, so that it cannot be used without a password."
     doublespend: "Double Spend"
     doublespendtxt: "If a malicious user tries to <b>spend their fabcoins to two different recipients at the same time</b>, this is double spending. Fabcoin <a href=\"#[vocabulary.mining]\">mining</a> and the <a href=\"#[vocabulary.blockchain]\">block chain</a> are there to create a consensus on the network about which of the two transactions will confirm and be considered valid."
+    ark: "Addressed Raw-Data Key"
+    arktxt: "---Description appears here---"
+    ccspv: "Cross Chain Simple Payment Verification Protocol"
+    ccspvtxt: "---Description appears here---"
+    cctip: "Cross Chain Transaction Interexchange Protocol"
+    cctiptxt: "---Description appears here---"
+    ccua: "Cross Chain Unified Address"
+    ccuatxt: "---Description appears here---"
+    osa: "Open Storage Architecture"
+    osatxt:  "---Description appears here---"
+    scar: "Smart Contract Agent Router"
+    scartxt:  "---Description appears here---"
     hashrate: "Hash Rate"
     hashratetxt: "The hash rate is the <b>measuring unit of the processing power of the Fabcoin network</b>. The Fabcoin network must make intensive mathematical operations for security purposes. When the network reached a hash rate of 10 Th/s, it meant it could make 10 trillion calculations per second."
     mining: "Mining"
@@ -928,28 +937,28 @@ en:
     taxtxt: "Fabcoin is not an official currency. That said, most jurisdictions still require you to pay income, sales, payroll, and capital gains taxes on anything that has value, including fabcoins. It is your responsibility to ensure that you adhere to <a href=\"http://en.wikipedia.org/wiki/Legality_of_fabcoin_by_country\">tax and other legal or regulatory mandates</a> issued by your government and/or local municipalities."
   layout:
     menu-about-us: "About fabcoins.info"
-    menu-fabcoin-for-businesses: Businesses
+    menu-fabcoin-for-businesses: Enterprises
     menu-fabcoin-for-developers: Developers
-    menu-fabcoin-for-individuals: Individuals
+    menu-fabcoin-for-individuals: Users
     menu-community: Community
-    menu-development: Development
+    menu-development: "Develop Fabcoin"
     menu-developer-documentation: Documentation
     menu-events: Events
     menu-exchanges: Exchanges
     menu-faq: FAQ
     menu-getting-started: "Getting started"
     menu-how-it-works: "How it works"
-    menu-innovation: Innovation
-    menu-intro: Introduction
+    menu-innovation: Technology
+    menu-intro: Get Started
     menu-legal: "Legal"
-    menu-participate: Participate
+    menu-participate: "Get Involved"
     menu-press: "Press"
     menu-privacy: "Privacy Policy"
-    menu-resources: Resources
+    menu-resources: Information
     menu-support-fabcoin: "Support Fabcoin"
     menu-buy: "Buy Fabcoin"
     menu-vocabulary: Vocabulary
-    menu-you-need-to-know: "You need to know"
+    menu-you-need-to-know: "Important Information"
     banner-core-moved: |
       This page has moved to the new Fabcoin Core
       website (click here to be redirected)

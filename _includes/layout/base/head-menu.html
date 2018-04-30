@@ -13,18 +13,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <ul id="menusimple" class="menusimple menumain" onclick="mobileMenuHover(event);" ontouchstart="mobileMenuHover(event);">
   <li><a>{% translate menu-intro layout %}</a>
     <ul>
+        <li{% if page.id == 'how-it-works' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate how-it-works url %}">{% translate menu-how-it-works layout %}</a></li>
+        <li{% if page.id == 'getting-started' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate getting-started url %}">{% translate menu-getting-started layout %}</a></li>
       <li{% if page.id == 'fabcoin-for-individuals' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate fabcoin-for-individuals url %}">{% translate menu-fabcoin-for-individuals layout %}</a></li>
       <li{% if page.id == 'fabcoin-for-businesses' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate fabcoin-for-businesses url %}">{% translate menu-fabcoin-for-businesses layout %}</a></li>
       <li{% if page.id == 'fabcoin-for-developers' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate fabcoin-for-developers url %}">{% translate menu-fabcoin-for-developers layout %}</a></li>
-      <li{% if page.id == 'getting-started' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate getting-started url %}">{% translate menu-getting-started layout %}</a></li>
-      <li{% if page.id == 'how-it-works' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate how-it-works url %}">{% translate menu-how-it-works layout %}</a></li>
       <li{% if page.id == 'you-need-to-know' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate you-need-to-know url %}">{% translate menu-you-need-to-know layout %}</a></li>
     </ul>
   </li>
   <li><a>{% translate menu-resources layout %}</a>
     <ul>
-      <li{% if page.id == 'resources' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate resources url %}">{% translate menu-resources layout %}</a>
-      {% if page.lang == 'en' %}<li{% if page.id == 'exchanges' %} class="active"{% endif %}><a href="/en/exchanges">Exchanges</a></li>{% endif %}
+      <li{% if page.id == 'resources' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate resources url %}"> Resources </a>
+      {% if page.lang == 'en' %}<li{% if page.id == 'exchanges' %} class="active"{% endif %}><a href="/en/exchanges">User Guides (Manuals) </a></li>{% endif %}
       <li{% if page.id == 'community' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate community url %}">{% translate menu-community layout %}</a></li>
       {% comment %}
         After the developer-documentation page is translated, add the language
@@ -52,11 +52,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <li{% if page.id == 'innovation' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate innovation url %}">{% translate menu-innovation layout %}</a></li>
   <li><a>{% translate menu-participate layout %}</a>
     <ul>
+        {% if page.lang == 'en' %}<li{% if page.id == 'buy' %} class="active"{% endif %}><a href="/en/buy">Buy Fabcoin</a></li>{% endif %}
+        
       <li{% if page.id == 'support-fabcoin' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate support-fabcoin url %}">{% translate menu-support-fabcoin layout %}</a>
-      {% if page.lang == 'en' %}<li{% if page.id == 'buy' %} class="active"{% endif %}><a href="/en/buy">Buy Fabcoin</a></li>{% endif %}
-      {% if page.lang == 'en' %}<li{% if page.id == 'full-node' %} class="active"{% endif %}><a href="http://fabcoin.pro/runtime.html">Running a full node</a></li>{% endif %}
 
-      <li{% if page.id == 'development' %} class="active"{% endif %}><a href="http://github.com/blockchaingate/fabcoin"> Development </a></li>
+      {% if page.lang == 'en' %}<li{% if page.id == 'full-node' %} class="active"{% endif %}><a href="http://fabcoin.pro/runtime.html">Run a full node</a></li>{% endif %}
+      
+      <li{% if page.id == 'development' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate development url %}">{% translate menu-development layout %}</a></li>
 
     </ul>
   </li>
