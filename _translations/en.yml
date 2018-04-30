@@ -931,7 +931,7 @@ en:
     experimental: "Fabcoin is still experimental"
     experimentaltxt: "Fabcoin is an experimental new currency that is in active development.  Each improvement makes Fabcoin more appealing but also reveals new challenges as Fabcoin adoption grows. During these growing pains you might encounter increased fees, slower confirmations, or even more severe issues. Be prepared for problems and consult a technical expert before making any major investments, but keep in mind that nobody can predict Fabcoin's future."
     tax: "Government taxes and regulations"
-    taxtxt: "Fabcoin is not an official currency. That said, most jurisdictions still require you to pay income, sales, payroll, and capital gains taxes on anything that has value, including fabcoins. It is your responsibility to ensure that you adhere to <a href=\"http://en.wikipedia.org/wiki/Legality_of_fabcoin_by_country\">tax and other legal or regulatory mandates</a> issued by your government and/or local municipalities."
+    taxtxt: "Fabcoin is not an official currency. That said, most jurisdictions still require you to pay income, sales, payroll, and capital gains taxes on anything that has value, including fabcoins. It is your responsibility to ensure that you adhere to tax and other legal or regulatory mandates issued by your government and/or local municipalities."
   layout:
     menu-about-us: "About fabcoins.info"
     menu-fabcoin-for-businesses: Enterprises
